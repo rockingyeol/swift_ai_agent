@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.0</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.swift</groupId>
+    <artifactId>prowide-svc</artifactId>
+    <version>0.1.0</version>
+    <name>prowide-svc</name>
+    <description>Prowide MT/MX 검증·변환 REST 마이크로서비스</description>
+
+    <properties>
+        <java.version>21</java.version>
+        <!-- Prowide Core (LGPL) — MT 파싱/검증 -->
+        <prowide-core.version>SRU2024-9.3.7</prowide-core.version>
+        <!--
+            MX/ISO 20022는 별도 Prowide ISO 20022(SRU) 라이브러리 필요.
+            라이선스 정책 확인 후 추가할 것. plan.md §1 (B) 참조.
+        -->
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- Prowide Core (MT) -->
+        <dependency>
+            <groupId>com.prowidesoftware</groupId>
+            <artifactId>pw-swift-core</artifactId>
+            <version>${prowide-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

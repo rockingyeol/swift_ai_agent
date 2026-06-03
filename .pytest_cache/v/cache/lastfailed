@@ -1,0 +1,4 @@
+{
+  "tests/test_pii.py::TestPresidioMasking::test_person_name_masked": true,
+  "tests/test_pii.py::TestPresidioMasking::test_presidio_placeholder_in_mapping": true
+}
