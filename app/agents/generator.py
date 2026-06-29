@@ -29,7 +29,10 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from app.graph.state import AgentState
 from app.llm import format_rag_context, get_chat_llm
-from app.prompts.generator_prompts import GENERATOR_SYSTEM, GENERATOR_USER
+from app.prompts.generator_prompts import (
+    MT_GENERATOR_SYSTEM, MT_GENERATOR_USER,
+    MX_GENERATOR_SYSTEM, MX_GENERATOR_USER,
+)
 from app.rag.retriever import SwiftRetriever
 
 log = logging.get_logger(__name__)
@@ -199,14 +202,107 @@ def _default_transaction(masked_message: str) -> dict[str, Any]:
 # LLM 체인 팩토리 — 테스트에서 패치 가능한 단일 지점
 # ===========================================================================
 
-def _build_generator_chain():
-    """Generator LCEL 체인 반환 (prompt | llm). 테스트에서 이 함수를 패치한다."""
+def _build_xsd_skeleton(msg_type: str, max_depth: int = 3) -> str:
+    """
+    XSD 파일에서 실제 XML 태그 구조를 추출해 스켈레톤 텍스트로 반환한다.
+    LLM이 잘못된 풀네임 태그 대신 XSD에 정의된 축약형 태그를 사용하도록 강제한다.
+    XSD가 없으면 빈 문자열 반환.
+    """
+    try:
+        from app.rag.xsd_parser import parse_xsd
+        sections = parse_xsd(msg_type)
+        if not sections:
+            return ""
+
+        lines = ["[XSD 스키마 태그 구조 — 아래 태그명을 그대로 사용할 것]"]
+        lines.append(f"<Document xmlns=\"...\">  <!-- 실제 네임스페이스는 가이드라인 문서에서 확인 -->")
+
+        def _render(fields: list, indent: int, depth: int) -> None:
+            if depth > max_depth:
+                return
+            for f in fields:
+                tag  = f.get("xml_tag", "")
+                m_o  = f.get("mandatory", "O")
+                mult = f.get("multiplicity", "[1..1]")
+                children = f.get("children", [])
+                pad = "  " * indent
+                label = f"<!-- {m_o} {mult} -->"
+                if children:
+                    lines.append(f"{pad}<{tag}> {label}")
+                    _render(children, indent + 1, depth + 1)
+                    lines.append(f"{pad}</{tag}>")
+                else:
+                    lines.append(f"{pad}<{tag}>...</{tag}> {label}")
+
+        for sec in sections:
+            tag  = sec.get("xml_tag", "")
+            m_o  = sec.get("mandatory", "O")
+            mult = sec.get("multiplicity", "[1..1]")
+            fields = sec.get("fields", [])
+            lines.append(f"  <{tag}> <!-- {m_o} {mult} -->")
+            _render(fields, indent=2, depth=1)
+            lines.append(f"  </{tag}>")
+
+        lines.append("</Document>")
+        return "\n".join(lines)
+    except Exception as e:
+        log.warning("xsd_skeleton_failed", msg_type=msg_type, error=str(e))
+        return ""
+
+
+def _is_mx(msg_type: str) -> bool:
+    """MX 전문 여부 판단. pacs/camt/pain 등 ISO 20022 접두어로 확인."""
+    if not msg_type:
+        return False
+    return bool(re.match(r"^(pacs|camt|pain|acmt|auth|reda|remt|sese|seev|semt)\.", msg_type, re.I))
+
+
+def _build_generator_chain(mx: bool = False):
+    """Generator LCEL 체인 반환. mx=True 면 MX CoT 프롬프트 사용."""
+    system_tpl = MX_GENERATOR_SYSTEM if mx else MT_GENERATOR_SYSTEM
+    user_tpl   = MX_GENERATOR_USER   if mx else MT_GENERATOR_USER
     prompt = ChatPromptTemplate.from_messages([
-        ("system", GENERATOR_SYSTEM),
-        ("human", GENERATOR_USER),
+        ("system", system_tpl),
+        ("human",  user_tpl),
     ])
-    llm = get_chat_llm(temperature=0.0)  # 재현성 보장 — 생성 결과가 매번 달라지지 않도록
+    llm = get_chat_llm(temperature=0.0)
     return prompt | llm
+
+
+def _build_scenario(user_request: str, msg_type: str) -> str:
+    """
+    사용자 요청 문자열에서 MX 거래 시나리오 항목을 추출해 구조화 텍스트로 반환.
+    명시된 항목만 포함하고 임의 값을 생성하지 않는다.
+    """
+    lines: list[str] = [f"전문 유형: {msg_type}"]
+    patterns = [
+        (r"채무자[:\s]+([^\n,;]+)", "채무자(Debtor)"),
+        (r"출금인[:\s]+([^\n,;]+)", "채무자(Debtor)"),
+        (r"Debtor[:\s]+([^\n,;]+)", "채무자(Debtor)"),
+        (r"채권자[:\s]+([^\n,;]+)", "채권자(Creditor)"),
+        (r"수취인[:\s]+([^\n,;]+)", "채권자(Creditor)"),
+        (r"Creditor[:\s]+([^\n,;]+)", "채권자(Creditor)"),
+        (r"금액[:\s]+([^\n,;]+)", "금액(Amount)"),
+        (r"Amount[:\s]+([^\n,;]+)", "금액(Amount)"),
+        (r"통화[:\s]+([A-Z]{3})", "통화(Currency)"),
+        (r"Currency[:\s]+([A-Z]{3})", "통화(Currency)"),
+        (r"목적[:\s]+([^\n,;]+)", "목적(Purpose)"),
+        (r"Purpose[:\s]+([^\n,;]+)", "목적(Purpose)"),
+        (r"날짜[:\s]+([^\n,;]+)", "날짜(Date)"),
+        (r"Date[:\s]+([^\n,;]+)", "날짜(Date)"),
+        (r"송금인 은행[:\s]+([^\n,;]+)", "송금인 은행(Debtor Agent)"),
+        (r"수취인 은행[:\s]+([^\n,;]+)", "수취인 은행(Creditor Agent)"),
+    ]
+    for pattern, label in patterns:
+        m = re.search(pattern, user_request, re.IGNORECASE)
+        if m:
+            lines.append(f"{label}: {m.group(1).strip()}")
+
+    # 별도 키워드가 없으면 사용자 요청 전체를 시나리오로 사용
+    if len(lines) == 1:
+        lines.append(user_request.strip())
+
+    return "\n".join(lines)
 
 
 # ===========================================================================
@@ -250,26 +346,39 @@ def run_generator(state: AgentState) -> Dict[str, Any]:
     xml_error  = ""
 
     try:
-        chain = _build_generator_chain()
-        # mapper_output이 있으면 mapping_spec 주입, 없으면 빈 문자열
+        mx = _is_mx(msg_type)
+        chain = _build_generator_chain(mx=mx)
+
+        import json as _json
         mapper_out = state.get("output") or {}
         mapping_spec = ""
         if mapper_out.get("mappings"):
-            import json as _json
             mapping_spec = _json.dumps(mapper_out["mappings"], ensure_ascii=False, indent=2)
 
-        # 사용자 요청에서 [필드 목록] 섹션 추출 (없으면 빈 문자열)
         req_fields_match = _re.search(
             r"\[필드 목록[^\]]*\](.*?)(?:\Z)", masked_message, _re.DOTALL
         )
         required_fields = req_fields_match.group(1).strip() if req_fields_match else "없음"
 
-        resp  = chain.invoke({
-            "user_request":    masked_message,
-            "required_fields": required_fields,
-            "rag_context":     rag_context,
-            "mapping_spec":    mapping_spec or "없음",
-        })
+        if mx:
+            scenario = _build_scenario(masked_message, msg_type)
+            xsd_skeleton = _build_xsd_skeleton(msg_type)
+            if xsd_skeleton:
+                rag_context = xsd_skeleton + "\n\n" + rag_context
+            resp = chain.invoke({
+                "msg_type":        msg_type,
+                "scenario":        scenario,
+                "required_fields": required_fields,
+                "rag_context":     rag_context,
+                "mapping_spec":    mapping_spec or "없음",
+            })
+        else:
+            resp = chain.invoke({
+                "user_request":    masked_message,
+                "required_fields": required_fields,
+                "rag_context":     rag_context,
+                "mapping_spec":    mapping_spec or "없음",
+            })
         raw_draft = (resp.content or "").strip()
         draft     = _extract_xml_block(raw_draft)
 

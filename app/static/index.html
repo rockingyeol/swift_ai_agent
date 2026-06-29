@@ -334,6 +334,35 @@
       #left { width: 100%; border-right: none; border-bottom: 1px solid var(--border);
               max-height: 50vh; }
     }
+
+    /* ── Result Blocks ──────────────────────────────────────────────────── */
+    .result-block {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      margin-bottom: 12px; overflow: hidden;
+    }
+    .result-block-header {
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      padding: 9px 14px; background: var(--surface2); cursor: pointer;
+      user-select: none; transition: background .15s;
+    }
+    .result-block-header:hover { background: #2d3147; }
+    .blk-seq {
+      font-size: 11px; font-weight: 800; color: var(--muted);
+      font-family: var(--font-mono); min-width: 28px;
+    }
+    .blk-ts { font-size: 11px; color: var(--muted); font-family: var(--font-mono); }
+    .blk-type { font-size: 12px; font-weight: 700; color: var(--accent2);
+                font-family: var(--font-mono); }
+    .blk-agent { font-size: 11px; color: var(--muted); }
+    .blk-verdict { font-size: 12px; font-weight: 800; }
+    .blk-chevron { margin-left: auto; font-size: 11px; color: var(--muted); flex-shrink: 0; }
+    .result-block-body { padding: 14px; }
+
+    /* readonly msg-type input */
+    input[readonly] {
+      font-weight: 700; color: var(--accent2); cursor: default;
+      background: var(--surface); opacity: 1;
+    }
   </style>
 </head>
 <body>
@@ -474,7 +503,7 @@
         <div style="display:flex;gap:10px">
           <div style="flex:1">
             <label>전문 유형</label>
-            <input id="msg-type" type="text" placeholder="MT103 / pacs.008 / …" />
+            <input id="msg-type" type="text" readonly tabindex="-1" placeholder="전문 선택 시 자동 입력" />
           </div>
           <div style="flex:1">
             <label>처리 의도</label>
@@ -529,18 +558,7 @@
             </svg>
             <p>전문을 입력하고 <strong>전송</strong> 버튼을 누르세요.</p>
           </div>
-          <div id="overview-content" style="display:none">
-            <div class="card">
-              <div class="card-title">처리 결과</div>
-              <div class="verdict-row" id="verdict-row"></div>
-              <div style="margin-top:14px;font-size:12px;color:var(--muted)" id="result-msg"></div>
-            </div>
-            <div class="meta-grid" id="meta-grid"></div>
-            <div class="card" id="guidebook-card" style="display:none">
-              <div class="card-title">가이드북 근거</div>
-              <div id="guidebook-list"></div>
-            </div>
-          </div>
+          <div id="overview-content" style="display:none"></div>
         </div>
 
         <!-- Output Tab -->
@@ -574,12 +592,7 @@
             </svg>
             <p>JSON 응답이 없습니다.</p>
           </div>
-          <div id="raw-content" style="display:none">
-            <div style="display:flex;justify-content:flex-end;margin-bottom:8px">
-              <button class="btn-secondary btn-sm" onclick="copyRaw()">📋 복사</button>
-            </div>
-            <pre class="code-block" id="raw-json"></pre>
-          </div>
+          <div id="raw-content" style="display:none"></div>
         </div>
 
       </div><!-- /tab-content -->
@@ -649,6 +662,7 @@ let currentThreadId = null;
 let lastResponse = null;
 let historyRows = [];
 let historySeq = 0;
+let resultBlockSeq = 0;
 
 /* ═══════════════════════════════════════════════════════════════════════
    Samples
@@ -1281,6 +1295,7 @@ function onMtCatChange() {
   const typeSel = document.getElementById('mt-type-select');
   typeSel.innerHTML = '<option value="">— 전문 유형 선택 —</option>';
   typeSel.disabled = !cat;
+  document.getElementById('msg-type').value = '';
   if (!cat) {
     document.getElementById('mt-cat-hint').textContent = '카테고리를 먼저 선택하세요.';
     return;
@@ -1304,6 +1319,7 @@ function onMxCatChange() {
   const typeSel = document.getElementById('mx-type-select');
   typeSel.innerHTML = '<option value="">— 전문 유형 선택 —</option>';
   typeSel.disabled = !domain;
+  document.getElementById('msg-type').value = '';
   if (!domain) {
     document.getElementById('mx-cat-hint').textContent = '도메인을 먼저 선택하세요.';
     return;
@@ -1605,7 +1621,6 @@ async function submitConvert() {
   if (!msg) { toast(isNlp ? '⚠ 질문을 입력하세요' : '⚠ 전문 내용을 입력하세요', 'warn'); return; }
 
   setLoading(true);
-  clearResults();
   document.getElementById('hitl-panel').style.display = 'none';
 
   const body = { raw_message: msg, msg_type: type };
@@ -1656,15 +1671,12 @@ async function sendResume(action) {
 function handleResponse(data) {
   lastResponse = data;
   currentThreadId = data.thread_id;
+  resultBlockSeq++;
+  const ts = new Date().toLocaleTimeString('ko-KR');
 
   // Thread info display
   document.getElementById('thread-info').style.display = 'block';
   document.getElementById('thread-id-display').textContent = data.thread_id;
-
-  // Raw JSON
-  document.getElementById('raw-empty').style.display = 'none';
-  document.getElementById('raw-content').style.display = 'block';
-  document.getElementById('raw-json').textContent = JSON.stringify(data, null, 2);
 
   // HITL panel
   const isHitl = data.status === 'pending_hitl';
@@ -1677,12 +1689,11 @@ function handleResponse(data) {
       `판정: ${verdict || 'N/A'} — ${data.message}`;
   }
 
-  // Render Overview
-  renderOverview(data);
-  // Render Output
-  renderOutput(data.output, data);
-  // Render Validation
-  renderValidation(data.validation_result, data.output);
+  // Render blocks
+  renderOverview(data, resultBlockSeq, ts);
+  renderOutput(data.output, data, resultBlockSeq, ts);
+  renderValidation(data.validation_result, data.output, resultBlockSeq, ts);
+  renderRawBlock(data, resultBlockSeq, ts);
 
   // Add to history
   addHistoryRow(data);
@@ -1693,7 +1704,6 @@ function handleResponse(data) {
   if (['explanation', 'mapping_rule', 'general_answer'].includes(data.output?.type)) {
     switchTab('output');
   } else if (data.output?.draft || data.output?.enhanced || data.output?.type === 'mapped_message') {
-    // 생성/변환 결과는 검토가 필요하므로 출력 탭으로
     switchTab('output');
   } else if (data.output?.type === 'analysis') {
     switchTab('validation');
@@ -1705,9 +1715,11 @@ function handleResponse(data) {
 /* ═══════════════════════════════════════════════════════════════════════
    Render Overview
 ═══════════════════════════════════════════════════════════════════════ */
-function renderOverview(data) {
-  document.getElementById('overview-empty').style.display = 'none';
-  document.getElementById('overview-content').style.display = 'block';
+function renderOverview(data, seq, ts) {
+  const empty   = document.getElementById('overview-empty');
+  const content = document.getElementById('overview-content');
+  empty.style.display = 'none';
+  content.style.display = 'block';
 
   const verdict = data.output?.verdict
     || data.validation_result?.verdict
@@ -1724,7 +1736,6 @@ function renderOverview(data) {
     failed:       '<span class="badge badge-err"><span class="dot"></span>실패</span>',
   }[data.status] || '';
 
-  // explanation / mapping_rule 타입은 별도 verdict 표시
   const isExplain     = data.output?.type === 'explanation';
   const isMappingRule = data.output?.type === 'mapping_rule';
   const verdictDisplay = isExplain
@@ -1735,16 +1746,10 @@ function renderOverview(data) {
         ? `<div class="verdict-badge" style="background:#7c3aed;font-size:14px">💬 Q&A</div>`
         : `<div class="verdict-badge ${vClass}">${verdict}</div>`;
 
-  document.getElementById('verdict-row').innerHTML = `
-    ${verdictDisplay}
-    ${statusBadge}
-    ${data.routed_agent ? `<span class="badge badge-info"><span class="dot"></span>${data.routed_agent}</span>` : ''}
-  `;
-  document.getElementById('result-msg').textContent = isExplain
+  const resultMsg = isExplain
     ? `${data.output?.full_name || ''} — ${data.output?.korean_name || ''}`
     : (data.message || '');
 
-  // Meta grid
   const meta = [
     { key: 'Thread ID', val: data.thread_id?.slice(0,8) + '…' || '—' },
     { key: '에이전트',   val: data.routed_agent || '—' },
@@ -1753,38 +1758,60 @@ function renderOverview(data) {
     { key: 'Prowide',   val: data.validation_result?.rule_engine?.degraded === true ? '⚠ Degraded' : '연결됨' },
     { key: '가이드북 참조', val: (data.validation_result?.guidebook_basis?.length || 0) + '건' },
   ];
-  document.getElementById('meta-grid').innerHTML = meta.map(m => `
-    <div class="meta-item"><div class="key">${m.key}</div><div class="val">${m.val}</div></div>
-  `).join('');
+  const metaHtml = `<div class="meta-grid">${meta.map(m =>
+    `<div class="meta-item"><div class="key">${m.key}</div><div class="val">${esc(String(m.val))}</div></div>`
+  ).join('')}</div>`;
 
-  // Guidebook basis
   const basis = data.validation_result?.guidebook_basis || [];
+  let guidebookHtml = '';
   if (basis.length > 0) {
-    document.getElementById('guidebook-card').style.display = 'block';
-    const basisChips = basis
-      .filter(b => (b.page != null) || b.source)   // field 없어도 page/source 있으면 표시
-      .map(b => {
-        const src   = b.source ? `<span style="color:#a5b4fc;font-size:10px;display:block;margin-bottom:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:160px" title="${esc(b.source)}">${esc(b.source)}</span>` : '';
-        const page  = b.page != null ? `p.${b.page}` : '';
-        const field = (b.field && b.field !== 'SYSTEM') ? ` :${b.field}:` : '';
-        const rule  = b.rule_id ? ` ${b.rule_id}` : '';
-        return `<span class="tag-chip" style="display:inline-flex;flex-direction:column;vertical-align:top;max-width:170px">${src}<span>${page}${field}${rule}</span></span>`;
-      })
-      .join('');
-    document.getElementById('guidebook-list').innerHTML = basisChips || '<span style="color:var(--muted);font-size:12px">근거 없음</span>';
-  } else {
-    document.getElementById('guidebook-card').style.display = 'none';
+    const chips = basis.filter(b => (b.page != null) || b.source).map(b => {
+      const src   = b.source ? `<span style="color:#a5b4fc;font-size:10px;display:block;margin-bottom:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:160px" title="${esc(b.source)}">${esc(b.source)}</span>` : '';
+      const page  = b.page != null ? `p.${b.page}` : '';
+      const field = (b.field && b.field !== 'SYSTEM') ? ` :${b.field}:` : '';
+      const rule  = b.rule_id ? ` ${b.rule_id}` : '';
+      return `<span class="tag-chip" style="display:inline-flex;flex-direction:column;vertical-align:top;max-width:170px">${src}<span>${page}${field}${rule}</span></span>`;
+    }).join('');
+    guidebookHtml = `<div class="card"><div class="card-title">가이드북 근거</div>${chips || '<span style="color:var(--muted);font-size:12px">근거 없음</span>'}</div>`;
   }
+
+  const msgTypeLabel = data.hitl_payload?.msg_type || '—';
+  const agentLabel   = data.routed_agent || '—';
+
+  content.insertAdjacentHTML('afterbegin', `
+    <div class="result-block">
+      <div class="result-block-header" onclick="toggleResultBlock(this)">
+        <span class="blk-seq">#${seq}</span>
+        <span class="blk-ts">${ts}</span>
+        <span class="blk-type">${esc(msgTypeLabel)}</span>
+        <span class="blk-agent">${esc(agentLabel)}</span>
+        <span class="blk-verdict ${vClass}">${verdict}</span>
+        <span class="blk-chevron">▼</span>
+      </div>
+      <div class="result-block-body">
+        <div class="card">
+          <div class="card-title">처리 결과</div>
+          <div class="verdict-row">
+            ${verdictDisplay}
+            ${statusBadge}
+            ${data.routed_agent ? `<span class="badge badge-info"><span class="dot"></span>${esc(data.routed_agent)}</span>` : ''}
+          </div>
+          <div style="margin-top:14px;font-size:12px;color:var(--muted)">${esc(resultMsg)}</div>
+        </div>
+        ${metaHtml}
+        ${guidebookHtml}
+      </div>
+    </div>`);
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
    Render Output
 ═══════════════════════════════════════════════════════════════════════ */
-function renderOutput(output, data) {
+function renderOutput(output, data, seq, ts) {
   const empty   = document.getElementById('output-empty');
   const content = document.getElementById('output-content');
 
-  if (!output) { empty.style.display='flex'; content.style.display='none'; return; }
+  if (!output) { if (!content.children.length) { empty.style.display='flex'; content.style.display='none'; } return; }
   empty.style.display = 'none';
   content.style.display = 'block';
 
@@ -2274,7 +2301,19 @@ function renderOutput(output, data) {
     </div>`;
   }
 
-  content.innerHTML = html || `<div class="empty-state" style="height:auto;padding:40px"><p>출력 데이터 없음</p></div>`;
+  if (!html) return;
+  const msgType = data?.hitl_payload?.msg_type || data?.output?.msg_type || '—';
+  content.insertAdjacentHTML('afterbegin', `
+    <div class="result-block">
+      <div class="result-block-header" onclick="toggleResultBlock(this)">
+        <span class="blk-seq">#${seq}</span>
+        <span class="blk-ts">${ts}</span>
+        <span class="blk-type">${esc(msgType)}</span>
+        <span class="blk-agent">${esc(output.type || '—')}</span>
+        <span class="blk-chevron">▼</span>
+      </div>
+      <div class="result-block-body">${html}</div>
+    </div>`);
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -2320,11 +2359,11 @@ function _translateProwideDesc(code, desc) {
 /* ═══════════════════════════════════════════════════════════════════════
    Render Validation
 ═══════════════════════════════════════════════════════════════════════ */
-function renderValidation(vr, output) {
+function renderValidation(vr, output, seq, ts) {
   const empty   = document.getElementById('validation-empty');
   const content = document.getElementById('validation-content');
 
-  if (!vr && !(output?.field_analysis?.length)) { empty.style.display='flex'; content.style.display='none'; return; }
+  if (!vr && !(output?.field_analysis?.length)) { if (!content.children.length) { empty.style.display='flex'; content.style.display='none'; } return; }
   empty.style.display = 'none';
   content.style.display = 'block';
 
@@ -2484,7 +2523,50 @@ function renderValidation(vr, output) {
     </div>`;
   }
 
-  content.innerHTML = html || `<div class="empty-state" style="height:auto;padding:40px"><p>검증 데이터 없음</p></div>`;
+  if (!html) return;
+  const verdict = vr?.verdict || '—';
+  const vClass = { PASS:'v-pass', WARNING:'v-warning', REJECT:'v-reject' }[verdict] || 'v-error';
+  content.insertAdjacentHTML('afterbegin', `
+    <div class="result-block">
+      <div class="result-block-header" onclick="toggleResultBlock(this)">
+        <span class="blk-seq">#${seq}</span>
+        <span class="blk-ts">${ts}</span>
+        <span class="blk-agent">검증 상세</span>
+        <span class="blk-verdict ${vClass}">${verdict}</span>
+        <span class="blk-chevron">▼</span>
+      </div>
+      <div class="result-block-body">${html}</div>
+    </div>`);
+}
+
+function renderRawBlock(data, seq, ts) {
+  const empty   = document.getElementById('raw-empty');
+  const content = document.getElementById('raw-content');
+  empty.style.display = 'none';
+  content.style.display = 'block';
+  const jsonStr = JSON.stringify(data, null, 2);
+  content.insertAdjacentHTML('afterbegin', `
+    <div class="result-block">
+      <div class="result-block-header" onclick="toggleResultBlock(this)">
+        <span class="blk-seq">#${seq}</span>
+        <span class="blk-ts">${ts}</span>
+        <span class="blk-agent">Raw JSON</span>
+        <button class="btn-secondary btn-sm" style="margin-left:auto;margin-right:24px;font-size:11px;padding:3px 8px"
+          onclick="event.stopPropagation();copyText(this.dataset.json)" data-json="${esc(jsonStr)}">📋 복사</button>
+        <span class="blk-chevron">▼</span>
+      </div>
+      <div class="result-block-body" style="padding:10px">
+        <pre class="code-block">${esc(jsonStr)}</pre>
+      </div>
+    </div>`);
+}
+
+function toggleResultBlock(headerEl) {
+  const body = headerEl.nextElementSibling;
+  const chev = headerEl.querySelector('.blk-chevron');
+  const collapsed = body.style.display === 'none';
+  body.style.display = collapsed ? '' : 'none';
+  if (chev) chev.textContent = collapsed ? '▼' : '▶';
 }
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -2570,22 +2652,13 @@ function setLoading(on) {
 }
 
 function clearResults() {
-  ['overview','output','validation','raw'].forEach(t => {
-    document.getElementById(`tab-${t}`)?.querySelectorAll('[id$="-content"]').forEach(el => {
-      el.style.display = 'none';
-    });
-    document.getElementById(`tab-${t}`)?.querySelectorAll('[id$="-empty"]').forEach(el => {
-      el.style.display = 'flex';
-    });
+  ['overview','output','validation','raw'].forEach(name => {
+    const content = document.getElementById(`${name}-content`);
+    const empty   = document.getElementById(`${name}-empty`);
+    if (content) { content.innerHTML = ''; content.style.display = 'none'; }
+    if (empty)   empty.style.display = 'flex';
   });
-  document.getElementById('raw-content').style.display = 'none';
-  document.getElementById('raw-empty').style.display  = 'flex';
-  document.getElementById('overview-content').style.display = 'none';
-  document.getElementById('overview-empty').style.display   = 'flex';
-  document.getElementById('output-content').style.display   = 'none';
-  document.getElementById('output-empty').style.display     = 'flex';
-  document.getElementById('validation-content').style.display = 'none';
-  document.getElementById('validation-empty').style.display   = 'flex';
+  resultBlockSeq = 0;
   switchTab('overview');
 }
 
@@ -2693,8 +2766,7 @@ function schemaCollapseAll() {
 }
 
 function copyRaw() {
-  const text = document.getElementById('raw-json').textContent;
-  copyText(text);
+  if (lastResponse) copyText(JSON.stringify(lastResponse, null, 2));
 }
 
 function copyText(text) {

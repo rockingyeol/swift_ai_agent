@@ -950,7 +950,6 @@ def _run_general_qa(state: AgentState, query: str) -> Dict[str, Any]:
 
     try:
         retriever = _get_retriever()
-        # Usage Rules 섹션 조회 시 추가 커버 메서드/금액 관련 청크 보강
         is_usage_rules = any(kw in lower for kw in ["usage rules", "작성 규칙", "사용 규칙", "rules", "룰", "규칙"])
         chunks = retriever.search(
             query=rag_query,
@@ -958,6 +957,25 @@ def _run_general_qa(state: AgentState, query: str) -> Dict[str, Any]:
             top_k=12 if is_usage_rules else 10,
             rerank=True,
         )
+        seen = {getattr(c, 'chunk_id', id(c)) for c in chunks}
+
+        # MX element 이름(CamelCase) 감지 → element_name 필터 보강 검색
+        # 예: "BizMsgIdr 태그 정보" → 전체 30개 후보에서 누락될 수 있으므로 직접 조회
+        mx_elems = _RE_MX_ELEMENT.findall(query)
+        if mx_elems and msg_type:
+            for elem in mx_elems[:3]:
+                elem_chunks = retriever.search(
+                    query=f"{msg_type} {elem} XML Tag definition presence mandatory",
+                    filters={"msg_type": msg_type, "element_name": elem},
+                    top_k=5,
+                    rerank=False,
+                )
+                for c in elem_chunks:
+                    cid = getattr(c, 'chunk_id', id(c))
+                    if cid not in seen:
+                        seen.add(cid)
+                        chunks.append(c)
+
         # Usage Rules 조회 시 커버 메서드·금액 관련 필드 청크 보강
         if is_usage_rules and msg_type:
             extra = retriever.search(
@@ -966,10 +984,12 @@ def _run_general_qa(state: AgentState, query: str) -> Dict[str, Any]:
                 top_k=6,
                 rerank=False,
             )
-            seen = {getattr(c, 'chunk_id', id(c)) for c in chunks}
             for c in extra:
-                if getattr(c, 'chunk_id', id(c)) not in seen:
+                cid = getattr(c, 'chunk_id', id(c))
+                if cid not in seen:
+                    seen.add(cid)
                     chunks.append(c)
+
         rag_context = format_rag_context(chunks)
     except Exception as e:
         log.error("explainer_general_rag_failed", error=str(e))

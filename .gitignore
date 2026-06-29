@@ -5,5 +5,5 @@ __pycache__/
 .env
 data/MT/
 data/MX/
-data/XSD/
 .pytest_cache/
+.claude/

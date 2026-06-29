@@ -89,6 +89,12 @@ _RE_MX_ELEM_HDR = re.compile(
     r"^(\d+\.\d+(?:\.\d+){0,4})\s+([\w][^<\n]{0,80}?)\s*(<[A-Za-z][A-Za-z0-9]*>)",
     re.MULTILINE,
 )
+# CBPRPlus 문서 포맷: 태그명이 별도 줄에 "XML Tag: TagName" 형식으로 표기됨
+#   5.54.1  Originator\nXML Tag: Orgtr\nPresence: [0..1]...
+_RE_MX_ELEM_HDR_CBPR = re.compile(
+    r"^(\d+\.\d+(?:\.\d+){0,4})\s+([\w][^\n]{0,80}?)\s*\n[^\n]*?XML\s+Tag:\s*([A-Za-z][A-Za-z0-9]*)",
+    re.MULTILINE,
+)
 _RE_MX_RULE_HDR = re.compile(
     r"^(C\d+|R\d+|BR[-\s]?\d+|Rule\s+\d+|Constraint\s+\w+)\b",
     re.MULTILINE | re.IGNORECASE,
@@ -197,9 +203,10 @@ class MXParser:
     # ── 메시지 루트 추출 ───────────────────────────────────────────────────
 
     def _extract_message_root(self, boundaries: list) -> str:
+        # depth==2(x.y) 인 첫 번째 섹션의 태그를 루트로 사용.
+        # 섹션 번호가 1.x 로 고정되지 않는 CBPRPlus Combined 문서 지원.
         for _, sec_num, _, xml_tag in boundaries:
-            parts = sec_num.split(".")
-            if len(parts) == 2 and parts[0] == "1":
+            if len(sec_num.split(".")) == 2:
                 return xml_tag
         return ""
 
@@ -269,13 +276,26 @@ class MXParser:
         chunks, seen = [], set()
         boundaries, seen_nums = [], set()
 
+        # ── 패턴 1: 인라인 형식  "1.2.3 FieldName <XmlTag>" ─────────────────
         for m in _RE_MX_ELEM_HDR.finditer(text):
             sec_num = m.group(1).strip()
             if sec_num in seen_nums: continue
-            if not sec_num.startswith("1."): continue
             if _RE_TOC_ENTRY.search(m.group(0)): continue
             seen_nums.add(sec_num)
             boundaries.append((m.start(), sec_num, m.group(2).strip(), m.group(3).strip("<>")))
+
+        # ── 패턴 2: CBPRPlus 포맷  "5.54.1 Originator\nXML Tag: Orgtr" ──────
+        # 패턴 1이 전혀 없는 경우에만 시도 (중복 방지)
+        if not boundaries:
+            for m in _RE_MX_ELEM_HDR_CBPR.finditer(text):
+                sec_num = m.group(1).strip()
+                if sec_num in seen_nums: continue
+                if _RE_TOC_ENTRY.search(m.group(0)): continue
+                seen_nums.add(sec_num)
+                # 헤더 전체 매치 시작점을 경계로 사용
+                boundaries.append((m.start(), sec_num, m.group(2).strip(), m.group(3).strip()))
+
+        boundaries.sort(key=lambda x: x[0])
 
         if not boundaries:
             body = re.sub(r"\n{3,}", "\n\n", text.strip())
@@ -417,10 +437,11 @@ class MXParser:
     @staticmethod
     def _has_element_headers(text: str) -> bool:
         count = 0
-        for m in _RE_MX_ELEM_HDR.finditer(text):
-            if m.group(1).startswith("1.") and not _RE_TOC_ENTRY.search(m.group(0)):
-                count += 1
-                if count >= 2: return True
+        for pattern in (_RE_MX_ELEM_HDR, _RE_MX_ELEM_HDR_CBPR):
+            for m in pattern.finditer(text):
+                if not _RE_TOC_ENTRY.search(m.group(0)):
+                    count += 1
+                    if count >= 2: return True
         return False
 
     # ── 섹션 유형 분류 ──────────────────────────────────────────────────────

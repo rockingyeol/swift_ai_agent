@@ -560,12 +560,13 @@ _GRAPH_TIMEOUT = float(os.getenv("GRAPH_TIMEOUT", "300"))
 
 async def _run_graph(initial_state: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]:
     """
-    동기 LangGraph invoke 를 스레드풀에서 실행하여 이벤트 루프를 블로킹하지 않는다.
-    invoke() 가 None 을 반환하는 경우(interrupt 발생) 에는 snapshot.values 로 대체한다.
+    LangGraph ainvoke 로 그래프를 실행한다.
+    interrupt() 발생 시 ainvoke 는 현재 상태 dict 를 반환하며,
+    get_state().next 에 중단 노드가 기록된다.
     """
     try:
         result: dict[str, Any] | None = await asyncio.wait_for(
-            asyncio.to_thread(compiled_graph.invoke, initial_state, config),
+            compiled_graph.ainvoke(initial_state, config),
             timeout=_GRAPH_TIMEOUT,
         )
     except asyncio.TimeoutError:
@@ -584,7 +585,7 @@ async def _resume_graph(command: Command, config: dict[str, Any]) -> dict[str, A
     """Command(resume=…) 로 HITL 중단 스레드를 재개한다."""
     try:
         result: dict[str, Any] | None = await asyncio.wait_for(
-            asyncio.to_thread(compiled_graph.invoke, command, config),
+            compiled_graph.ainvoke(command, config),
             timeout=_GRAPH_TIMEOUT,
         )
     except asyncio.TimeoutError:
