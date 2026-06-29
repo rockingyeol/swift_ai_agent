@@ -1,0 +1,3556 @@
+{
+  "camt.003.001.02": {
+    "name_en": "Get Account Information",
+    "name_ko": "계좌 정보 조회"
+  },
+  "camt.003.001.03": {
+    "name_en": "Get Account Information Query",
+    "name_ko": "계좌 정보 조회"
+  },
+  "camt.003.001.04": {
+    "name_en": "Account Query Request",
+    "name_ko": "계좌 조회 요청"
+  },
+  "camt.003.001.05": {
+    "name_en": "Get Account",
+    "name_ko": "계좌 조회"
+  },
+  "camt.003.001.06": {
+    "name_en": "Get Account",
+    "name_ko": "계좌 조회"
+  },
+  "camt.003.001.07": {
+    "name_en": "Get Account Query",
+    "name_ko": "계좌 조회 요청"
+  },
+  "camt.003.001.08": {
+    "name_en": "Account Query Request",
+    "name_ko": "계좌 조회 요청"
+  },
+  "camt.004.001.02": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "camt.004.001.03": {
+    "name_en": "Account Information Query Response",
+    "name_ko": "계좌 정보 조회 응답"
+  },
+  "camt.004.001.04": {
+    "name_en": "Limit Agreement",
+    "name_ko": "한도 약정"
+  },
+  "camt.004.001.05": {
+    "name_en": "Account Report or Error",
+    "name_ko": "계좌 보고서 또는 오류"
+  },
+  "camt.004.001.06": {
+    "name_en": "Account Information Response",
+    "name_ko": "계좌 정보 응답"
+  },
+  "camt.004.001.07": {
+    "name_en": "Bank-to-Customer Account Report",
+    "name_ko": "은행-고객 계좌 보고서"
+  },
+  "camt.004.001.08": {
+    "name_en": "Mandate Initiation Request",
+    "name_ko": "위임장 개시 요청"
+  },
+  "camt.004.001.09": {
+    "name_en": "Enquiry Response",
+    "name_ko": "조회 응답"
+  },
+  "camt.004.001.10": {
+    "name_en": "Account Information Response",
+    "name_ko": "계좌 정보 응답"
+  },
+  "camt.005.001.03": {
+    "name_en": "Banked Settlement Activity Report",
+    "name_ko": "은행 결제 활동 보고서"
+  },
+  "camt.005.001.04": {
+    "name_en": "Get Transaction Inquiry",
+    "name_ko": "거래 조회"
+  },
+  "camt.005.001.05": {
+    "name_en": "Interbank Settlement Amount Instruction",
+    "name_ko": "은행간 결제금액 지시"
+  },
+  "camt.005.001.06": {
+    "name_en": "Bank-to-Customer Statement",
+    "name_ko": "은행-고객 거래명세서"
+  },
+  "camt.005.001.07": {
+    "name_en": "Query Criteria",
+    "name_ko": "쿼리 기준"
+  },
+  "camt.006.001.02": {
+    "name_en": "Debtor Payment Cancellation Request",
+    "name_ko": "채무자 지급 취소 요청"
+  },
+  "camt.006.001.03": {
+    "name_en": "Interbank Payment Status Request",
+    "name_ko": "은행간 결제 상태 요청"
+  },
+  "camt.006.001.04": {
+    "name_en": "Return Transaction",
+    "name_ko": "거래 반환"
+  },
+  "camt.006.001.05": {
+    "name_en": "Mandate Related Information Request",
+    "name_ko": "mandate 관련 정보 요청"
+  },
+  "camt.006.001.06": {
+    "name_en": "Return Debit Credit Notification",
+    "name_ko": "반환 차변 신용 알림"
+  },
+  "camt.006.001.07": {
+    "name_en": "Debit Credit Notification",
+    "name_ko": "차변 신용 알림"
+  },
+  "camt.007.001.02": {
+    "name_en": "Proprietary Payment Status Report",
+    "name_ko": "전용 결제 상태 보고서"
+  },
+  "camt.007.001.03": {
+    "name_en": "Payment Valuation Adjustment",
+    "name_ko": "결제 가액 조정"
+  },
+  "camt.007.001.04": {
+    "name_en": "Interbank Payment Order",
+    "name_ko": "은행간 지급 지시"
+  },
+  "camt.007.001.05": {
+    "name_en": "Interbank Payments Clearing Request",
+    "name_ko": "은행간 결제 청산 요청"
+  },
+  "camt.007.001.06": {
+    "name_en": "Payment Cancellation Request",
+    "name_ko": "지급 취소 요청"
+  },
+  "camt.007.001.07": {
+    "name_en": "Interbank Payment Value Correction",
+    "name_ko": "은행간 지급 값 수정"
+  },
+  "camt.007.001.10": {
+    "name_en": "Modification of Remittance Advice",
+    "name_ko": "송금 조언 수정"
+  },
+  "camt.007.002.01": {
+    "name_en": "Interbank Payment Order",
+    "name_ko": "은행간 결제 지시"
+  },
+  "camt.007.002.02": {
+    "name_en": "Interbank Clearing and Settlement (Reversal)",
+    "name_ko": "은행간 결제 및 정산(취소)"
+  },
+  "camt.008.001.02": {
+    "name_en": "Debit Authorisation Request",
+    "name_ko": "직불 승인 요청"
+  },
+  "camt.008.001.03": {
+    "name_en": "Interbank Payment Settlement Message",
+    "name_ko": "은행간 결제 정산 메시지"
+  },
+  "camt.008.001.04": {
+    "name_en": "Payment Instruction Enquiry",
+    "name_ko": "지급 지시 문의"
+  },
+  "camt.008.001.05": {
+    "name_en": "Payment Control Request",
+    "name_ko": "결제 제어 요청"
+  },
+  "camt.008.001.06": {
+    "name_en": "Payment Control Request",
+    "name_ko": "결제 통제 요청"
+  },
+  "camt.008.001.07": {
+    "name_en": "Payment Cancellation Request",
+    "name_ko": "지급 취소 요청"
+  },
+  "camt.008.001.08": {
+    "name_en": "Request to Modify Payment",
+    "name_ko": "결제 수정 요청"
+  },
+  "camt.008.001.09": {
+    "name_en": "Clearing Institution or Intermediary Queue Response",
+    "name_ko": "청산기관 또는 중개기관 대기열 응답"
+  },
+  "camt.008.001.10": {
+    "name_en": "Payment Cancellation Request",
+    "name_ko": "결제 취소 요청"
+  },
+  "camt.008.002.01": {
+    "name_en": "Assignment of Payment Instruction",
+    "name_ko": "지급지시 양도"
+  },
+  "camt.008.002.02": {
+    "name_en": "Payment Cancellation Request",
+    "name_ko": "지급 취소 요청"
+  },
+  "camt.009.001.03": {
+    "name_en": "Limit Query Request",
+    "name_ko": "한도 조회 요청"
+  },
+  "camt.009.001.04": {
+    "name_en": "Bilateral Limit",
+    "name_ko": "양자간 한도"
+  },
+  "camt.009.001.05": {
+    "name_en": "Bilateral Limit Query",
+    "name_ko": "양자간 한도 조회"
+  },
+  "camt.009.001.06": {
+    "name_en": "Limit Query Request",
+    "name_ko": "한도 조회 요청"
+  },
+  "camt.009.001.07": {
+    "name_en": "Limit Query Response",
+    "name_ko": "한도 조회 응답"
+  },
+  "camt.010.001.02": {
+    "name_en": "Bilateral Credit Limit Agreement",
+    "name_ko": "양자간 신용한도 협약"
+  },
+  "camt.010.001.03": {
+    "name_en": "Limit Report",
+    "name_ko": "한도 보고서"
+  },
+  "camt.010.001.04": {
+    "name_en": "Enquire on Limits Request",
+    "name_ko": "한도 조회 요청"
+  },
+  "camt.010.001.05": {
+    "name_en": "Limits Report",
+    "name_ko": "한도 보고서"
+  },
+  "camt.010.001.06": {
+    "name_en": "Limits Report",
+    "name_ko": "한도 보고서"
+  },
+  "camt.010.001.07": {
+    "name_en": "Bilateral Limit Information Request",
+    "name_ko": "양자 한도 정보 요청"
+  },
+  "camt.010.001.08": {
+    "name_en": "Limit Information Request",
+    "name_ko": "한도 정보 요청"
+  },
+  "camt.011.001.02": {
+    "name_en": "Clearing System Member Identification",
+    "name_ko": "결제시스템 회원 식별"
+  },
+  "camt.011.001.03": {
+    "name_en": "Debit Credit Notification",
+    "name_ko": "차입 신용 알림"
+  },
+  "camt.011.001.04": {
+    "name_en": "Modify Limit",
+    "name_ko": "한도 수정"
+  },
+  "camt.011.001.05": {
+    "name_en": "Notification of Case Assignment",
+    "name_ko": "사건 할당 통보"
+  },
+  "camt.011.001.06": {
+    "name_en": "Limit Identification Request",
+    "name_ko": "한도 식별 요청"
+  },
+  "camt.011.001.07": {
+    "name_en": "Bilateral Limit Modification Request",
+    "name_ko": "양자 한도 수정 요청"
+  },
+  "camt.011.001.08": {
+    "name_en": "Limit Details and Risk Management Query",
+    "name_ko": "한도 세부사항 및 위험관리 조회"
+  },
+  "camt.012.001.02": {
+    "name_en": "Limit Establishment",
+    "name_ko": "한도 설정"
+  },
+  "camt.012.001.03": {
+    "name_en": "Bilateral Limit Establishment",
+    "name_ko": "양자 한도 설정"
+  },
+  "camt.012.001.04": {
+    "name_en": "Intraday Limit Update",
+    "name_ko": "당일 한도 업데이트"
+  },
+  "camt.012.001.05": {
+    "name_en": "Limit Query Request",
+    "name_ko": "한도 조회 요청"
+  },
+  "camt.012.001.06": {
+    "name_en": "Limit Query Request",
+    "name_ko": "한도 조회 요청"
+  },
+  "camt.012.001.07": {
+    "name_en": "Intraday Limit Update Request",
+    "name_ko": "당일 한도 업데이트 요청"
+  },
+  "camt.012.001.08": {
+    "name_en": "Bilateral Limit Establishment",
+    "name_ko": "양자간 한도 설정"
+  },
+  "camt.013.001.01": {
+    "name_en": "Query Recalled Information",
+    "name_ko": "조회 재호출 정보"
+  },
+  "camt.013.001.02": {
+    "name_en": "Member Query",
+    "name_ko": "회원 조회"
+  },
+  "camt.013.001.03": {
+    "name_en": "Request to Modify Query",
+    "name_ko": "쿼리 수정 요청"
+  },
+  "camt.013.001.04": {
+    "name_en": "Member Query Definition Request",
+    "name_ko": "회원 쿼리 정의 요청"
+  },
+  "camt.014.001.01": {
+    "name_en": "Return Debit Credit Notification",
+    "name_ko": "반환 차변 신용 통지"
+  },
+  "camt.014.001.02": {
+    "name_en": "Clearing House Member Information Request",
+    "name_ko": "청산소 회원 정보 요청"
+  },
+  "camt.014.001.03": {
+    "name_en": "Member Query Response",
+    "name_ko": "회원 조회 응답"
+  },
+  "camt.014.001.04": {
+    "name_en": "Clearing System Member Directory Search Reply",
+    "name_ko": "결제시스템 회원 디렉토리 검색 응답"
+  },
+  "camt.014.001.05": {
+    "name_en": "Member Clearing System Member Report",
+    "name_ko": "회원 결제시스템 회원 보고"
+  },
+  "camt.015.001.01": {
+    "name_en": "Clearing System Member Notification",
+    "name_ko": "결제시스템 회원 알림"
+  },
+  "camt.015.001.02": {
+    "name_en": "Intra-Bank Payment Clearing Request",
+    "name_ko": "은행 내 결제 청산 요청"
+  },
+  "camt.015.001.03": {
+    "name_en": "Intra-Bank Payment Clearing",
+    "name_ko": "은행 내 결제 청산"
+  },
+  "camt.015.001.04": {
+    "name_en": "Clearing House Interest",
+    "name_ko": "결제소 이자"
+  },
+  "camt.016.001.01": {
+    "name_en": "Currency Exchange Query",
+    "name_ko": "환율 조회"
+  },
+  "camt.016.001.02": {
+    "name_en": "Currency Exchange Query",
+    "name_ko": "환율 조회"
+  },
+  "camt.016.001.03": {
+    "name_en": "Currency Query Definition",
+    "name_ko": "통화 조회 정의"
+  },
+  "camt.017.001.01": {
+    "name_en": "Return Currency Exchange Rate",
+    "name_ko": "환율 반환"
+  },
+  "camt.017.001.02": {
+    "name_en": "Return Currency Exchange Rate",
+    "name_ko": "통화환율 반환"
+  },
+  "camt.017.001.03": {
+    "name_en": "Inquiry Response",
+    "name_ko": "조회 응답"
+  },
+  "camt.017.001.04": {
+    "name_en": "GetTransaction Response",
+    "name_ko": "거래 조회 응답"
+  },
+  "camt.017.001.05": {
+    "name_en": "Currency Exchange Rate Reporting",
+    "name_ko": "환율 보고"
+  },
+  "camt.018.001.01": {
+    "name_en": "Business Day Information Search Request",
+    "name_ko": "영업일 정보 검색 요청"
+  },
+  "camt.018.001.02": {
+    "name_en": "Business Day Information Query",
+    "name_ko": "영업일 정보 조회"
+  },
+  "camt.018.001.03": {
+    "name_en": "Business Day Information Query",
+    "name_ko": "영업일 정보 조회"
+  },
+  "camt.018.001.04": {
+    "name_en": "Business Day Information Query",
+    "name_ko": "영업일 정보 조회"
+  },
+  "camt.018.001.05": {
+    "name_en": "Business Day Information Query",
+    "name_ko": "영업일 정보 조회"
+  },
+  "camt.019.001.02": {
+    "name_en": "Liquidity Credit Transfer",
+    "name_ko": "유동성 신용 이체"
+  },
+  "camt.019.001.03": {
+    "name_en": "Business Day Information Response",
+    "name_ko": "업무일 정보 응답"
+  },
+  "camt.019.001.04": {
+    "name_en": "Business Day Information Report",
+    "name_ko": "영업일 정보 보고서"
+  },
+  "camt.019.001.05": {
+    "name_en": "Business Day Information Request",
+    "name_ko": "영업일 정보 요청"
+  },
+  "camt.019.001.06": {
+    "name_en": "Interbank Reconciliation Request",
+    "name_ko": "은행간 조정 요청"
+  },
+  "camt.020.001.01": {
+    "name_en": "Account Information Query Response",
+    "name_ko": "계좌 정보 조회 응답"
+  },
+  "camt.020.001.02": {
+    "name_en": "General Business Information Query",
+    "name_ko": "일반 사업 정보 조회"
+  },
+  "camt.020.001.03": {
+    "name_en": "General Business Information Query",
+    "name_ko": "일반 사업 정보 조회"
+  },
+  "camt.020.001.04": {
+    "name_en": "General Business Information Query",
+    "name_ko": "일반 사업 정보 조회"
+  },
+  "camt.021.001.01": {
+    "name_en": "General Business Information Response",
+    "name_ko": "일반 비즈니스 정보 응답"
+  },
+  "camt.021.001.02": {
+    "name_en": "Return General Business Information",
+    "name_ko": "일반 비즈니스 정보 반환"
+  },
+  "camt.021.001.03": {
+    "name_en": "Business Information Response",
+    "name_ko": "비즈니스 정보 응답"
+  },
+  "camt.021.001.04": {
+    "name_en": "Business Report",
+    "name_ko": "비즈니스 보고서"
+  },
+  "camt.021.001.05": {
+    "name_en": "Business Application Rejection",
+    "name_ko": "비즈니스 애플리케이션 거부"
+  },
+  "camt.021.001.06": {
+    "name_en": "Return Debit Credit Notification",
+    "name_ko": "반환 차변 신용 알림"
+  },
+  "camt.023.001.02": {
+    "name_en": "Centralized Clearing Instruction",
+    "name_ko": "중앙집중식 결제지시"
+  },
+  "camt.023.001.03": {
+    "name_en": "Debit Authorisation Request",
+    "name_ko": "직불 승인 요청"
+  },
+  "camt.023.001.04": {
+    "name_en": "Intra-Bank Payment Clearing Request",
+    "name_ko": "은행 내 지급 결제 요청"
+  },
+  "camt.023.001.05": {
+    "name_en": "Interbank Settlement Instructions Amendment",
+    "name_ko": "은행간 결제지시 수정"
+  },
+  "camt.023.001.06": {
+    "name_en": "Debtor Payment Activation Request",
+    "name_ko": "채무자 결제 활성화 요청"
+  },
+  "camt.023.001.07": {
+    "name_en": "Liquidity Credit Transfer",
+    "name_ko": "유동성 신용이체"
+  },
+  "camt.024.001.02": {
+    "name_en": "Notification of Cancellation",
+    "name_ko": "취소 통지"
+  },
+  "camt.024.001.03": {
+    "name_en": "Standing Order Modification Request",
+    "name_ko": "정기이체 수정 요청"
+  },
+  "camt.024.001.04": {
+    "name_en": "Standing Order Cancellation Request",
+    "name_ko": "정기이체 취소 요청"
+  },
+  "camt.024.001.05": {
+    "name_en": "Liquidity Transfer Standing Order",
+    "name_ko": "유동성 이전 정기 주문"
+  },
+  "camt.024.001.06": {
+    "name_en": "Standing Order Modification Request",
+    "name_ko": "정기이체 수정 요청"
+  },
+  "camt.024.001.07": {
+    "name_en": "Standing Order Cancellation Request",
+    "name_ko": "정기주문 취소 요청"
+  },
+  "camt.024.001.08": {
+    "name_en": "Standing Order Cancellation Request",
+    "name_ko": "정기이체 취소 요청"
+  },
+  "camt.025.001.01": {
+    "name_en": "Claimable Amount Verification",
+    "name_ko": "청구 가능 금액 검증"
+  },
+  "camt.025.001.02": {
+    "name_en": "Payment Control Request",
+    "name_ko": "지급 통제 요청"
+  },
+  "camt.025.001.03": {
+    "name_en": "Clawback Request",
+    "name_ko": "클로백 요청"
+  },
+  "camt.025.001.04": {
+    "name_en": "Clearing System Payment Status Report",
+    "name_ko": "결제 시스템 결제 상태 보고서"
+  },
+  "camt.025.001.05": {
+    "name_en": "Inquiry Into Account Balance",
+    "name_ko": "계좌 잔액 조회"
+  },
+  "camt.025.001.06": {
+    "name_en": "Debit Authorisation Response",
+    "name_ko": "직불 승인 응답"
+  },
+  "camt.025.001.08": {
+    "name_en": "Interbank Settlement Amount Instruction",
+    "name_ko": "은행간 결제금액 지시"
+  },
+  "camt.026.001.01": {
+    "name_en": "Unable to Apply message",
+    "name_ko": "적용 불가 메시지"
+  },
+  "camt.026.001.02": {
+    "name_en": "Unable to Apply Message",
+    "name_ko": "적용 불가 메시지"
+  },
+  "camt.026.001.03": {
+    "name_en": "Debit Authorisation Request",
+    "name_ko": "직불 승인 요청"
+  },
+  "camt.026.001.04": {
+    "name_en": "Unable to Apply Instruction",
+    "name_ko": "지시사항 적용 불가"
+  },
+  "camt.026.001.05": {
+    "name_en": "Unable to Apply Instruction",
+    "name_ko": "지시사항 적용 불가"
+  },
+  "camt.026.001.06": {
+    "name_en": "Debit Mandate Amendment Request",
+    "name_ko": "직불 위임장 수정 요청"
+  },
+  "camt.026.001.07": {
+    "name_en": "Debit Instruction Response",
+    "name_ko": "직불 지시 응답"
+  },
+  "camt.026.001.08": {
+    "name_en": "Unmatched Statement Entry Report",
+    "name_ko": "불일치 명세서 항목 보고"
+  },
+  "camt.027.001.01": {
+    "name_en": "Claim Non Receipt",
+    "name_ko": "미수령 청구"
+  },
+  "camt.027.001.02": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 할당"
+  },
+  "camt.027.001.03": {
+    "name_en": "Debit Demand Reversal",
+    "name_ko": "직불 요구 취소"
+  },
+  "camt.027.001.04": {
+    "name_en": "Fast Customer Credit Transfer",
+    "name_ko": "고속 고객 신용 이체"
+  },
+  "camt.027.001.05": {
+    "name_en": "Missing Cover and Claim Non Receipt",
+    "name_ko": "미수령 커버 및 클레임"
+  },
+  "camt.027.001.06": {
+    "name_en": "Payment Return",
+    "name_ko": "지급 반환"
+  },
+  "camt.027.001.07": {
+    "name_en": "Amended Undertaking",
+    "name_ko": "수정된 약정"
+  },
+  "camt.027.001.08": {
+    "name_en": "Investigation Case Assignment Confirmation",
+    "name_ko": "조사 사건 배정 확인"
+  },
+  "camt.027.001.09": {
+    "name_en": "Claim Non Receipt Investigation",
+    "name_ko": "청구 미수령 조사"
+  },
+  "camt.027.001.10": {
+    "name_en": "Interbank Settlement Amount Message",
+    "name_ko": "은행간 결제 금액 메시지"
+  },
+  "camt.028.001.01": {
+    "name_en": "Reconciliation for Centralized Settlements",
+    "name_ko": "중앙집중식 결제 조정"
+  },
+  "camt.028.001.02": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 지정"
+  },
+  "camt.028.001.03": {
+    "name_en": "Debtor Payment Obligation Cancellation Request",
+    "name_ko": "채무자 지급 의무 취소 요청"
+  },
+  "camt.028.001.04": {
+    "name_en": "Investigation Case Assignment Confirmation",
+    "name_ko": "조사 건 과제 확인"
+  },
+  "camt.028.001.05": {
+    "name_en": "Investigation Case Management",
+    "name_ko": "조사 사건 관리"
+  },
+  "camt.028.001.06": {
+    "name_en": "Debit Reversal",
+    "name_ko": "직불 반제"
+  },
+  "camt.028.001.07": {
+    "name_en": "Instructed Agent Status Report",
+    "name_ko": "지시된 대리인 상태 보고서"
+  },
+  "camt.028.001.08": {
+    "name_en": "Debit Reversal",
+    "name_ko": "직불 거래 취소"
+  },
+  "camt.028.001.09": {
+    "name_en": "Underlying Investigation Case Assignment",
+    "name_ko": "기초 조사 사건 할당"
+  },
+  "camt.028.001.10": {
+    "name_en": "Interbank Settlement Amount and Investigation Request",
+    "name_ko": "은행간 결제 금액 및 조사 요청"
+  },
+  "camt.028.001.11": {
+    "name_en": "Liquidity Credit Transfer",
+    "name_ko": "유동성 신용 이체"
+  },
+  "camt.028.001.12": {
+    "name_en": "Understood Rejection Notification",
+    "name_ko": "거부 알림 확인"
+  },
+  "camt.029.001.01": {
+    "name_en": "Resolution of Case Assignment",
+    "name_ko": "사건 할당 해결"
+  },
+  "camt.029.001.02": {
+    "name_en": "Case Assignment Confirmation",
+    "name_ko": "사건 할당 확인"
+  },
+  "camt.029.001.03": {
+    "name_en": "Resolution of Case",
+    "name_ko": "사건 해결"
+  },
+  "camt.029.001.04": {
+    "name_en": "Resolution of Investigation",
+    "name_ko": "조사 해결"
+  },
+  "camt.029.001.05": {
+    "name_en": "Modification Rejection",
+    "name_ko": "수정 거절"
+  },
+  "camt.029.001.06": {
+    "name_en": "Resolution of Case",
+    "name_ko": "건의 해결"
+  },
+  "camt.029.001.07": {
+    "name_en": "Debit or Credit Adjustment",
+    "name_ko": "차변 또는 대변 조정"
+  },
+  "camt.029.001.08": {
+    "name_en": "Interbank Settlement Cancellation Report",
+    "name_ko": "은행간 결제 취소 보고"
+  },
+  "camt.029.001.10": {
+    "name_en": "Resolution of Case",
+    "name_ko": "사건 해결"
+  },
+  "camt.029.001.11": {
+    "name_en": "Resolution of Case Assignment",
+    "name_ko": "사건 배정 해제"
+  },
+  "camt.029.001.12": {
+    "name_en": "Transaction Cancellation Status Report",
+    "name_ko": "거래 취소 상태 보고"
+  },
+  "camt.029.001.13": {
+    "name_en": "Notification of Case Resolution",
+    "name_ko": "사건 해결 통지"
+  },
+  "camt.030.001.01": {
+    "name_en": "Case Forwarding Notification",
+    "name_ko": "사건 전달 알림"
+  },
+  "camt.030.001.02": {
+    "name_en": "Case Forwarding Notification",
+    "name_ko": "사건 전달 통지"
+  },
+  "camt.030.001.03": {
+    "name_en": "Case Status Notification",
+    "name_ko": "사건 상태 알림"
+  },
+  "camt.030.001.04": {
+    "name_en": "Case Forwarding Notification",
+    "name_ko": "사건 전달 통지"
+  },
+  "camt.030.001.05": {
+    "name_en": "Case Forwarding Notification",
+    "name_ko": "사건 전달 알림"
+  },
+  "camt.030.001.06": {
+    "name_en": "Case Forwarding Notification",
+    "name_ko": "사건 전달 알림"
+  },
+  "camt.031.001.01": {
+    "name_en": "Case Assignment Rejection",
+    "name_ko": "사건 할당 거절"
+  },
+  "camt.031.001.02": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 배정"
+  },
+  "camt.031.001.03": {
+    "name_en": "Investigation Case Assignment Rejection",
+    "name_ko": "조사 사건 할당 거부"
+  },
+  "camt.031.001.04": {
+    "name_en": "Investigation Case Assignment Confirmation",
+    "name_ko": "조사 사건 배정 확인"
+  },
+  "camt.031.001.05": {
+    "name_en": "Debit Authorization Request",
+    "name_ko": "직불 인증 요청"
+  },
+  "camt.031.001.06": {
+    "name_en": "Investigation Rejection Notification",
+    "name_ko": "조사 거절 알림"
+  },
+  "camt.031.001.07": {
+    "name_en": "Investigation Case Assignment Confirmation",
+    "name_ko": "조사 사건 할당 확인"
+  },
+  "camt.032.001.01": {
+    "name_en": "Case Assignment Notification",
+    "name_ko": "사건 할당 알림"
+  },
+  "camt.032.001.02": {
+    "name_en": "Investigation Case Assignment",
+    "name_ko": "조사 사건 지정"
+  },
+  "camt.032.001.03": {
+    "name_en": "Investigation Case Assignment Confirmation",
+    "name_ko": "조사 사건 과제 확인"
+  },
+  "camt.032.001.04": {
+    "name_en": "Resolution of Investigation Case",
+    "name_ko": "조사 사건 해결"
+  },
+  "camt.032.001.05": {
+    "name_en": "Investigation Case Assignment",
+    "name_ko": "조사 사건 배정"
+  },
+  "camt.033.001.01": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 지정"
+  },
+  "camt.033.001.02": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 할당"
+  },
+  "camt.033.001.03": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 배정"
+  },
+  "camt.033.001.04": {
+    "name_en": "Investigation Case Assignment",
+    "name_ko": "조사 사건 배정"
+  },
+  "camt.033.001.05": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 지정"
+  },
+  "camt.033.001.06": {
+    "name_en": "Modification of Guarantee",
+    "name_ko": "보증 수정"
+  },
+  "camt.033.001.07": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 배정"
+  },
+  "camt.034.001.01": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 배정"
+  },
+  "camt.034.001.02": {
+    "name_en": "Case Assignment Notification",
+    "name_ko": "사건 지정 통지"
+  },
+  "camt.034.001.03": {
+    "name_en": "Investigation Case Assignment",
+    "name_ko": "조사 사건 과제 배정"
+  },
+  "camt.034.001.04": {
+    "name_en": "Investigation Case Assignment Notification",
+    "name_ko": "조사 사건 배정 통지"
+  },
+  "camt.034.001.05": {
+    "name_en": "Notification of Case Assignment",
+    "name_ko": "사건 할당 알림"
+  },
+  "camt.034.001.06": {
+    "name_en": "Investigation Case Assignment Confirmation",
+    "name_ko": "조사 사건 배정 확인"
+  },
+  "camt.034.001.07": {
+    "name_en": "Investigation Case Assignment Confirmation",
+    "name_ko": "조사 사건 배정 확인"
+  },
+  "camt.035.001.01": {
+    "name_en": "Case Assignment Notification",
+    "name_ko": "사건 할당 알림"
+  },
+  "camt.035.001.02": {
+    "name_en": "Investigation Case Assignment Confirmation",
+    "name_ko": "조사 사건 배정 확인"
+  },
+  "camt.035.001.04": {
+    "name_en": "Proprietary Document Envelope",
+    "name_ko": "독점 문서 봉투"
+  },
+  "camt.035.001.05": {
+    "name_en": "Clearing House Interests Statement",
+    "name_ko": "청산소 이자 명세서"
+  },
+  "camt.035.001.06": {
+    "name_en": "Dispute Investigation Assignment",
+    "name_ko": "분쟁 조사 배정"
+  },
+  "camt.036.001.01": {
+    "name_en": "Debit Authorization Request",
+    "name_ko": "차용금 승인 요청"
+  },
+  "camt.036.001.02": {
+    "name_en": "Debit Authorisation Response",
+    "name_ko": "직불 승인 응답"
+  },
+  "camt.036.001.04": {
+    "name_en": "Case Status Report",
+    "name_ko": "사건 상태 보고서"
+  },
+  "camt.036.001.05": {
+    "name_en": "Investigation Case Assignment",
+    "name_ko": "조사 사건 배정"
+  },
+  "camt.036.001.06": {
+    "name_en": "Debit Authorisation Confirmation",
+    "name_ko": "직불 승인 확인"
+  },
+  "camt.037.001.01": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 배정"
+  },
+  "camt.037.001.02": {
+    "name_en": "Case Assignment",
+    "name_ko": "사건 할당"
+  },
+  "camt.037.001.03": {
+    "name_en": "Debit Authorization Request",
+    "name_ko": "차변 승인 요청"
+  },
+  "camt.037.001.04": {
+    "name_en": "Cancellation Case Status Report",
+    "name_ko": "취소 사건 상태 보고서"
+  },
+  "camt.037.001.05": {
+    "name_en": "Underlying Payment Instruction Request",
+    "name_ko": "기초 지급 지시 요청"
+  },
+  "camt.037.001.06": {
+    "name_en": "Credit Transfer Initiation",
+    "name_ko": "신용이체 개시"
+  },
+  "camt.037.001.07": {
+    "name_en": "Claim Nonreceipt of Payment Investigation",
+    "name_ko": "결제 미수령 청구 조사"
+  },
+  "camt.037.001.08": {
+    "name_en": "Debit Notes Related to a Credit Transfer",
+    "name_ko": "송금 관련 차용 증권"
+  },
+  "camt.037.001.09": {
+    "name_en": "Banked Statements Correction",
+    "name_ko": "은행 명세서 정정"
+  },
+  "camt.037.001.10": {
+    "name_en": "Case Resolution Notification",
+    "name_ko": "사건 해결 알림"
+  },
+  "camt.038.001.01": {
+    "name_en": "Reopen Case Indication",
+    "name_ko": "사건 재개 표시"
+  },
+  "camt.038.001.02": {
+    "name_en": "Case Status Report Request",
+    "name_ko": "사건 상태 보고 요청"
+  },
+  "camt.038.001.03": {
+    "name_en": "Investigation Case Status Report",
+    "name_ko": "조사 사건 상태 보고서"
+  },
+  "camt.038.001.04": {
+    "name_en": "Investigation Case Status Report",
+    "name_ko": "조사 사건 상태 보고서"
+  },
+  "camt.038.001.05": {
+    "name_en": "Investigation Status Request",
+    "name_ko": "조사 상태 요청"
+  },
+  "camt.039.001.01": {
+    "name_en": "Case Status Report",
+    "name_ko": "사건 상태 보고"
+  },
+  "camt.039.001.02": {
+    "name_en": "Investigation Case Assignment",
+    "name_ko": "조사 사건 배정"
+  },
+  "camt.039.001.03": {
+    "name_en": "Case Status Report",
+    "name_ko": "사건 상태 보고"
+  },
+  "camt.039.001.04": {
+    "name_en": "Investigation Report",
+    "name_ko": "조사 보고서"
+  },
+  "camt.039.001.05": {
+    "name_en": "Investigation Report",
+    "name_ko": "조사 보고서"
+  },
+  "camt.039.001.06": {
+    "name_en": "Case Assignment Status Report",
+    "name_ko": "사건 할당 상태 보고서"
+  },
+  "camt.040.001.02": {
+    "name_en": "Fund Management Cash Flow Report",
+    "name_ko": "펀드 관리 현금 흐름 보고"
+  },
+  "camt.040.001.03": {
+    "name_en": "Coupon Payment Notification",
+    "name_ko": "쿠폰 지급 알림"
+  },
+  "camt.040.001.04": {
+    "name_en": "Fund Cash Forecast",
+    "name_ko": "펀드 현금 예측"
+  },
+  "camt.041.001.02": {
+    "name_en": "Fund Cash Forecast",
+    "name_ko": "펀드 현금 예측"
+  },
+  "camt.041.001.03": {
+    "name_en": "Cash Settlement Instruction",
+    "name_ko": "현금 결제 지시"
+  },
+  "camt.041.001.04": {
+    "name_en": "Balance Report",
+    "name_ko": "잔액 보고서"
+  },
+  "camt.042.001.02": {
+    "name_en": "Investment Fund Cash Forecast Report",
+    "name_ko": "투자펀드 현금 예측 보고서"
+  },
+  "camt.042.001.03": {
+    "name_en": "Fund Performance Report",
+    "name_ko": "펀드 성과 보고서"
+  },
+  "camt.042.001.04": {
+    "name_en": "Interintra Balance Report",
+    "name_ko": "내부 잔액 보고서"
+  },
+  "camt.043.001.02": {
+    "name_en": "Net Cash Forecast",
+    "name_ko": "순 현금 예측"
+  },
+  "camt.043.001.03": {
+    "name_en": "Fund Cash Forecast",
+    "name_ko": "펀드 현금 예측"
+  },
+  "camt.043.001.04": {
+    "name_en": "Fund Identification and Cash Flow Forecast",
+    "name_ko": "펀드 식별 및 현금 흐름 예측"
+  },
+  "camt.044.001.01": {
+    "name_en": "Notification of Lodgement",
+    "name_ko": "예탁 통지"
+  },
+  "camt.044.001.02": {
+    "name_en": "Fund Cash Forecast Report",
+    "name_ko": "펀드 현금 예측 보고서"
+  },
+  "camt.044.001.03": {
+    "name_en": "Intra-Day Credit Limit Update",
+    "name_ko": "당일 신용한도 업데이트"
+  },
+  "camt.045.001.01": {
+    "name_en": "Cash Forecast Report Cancellation",
+    "name_ko": "현금 예측 보고서 취소"
+  },
+  "camt.045.001.02": {
+    "name_en": "Fund Administration Cash Flow Request",
+    "name_ko": "펀드 관리 현금 흐름 요청"
+  },
+  "camt.045.001.03": {
+    "name_en": "Notification of Status Change",
+    "name_ko": "상태 변경 알림"
+  },
+  "camt.046.001.01": {
+    "name_en": "Reservation Query",
+    "name_ko": "예약 조회"
+  },
+  "camt.046.001.02": {
+    "name_en": "Query Response",
+    "name_ko": "쿼리 응답"
+  },
+  "camt.046.001.03": {
+    "name_en": "Reservation Query Definition",
+    "name_ko": "예약 조회 정의"
+  },
+  "camt.046.001.04": {
+    "name_en": "Reservation Query",
+    "name_ko": "예약 조회"
+  },
+  "camt.046.001.05": {
+    "name_en": "Reservation Query",
+    "name_ko": "예약 조회"
+  },
+  "camt.046.001.06": {
+    "name_en": "Reservation Query Request",
+    "name_ko": "예약 조회 요청"
+  },
+  "camt.046.001.07": {
+    "name_en": "Reservation Search Criteria Notification",
+    "name_ko": "예약 검색 기준 알림"
+  },
+  "camt.047.001.01": {
+    "name_en": "Reservation of Liquidity",
+    "name_ko": "유동성 예약"
+  },
+  "camt.047.001.02": {
+    "name_en": "Reservation of Funds Request",
+    "name_ko": "자금 예약 요청"
+  },
+  "camt.047.001.03": {
+    "name_en": "Reservation Information Request",
+    "name_ko": "예약 정보 요청"
+  },
+  "camt.047.001.04": {
+    "name_en": "Reservation Report",
+    "name_ko": "예약 보고서"
+  },
+  "camt.047.001.05": {
+    "name_en": "Reservation Report",
+    "name_ko": "예약 보고서"
+  },
+  "camt.047.001.06": {
+    "name_en": "Reservation Report",
+    "name_ko": "예약 보고서"
+  },
+  "camt.047.001.07": {
+    "name_en": "Default Reservation Report",
+    "name_ko": "기본 예약 보고서"
+  },
+  "camt.047.001.08": {
+    "name_en": "Reservation of Funds Request",
+    "name_ko": "자금 예약 요청"
+  },
+  "camt.048.001.01": {
+    "name_en": "Account Query Response",
+    "name_ko": "계좌 조회 응답"
+  },
+  "camt.048.001.02": {
+    "name_en": "Reservation of Funds",
+    "name_ko": "자금 예약"
+  },
+  "camt.048.001.03": {
+    "name_en": "Account Exclusion Request",
+    "name_ko": "계좌 제외 요청"
+  },
+  "camt.048.001.04": {
+    "name_en": "Liquidity Credit Transfer Initiation",
+    "name_ko": "유동성 신용이체 개시"
+  },
+  "camt.048.001.05": {
+    "name_en": "Account Query Request",
+    "name_ko": "계좌 조회 요청"
+  },
+  "camt.048.001.06": {
+    "name_en": "Reservation of Funds Request",
+    "name_ko": "자금 예약 요청"
+  },
+  "camt.048.001.07": {
+    "name_en": "Liquidity Credit Transfer Request",
+    "name_ko": "유동성 신용이체 요청"
+  },
+  "camt.049.001.01": {
+    "name_en": "Limit Adjustment Request",
+    "name_ko": "한도 조정 요청"
+  },
+  "camt.049.001.02": {
+    "name_en": "Reservation of Funds",
+    "name_ko": "자금 예약"
+  },
+  "camt.049.001.03": {
+    "name_en": "Liquidity Credit Transfer Reservation Deletion",
+    "name_ko": "유동성 신용이체 예약 삭제"
+  },
+  "camt.049.001.04": {
+    "name_en": "Liquidity Transfer Request",
+    "name_ko": "유동성 이전 요청"
+  },
+  "camt.049.001.05": {
+    "name_en": "Liquidity Credit Transfer Initiation",
+    "name_ko": "유동성 크레딧 이체 개시"
+  },
+  "camt.049.001.06": {
+    "name_en": "Limit Establishment",
+    "name_ko": "한도 설정"
+  },
+  "camt.049.001.07": {
+    "name_en": "Limit Adjustment",
+    "name_ko": "한도 조정"
+  },
+  "camt.050.001.01": {
+    "name_en": "Liquidity Credit Transfer",
+    "name_ko": "유동성 신용 이체"
+  },
+  "camt.050.001.02": {
+    "name_en": "Liquidity Credit Transfer Initiation",
+    "name_ko": "유동성 신용이체 개시"
+  },
+  "camt.050.001.03": {
+    "name_en": "Intra-Bank Payment Instruction",
+    "name_ko": "은행 내 송금 지시"
+  },
+  "camt.050.001.04": {
+    "name_en": "Intra-Bank Payment Clearing Request",
+    "name_ko": "은행 내 결제 정산 요청"
+  },
+  "camt.050.001.06": {
+    "name_en": "Liquidity Credit Transfer Initiation",
+    "name_ko": "유동성 신용이체 개시"
+  },
+  "camt.051.001.01": {
+    "name_en": "Balance Confirmation Statement",
+    "name_ko": "잔액 확인 명세서"
+  },
+  "camt.051.001.02": {
+    "name_en": "Balance Report",
+    "name_ko": "잔액 보고서"
+  },
+  "camt.051.001.03": {
+    "name_en": "Liquidity Credit Transfer",
+    "name_ko": "유동성 신용이체"
+  },
+  "camt.051.001.04": {
+    "name_en": "Liquidity Credit Transfer Initiation",
+    "name_ko": "유동성 신용 이체 개시"
+  },
+  "camt.051.001.05": {
+    "name_en": "Intra-Bank Payment Status Report",
+    "name_ko": "은행내 결제 상태 보고서"
+  },
+  "camt.051.001.06": {
+    "name_en": "Balance Adjustment Notification",
+    "name_ko": "잔액 조정 통지"
+  },
+  "camt.051.001.07": {
+    "name_en": "Liquidity Credit Transfer",
+    "name_ko": "유동성 신용 이체"
+  },
+  "camt.052.001.01": {
+    "name_en": "Bank to Customer Account Report",
+    "name_ko": "은행에서 고객으로 계좌 보고"
+  },
+  "camt.052.001.02": {
+    "name_en": "Bank-to-Customer Account Report",
+    "name_ko": "은행-고객 계좌 보고서"
+  },
+  "camt.052.001.03": {
+    "name_en": "Bank-to-Customer Cash Management Statement",
+    "name_ko": "은행-고객 현금 관리 명세서"
+  },
+  "camt.052.001.04": {
+    "name_en": "Bank to Customer Account Statement",
+    "name_ko": "은행에서 고객으로 계좌 거래 명세서"
+  },
+  "camt.052.001.05": {
+    "name_en": "Bank-to-Customer Cash Management Status Report",
+    "name_ko": "은행-고객 현금관리 상태 보고서"
+  },
+  "camt.052.001.06": {
+    "name_en": "Bank to Customer Account Report",
+    "name_ko": "은행에서 고객 계정 보고"
+  },
+  "camt.052.001.07": {
+    "name_en": "Bank-to-Customer Account Report",
+    "name_ko": "은행-고객 계좌 보고서"
+  },
+  "camt.052.001.09": {
+    "name_en": "Bank-to-Customer Account Report",
+    "name_ko": "은행-고객 계좌 보고서"
+  },
+  "camt.052.001.10": {
+    "name_en": "Bank-to-Customer Account Report",
+    "name_ko": "은행-고객 계좌 보고서"
+  },
+  "camt.052.001.11": {
+    "name_en": "Bank-to-Customer Cash Management Report",
+    "name_ko": "은행-고객 자금관리 보고서"
+  },
+  "camt.053.001.01": {
+    "name_en": "Bank to Customer Account Statement",
+    "name_ko": "은행에서 고객으로 계좌명세서"
+  },
+  "camt.053.001.04": {
+    "name_en": "Bank to Customer Account Statement",
+    "name_ko": "은행에서 고객으로 계좌 명세서"
+  },
+  "camt.053.001.05": {
+    "name_en": "Bank to Customer Account Statement",
+    "name_ko": "은행에서 고객으로 계좌명세서"
+  },
+  "camt.053.001.06": {
+    "name_en": "Bank to Customer Account Statement",
+    "name_ko": "은행에서 고객으로 계좌 명세서"
+  },
+  "camt.053.001.07": {
+    "name_en": "Bank to Customer Account Statement",
+    "name_ko": "은행에서 고객으로 계좌 명세서"
+  },
+  "camt.053.001.09": {
+    "name_en": "Bank to Customer Account Statement",
+    "name_ko": "은행에서 고객으로 계좌명세서"
+  },
+  "camt.053.001.10": {
+    "name_en": "Bank to Customer Account Statement",
+    "name_ko": "은행에서 고객으로의 계좌 명세서"
+  },
+  "camt.054.001.03": {
+    "name_en": "Bank-to-Customer Account Report",
+    "name_ko": "은행-고객 계좌 보고서"
+  },
+  "camt.054.001.04": {
+    "name_en": "Bank to Customer Account Report",
+    "name_ko": "은행에서 고객으로의 계좌 보고"
+  },
+  "camt.054.001.05": {
+    "name_en": "Bank Debit Credit Notification",
+    "name_ko": "은행 차입금 대출금 알림"
+  },
+  "camt.054.001.06": {
+    "name_en": "Bank-to-Customer Account Report",
+    "name_ko": "은행에서 고객으로의 계좌 보고"
+  },
+  "camt.054.001.07": {
+    "name_en": "Bank-to-Customer Cash Management Status Report",
+    "name_ko": "은행-고객 현금관리 상태 보고서"
+  },
+  "camt.054.001.09": {
+    "name_en": "Bank to Customer Bank Statement",
+    "name_ko": "은행에서 고객에게 보내는 은행 거래명세서"
+  },
+  "camt.054.001.10": {
+    "name_en": "Bank to Customer Account Statement",
+    "name_ko": "은행에서 고객으로 계좌명세서"
+  },
+  "camt.054.001.11": {
+    "name_en": "Bank-to-Customer Debit Credit Notification",
+    "name_ko": "은행-고객 차변 신용 통지"
+  },
+  "camt.055.001.01": {
+    "name_en": "Liquidity Credit Transfer Cancellation Request",
+    "name_ko": "유동성 신용 이체 취소 요청"
+  },
+  "camt.055.001.02": {
+    "name_en": "Liquidity Credit Transfer Cancellation",
+    "name_ko": "유동성 신용 이체 취소"
+  },
+  "camt.055.001.03": {
+    "name_en": "Liquidity Credit Transfer Cancellation",
+    "name_ko": "유동성 신용이체 취소"
+  },
+  "camt.055.001.04": {
+    "name_en": "Group Cancellation and Number of Transactions",
+    "name_ko": "그룹 취소 및 거래 수 확인"
+  },
+  "camt.055.001.05": {
+    "name_en": "Liquidity Credit Transfer",
+    "name_ko": "유동성 신용 이체"
+  },
+  "camt.055.001.06": {
+    "name_en": "Payment Cancellation Request",
+    "name_ko": "결제 취소 요청"
+  },
+  "camt.055.001.07": {
+    "name_en": "Mandate Cancellation Request",
+    "name_ko": "위임장 취소 요청"
+  },
+  "camt.055.001.10": {
+    "name_en": "Liquidity Credit Transfer Cancellation Request",
+    "name_ko": "유동성 신용 이체 취소 요청"
+  },
+  "camt.055.001.11": {
+    "name_en": "Cancellation Payment Outgoing",
+    "name_ko": "결제 취소 발신"
+  },
+  "camt.055.001.12": {
+    "name_en": "Case Management Request Cancel",
+    "name_ko": "사건 관리 요청 취소"
+  },
+  "camt.056.001.01": {
+    "name_en": "Cancellation Request",
+    "name_ko": "취소 요청"
+  },
+  "camt.056.001.02": {
+    "name_en": "Debit Adjustment Request",
+    "name_ko": "차변조정요청"
+  },
+  "camt.056.001.03": {
+    "name_en": "Debit Authorization Request",
+    "name_ko": "직불 승인 요청"
+  },
+  "camt.056.001.04": {
+    "name_en": "FIToFIPaymentCancellationRequest",
+    "name_ko": "금융기관간 결제 취소 요청"
+  },
+  "camt.056.001.05": {
+    "name_en": "FIToFIPaymentCancellationRequest",
+    "name_ko": "금융기관간 결제 취소 요청"
+  },
+  "camt.056.001.06": {
+    "name_en": "Debit Notification",
+    "name_ko": "차변 통지"
+  },
+  "camt.056.001.07": {
+    "name_en": "Debit Autoreverse Notification",
+    "name_ko": "차변 자동역거래 통지"
+  },
+  "camt.056.001.09": {
+    "name_en": "FIToFI Payment Status Report",
+    "name_ko": "금융기관간 결제 상태 보고"
+  },
+  "camt.056.001.10": {
+    "name_en": "Debit Advice Cancellation Request",
+    "name_ko": "직불 조언 취소 요청"
+  },
+  "camt.057.001.01": {
+    "name_en": "Request for Incoming Credit Entry",
+    "name_ko": "수입 신용 항목 요청"
+  },
+  "camt.057.001.02": {
+    "name_en": "Account Notification",
+    "name_ko": "계좌 알림"
+  },
+  "camt.057.001.03": {
+    "name_en": "Debit Notes Request",
+    "name_ko": "차변 통지 요청"
+  },
+  "camt.057.001.04": {
+    "name_en": "Debit Authorisation Request",
+    "name_ko": "직불 승인 요청"
+  },
+  "camt.057.001.05": {
+    "name_en": "Statement of Account",
+    "name_ko": "계좌 명세서"
+  },
+  "camt.057.001.07": {
+    "name_en": "Statement of Account",
+    "name_ko": "계좌 명세서"
+  },
+  "camt.057.001.08": {
+    "name_en": "Debit Authorisation Request",
+    "name_ko": "직불 인증 요청"
+  },
+  "camt.058.001.01": {
+    "name_en": "Notification of Debit",
+    "name_ko": "차변 통지"
+  },
+  "camt.058.001.02": {
+    "name_en": "Debit Adjustment Statement",
+    "name_ko": "차용 조정 명세서"
+  },
+  "camt.058.001.03": {
+    "name_en": "Notification to Receive",
+    "name_ko": "수령 통지"
+  },
+  "camt.058.001.04": {
+    "name_en": "Debit Authorisation Response",
+    "name_ko": "직불 승인 응답"
+  },
+  "camt.058.001.05": {
+    "name_en": "Debit Adjustment Advice",
+    "name_ko": "차변 조정 통지"
+  },
+  "camt.058.001.07": {
+    "name_en": "Notification of Cancellation",
+    "name_ko": "취소 통지"
+  },
+  "camt.058.001.09": {
+    "name_en": "Intra-Bank Payment Status Report",
+    "name_ko": "은행 내부 결제 상태 보고서"
+  },
+  "camt.059.001.01": {
+    "name_en": "Notification of Cancellation",
+    "name_ko": "취소 통지"
+  },
+  "camt.059.001.02": {
+    "name_en": "Intra-Bank Payment Clearing Information",
+    "name_ko": "은행 내 결제 청산 정보"
+  },
+  "camt.059.001.03": {
+    "name_en": "Notification of Cancellation Status",
+    "name_ko": "취소 상태 알림"
+  },
+  "camt.059.001.04": {
+    "name_en": "Notification to Receive",
+    "name_ko": "수령 통지"
+  },
+  "camt.059.001.05": {
+    "name_en": "Notification of Failed Settlement",
+    "name_ko": "결제 실패 알림"
+  },
+  "camt.059.001.06": {
+    "name_en": "Debit Adjustment",
+    "name_ko": "차변 조정"
+  },
+  "camt.059.001.07": {
+    "name_en": "Debit Autumnal Notification",
+    "name_ko": "차용금 자동통지"
+  },
+  "camt.059.001.08": {
+    "name_en": "Debit Advice",
+    "name_ko": "차변 통지"
+  },
+  "camt.060.001.01": {
+    "name_en": "Balance Reporting Request",
+    "name_ko": "잔액 보고 요청"
+  },
+  "camt.060.001.02": {
+    "name_en": "Arrangement Transaction Report",
+    "name_ko": "거래 보고 메시지"
+  },
+  "camt.060.001.04": {
+    "name_en": "Account Reporting Request",
+    "name_ko": "계좌 보고 요청"
+  },
+  "camt.060.001.06": {
+    "name_en": "Account Reporting Request",
+    "name_ko": "계좌 보고 요청"
+  },
+  "camt.061.001.01": {
+    "name_en": "Pay In Call Notification",
+    "name_ko": "납입 콜 통지"
+  },
+  "camt.061.001.02": {
+    "name_en": "Cash Management Pay-in Call Report",
+    "name_ko": "현금관리 입금콜 보고서"
+  },
+  "camt.062.001.01": {
+    "name_en": "Payment Schedule Message",
+    "name_ko": "지급 일정 메시지"
+  },
+  "camt.062.001.02": {
+    "name_en": "Pay-In Schedule Message",
+    "name_ko": "납입 일정 메시지"
+  },
+  "camt.062.001.03": {
+    "name_en": "Margin Calculation Reporting",
+    "name_ko": "증거금 계산 보고"
+  },
+  "camt.063.001.01": {
+    "name_en": "Pay In Schedule Confirmation",
+    "name_ko": "입금 스케줄 확인"
+  },
+  "camt.063.001.02": {
+    "name_en": "Pay In Acknowledgement",
+    "name_ko": "페이인 승인"
+  },
+  "camt.064.001.01": {
+    "name_en": "Interbank Payment Limit Advice",
+    "name_ko": "은행간 결제 한도 공지"
+  },
+  "camt.065.001.01": {
+    "name_en": "Limit Inquiry Response",
+    "name_ko": "한도 조회 응답"
+  },
+  "camt.066.001.01": {
+    "name_en": "Balance Instruction Movement",
+    "name_ko": "잔액 지시 이동"
+  },
+  "camt.066.001.02": {
+    "name_en": "Corporate Action Instruction",
+    "name_ko": "기업행동 지시"
+  },
+  "camt.067.001.02": {
+    "name_en": "Intraday Account Balance Report",
+    "name_ko": "당일 계좌 잔액 보고서"
+  },
+  "camt.068.001.01": {
+    "name_en": "Balance Information Report",
+    "name_ko": "잔액 정보 보고서"
+  },
+  "camt.068.001.02": {
+    "name_en": "Intra-Balance Movement Transaction Report",
+    "name_ko": "잔액 내부 이동 거래 보고"
+  },
+  "camt.069.001.01": {
+    "name_en": "Query Statement of Account",
+    "name_ko": "계좌 거래내역 조회"
+  },
+  "camt.069.001.02": {
+    "name_en": "Standing Order Query",
+    "name_ko": "정기이체 조회"
+  },
+  "camt.069.001.03": {
+    "name_en": "Standing Order Query",
+    "name_ko": "정기 주문 조회"
+  },
+  "camt.069.001.04": {
+    "name_en": "Liquidity Credit Transfer Initiation",
+    "name_ko": "유동성 신용 이체 개시"
+  },
+  "camt.069.001.05": {
+    "name_en": "Standing Order Report",
+    "name_ko": "정기이체 보고서"
+  },
+  "camt.070.001.01": {
+    "name_en": "Standing Order Report",
+    "name_ko": "상설주문 보고"
+  },
+  "camt.070.001.02": {
+    "name_en": "Standing Order Query Response",
+    "name_ko": "정기이체 조회 응답"
+  },
+  "camt.070.001.03": {
+    "name_en": "Standing Order or Error",
+    "name_ko": "정기이체 또는 오류"
+  },
+  "camt.070.001.04": {
+    "name_en": "Reversal of Debit Information",
+    "name_ko": "차변 정보 역거래"
+  },
+  "camt.070.001.05": {
+    "name_en": "Return Debit Notes Request",
+    "name_ko": "반품 차변 메모 요청"
+  },
+  "camt.070.001.06": {
+    "name_en": "Request for Payment Status Report",
+    "name_ko": "결제 상태 보고서 요청"
+  },
+  "camt.071.001.02": {
+    "name_en": "Standing Order Cancellation",
+    "name_ko": "정기이체 취소"
+  },
+  "camt.071.001.03": {
+    "name_en": "Standing Orders Query",
+    "name_ko": "정기이체 조회"
+  },
+  "camt.071.001.04": {
+    "name_en": "Standing Order Cancellation Request",
+    "name_ko": "자동이체 취소 요청"
+  },
+  "camt.071.001.05": {
+    "name_en": "Standing Order Cancellation Request",
+    "name_ko": "정기이체 취소 요청"
+  },
+  "camt.072.001.01": {
+    "name_en": "Inquiry Response - General",
+    "name_ko": "조회 응답 - 일반"
+  },
+  "camt.072.001.02": {
+    "name_en": "Intra-Position Movement Instruction",
+    "name_ko": "포지션 내부 이동 지시"
+  },
+  "camt.073.001.01": {
+    "name_en": "Request for Account Servicer Transaction Identification",
+    "name_ko": "계좌 서비스 제공자 거래 식별 요청"
+  },
+  "camt.073.001.02": {
+    "name_en": "Request for Settlement of Investment Account",
+    "name_ko": "투자 계좌 결제 요청"
+  },
+  "camt.074.001.01": {
+    "name_en": "Securities Transaction Posting Report",
+    "name_ko": "유가증권 거래 전기 보고서"
+  },
+  "camt.074.001.02": {
+    "name_en": "Securities Settlement Instruction Cancellation",
+    "name_ko": "증권 결제 지시 취소"
+  },
+  "camt.075.001.01": {
+    "name_en": "Complaint Disposition",
+    "name_ko": "불만 처리"
+  },
+  "camt.075.001.02": {
+    "name_en": "Intra-Balance Movement Report",
+    "name_ko": "내부 잔액 이동 보고서"
+  },
+  "camt.076.001.01": {
+    "name_en": "Billing Information Notification",
+    "name_ko": "청구 정보 통보"
+  },
+  "camt.077.001.01": {
+    "name_en": "Interbank Reconciliation Request",
+    "name_ko": "은행간 조정 요청"
+  },
+  "camt.078.001.01": {
+    "name_en": "Corporate Action Event Instruction Cancellation Request",
+    "name_ko": "기업행위 이벤트 지시 취소 요청"
+  },
+  "camt.078.001.02": {
+    "name_en": "Intra-Balance Movement Query",
+    "name_ko": "계좌 내 잔액 이동 조회"
+  },
+  "camt.079.001.01": {
+    "name_en": "Operational Error Notification",
+    "name_ko": "운영 오류 알림"
+  },
+  "camt.079.001.02": {
+    "name_en": "Notification of Cancellation",
+    "name_ko": "취소 알림"
+  },
+  "camt.080.001.01": {
+    "name_en": "Request for Account Information",
+    "name_ko": "계좌 정보 요청"
+  },
+  "camt.080.001.02": {
+    "name_en": "Interbank Cash Movement Notification",
+    "name_ko": "은행간 현금이동 통지"
+  },
+  "camt.081.001.01": {
+    "name_en": "Interbank Clearing Request",
+    "name_ko": "은행간 결제 요청"
+  },
+  "camt.081.001.02": {
+    "name_en": "Intrabank Clearing and Settlement",
+    "name_ko": "은행내 결제 및 정산"
+  },
+  "camt.082.001.01": {
+    "name_en": "Notification of Cancellation",
+    "name_ko": "취소 알림"
+  },
+  "camt.082.001.02": {
+    "name_en": "Accrued Interest Calculation Request",
+    "name_ko": "미지급 이자 계산 요청"
+  },
+  "camt.083.001.01": {
+    "name_en": "Intrabalance Cancellation",
+    "name_ko": "잔액 내 취소"
+  },
+  "camt.083.001.02": {
+    "name_en": "Cancellation Status Report",
+    "name_ko": "취소 상태 보고서"
+  },
+  "camt.084.001.01": {
+    "name_en": "Reconciliation of Accounts",
+    "name_ko": "계정 조정"
+  },
+  "camt.084.001.02": {
+    "name_en": "Quantity Breakdown Instruction",
+    "name_ko": "수량 내역 분석 지시"
+  },
+  "camt.085.001.01": {
+    "name_en": "Sidecar Account Statement",
+    "name_ko": "사이드카 계좌 명세서"
+  },
+  "camt.085.001.02": {
+    "name_en": "Debit Autosave Order",
+    "name_ko": "자동이체 주문"
+  },
+  "camt.086.001.01": {
+    "name_en": "Billing Statement Report",
+    "name_ko": "청구 명세서 보고서"
+  },
+  "camt.086.001.02": {
+    "name_en": "Debit Auto Transfer Order",
+    "name_ko": "자동 이체 주문"
+  },
+  "camt.086.001.03": {
+    "name_en": "Debit Adjustment",
+    "name_ko": "차변 조정"
+  },
+  "camt.086.001.04": {
+    "name_en": "Debit Adjustment Notification",
+    "name_ko": "차변 조정 통지"
+  },
+  "camt.087.001.01": {
+    "name_en": "Payment Instruction Modification Request",
+    "name_ko": "지급 지시 수정 요청"
+  },
+  "camt.087.001.02": {
+    "name_en": "Investigation Case Assignment Confirmation",
+    "name_ko": "조사 사건 배정 확인"
+  },
+  "camt.087.001.03": {
+    "name_en": "Request to Modify Payment",
+    "name_ko": "지급 수정 요청"
+  },
+  "camt.087.001.04": {
+    "name_en": "Request to Modify Payment",
+    "name_ko": "지급 수정 요청"
+  },
+  "camt.087.001.05": {
+    "name_en": "Case Assignment",
+    "name_ko": "케이스 배정"
+  },
+  "camt.087.001.06": {
+    "name_en": "Request for Payment Status Report",
+    "name_ko": "지급 상태 보고 요청"
+  },
+  "camt.087.001.07": {
+    "name_en": "Request to Modify Payment",
+    "name_ko": "결제 수정 요청"
+  },
+  "camt.087.001.08": {
+    "name_en": "Request to Modify Payment",
+    "name_ko": "지급 수정 요청"
+  },
+  "camt.088.001.01": {
+    "name_en": "Netting Obligation Statement",
+    "name_ko": "순액결제 의무 명세서"
+  },
+  "camt.088.001.02": {
+    "name_en": "Netting Statement Message",
+    "name_ko": "네팅 명세서 메시지"
+  },
+  "camt.088.001.03": {
+    "name_en": "Net Report Obligations",
+    "name_ko": "순 의무보고"
+  },
+  "camt.088.001.04": {
+    "name_en": "Net Report",
+    "name_ko": "순액 보고"
+  },
+  "camt.091.001.01": {
+    "name_en": "Cash Settlement Initiation",
+    "name_ko": "현금 결제 개시"
+  },
+  "camt.101.001.01": {
+    "name_en": "Debit Authorisation Response",
+    "name_ko": "직불 인증 응답"
+  },
+  "camt.101.001.02": {
+    "name_en": "Debit Credit Notification",
+    "name_ko": "차용/신용 통지"
+  },
+  "camt.102.001.01": {
+    "name_en": "Interbank Clearing Member Standing Order",
+    "name_ko": "은행 간 청산 회원 정기 지시"
+  },
+  "camt.102.001.02": {
+    "name_en": "Standing Order Modification Request",
+    "name_ko": "정기이체 수정 요청"
+  },
+  "camt.102.001.03": {
+    "name_en": "Standing Order Cancellation Request",
+    "name_ko": "정기이체 취소 요청"
+  },
+  "camt.103.001.01": {
+    "name_en": "Liquidity Transfer Request",
+    "name_ko": "유동성 이체 요청"
+  },
+  "camt.103.001.02": {
+    "name_en": "Reservation of Funds Request",
+    "name_ko": "자금 예약 요청"
+  },
+  "camt.103.001.03": {
+    "name_en": "Reservation of Funds",
+    "name_ko": "자금 예약"
+  },
+  "camt.104.001.01": {
+    "name_en": "Notification of Bilateral Agreement",
+    "name_ko": "양자 협약 통지"
+  },
+  "camt.105.001.01": {
+    "name_en": "Charges Notification",
+    "name_ko": "수수료 통지"
+  },
+  "camt.106.001.01": {
+    "name_en": "Interbank Charges Advice",
+    "name_ko": "은행간 수수료 통보"
+  },
+  "camt.998.001.02": {
+    "name_en": "Proprietary Message",
+    "name_ko": "독점 메시지"
+  },
+  "acmt.001.001.01": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.001.001.02": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌 개설 요청"
+  },
+  "acmt.001.001.03": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌 개설 요청"
+  },
+  "acmt.001.001.04": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌 개설 지시"
+  },
+  "acmt.001.001.05": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌 개설 지시"
+  },
+  "acmt.001.001.06": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌 개설 지시"
+  },
+  "acmt.001.001.07": {
+    "name_en": "Account Opening",
+    "name_ko": "계좌 개설"
+  },
+  "acmt.001.001.08": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.002.001.01": {
+    "name_en": "Account Details Confirmation",
+    "name_ko": "계좌 상세 정보 확인"
+  },
+  "acmt.002.001.02": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌 개설 지시"
+  },
+  "acmt.002.001.03": {
+    "name_en": "Account Details Confirmation",
+    "name_ko": "계좌 세부정보 확인"
+  },
+  "acmt.002.001.04": {
+    "name_en": "Account Details Confirmation",
+    "name_ko": "계좌 세부정보 확인"
+  },
+  "acmt.002.001.05": {
+    "name_en": "Account Details Confirmation",
+    "name_ko": "계좌 세부정보 확인"
+  },
+  "acmt.002.001.06": {
+    "name_en": "Account Details Confirmation",
+    "name_ko": "계좌 세부 정보 확인"
+  },
+  "acmt.002.001.07": {
+    "name_en": "Account Details Confirmation",
+    "name_ko": "계좌 세부정보 확인"
+  },
+  "acmt.002.001.08": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌 개설 지시"
+  },
+  "acmt.003.001.01": {
+    "name_en": "Account Modification Instruction",
+    "name_ko": "계정 수정 지시"
+  },
+  "acmt.003.001.02": {
+    "name_en": "Account Modification Instruction",
+    "name_ko": "계좌 수정 지시"
+  },
+  "acmt.003.001.03": {
+    "name_en": "Account Modification Notification",
+    "name_ko": "계좌 수정 알림"
+  },
+  "acmt.003.001.04": {
+    "name_en": "Account Modification",
+    "name_ko": "계좌 수정"
+  },
+  "acmt.003.001.05": {
+    "name_en": "Account Modification",
+    "name_ko": "계좌 수정"
+  },
+  "acmt.003.001.06": {
+    "name_en": "Account Modification Instruction",
+    "name_ko": "계좌 수정 지시"
+  },
+  "acmt.003.001.07": {
+    "name_en": "Account Modification Instruction",
+    "name_ko": "계좌 수정 지시"
+  },
+  "acmt.003.001.08": {
+    "name_en": "Account Modification Instruction",
+    "name_ko": "계좌 수정 지시"
+  },
+  "acmt.004.001.01": {
+    "name_en": "Get Account Details",
+    "name_ko": "계좌 세부정보 조회"
+  },
+  "acmt.004.001.02": {
+    "name_en": "Investment Account Selection Request",
+    "name_ko": "투자 계좌 선택 요청"
+  },
+  "acmt.004.001.03": {
+    "name_en": "Get Account Details",
+    "name_ko": "계좌 세부정보 조회"
+  },
+  "acmt.004.001.04": {
+    "name_en": "Get Account Details",
+    "name_ko": "계좌 세부정보 조회"
+  },
+  "acmt.004.001.05": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.004.001.06": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.005.001.01": {
+    "name_en": "Request For Account Management Status Report",
+    "name_ko": "계좌 관리 상태 보고 요청"
+  },
+  "acmt.005.001.02": {
+    "name_en": "Request for Account Management Status Report",
+    "name_ko": "계좌 관리 상태 보고 요청"
+  },
+  "acmt.005.001.03": {
+    "name_en": "Account Information Modification",
+    "name_ko": "계좌 정보 수정"
+  },
+  "acmt.005.001.04": {
+    "name_en": "Request for Account Management Status Report",
+    "name_ko": "계좌 관리 상태 보고 요청"
+  },
+  "acmt.005.001.05": {
+    "name_en": "Account Management Status Report Request",
+    "name_ko": "계좌 관리 상태 보고 요청"
+  },
+  "acmt.005.001.06": {
+    "name_en": "Request For Account Management Status Report",
+    "name_ko": "계좌관리 상태 보고 요청"
+  },
+  "acmt.006.001.01": {
+    "name_en": "Account Management Status Report",
+    "name_ko": "계좌 관리 상태 보고서"
+  },
+  "acmt.006.001.02": {
+    "name_en": "Account Management Status Report",
+    "name_ko": "계좌 관리 상태 보고서"
+  },
+  "acmt.006.001.03": {
+    "name_en": "Account Management Status Report",
+    "name_ko": "계좌관리 상태 보고서"
+  },
+  "acmt.006.001.04": {
+    "name_en": "Account Management Status Report",
+    "name_ko": "계좌 관리 상태 보고서"
+  },
+  "acmt.006.001.05": {
+    "name_en": "Account Management Status Report",
+    "name_ko": "계좌 관리 상태 보고서"
+  },
+  "acmt.006.001.06": {
+    "name_en": "Account Management Status Report",
+    "name_ko": "계좌관리 상태보고"
+  },
+  "acmt.006.001.07": {
+    "name_en": "Account Management Status Report",
+    "name_ko": "계좌 관리 상태 보고서"
+  },
+  "acmt.007.001.01": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌 개설 요청"
+  },
+  "acmt.007.001.02": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌 개설 요청"
+  },
+  "acmt.007.001.03": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌 개설 요청"
+  },
+  "acmt.007.001.04": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.007.001.05": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌 개설 요청"
+  },
+  "acmt.008.001.01": {
+    "name_en": "Account Opening Amendment Request",
+    "name_ko": "계좌 개설 수정 요청"
+  },
+  "acmt.008.001.02": {
+    "name_en": "Account Mandate Modification",
+    "name_ko": "계좌 위임장 수정"
+  },
+  "acmt.008.001.03": {
+    "name_en": "Account Opening Amendment Request",
+    "name_ko": "계좌 개설 수정 요청"
+  },
+  "acmt.008.001.04": {
+    "name_en": "Account Mandate Notification",
+    "name_ko": "계좌 위임장 통지"
+  },
+  "acmt.008.001.05": {
+    "name_en": "Account Opening Amendment Request",
+    "name_ko": "계좌 개설 수정 요청"
+  },
+  "acmt.009.001.01": {
+    "name_en": "Modify Account Opening Instruction",
+    "name_ko": "계좌개설 지시 수정"
+  },
+  "acmt.009.001.02": {
+    "name_en": "Account Opening Additional Information Request",
+    "name_ko": "계좌 개설 추가 정보 요청"
+  },
+  "acmt.009.001.03": {
+    "name_en": "Account Information Notification",
+    "name_ko": "계좌 정보 알림"
+  },
+  "acmt.009.001.04": {
+    "name_en": "Account Management Opening Instruction",
+    "name_ko": "계좌 관리 개설 지시"
+  },
+  "acmt.010.001.01": {
+    "name_en": "Account Request Acknowledgement",
+    "name_ko": "계좌 요청 승인"
+  },
+  "acmt.010.001.02": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌개설요청"
+  },
+  "acmt.010.001.03": {
+    "name_en": "Account Information Request",
+    "name_ko": "계정 정보 요청"
+  },
+  "acmt.010.001.04": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌 개설 요청"
+  },
+  "acmt.011.001.01": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.011.001.02": {
+    "name_en": "Account Request Rejection",
+    "name_ko": "계정 요청 거부"
+  },
+  "acmt.011.001.03": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.011.001.04": {
+    "name_en": "Account Modification Notification",
+    "name_ko": "계좌 수정 알림"
+  },
+  "acmt.012.001.01": {
+    "name_en": "Account Additional Information Request",
+    "name_ko": "계좌 추가 정보 요청"
+  },
+  "acmt.012.001.02": {
+    "name_en": "Account Information Confirmation",
+    "name_ko": "계좌 정보 확인"
+  },
+  "acmt.012.001.03": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌 개설 지시"
+  },
+  "acmt.012.001.04": {
+    "name_en": "Account Additional Information Request",
+    "name_ko": "계좌 추가 정보 요청"
+  },
+  "acmt.013.001.01": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.013.001.02": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.013.001.03": {
+    "name_en": "Request to Modify an Account",
+    "name_ko": "계좌 수정 요청"
+  },
+  "acmt.013.001.04": {
+    "name_en": "Request to Modify an Account",
+    "name_ko": "계좌 수정 요청"
+  },
+  "acmt.014.001.01": {
+    "name_en": "Account Report",
+    "name_ko": "계좌 보고서"
+  },
+  "acmt.014.001.02": {
+    "name_en": "Account Report",
+    "name_ko": "계좌 보고서"
+  },
+  "acmt.014.001.03": {
+    "name_en": "Account Report",
+    "name_ko": "계좌 보고서"
+  },
+  "acmt.014.001.04": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌 개설 지시"
+  },
+  "acmt.014.001.05": {
+    "name_en": "Account Report",
+    "name_ko": "계좌 보고서"
+  },
+  "acmt.015.001.01": {
+    "name_en": "Account Opening Maintenance Closing",
+    "name_ko": "계좌 개설 유지 폐쇄"
+  },
+  "acmt.015.001.02": {
+    "name_en": "Account Excluded Mandate Maintenance Request",
+    "name_ko": "계좌 제외 위임장 유지보수 요청"
+  },
+  "acmt.015.001.03": {
+    "name_en": "Account Modification Request",
+    "name_ko": "계좌 수정 요청"
+  },
+  "acmt.015.001.04": {
+    "name_en": "Account Excluded Mandate Maintenance Request",
+    "name_ko": "계좌 제외 위임장 유지 요청"
+  },
+  "acmt.015.001.05": {
+    "name_en": "Account Excluded Mandate Maintenance Request",
+    "name_ko": "계정 제외 위임권 유지보수 요청"
+  },
+  "acmt.016.001.01": {
+    "name_en": "Account Management Request",
+    "name_ko": "계좌 관리 요청"
+  },
+  "acmt.016.001.02": {
+    "name_en": "Account Excluded Mandate Maintenance Amendment Request",
+    "name_ko": "계좌 제외 위임장 유지 수정 요청"
+  },
+  "acmt.016.001.03": {
+    "name_en": "Account Excluded Mandate Maintenance Amendment Request",
+    "name_ko": "계좌 제외 위임장 유지 수정 요청"
+  },
+  "acmt.016.001.04": {
+    "name_en": "Account Excluded Mandate Maintenance Amendment Request",
+    "name_ko": "계정 제외 위임장 유지보수 수정 요청"
+  },
+  "acmt.016.001.05": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.017.001.01": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌 개설 지시"
+  },
+  "acmt.017.001.02": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌 개설 지시"
+  },
+  "acmt.017.001.03": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌개설지시"
+  },
+  "acmt.017.001.04": {
+    "name_en": "Add Account Modification Request",
+    "name_ko": "계좌 수정 요청 추가"
+  },
+  "acmt.017.001.05": {
+    "name_en": "Additional Information Request",
+    "name_ko": "추가 정보 요청"
+  },
+  "acmt.018.001.01": {
+    "name_en": "Account Closure Request",
+    "name_ko": "계좌 폐쇄 요청"
+  },
+  "acmt.018.001.02": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌 개설 요청"
+  },
+  "acmt.018.001.03": {
+    "name_en": "Account Opening Request",
+    "name_ko": "계좌 개설 요청"
+  },
+  "acmt.018.001.04": {
+    "name_en": "Account Mandate Maintenance Amendment Request",
+    "name_ko": "계좌 위임장 유지 수정 요청"
+  },
+  "acmt.018.001.05": {
+    "name_en": "Account Mandate Maintenance Amendment Request",
+    "name_ko": "계좌 위임장 유지 수정 요청"
+  },
+  "acmt.019.001.01": {
+    "name_en": "Account Modification Request",
+    "name_ko": "계좌 수정 요청"
+  },
+  "acmt.019.001.02": {
+    "name_en": "Account Closing Request",
+    "name_ko": "계좌 종료 요청"
+  },
+  "acmt.019.001.03": {
+    "name_en": "Account Closing Request",
+    "name_ko": "계좌 폐지 요청"
+  },
+  "acmt.019.001.04": {
+    "name_en": "Account Closing Request",
+    "name_ko": "계좌 종료 요청"
+  },
+  "acmt.020.001.01": {
+    "name_en": "Account Closing Amendment Request",
+    "name_ko": "계좌 폐지 수정 요청"
+  },
+  "acmt.020.001.02": {
+    "name_en": "Account Modification Request",
+    "name_ko": "계좌 수정 요청"
+  },
+  "acmt.020.001.03": {
+    "name_en": "Account Modification Request",
+    "name_ko": "계좌 수정 요청"
+  },
+  "acmt.020.001.04": {
+    "name_en": "Account Opening/Maintenance/Closing Request",
+    "name_ko": "계좌 개설/유지/폐지 요청"
+  },
+  "acmt.021.001.01": {
+    "name_en": "Account Closing Additional Information Request",
+    "name_ko": "계좌 종료 추가 정보 요청"
+  },
+  "acmt.021.001.02": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.021.001.03": {
+    "name_en": "Account Closing Additional Information Request",
+    "name_ko": "계좌 폐지 추가 정보 요청"
+  },
+  "acmt.021.001.04": {
+    "name_en": "Account Closing Additional Information Request",
+    "name_ko": "계좌 폐지 추가 정보 요청"
+  },
+  "acmt.022.001.01": {
+    "name_en": "Identification Modification Advice",
+    "name_ko": "식별 정보 수정 통지"
+  },
+  "acmt.022.001.02": {
+    "name_en": "Party and Account Identification Assignment",
+    "name_ko": "당사자 및 계좌 식별 할당"
+  },
+  "acmt.022.001.03": {
+    "name_en": "Identification Modification Advice",
+    "name_ko": "식별 수정 통지"
+  },
+  "acmt.022.001.04": {
+    "name_en": "Identification Modification Advice",
+    "name_ko": "식별 정보 수정 안내"
+  },
+  "acmt.023.001.01": {
+    "name_en": "Identification Verification Request",
+    "name_ko": "신원 인증 요청"
+  },
+  "acmt.023.001.02": {
+    "name_en": "Account Identification Assignment Notification",
+    "name_ko": "계좌 식별 할당 통지"
+  },
+  "acmt.023.001.03": {
+    "name_en": "Account Management Identification Assignment",
+    "name_ko": "계좌 관리 식별 할당"
+  },
+  "acmt.023.001.04": {
+    "name_en": "Identification Verification Request",
+    "name_ko": "신원 확인 요청"
+  },
+  "acmt.024.001.01": {
+    "name_en": "Identification Verification Rejection",
+    "name_ko": "신원 확인 거부"
+  },
+  "acmt.024.001.02": {
+    "name_en": "Identification Verification Report",
+    "name_ko": "신원 확인 보고서"
+  },
+  "acmt.024.001.03": {
+    "name_en": "Identification Verification Report",
+    "name_ko": "신원 확인 보고서"
+  },
+  "acmt.024.001.04": {
+    "name_en": "Identification Verification Report",
+    "name_ko": "신원 확인 보고서"
+  },
+  "acmt.025.001.02": {
+    "name_en": "Account Opening Instruction",
+    "name_ko": "계좌개설 지시"
+  },
+  "acmt.026.001.02": {
+    "name_en": "Account Mandate Notification",
+    "name_ko": "계좌 위임장 알림"
+  },
+  "acmt.027.001.01": {
+    "name_en": "Account Switch Request",
+    "name_ko": "계좌 이동 요청"
+  },
+  "acmt.027.001.02": {
+    "name_en": "Account Switch Information Request",
+    "name_ko": "계좌 전환 정보 요청"
+  },
+  "acmt.027.001.03": {
+    "name_en": "Account Switch Information Request",
+    "name_ko": "계좌 전환 정보 요청"
+  },
+  "acmt.027.001.04": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.027.001.05": {
+    "name_en": "Account Switch Information Request",
+    "name_ko": "계좌 전환 정보 요청"
+  },
+  "acmt.027.001.06": {
+    "name_en": "Account Transfer Initiation",
+    "name_ko": "계좌 이전 개시"
+  },
+  "acmt.028.001.01": {
+    "name_en": "Account Switch Information Response",
+    "name_ko": "계좌 이전 정보 응답"
+  },
+  "acmt.028.001.02": {
+    "name_en": "Account Switch Information Response",
+    "name_ko": "계좌 전환 정보 응답"
+  },
+  "acmt.028.001.03": {
+    "name_en": "Account Switch Information Response",
+    "name_ko": "계좌 전환 정보 응답"
+  },
+  "acmt.028.001.04": {
+    "name_en": "Account Switch Information Response",
+    "name_ko": "계좌 전환 정보 응답"
+  },
+  "acmt.028.001.05": {
+    "name_en": "Account Switch Information Response",
+    "name_ko": "계좌 전환 정보 응답"
+  },
+  "acmt.028.001.06": {
+    "name_en": "Account Switch Information Response",
+    "name_ko": "계좌 전환 정보 응답"
+  },
+  "acmt.029.001.01": {
+    "name_en": "Account Switch Cancel Existing Payment",
+    "name_ko": "계좌 이전 기존 결제 취소"
+  },
+  "acmt.029.001.02": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 알림"
+  },
+  "acmt.029.001.03": {
+    "name_en": "Debit Authorization Request",
+    "name_ko": "직불 승인 요청"
+  },
+  "acmt.029.001.04": {
+    "name_en": "Account Switch Cancel Existing Payment",
+    "name_ko": "계좌 전환 기존 결제 취소"
+  },
+  "acmt.029.001.05": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 알림"
+  },
+  "acmt.029.001.06": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 알림"
+  },
+  "acmt.030.001.01": {
+    "name_en": "Account Switch Request Redirection",
+    "name_ko": "계좌 전환 요청 리디렉션"
+  },
+  "acmt.030.001.02": {
+    "name_en": "Account Switch Acknowledgement",
+    "name_ko": "계좌 전환 승인"
+  },
+  "acmt.030.001.03": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 알림"
+  },
+  "acmt.030.001.04": {
+    "name_en": "Account Information Request",
+    "name_ko": "계좌 정보 요청"
+  },
+  "acmt.031.001.01": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 알림"
+  },
+  "acmt.031.001.02": {
+    "name_en": "Inquiry Response for Cheques",
+    "name_ko": "수표 조회 응답"
+  },
+  "acmt.031.001.03": {
+    "name_en": "Account Switch Initiation",
+    "name_ko": "계좌 이전 개시"
+  },
+  "acmt.031.001.04": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 통지"
+  },
+  "acmt.031.001.05": {
+    "name_en": "Account Switch Request Balance Transfer",
+    "name_ko": "계좌 전환 요청 잔액 이체"
+  },
+  "acmt.031.001.06": {
+    "name_en": "Account Switch Request Balance Transfer",
+    "name_ko": "계좌 전환 요청 잔액 이체"
+  },
+  "acmt.032.001.01": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 알림"
+  },
+  "acmt.032.001.02": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 알림"
+  },
+  "acmt.032.001.03": {
+    "name_en": "Account Switch Balance Transfer Acknowledgement",
+    "name_ko": "계좌 전환 잔액 이체 승인"
+  },
+  "acmt.032.001.04": {
+    "name_en": "Account Switch Balance Transfer Acknowledgement",
+    "name_ko": "계좌 전환 잔액 이체 승인"
+  },
+  "acmt.032.001.05": {
+    "name_en": "Account Switch Balance Transfer Acknowledgement",
+    "name_ko": "계좌 이전 잔액 이체 승인"
+  },
+  "acmt.032.001.06": {
+    "name_en": "Account Switch Balance Transfer Acknowledgement",
+    "name_ko": "계좌 전환 잔액 이체 승인"
+  },
+  "acmt.033.001.01": {
+    "name_en": "Account Switch Request",
+    "name_ko": "계좌 전환 요청"
+  },
+  "acmt.033.001.02": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 이전 알림"
+  },
+  "acmt.034.001.01": {
+    "name_en": "Account Switch Request Payment",
+    "name_ko": "계좌 이전 요청 결제"
+  },
+  "acmt.034.001.02": {
+    "name_en": "Account Switching Request Notification",
+    "name_ko": "계좌 전환 요청 알림"
+  },
+  "acmt.034.001.03": {
+    "name_en": "Account Switch Request",
+    "name_ko": "계좌 전환 요청"
+  },
+  "acmt.034.001.04": {
+    "name_en": "Account Modification Request",
+    "name_ko": "계좌 수정 요청"
+  },
+  "acmt.034.001.05": {
+    "name_en": "Account Switch Request Payment",
+    "name_ko": "계좌 전환 요청 결제"
+  },
+  "acmt.034.001.06": {
+    "name_en": "Account Switch Request Payment",
+    "name_ko": "계좌 전환 요청 결제"
+  },
+  "acmt.035.001.01": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 알림"
+  },
+  "acmt.035.001.02": {
+    "name_en": "Account Switch Response",
+    "name_ko": "계좌 전환 응답"
+  },
+  "acmt.036.001.01": {
+    "name_en": "Account Switch Details Notification",
+    "name_ko": "계좌 전환 상세 알림"
+  },
+  "acmt.037.001.01": {
+    "name_en": "Account Switch Notification",
+    "name_ko": "계좌 전환 통지"
+  },
+  "acmt.037.001.02": {
+    "name_en": "Account Switch Technical Rejection",
+    "name_ko": "계좌 이전 기술적 거부"
+  },
+  "admi.001.001.01": {
+    "name_en": "Report Message",
+    "name_ko": "보고서 메시지"
+  },
+  "admi.002.001.01": {
+    "name_en": "Message Reject",
+    "name_ko": "메시지 거부"
+  },
+  "admi.003.001.01": {
+    "name_en": "Trade Deletion Notification",
+    "name_ko": "거래 삭제 통지"
+  },
+  "admi.004.001.01": {
+    "name_en": "System Event Notification",
+    "name_ko": "시스템 이벤트 알림"
+  },
+  "admi.004.001.02": {
+    "name_en": "System Event Notification",
+    "name_ko": "시스템 이벤트 알림"
+  },
+  "admi.005.001.01": {
+    "name_en": "Report Query Request",
+    "name_ko": "보고서 질의 요청"
+  },
+  "admi.006.001.01": {
+    "name_en": "Resend Request",
+    "name_ko": "재전송 요청"
+  },
+  "admi.007.001.01": {
+    "name_en": "Receipt Acknowledgement",
+    "name_ko": "수령 확인"
+  },
+  "admi.008.001.01": {
+    "name_en": "System Status Request or Notification",
+    "name_ko": "시스템 상태 요청 또는 알림"
+  },
+  "admi.009.001.01": {
+    "name_en": "Data Request Message",
+    "name_ko": "데이터 요청 메시지"
+  },
+  "admi.009.001.02": {
+    "name_en": "Data Request",
+    "name_ko": "데이터 요청"
+  },
+  "admi.010.001.01": {
+    "name_en": "Report Request Response",
+    "name_ko": "보고서 요청 응답"
+  },
+  "admi.010.001.02": {
+    "name_en": "Request Report",
+    "name_ko": "요청 보고서"
+  },
+  "admi.011.001.01": {
+    "name_en": "System Event Acknowledgement",
+    "name_ko": "시스템 이벤트 승인"
+  },
+  "admi.014.001.01": {
+    "name_en": "Delivery Status Notification",
+    "name_ko": "배송 상태 알림"
+  },
+  "admi.014.001.02": {
+    "name_en": "Request to Cancel",
+    "name_ko": "취소 요청"
+  },
+  "admi.016.001.01": {
+    "name_en": "Participant Status Report",
+    "name_ko": "참가자 상태 보고서"
+  },
+  "admi.017.001.01": {
+    "name_en": "Request for Clearing House Processing",
+    "name_ko": "청산소 처리 요청"
+  },
+  "admi.017.001.02": {
+    "name_en": "Request Processing Request Message",
+    "name_ko": "요청 처리 요청 메시지"
+  },
+  "admi.024.001.01": {
+    "name_en": "Notification of Correspondence",
+    "name_ko": "서신 통지"
+  },
+  "admi.998.001.01": {
+    "name_en": "Proprietary Message",
+    "name_ko": "독점 메시지"
+  },
+  "admi.998.001.02": {
+    "name_en": "Administration Proprietary Message",
+    "name_ko": "관리 독점 메시지"
+  },
+  "admi.998.001.03": {
+    "name_en": "Administration Proprietary Message",
+    "name_ko": "관리 소유권 메시지"
+  },
+  "auth.001.001.01": {
+    "name_en": "Information Request Opening",
+    "name_ko": "정보 요청 개설"
+  },
+  "auth.001.001.02": {
+    "name_en": "Information Request Opening",
+    "name_ko": "정보 요청 개시"
+  },
+  "auth.002.001.01": {
+    "name_en": "Information Request Response",
+    "name_ko": "정보 요청 응답"
+  },
+  "auth.002.001.02": {
+    "name_en": "Authentication Response",
+    "name_ko": "인증 응답"
+  },
+  "auth.003.001.01": {
+    "name_en": "Authentication Investigation Response",
+    "name_ko": "인증 조사 응답"
+  },
+  "auth.008.001.02": {
+    "name_en": "Regulatory Transaction Report",
+    "name_ko": "규제 거래 보고서"
+  },
+  "auth.009.001.02": {
+    "name_en": "Regulatory Transaction Report Cancellation Request",
+    "name_ko": "규제 거래 보고 취소 요청"
+  },
+  "auth.010.001.01": {
+    "name_en": "Regulatory Transaction Report Status",
+    "name_ko": "규제 거래 보고서 상태"
+  },
+  "auth.011.001.01": {
+    "name_en": "Regulatory Transaction Report Cancellation Status",
+    "name_ko": "규제거래보고 취소 상태"
+  },
+  "auth.012.001.01": {
+    "name_en": "Money Market Secured Market Statistical Report",
+    "name_ko": "금융시장 담보부 시장 통계 보고"
+  },
+  "auth.012.001.02": {
+    "name_en": "Money Market Secured Market Statistical Report",
+    "name_ko": "머니마켓 담보부 시장 통계 보고서"
+  },
+  "auth.013.001.01": {
+    "name_en": "Money Market Unsecured Market Statistical Report",
+    "name_ko": "금융시장 무담보 시장 통계 보고서"
+  },
+  "auth.013.001.02": {
+    "name_en": "Money Market Report",
+    "name_ko": "머니마켓 보고서"
+  },
+  "auth.014.001.01": {
+    "name_en": "Transaction Report",
+    "name_ko": "거래 보고"
+  },
+  "auth.014.001.02": {
+    "name_en": "Authorization Transaction Report",
+    "name_ko": "거래 인증 보고"
+  },
+  "auth.015.001.01": {
+    "name_en": "OTC Derivatives Transaction Report",
+    "name_ko": "장외 파생상품 거래 보고"
+  },
+  "auth.015.001.02": {
+    "name_en": "Money Market Overnight Index Swap",
+    "name_ko": "머니마켓 야간지수스왑"
+  },
+  "auth.016.001.01": {
+    "name_en": "Financial Instrument Reporting Transaction Report",
+    "name_ko": "금융상품 보고 거래 보고서"
+  },
+  "auth.016.001.02": {
+    "name_en": "Financial Instrument Reporting Transaction Report",
+    "name_ko": "금융상품 보고 거래 보고서"
+  },
+  "auth.016.001.03": {
+    "name_en": "Identification of beneficiary",
+    "name_ko": "수익자 식별"
+  },
+  "auth.017.001.01": {
+    "name_en": "Financial Instrument Reporting Reference Data Report",
+    "name_ko": "금융상품 보고 참조 데이터 보고서"
+  },
+  "auth.017.001.02": {
+    "name_en": "Derivatives Trade Reporting Status",
+    "name_ko": "파생상품 거래 보고 현황"
+  },
+  "auth.018.001.01": {
+    "name_en": "Contract Registration Request",
+    "name_ko": "계약 등록 요청"
+  },
+  "auth.018.001.02": {
+    "name_en": "Contract Registration Request",
+    "name_ko": "계약 등록 요청"
+  },
+  "auth.018.001.03": {
+    "name_en": "Customs Declaration Request",
+    "name_ko": "세관 신고 요청"
+  },
+  "auth.018.001.04": {
+    "name_en": "Contract Registration Request",
+    "name_ko": "계약 등록 요청"
+  },
+  "auth.019.001.01": {
+    "name_en": "Restrict Currency Control Contract Registration",
+    "name_ko": "통화 통제 계약 등록 제한"
+  },
+  "auth.019.001.02": {
+    "name_en": "Contract Registration Confirmation",
+    "name_ko": "계약 등록 확인"
+  },
+  "auth.019.001.03": {
+    "name_en": "Loan Agreement Notification",
+    "name_ko": "대출 약정 통지"
+  },
+  "auth.019.001.04": {
+    "name_en": "Registered Trade Agreement Information",
+    "name_ko": "등록된 무역 계약 정보"
+  },
+  "auth.020.001.01": {
+    "name_en": "Contract Registration Closure Request",
+    "name_ko": "계약 등록 종료 요청"
+  },
+  "auth.020.001.02": {
+    "name_en": "Contract Registration Closure Request",
+    "name_ko": "계약 등록 종료 요청"
+  },
+  "auth.020.001.03": {
+    "name_en": "Contract Registration Closure Request",
+    "name_ko": "계약 등록 종료 요청"
+  },
+  "auth.020.001.04": {
+    "name_en": "Contract Registration Closure Request",
+    "name_ko": "계약 등록 종료 요청"
+  },
+  "auth.021.001.01": {
+    "name_en": "Contract Registration Amendment",
+    "name_ko": "계약 등록 수정"
+  },
+  "auth.021.001.02": {
+    "name_en": "Contract Registration Amendment Request",
+    "name_ko": "계약 등록 수정 요청"
+  },
+  "auth.021.001.03": {
+    "name_en": "Registered Contract Notification",
+    "name_ko": "등록된 계약 통지"
+  },
+  "auth.021.001.04": {
+    "name_en": "Mandate Related Information",
+    "name_ko": "위임장 관련 정보"
+  },
+  "auth.022.001.01": {
+    "name_en": "Contract Registration Statement",
+    "name_ko": "계약 등록 명세서"
+  },
+  "auth.022.001.02": {
+    "name_en": "Contract Registration Statement",
+    "name_ko": "계약 등록 명세서"
+  },
+  "auth.022.001.03": {
+    "name_en": "Undertaking Amendment",
+    "name_ko": "보증 수정"
+  },
+  "auth.022.001.04": {
+    "name_en": "Loan Contract Notification",
+    "name_ko": "대출 계약 통지"
+  },
+  "auth.023.001.01": {
+    "name_en": "Currency Control Statement Request",
+    "name_ko": "환율 관리 명세서 요청"
+  },
+  "auth.023.001.02": {
+    "name_en": "Registered Currency Control Contract Registration",
+    "name_ko": "등록 통화관리 계약 등록"
+  },
+  "auth.023.001.03": {
+    "name_en": "Customs Declaration Advice",
+    "name_ko": "관세 신고 조언"
+  },
+  "auth.023.001.04": {
+    "name_en": "Authorisation Request Message",
+    "name_ko": "인증 요청 메시지"
+  },
+  "auth.024.001.01": {
+    "name_en": "Payment Regulatory Information Notification",
+    "name_ko": "결제 규제 정보 알림"
+  },
+  "auth.024.001.02": {
+    "name_en": "Payment Regulatory Information Notification",
+    "name_ko": "지급 규제 정보 알림"
+  },
+  "auth.024.001.03": {
+    "name_en": "Account Certificate Record Request",
+    "name_ko": "계좌 인증서 기록 요청"
+  },
+  "auth.024.001.04": {
+    "name_en": "Payment Regulatory Information Notification",
+    "name_ko": "결제 규제 정보 알림"
+  },
+  "auth.025.001.01": {
+    "name_en": "Currency Control Supporting Document Delivery",
+    "name_ko": "통화 관리 지원 문서 전달"
+  },
+  "auth.025.001.02": {
+    "name_en": "Currency Control Supporting Document Delivery",
+    "name_ko": "통화 관리 지원 문서 전달"
+  },
+  "auth.025.001.03": {
+    "name_en": "Currency Control Supporting Document Delivery",
+    "name_ko": "통화 관리 지원 문서 배송"
+  },
+  "auth.025.001.04": {
+    "name_en": "Currency Control - Supporting Document",
+    "name_ko": "통화 관리 - 지원 문서"
+  },
+  "auth.026.001.01": {
+    "name_en": "Authentication Supporting Documents Request",
+    "name_ko": "인증 보조 문서 요청"
+  },
+  "auth.026.001.02": {
+    "name_en": "Forwarding Agent Information",
+    "name_ko": "송달 대리인 정보"
+  },
+  "auth.026.001.03": {
+    "name_en": "Supporting Document Request or Letter",
+    "name_ko": "지원 문서 요청 또는 편지"
+  },
+  "auth.026.001.04": {
+    "name_en": "Letter of Credit Documentary Supporting Document",
+    "name_ko": "신용장 서류 지원 문서"
+  },
+  "auth.027.001.01": {
+    "name_en": "Authorization Assertion Status Report",
+    "name_ko": "인증 주장 상태 보고서"
+  },
+  "auth.027.001.02": {
+    "name_en": "Authentication Response",
+    "name_ko": "인증 응답"
+  },
+  "auth.027.001.03": {
+    "name_en": "Currency Control Status Advice",
+    "name_ko": "통화 관제 상태 통지"
+  },
+  "auth.027.001.04": {
+    "name_en": "Currency Control Status Advice",
+    "name_ko": "통화관리 상태 통지"
+  },
+  "auth.028.001.01": {
+    "name_en": "Money Market Statistical Reporting Status Report",
+    "name_ko": "머니마켓 통계 보고 상태 보고서"
+  },
+  "auth.029.001.01": {
+    "name_en": "Derivatives Trade Report Query",
+    "name_ko": "파생상품 거래 보고서 조회"
+  },
+  "auth.029.001.02": {
+    "name_en": "Trade Query",
+    "name_ko": "거래 조회"
+  },
+  "auth.029.001.03": {
+    "name_en": "Trade Query Response Message",
+    "name_ko": "거래 조회 응답 메시지"
+  },
+  "auth.029.001.04": {
+    "name_en": "Ad Hoc Trade Query",
+    "name_ko": "임시 거래 조회"
+  },
+  "auth.029.001.05": {
+    "name_en": "Derivatives Trade Report Query",
+    "name_ko": "파생상품 거래 보고 조회"
+  },
+  "auth.030.001.01": {
+    "name_en": "Derivatives Trade Report",
+    "name_ko": "파생상품 거래 보고"
+  },
+  "auth.030.001.02": {
+    "name_en": "Counterparty Trade Report Compression",
+    "name_ko": "거래상대방 거래 보고서 압축"
+  },
+  "auth.030.001.03": {
+    "name_en": "Counterparty Reporting Correction",
+    "name_ko": "거래상대방 보고 수정"
+  },
+  "auth.031.001.01": {
+    "name_en": "Financial Instrument Reporting Status Advice",
+    "name_ko": "금융상품 보고 상태 통지"
+  },
+  "auth.032.001.01": {
+    "name_en": "Financial Instrument Reporting Equity Transparency Data Report",
+    "name_ko": "금융상품 보고 주식 투명성 데이터 보고서"
+  },
+  "auth.033.001.01": {
+    "name_en": "Financial Instrument Reporting Non-Equity Transparency Data Report",
+    "name_ko": "금융상품 보고 비주식 투명성 데이터 보고서"
+  },
+  "auth.033.001.02": {
+    "name_en": "Financial Instrument Reporting Non-Equity Transparency Data Report",
+    "name_ko": "금융상품 보고 비주식 투명성 데이터 보고"
+  },
+  "auth.033.001.03": {
+    "name_en": "Financial Instrument Reporting Non-Equity Transparency Data Report",
+    "name_ko": "금융상품 보고 비주식 투명성 데이터 보고"
+  },
+  "auth.034.001.01": {
+    "name_en": "Invoice Tax Report",
+    "name_ko": "인보이스 세금 보고"
+  },
+  "auth.035.001.01": {
+    "name_en": "Financial Instrument Reporting Trading Volume Cap Data Report",
+    "name_ko": "금융상품 보고 거래량 상한 데이터 보고"
+  },
+  "auth.036.001.01": {
+    "name_en": "Financial Instrument Reporting Reference Data Delta Report",
+    "name_ko": "금융상품 보고 참조 데이터 델타 보고서"
+  },
+  "auth.036.001.02": {
+    "name_en": "Financial Instrument Admission Notification",
+    "name_ko": "금융상품 인정 통지"
+  },
+  "auth.036.001.03": {
+    "name_en": "Financial Instrument Reporting Reference Data Delta Report",
+    "name_ko": "금융상품 보고 참조 데이터 델타 보고서"
+  },
+  "auth.038.001.01": {
+    "name_en": "Invoice Tax Report Status Advice",
+    "name_ko": "송장 세금 보고서 상태 통지"
+  },
+  "auth.039.001.01": {
+    "name_en": "Financial Instrument Reporting Non Working Day Report",
+    "name_ko": "금융상품 보고 비영업일 보고서"
+  },
+  "auth.040.001.01": {
+    "name_en": "Financial Instrument Reporting Equity Trading Activity Report",
+    "name_ko": "금융상품 보고 주식 거래 활동 보고서"
+  },
+  "auth.041.001.01": {
+    "name_en": "Financial Instrument Reporting Non-Equity Trading Activity Report",
+    "name_ko": "금융상품 보고 비상품거래 활동 보고서"
+  },
+  "auth.042.001.01": {
+    "name_en": "Instrument Information Notification",
+    "name_ko": "금융상품 정보 통지"
+  },
+  "auth.042.001.02": {
+    "name_en": "Derivatives Trade Repository Report",
+    "name_ko": "파생상품 거래 저장소 보고서"
+  },
+  "auth.043.001.01": {
+    "name_en": "Financial Instrument Reporting Reference Data Index Report",
+    "name_ko": "금융상품 보고 참조 데이터 지수 보고서"
+  },
+  "auth.044.001.01": {
+    "name_en": "Financial Instrument Reporting Equity Trading Activity Result",
+    "name_ko": "금융상품 보고 주식거래 활동 결과"
+  },
+  "auth.044.001.02": {
+    "name_en": "Transparency Report Message",
+    "name_ko": "투명성 보고 메시지"
+  },
+  "auth.044.001.03": {
+    "name_en": "Financial Instrument Reporting Equity Trading Activity Result",
+    "name_ko": "금융상품 보고 주식거래활동 결과"
+  },
+  "auth.045.001.01": {
+    "name_en": "Transparency Data Report",
+    "name_ko": "투명성 데이터 보고서"
+  },
+  "auth.045.001.02": {
+    "name_en": "Financial Instrument Reporting Message",
+    "name_ko": "금융상품 보고 메시지"
+  },
+  "auth.045.001.03": {
+    "name_en": "Financial Instrument Reporting Non-Equity Trading Activity Result",
+    "name_ko": "금융상품 보고 비주식 거래 활동 결과"
+  },
+  "auth.047.001.01": {
+    "name_en": "Financial Instrument Reporting Country Code Report",
+    "name_ko": "금융상품 보고 국가코드 보고서"
+  },
+  "auth.048.001.01": {
+    "name_en": "Financial Instrument Reporting Currency Code Report",
+    "name_ko": "금융상품 보고 통화 코드 보고서"
+  },
+  "auth.049.001.01": {
+    "name_en": "Market Infrastructure Entity Reference Data",
+    "name_ko": "시장 기반시설 기관 참조 데이터"
+  },
+  "auth.049.001.02": {
+    "name_en": "Financial Instrument Reporting Market Identification Code Report",
+    "name_ko": "금융상품 보고 시장 식별 코드 보고"
+  },
+  "auth.050.001.01": {
+    "name_en": "Financial Instrument Reporting Instrument Classification Report",
+    "name_ko": "금융상품 보고 상품분류 보고서"
+  },
+  "auth.052.001.01": {
+    "name_en": "Securities Financing Reporting Transaction Report",
+    "name_ko": "증권 금융 보고 거래 보고"
+  },
+  "auth.052.001.02": {
+    "name_en": "Trade Report Notification",
+    "name_ko": "거래 보고 통지"
+  },
+  "auth.053.001.01": {
+    "name_en": "Trading Under Waiver Report",
+    "name_ko": "면제 조건 거래 보고"
+  },
+  "auth.054.001.01": {
+    "name_en": "Collateral Management - Clearing Member Registration",
+    "name_ko": "담보 관리 - 청산 회원 등록"
+  },
+  "auth.055.001.01": {
+    "name_en": "CCP Member Requirements Report",
+    "name_ko": "중앙결제기구 회원 요구사항 보고서"
+  },
+  "auth.056.001.01": {
+    "name_en": "CCP Member End of Day Initial Margin",
+    "name_ko": "CCP 회원 일일 종료 초기 증거금"
+  },
+  "auth.057.001.01": {
+    "name_en": "Stress Testing Scenario Definition",
+    "name_ko": "스트레스 테스트 시나리오 정의"
+  },
+  "auth.057.001.02": {
+    "name_en": "Stressed Market Data Report",
+    "name_ko": "스트레스 시장 데이터 보고서"
+  },
+  "auth.058.001.01": {
+    "name_en": "Aggregated Stress Loss Report",
+    "name_ko": "집계 스트레스 손실 보고서"
+  },
+  "auth.059.001.01": {
+    "name_en": "Capital Adequacy Reporting",
+    "name_ko": "자본 적정성 보고"
+  },
+  "auth.059.001.02": {
+    "name_en": "Capital Adequacy Data Report",
+    "name_ko": "자본 적절성 데이터 보고서"
+  },
+  "auth.060.001.01": {
+    "name_en": "Intraday Account Balance Reporting Message",
+    "name_ko": "당일 계좌 잔액 보고 메시지"
+  },
+  "auth.060.001.02": {
+    "name_en": "CCP Concentration Account Report",
+    "name_ko": "CCP 집중 계좌 보고서"
+  },
+  "auth.061.001.01": {
+    "name_en": "Repurchase Agreement Notification",
+    "name_ko": "재매매약정 알림"
+  },
+  "auth.061.001.02": {
+    "name_en": "Authorized Collateral Information",
+    "name_ko": "승인된 담보 정보"
+  },
+  "auth.062.001.01": {
+    "name_en": "Liquidity Stress Scenario Definition",
+    "name_ko": "유동성 스트레스 시나리오 정의"
+  },
+  "auth.063.001.01": {
+    "name_en": "CCP Liquidity Stress Testing Result Report",
+    "name_ko": "CCP 유동성 스트레스 테스트 결과 보고서"
+  },
+  "auth.064.001.01": {
+    "name_en": "CCP Default Waterfall Report",
+    "name_ko": "CCP 기본 연쇄 보고서"
+  },
+  "auth.064.001.02": {
+    "name_en": "CCP Available Financial Resources Report",
+    "name_ko": "CCP 이용 가능 금융 자원 보고서"
+  },
+  "auth.065.001.01": {
+    "name_en": "Supervisory Model Validation Report",
+    "name_ko": "감시 모델 검증 보고서"
+  },
+  "auth.066.001.01": {
+    "name_en": "Central Bank Reporting Monthly Results",
+    "name_ko": "중앙은행 보고 월간 결과"
+  },
+  "auth.067.001.01": {
+    "name_en": "Collateral Management Request",
+    "name_ko": "담보 관리 요청"
+  },
+  "auth.068.001.01": {
+    "name_en": "CCP Account Position Report",
+    "name_ko": "CCP 계좌 포지션 보고서"
+  },
+  "auth.069.001.01": {
+    "name_en": "Derivative Trade Product Reporting",
+    "name_ko": "파생상품 거래 보고"
+  },
+  "auth.069.001.02": {
+    "name_en": "Regulatory Capital Reporting Message",
+    "name_ko": "규제 자본 보고 메시지"
+  },
+  "auth.069.001.03": {
+    "name_en": "CCP Product Clearing Report",
+    "name_ko": "CCP 상품 청산 보고서"
+  },
+  "auth.070.001.01": {
+    "name_en": "Securities Financing Reporting Transaction Margin Data Report",
+    "name_ko": "유가증권 금융 거래 보고 마진 데이터 보고"
+  },
+  "auth.070.001.02": {
+    "name_en": "Securities Financing Reporting Transaction Margin Data Report",
+    "name_ko": "유가증권 금융 거래 보고 마진 데이터 보고"
+  },
+  "auth.071.001.01": {
+    "name_en": "Regulatory Reporting",
+    "name_ko": "규제 보고"
+  },
+  "auth.071.001.02": {
+    "name_en": "Collateral Reuse Update Report",
+    "name_ko": "담보 재사용 업데이트 보고서"
+  },
+  "auth.072.001.01": {
+    "name_en": "Settlement Internalisation Reporting Message",
+    "name_ko": "결제 내부화 보고 메시지"
+  },
+  "auth.078.001.01": {
+    "name_en": "Securities Financing Transaction Report",
+    "name_ko": "유가증권 금융거래 보고"
+  },
+  "auth.078.001.02": {
+    "name_en": "Counterparty Reporting Message",
+    "name_ko": "거래상대방 보고 메시지"
+  },
+  "auth.079.001.01": {
+    "name_en": "Trade State Report",
+    "name_ko": "거래 상태 보고서"
+  },
+  "auth.079.001.02": {
+    "name_en": "Trade State Report",
+    "name_ko": "거래 상태 보고"
+  },
+  "auth.080.001.01": {
+    "name_en": "Securities Financing Reporting Reconciliation Status Advice",
+    "name_ko": "증권 파이낸싱 보고 조정 상태 통지"
+  },
+  "auth.080.001.02": {
+    "name_en": "Counterparty Collateral Settlement and Reconciliation",
+    "name_ko": "상대방 담보 결제 및 조정"
+  },
+  "auth.083.001.01": {
+    "name_en": "Reconciliation Supplementary Data",
+    "name_ko": "조정 추가 데이터"
+  },
+  "auth.083.001.02": {
+    "name_en": "Counterparty Reporting Message",
+    "name_ko": "거래상대방 보고 메시지"
+  },
+  "auth.084.001.01": {
+    "name_en": "Securities Financing Reporting Transaction Status Advice",
+    "name_ko": "증권 금융 보고 거래 상태 조언"
+  },
+  "auth.084.001.02": {
+    "name_en": "Securities Financing Reporting Transaction Status Advice",
+    "name_ko": "증권 금융 보고 거래 상태 조언"
+  },
+  "auth.085.001.01": {
+    "name_en": "Securities Financing Reporting Margin Data Transaction State Report",
+    "name_ko": "증권 금융 보고 증거금 데이터 거래 상태 보고서"
+  },
+  "auth.085.001.02": {
+    "name_en": "Derivative Trade Report Submission",
+    "name_ko": "파생상품 거래 보고 제출"
+  },
+  "auth.086.001.01": {
+    "name_en": "Securities Financing Reporting Reused Collateral Data Transaction State Report",
+    "name_ko": "증권 금융 보고 재사용 담보 데이터 거래 상태 보고서"
+  },
+  "auth.086.001.02": {
+    "name_en": "Secured Finance Reporting Message",
+    "name_ko": "담보부금융 보고 메시지"
+  },
+  "auth.090.001.01": {
+    "name_en": "Derivatives Trade Position Set Report",
+    "name_ko": "파생상품 거래 포지션 집합 보고"
+  },
+  "auth.090.001.02": {
+    "name_en": "Secured Transaction Notification",
+    "name_ko": "담보거래 알림"
+  },
+  "auth.091.001.01": {
+    "name_en": "Reconciliation Statistics Report",
+    "name_ko": "조정 통계 보고서"
+  },
+  "auth.091.001.02": {
+    "name_en": "Restricted Financial Transaction Authority",
+    "name_ko": "제한된 금융거래 인증"
+  },
+  "auth.091.001.03": {
+    "name_en": "Derivatives Trade Reconciliation Statistical Report",
+    "name_ko": "파생상품 거래 조정 통계 보고서"
+  },
+  "auth.092.001.01": {
+    "name_en": "Derivatives Trade Rejection Statistical Report",
+    "name_ko": "파생상품 거래 거부 통계 보고서"
+  },
+  "auth.092.001.02": {
+    "name_en": "Reporting Authority Data Submission",
+    "name_ko": "보고 당국 데이터 제출"
+  },
+  "auth.092.001.03": {
+    "name_en": "Derivatives Trade Rejection Statistical Report",
+    "name_ko": "파생상품 거래 거절 통계 보고서"
+  },
+  "auth.092.001.04": {
+    "name_en": "Derivatives Trade Rejection Statistical Report",
+    "name_ko": "파생상품 거래 거절 통계 보고서"
+  },
+  "auth.094.001.01": {
+    "name_en": "Securities Financing Reporting Transaction Query",
+    "name_ko": "유가증권 금융거래 보고 조회"
+  },
+  "auth.094.001.02": {
+    "name_en": "Ad Hoc Trade Query Request",
+    "name_ko": "임시 거래 조회 요청"
+  },
+  "auth.100.001.01": {
+    "name_en": "Settlement Fails Monthly Report",
+    "name_ko": "결제 부불 월간 보고서"
+  },
+  "auth.101.001.01": {
+    "name_en": "Settlement Fails Report",
+    "name_ko": "결제 부도 보고서"
+  },
+  "auth.102.001.01": {
+    "name_en": "Market Authentication Report",
+    "name_ko": "시장 인증 보고서"
+  },
+  "auth.105.001.01": {
+    "name_en": "Loan Reconciliation and Reporting Status",
+    "name_ko": "대출 조정 및 보고 상태"
+  },
+  "auth.106.001.01": {
+    "name_en": "Derivative Trade Report",
+    "name_ko": "파생상품 거래 보고"
+  },
+  "auth.107.001.01": {
+    "name_en": "Derivatives Trade State Report",
+    "name_ko": "파생상품 거래 상태 보고"
+  },
+  "auth.107.001.02": {
+    "name_en": "Derivatives Trade State Report",
+    "name_ko": "파생상품 거래 상태 보고"
+  },
+  "auth.108.001.01": {
+    "name_en": "Derivatives Trade Margin Data Report",
+    "name_ko": "파생상품 거래 증거금 데이터 보고서"
+  },
+  "auth.108.001.02": {
+    "name_en": "Retrieval of Authentication Information",
+    "name_ko": "인증 정보 검색"
+  },
+  "auth.109.001.01": {
+    "name_en": "Counterparty Reporting Message",
+    "name_ko": "거래상대방 보고 메시지"
+  },
+  "auth.109.001.02": {
+    "name_en": "Advice of Debit or Credit Transfer",
+    "name_ko": "차변 또는 신용 이체 조언"
+  },
+  "auth.112.001.01": {
+    "name_en": "CCP Interoperability Report",
+    "name_ko": "CCP 상호운용성 보고서"
+  },
+  "auth.113.001.01": {
+    "name_en": "Order Book Report",
+    "name_ko": "주문 장부 보고서"
+  },
+  "auth.114.001.01": {
+    "name_en": "Regulatory Data Metadata Report",
+    "name_ko": "규제 데이터 메타데이터 보고서"
+  },
+  "caaa.001.001.01": {
+    "name_en": "Acceptor Authorisation Request",
+    "name_ko": "인수자 승인 요청"
+  },
+  "caaa.001.001.02": {
+    "name_en": "Card Payment Transaction Report",
+    "name_ko": "카드 결제 거래 보고서"
+  },
+  "caaa.001.001.03": {
+    "name_en": "Card Agreement Acceptance Advice",
+    "name_ko": "카드 계약 수락 공지"
+  },
+  "caaa.001.001.04": {
+    "name_en": "Card Payment Authorization Request",
+    "name_ko": "카드 결제 승인 요청"
+  },
+  "caaa.001.001.05": {
+    "name_en": "Card Acceptance Acquirer Advice",
+    "name_ko": "카드 승인 취득자 안내"
+  },
+  "caaa.001.001.06": {
+    "name_en": "Card Transaction Reconciliation",
+    "name_ko": "카드 거래 조정"
+  },
+  "caaa.001.001.07": {
+    "name_en": "Authorization Request Message",
+    "name_ko": "인가 요청 메시지"
+  },
+  "caaa.001.001.08": {
+    "name_en": "Card Payment Service Request",
+    "name_ko": "카드 결제 서비스 요청"
+  },
+  "caaa.001.001.09": {
+    "name_en": "Acceptor Authorisation Request",
+    "name_ko": "수용자 승인 요청"
+  },
+  "caaa.001.001.10": {
+    "name_en": "Acceptor Authorisation Request",
+    "name_ko": "수락자 인증 요청"
+  },
+  "caaa.001.001.11": {
+    "name_en": "Card Payment Transaction Report",
+    "name_ko": "카드 결제 거래 보고서"
+  },
+  "caaa.001.001.12": {
+    "name_en": "Authorization Request",
+    "name_ko": "인가 요청"
+  },
+  "caaa.001.001.13": {
+    "name_en": "Acceptor Authorisation Request",
+    "name_ko": "수락자 인증 요청"
+  },
+  "caaa.001.001.14": {
+    "name_en": "Creditor Payment Activation Request",
+    "name_ko": "채권자 결제 활성화 요청"
+  },
+  "caaa.001.001.15": {
+    "name_en": "Acceptor Authorisation Request",
+    "name_ko": "수용자 인가 요청"
+  },
+  "caaa.002.001.01": {
+    "name_en": "Card Payment Authorisation Response",
+    "name_ko": "카드 결제 인증 응답"
+  },
+  "caaa.002.001.02": {
+    "name_en": "Terminal Management System Response",
+    "name_ko": "단말기 관리 시스템 응답"
+  },
+  "caaa.002.001.03": {
+    "name_en": "Card Authorization Response",
+    "name_ko": "카드 인증 응답"
+  },
+  "caaa.002.001.04": {
+    "name_en": "Acceptor Authorisation Response",
+    "name_ko": "인수자 인증 응답"
+  },
+  "caaa.002.001.05": {
+    "name_en": "Card Payment Authorization Response",
+    "name_ko": "카드 결제 승인 응답"
+  },
+  "caaa.002.001.06": {
+    "name_en": "Card Transaction Reconciliation",
+    "name_ko": "카드 거래 조정"
+  },
+  "caaa.002.001.07": {
+    "name_en": "Cardholder Authentication Request",
+    "name_ko": "카드소유자 인증 요청"
+  },
+  "caaa.002.001.08": {
+    "name_en": "ATM Withdrawal Request",
+    "name_ko": "ATM 출금 요청"
+  },
+  "caaa.002.001.09": {
+    "name_en": "Card Transaction Request",
+    "name_ko": "카드 거래 요청"
+  },
+  "caaa.002.001.10": {
+    "name_en": "Card Transaction Verification Report",
+    "name_ko": "카드 거래 검증 보고서"
+  },
+  "caaa.002.001.11": {
+    "name_en": "Acceptor Authorisation Response",
+    "name_ko": "수용자 인증 응답"
+  },
+  "caaa.002.001.12": {
+    "name_en": "Acceptor Authorisation Response",
+    "name_ko": "인수자 인가 응답"
+  },
+  "caaa.002.001.13": {
+    "name_en": "Acceptor Authorisation Response",
+    "name_ko": "승인자 인증 응답"
+  },
+  "caaa.002.001.14": {
+    "name_en": "Card Payment Transaction Response",
+    "name_ko": "카드 결제 거래 응답"
+  },
+  "caaa.002.001.15": {
+    "name_en": "Acceptor Authorisation Response",
+    "name_ko": "수락자 인증 응답"
+  },
+  "caaa.003.001.01": {
+    "name_en": "Authorization Request",
+    "name_ko": "인증 요청"
+  },
+  "caaa.003.001.02": {
+    "name_en": "ATM Card Transaction Authentication",
+    "name_ko": "ATM 카드 거래 인증"
+  },
+  "caaa.003.001.03": {
+    "name_en": "Card Acceptor Transaction Response",
+    "name_ko": "카드 가맹점 거래 응답"
+  },
+  "caaa.003.001.04": {
+    "name_en": "Acceptor Completion Advice",
+    "name_ko": "인수기 완료 통지"
+  },
+  "caaa.003.001.05": {
+    "name_en": "Acceptor Completion Advice",
+    "name_ko": "인수인 완료 통지"
+  },
+  "caaa.003.001.06": {
+    "name_en": "Card Payment Authorisation Request",
+    "name_ko": "카드 결제 승인 요청"
+  },
+  "caaa.003.001.07": {
+    "name_en": "Acceptor Completion Advice",
+    "name_ko": "인수자 완료 통지"
+  },
+  "caaa.003.001.08": {
+    "name_en": "Acceptor Completion Advice",
+    "name_ko": "인수기 완료 통지"
+  },
+  "caaa.003.001.09": {
+    "name_en": "Acceptor Completion Advice",
+    "name_ko": "수용자 완료 통지"
+  },
+  "caaa.003.001.10": {
+    "name_en": "Card Payment Reconciliation",
+    "name_ko": "카드 결제 조정"
+  },
+  "caaa.003.001.11": {
+    "name_en": "Acceptor Completion Advice",
+    "name_ko": "인수자 완료 통지"
+  },
+  "caaa.003.001.12": {
+    "name_en": "Card Payment Completion Advice",
+    "name_ko": "카드 결제 완료 공지"
+  },
+  "caaa.003.001.13": {
+    "name_en": "Card Payment Authorisation",
+    "name_ko": "카드 결제 승인"
+  },
+  "caaa.003.001.14": {
+    "name_en": "Acceptor Completion Advice",
+    "name_ko": "승인자 완료 통보"
+  },
+  "caaa.003.001.15": {
+    "name_en": "Acceptor Completion Advice",
+    "name_ko": "수용자 완료 조언"
+  },
+  "caaa.004.001.01": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수용자 완료 조언 응답"
+  },
+  "caaa.004.001.02": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수용자 완료 조언 응답"
+  },
+  "caaa.004.001.03": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수용자 완료 조언 응답"
+  },
+  "caaa.004.001.04": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수용자 완료 조언 응답"
+  },
+  "caaa.004.001.05": {
+    "name_en": "Authorization Request Response",
+    "name_ko": "인증 요청 응답"
+  },
+  "caaa.004.001.06": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수락자 완료 조언 응답"
+  },
+  "caaa.004.001.07": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수락자 완료 조언 응답"
+  },
+  "caaa.004.001.08": {
+    "name_en": "Completion Advice Response",
+    "name_ko": "완료 조언 응답"
+  },
+  "caaa.004.001.09": {
+    "name_en": "Completion Advice Response",
+    "name_ko": "완료 조언 응답"
+  },
+  "caaa.004.001.10": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수용자 완료 조언 응답"
+  },
+  "caaa.004.001.11": {
+    "name_en": "Completion Advice Response",
+    "name_ko": "완료 통지 응답"
+  },
+  "caaa.004.001.12": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수용자 완료 조언 응답"
+  },
+  "caaa.004.001.13": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수용자 완료 조언 응답"
+  },
+  "caaa.004.001.14": {
+    "name_en": "Acceptor Completion Advice Response",
+    "name_ko": "수락자 완료 조언 응답"
+  },
+  "caaa.005.001.01": {
+    "name_en": "Card Payment Initiation Request",
+    "name_ko": "카드 결제 개시 요청"
+  },
+  "caaa.005.001.02": {
+    "name_en": "Acceptor Cancellation Request",
+    "name_ko": "수락자 취소 요청"
+  },
+  "caaa.005.001.03": {
+    "name_en": "Acceptor Cancellation Request V03",
+    "name_ko": "수용자 취소 요청 V03"
+  },
+  "caaa.005.001.04": {
+    "name_en": "Acceptor Cancellation Request",
+    "name_ko": "수락자 취소 요청"
+  },
+  "caaa.005.001.05": {
+    "name_en": "Card Transaction Request",
+    "name_ko": "카드 거래 요청"
+  },
+  "caaa.005.001.06": {
+    "name_en": "Acceptor Cancellation Request",
+    "name_ko": "수취인 취소 요청"
+  },
+  "caaa.005.001.07": {
+    "name_en": "Card Payment Transaction Initiation",
+    "name_ko": "카드 결제 거래 개시"
+  },
+  "pacs.008": {
+    "name_en": "Financial Institution to Customer Credit Transfer",
+    "name_ko": "금융기관에서 고객으로의 송금 이체"
+  },
+  "_domains": {
+    "acmt": {
+      "name_en": "Account Management",
+      "name_ko": "계좌 관리"
+    },
+    "admi": {
+      "name_en": "Administration",
+      "name_ko": "관리"
+    },
+    "auth": {
+      "name_en": "Authentication & Security",
+      "name_ko": "인증 및 보안"
+    },
+    "caaa": {
+      "name_en": "Clearing And Assurance",
+      "name_ko": "청산 및 보증"
+    },
+    "camt": {
+      "name_en": "Cash Management",
+      "name_ko": "현금 관리"
+    },
+    "pacs": {
+      "name_en": "Payments Clearing and Settlement",
+      "name_ko": "결제 청산 및 결제"
+    }
+  }
+}

@@ -1,0 +1,551 @@
+{
+  "description": "SWIFT ISO 20022 tsmt 메시지 목록 (전체 버전)",
+  "messages": [
+
+    {
+      "id": "tsmt.001.001.02",
+      "name": "Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.001.001.03",
+      "name": "Acknowledgement V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.002.001.02",
+      "name": "Activity Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.002.001.03",
+      "name": "Activity Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.002.001.04",
+      "name": "Activity Report V04",
+      "description": ""
+    },
+    {
+      "id": "tsmt.003.001.02",
+      "name": "Activity Report Request V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.003.001.03",
+      "name": "Activity Report Request V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.004.001.01",
+      "name": "Activity Report Set Up Request",
+      "description": ""
+    },
+    {
+      "id": "tsmt.004.001.02",
+      "name": "Activity Report Set Up Request V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.005.001.01",
+      "name": "Amendment Acceptance",
+      "description": ""
+    },
+    {
+      "id": "tsmt.005.001.02",
+      "name": "Amendment Acceptance V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.006.001.02",
+      "name": "Amendment Acceptance Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.006.001.03",
+      "name": "Amendment Acceptance Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.007.001.01",
+      "name": "Amendment Rejection",
+      "description": ""
+    },
+    {
+      "id": "tsmt.007.001.02",
+      "name": "Amendment Rejection V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.008.001.02",
+      "name": "Amendment Rejection Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.008.001.03",
+      "name": "Amendment Rejection Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.009.001.02",
+      "name": "Baseline Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.009.001.03",
+      "name": "Baseline Amendment Request V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.009.001.04",
+      "name": "Baseline Amendment Request V04",
+      "description": ""
+    },
+    {
+      "id": "tsmt.009.001.05",
+      "name": "Baseline Amendment Request V05",
+      "description": ""
+    },
+    {
+      "id": "tsmt.010.001.02",
+      "name": "Baseline Match Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.010.001.03",
+      "name": "Baseline Match Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.011.001.02",
+      "name": "Baseline Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.011.001.03",
+      "name": "Baseline Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.011.001.04",
+      "name": "Baseline Report V04",
+      "description": ""
+    },
+    {
+      "id": "tsmt.012.001.02",
+      "name": "Baseline Re Submission V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.012.001.03",
+      "name": "Baseline Re Submission V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.012.001.04",
+      "name": "Baseline Re Submission V04",
+      "description": ""
+    },
+    {
+      "id": "tsmt.012.001.05",
+      "name": "Baseline Re Submission V05",
+      "description": ""
+    },
+    {
+      "id": "tsmt.013.001.02",
+      "name": "Data Set Match Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.013.001.03",
+      "name": "Data Set Match Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.014.001.02",
+      "name": "Data Set Submission V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.014.001.03",
+      "name": "Data Set Submission V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.014.001.04",
+      "name": "Data Set Submission V04",
+      "description": ""
+    },
+    {
+      "id": "tsmt.014.001.05",
+      "name": "Data Set Submission V05",
+      "description": ""
+    },
+    {
+      "id": "tsmt.015.001.02",
+      "name": "Delta Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.015.001.03",
+      "name": "Delta Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.016.001.02",
+      "name": "Error Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.016.001.03",
+      "name": "Error Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.017.001.02",
+      "name": "Forward Data Set Submission Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.017.001.03",
+      "name": "Forward Data Set Submission Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.017.001.04",
+      "name": "Forward Data Set Submission Report V04",
+      "description": ""
+    },
+    {
+      "id": "tsmt.017.001.05",
+      "name": "Forward Data Set Submission Report V05",
+      "description": ""
+    },
+    {
+      "id": "tsmt.018.001.02",
+      "name": "Full Push Through Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.018.001.03",
+      "name": "Full Push Through Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.018.001.04",
+      "name": "Full Push Through Report V04",
+      "description": ""
+    },
+    {
+      "id": "tsmt.018.001.05",
+      "name": "Full Push Through Report V05",
+      "description": ""
+    },
+    {
+      "id": "tsmt.019.001.02",
+      "name": "Initial Baseline Submission V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.019.001.03",
+      "name": "Initial Baseline Submission V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.019.001.04",
+      "name": "Initial Baseline Submission V04",
+      "description": ""
+    },
+    {
+      "id": "tsmt.019.001.05",
+      "name": "Initial Baseline Submission V05",
+      "description": ""
+    },
+    {
+      "id": "tsmt.020.001.01",
+      "name": "Mis Match Acceptance",
+      "description": ""
+    },
+    {
+      "id": "tsmt.020.001.02",
+      "name": "Mis Match Acceptance V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.021.001.02",
+      "name": "Mis Match Acceptance Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.021.001.03",
+      "name": "Mis Match Acceptance Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.022.001.01",
+      "name": "Mis Match Rejection",
+      "description": ""
+    },
+    {
+      "id": "tsmt.022.001.02",
+      "name": "Mis Match Rejection V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.023.001.02",
+      "name": "Mis Match Rejection Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.023.001.03",
+      "name": "Mis Match Rejection Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.024.001.03",
+      "name": "Action Reminder V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.025.001.02",
+      "name": "Status Change Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.025.001.03",
+      "name": "Status Change Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.026.001.01",
+      "name": "Status Change Request",
+      "description": ""
+    },
+    {
+      "id": "tsmt.026.001.02",
+      "name": "Status Change Request V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.027.001.01",
+      "name": "Status Change Request Acceptance",
+      "description": ""
+    },
+    {
+      "id": "tsmt.027.001.02",
+      "name": "Status Change Request Acceptance V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.028.001.02",
+      "name": "Status Change Request Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.028.001.03",
+      "name": "Status Change Request Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.029.001.01",
+      "name": "Status Change Request Rejection",
+      "description": ""
+    },
+    {
+      "id": "tsmt.029.001.02",
+      "name": "Status Change Request Rejection V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.030.001.02",
+      "name": "Status Change Request Rejection Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.030.001.03",
+      "name": "Status Change Request Rejection Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.031.001.03",
+      "name": "Status Extension Request Acceptance V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.032.001.02",
+      "name": "Status Extension Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.032.001.03",
+      "name": "Status Extension Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.033.001.02",
+      "name": "Status Extension Rejection V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.033.001.03",
+      "name": "Status Extension Request Rejection V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.034.001.02",
+      "name": "Status Extension Rejection Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.034.001.03",
+      "name": "Status Extension Rejection Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.035.001.02",
+      "name": "Status Extension Request V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.035.001.03",
+      "name": "Status Extension Request V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.036.001.02",
+      "name": "Status Extension Request Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.036.001.03",
+      "name": "Status Extension Request Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.037.001.02",
+      "name": "Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.037.001.03",
+      "name": "Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.038.001.02",
+      "name": "Status Report Request V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.038.001.03",
+      "name": "Status Report Request V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.039.001.02",
+      "name": "Store Data Set Request V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.040.001.02",
+      "name": "Time Out Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.040.001.03",
+      "name": "Time Out Notification V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.041.001.02",
+      "name": "Transaction Report V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.041.001.03",
+      "name": "Transaction Report V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.042.001.02",
+      "name": "Transaction Report Request V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.042.001.03",
+      "name": "Transaction Report Request V03",
+      "description": ""
+    },
+    {
+      "id": "tsmt.044.001.01",
+      "name": "Intent To Pay Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.044.001.02",
+      "name": "Intent To Pay Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.045.001.01",
+      "name": "Forward Intent To Pay Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.045.001.02",
+      "name": "Forward Intent To Pay Notification V02",
+      "description": ""
+    },
+    {
+      "id": "tsmt.046.001.01",
+      "name": "Intent To Pay Report V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.047.001.01",
+      "name": "Special Request V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.048.001.01",
+      "name": "Special Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.049.001.01",
+      "name": "Role And Baseline Acceptance V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.050.001.01",
+      "name": "Role And Baseline Rejection V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.051.001.01",
+      "name": "Role And Baseline Acceptance Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.052.001.01",
+      "name": "Role And Baseline Rejection Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.053.001.01",
+      "name": "Invoice Payment Reconciliation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.054.001.01",
+      "name": "Invoice Payment Reconciliation Status V01",
+      "description": ""
+    },
+    {
+      "id": "tsmt.055.001.01",
+      "name": "Party Event Advice V01",
+      "description": ""
+    }
+  ]
+}

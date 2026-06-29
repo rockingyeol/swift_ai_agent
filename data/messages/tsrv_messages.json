@@ -1,0 +1,100 @@
+{
+  "description": "SWIFT ISO 20022 tsrv 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "tsrv.001.001.01",
+      "name": "Undertaking Issuance V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.002.001.01",
+      "name": "Undertaking Issuance Advice V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.003.001.01",
+      "name": "Undertaking Issuance Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.004.001.01",
+      "name": "Undertaking Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.005.001.01",
+      "name": "Undertaking Amendment V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.006.001.01",
+      "name": "Undertaking Amendment Advice V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.007.001.01",
+      "name": "Undertaking Amendment Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.008.001.01",
+      "name": "Undertaking Amendment Response V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.009.001.01",
+      "name": "Undertaking Amendment Response Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.010.001.01",
+      "name": "Undertaking Non Extension Request V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.011.001.01",
+      "name": "Undertaking Non Extension Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.012.001.01",
+      "name": "Undertaking Termination Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.013.001.01",
+      "name": "Undertaking Demand V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.014.001.01",
+      "name": "Extend Or Pay Request V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.015.001.01",
+      "name": "Extend Or Pay Response V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.016.001.01",
+      "name": "Demand Refusal Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.017.001.01",
+      "name": "Demand Withdrawal Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.018.001.01",
+      "name": "Trade Status Report V01",
+      "description": ""
+    },
+    {
+      "id": "tsrv.019.001.01",
+      "name": "Undertaking Status Report V01",
+      "description": ""
+    }
+  ]
+}

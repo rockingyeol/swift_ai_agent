@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import re
 import threading
-from typing import Optional
+from typing import Any, Optional
 
 from app.graph.state import AgentState
 
@@ -22,11 +22,13 @@ _STRUCTURED_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     # IBAN: 국가코드(2) + 체크(2) + BBAN(4~30)
     ("IBAN", re.compile(r"\b[A-Z]{2}\d{2}[A-Z0-9]{4,30}\b")),
     # BIC: 기관(4) + 국가(2) + 위치(2) + 지점(3, 선택) = 8 또는 11자
-    ("BIC",  re.compile(r"\b[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?\b")),
+    # \b 대신 명시적 경계 사용 — CJK/한국어 문자 옆에서 \b가 오작동하는 문제 방지
+    ("BIC",  re.compile(r"(?<![A-Z0-9])([A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?)(?![A-Z0-9])")),
     # 로컬 계좌: SWIFT "/" 구분자 뒤 숫자열 (IBAN 마스킹 후 처리하므로 이중 치환 없음)
     ("ACCT", re.compile(r"(?<=/)\d{10,34}")),
-    # 금액: SWIFT는 콤마 소수점(5000,00). (?!\d)로 더 긴 숫자에 포함되는 경우 제외
-    ("AMT",  re.compile(r"\d{1,15}[,.]\d{2}(?!\d)")),
+    # 금액: SWIFT 콤마 소수점(5000,00) 또는 일반 소수점(1000.50).
+    # (?<![.\w]) lookbehind로 "001.10" 같은 버전 번호 오인식 방지.
+    ("AMT",  re.compile(r"(?<![.\w])\d{1,15}[,.]\d{2}(?!\w)")),
 ]
 
 # ---------------------------------------------------------------------------
@@ -139,9 +141,22 @@ def mask_pii(state: AgentState) -> AgentState:
     """
     [2] PII 마스킹 게이트 노드.
     raw_message → masked_message 생성, pii_mapping을 state에 저장.
+
+    generate / explain intent: 자연어 입력이므로 spaCy NER 없이
+    구조화 패턴(BIC·IBAN·계좌·금액)만 적용한다.
+    SWIFT 코드(SHA/OUR/BEN/EUR 등)가 조직명·지명으로 오마스킹되는 것을 방지.
     """
+    intent = state.get("user_intent", "")
     masker = PiiMasker()
-    masked = masker.mask(state["raw_message"])
+
+    if intent in ("generate", "explain"):
+        # 자연어 질문: 모든 정형 패턴 적용 (AMT 포함).
+        # AMT 패턴에 lookbehind(?<![.\w])가 적용되어 있어
+        # "pacs.001.001.06" 같은 MX 버전 번호는 오인식되지 않는다.
+        masked = masker.mask(state["raw_message"])
+    else:
+        masked = masker.mask(state["raw_message"])
+
     return {
         **state,
         "masked_message": masked,
@@ -152,15 +167,38 @@ def mask_pii(state: AgentState) -> AgentState:
 def unmask_pii(state: AgentState) -> AgentState:
     """
     [7] 언마스킹 노드.
-    output 딕셔너리의 모든 string 값에서 플레이스홀더를 원본으로 복원한다.
+    output 딕셔너리의 모든 string 값(중첩 포함)에서 플레이스홀더를 원본으로 복원한다.
     """
     mapping: dict[str, str] = state.get("pii_mapping") or {}
-    output = dict(state.get("output") or {})
 
-    def _restore(text: str) -> str:
-        for ph, orig in mapping.items():
-            text = text.replace(ph, orig)
-        return text
+    def _restore(value: Any, depth: int = 0) -> Any:
+        if depth > 50:
+            import structlog as _slog
+            _slog.get_logger(__name__).warning(
+                "unmask_pii_recursion_limit", depth=depth, value_type=type(value).__name__
+            )
+            return value
+        if isinstance(value, str):
+            for ph, orig in mapping.items():
+                value = value.replace(ph, orig)
+            return value
+        if isinstance(value, dict):
+            return {k: _restore(v, depth + 1) for k, v in value.items()}
+        if isinstance(value, list):
+            return [_restore(item, depth + 1) for item in value]
+        return value
 
-    output = {k: _restore(v) if isinstance(v, str) else v for k, v in output.items()}
+    output = _restore(state.get("output") or {})
+
+    # 복원 후 플레이스홀더가 남아 있으면 매핑 누락 경고
+    import re as _re
+    import structlog as _slog
+    _remaining = _re.findall(r"<<[A-Z]+_\d+>>", str(output))
+    if _remaining:
+        _slog.get_logger(__name__).warning(
+            "unmask_pii_placeholders_remaining",
+            count=len(_remaining),
+            samples=_remaining[:5],
+        )
+
     return {**state, "output": output}

@@ -24,7 +24,10 @@ from pathlib import Path
 from typing import Any, Optional
 
 import fitz  # PyMuPDF
+import structlog
 from pydantic import BaseModel
+
+log = structlog.get_logger(__name__)
 
 
 # ===========================================================================
@@ -41,14 +44,16 @@ class MTFieldChunk(BaseModel):
                    필드 무관 섹션은 "SYSTEM"
       - doc_type  : 항상 "guidebook"
       - page_label: 섹션 시작 페이지 번호
+      - category  : PDF가 속한 카테고리 폴더명 (예: "Category1", "Category2")
     """
 
     # ── Qdrant 페이로드 필수 메타데이터 ─────────────────────────────────────
     chunk_id:     str
-    msg_type:     str  = "MT101"
-    field_tag:    str  = "SYSTEM"
+    msg_type:     str  = ""          # 실제값은 chunk_mt_guidebook()에서 주입 (예: "MT103")
+    field_tag:    str  = "SYSTEM"    # 필드 무관 섹션 기본값
     doc_type:     str  = "guidebook"
     page_label:   int  = 0
+    category:     str  = ""          # 카테고리 폴더명 (data/MT/<category>/)
 
     # ── 보조 메타데이터 ──────────────────────────────────────────────────────
     section_title: str           = ""
@@ -280,6 +285,7 @@ def _split_into_sections(
 def chunk_mt_guidebook(
     pdf_path: str,
     msg_type: Optional[str] = None,
+    category: Optional[str] = None,
 ) -> list[MTFieldChunk]:
     """
     MT 전문 가이드북 PDF를 필드 태그 단위 청크 목록으로 변환한다.
@@ -294,9 +300,11 @@ def chunk_mt_guidebook(
     Args:
         pdf_path : SWIFT MT 가이드북 PDF 경로
         msg_type : MT 타입 (기본: 파일명에서 자동 추론, 예 "MT101")
+        category : 카테고리 폴더명 (기본: PDF 부모 폴더명 자동 추출,
+                   예 "data/MT/Category1/foo.pdf" → "Category1")
 
     Returns:
-        MTFieldChunk 목록
+        MTFieldChunk 목록 (각 청크에 category 메타데이터 포함)
     """
     path = Path(pdf_path)
     if not path.exists():
@@ -307,6 +315,17 @@ def chunk_mt_guidebook(
         stem = path.stem.upper()
         m = re.search(r"MT\s*(\d{3})", stem)
         msg_type = f"MT{m.group(1)}" if m else "MT101"
+
+    # category 자동 추론: PDF 직계 부모 폴더명을 사용
+    # data/MT/Category1/SR_2025_MT101.pdf → "Category1"
+    if category is None:
+        category = path.parent.name
+        # 2단계 이상 중첩 경로면 category 추출이 부정확할 수 있으므로 경고
+        grandparent = path.parents[1].name if len(path.parents) > 1 else ""
+        if grandparent.upper() not in ("MT", "MX", "DATA", ""):
+            log.warning("deep_pdf_nesting_category_inferred",
+                        pdf_path=str(path), category=category,
+                        hint="Pass category= explicitly if wrong")
 
     # ── 텍스트 추출 ──────────────────────────────────────────────────────────
     pages = _extract_pages(pdf_path)
@@ -347,12 +366,49 @@ def chunk_mt_guidebook(
             field_tag=sec["field_tag"],
             doc_type="guidebook",
             page_label=sec["page"],
+            category=category,
             section_title=sec["title"],
             section_type=sec["section_type"],
             text=text,
         ))
 
     return chunks
+
+
+# ===========================================================================
+# ── 2-b. MTEnrichedChunk — 고도화 인제스트 전용 (ingest_mt_all.py) ─────────────
+# ===========================================================================
+
+class MTEnrichedChunk(MTFieldChunk):
+    """
+    MTFieldChunk 확장 모델.
+
+    ingest_mt_all.py 의 MTParser 가 생성하며,
+    Qdrant 페이로드에 추가 메타데이터가 저장된다.
+
+    추가 필드:
+      doc_category : 항상 "MT"          (MT vs MX 필터링용)
+      sequence     : "A" | "B" | "none" (Sequence A/B 구분)
+      source_file  : PDF 파일명 (확장자 제외, 예: "SR_2025_MT101")
+                     중복 적재 방지 삭제 필터의 기준 키
+    """
+    doc_category: str = "MT"
+    sequence:     str = "none"
+    source_file:  str = ""   # PDF stem — 재적재 시 dedup 필터 키
+
+    def embedding_text(self) -> str:
+        """컨텍스트 보완 헤더 + 청크 본문 (LLM 프롬프트 상위 문맥 보존)."""
+        section = self.section_title or "Unknown"
+        field   = f" | Field: :{self.field_tag}:" if self.field_tag not in ("SYSTEM", "none", "") else ""
+        rule    = f" | Rule: {self.rule_id}"       if self.rule_id and self.rule_id != "none" else ""
+        header  = (
+            f"[Document: {self.msg_type}]\n"
+            f"[Category: {self.category}]\n"
+            f"[Section: {section}]\n"
+            f"[Sequence: {self.sequence}]{field}{rule}\n"
+            f"{'─' * 50}\n"
+        )
+        return header + self.text
 
 
 # ===========================================================================
@@ -373,14 +429,16 @@ class MXFieldChunk(BaseModel):
       - xml_tag    : 현재 필드 XML 태그 (예: "MsgId")
       - doc_type   : 항상 "mx_guide"
       - page_label : 섹션 시작 페이지 번호
+      - category   : PDF가 속한 카테고리 폴더명 (예: "pacs", "camt")
     """
 
     chunk_id:      str
-    msg_type:      str       = "pacs.008"
+    msg_type:      str       = ""          # 실제값은 chunk_mx_guidebook()에서 주입 (예: "pacs.008")
     field_path:    str       = ""          # 예: "GrpHdr/MsgId"
     xml_tag:       str       = ""          # 예: "MsgId"
     doc_type:      str       = "mx_guide"
     page_label:    int       = 0
+    category:      str       = ""         # 카테고리 폴더명 (data/MX/<category>/)
     section_title: str       = ""
     section_num:   str       = ""          # 예: "1.4.1.1"
     multiplicity:  str       = ""          # 예: "[1..1]"
@@ -407,6 +465,50 @@ class MXFieldChunk(BaseModel):
         return self.msg_type
 
 
+class MXEnrichedChunk(MXFieldChunk):
+    """
+    MXFieldChunk 확장 모델.
+
+    ingest_mx_all.py 의 MXParser 가 생성하며,
+    Qdrant 페이로드에 추가 메타데이터가 저장된다.
+
+    추가 필드:
+      doc_category : 항상 "MX"
+      doc_subtype  : "cbpr_plus" | "standard"  — CBPRPlus 우선순위 구분
+      section      : 대분류 섹션명  (예: "Element_Specifications", "Business_Rules")
+      xml_path     : 전체 XPath    (예: "/Document/FIToFICstmrCdtTrf/GrpHdr/MsgId")
+      element_name : XML 태그명    (예: "MsgId"), 없으면 "none"
+      mult_norm    : 정규화 다중성  (예: "1..1", "0..1", "1..*"), 없으면 "none"
+      source_file  : PDF 파일명 (확장자 제외, 예: "MX_pacs_008_001_14")
+                     중복 적재 방지 삭제 필터의 기준 키
+    """
+    doc_category: str = "MX"
+    doc_subtype:  str = "standard"  # "cbpr_plus" | "standard"
+    variant:      str = ""          # CBPRPlus 변형: "STP" | "ADV" | "COV" | "MultipleCharges" | ""
+    section:      str = "none"
+    xml_path:     str = "none"
+    element_name: str = "none"
+    mult_norm:    str = "none"
+    source_file:  str = ""   # PDF stem — 재적재 시 dedup 필터 키
+
+    def embedding_text(self) -> str:
+        """컨텍스트 보완 헤더 + 청크 본문 (XML 계층 문맥 보존)."""
+        mult_disp = self.mult_norm if self.mult_norm != "none" else self.multiplicity or "none"
+        elem_disp = (
+            f"{self.element_name} ({mult_disp})"
+            if self.element_name != "none" else "none"
+        )
+        header = (
+            f"[Document: {self.msg_type}]\n"
+            f"[Category: {self.category}]\n"
+            f"[Section: {self.section}]\n"
+            f"[XML Path: {self.xml_path}]\n"
+            f"[Element: {elem_disp}]\n"
+            f"{'─' * 50}\n"
+        )
+        return header + self.text
+
+
 class CbprSr2026Chunk(BaseModel):
     """
     CBPR+ SR2026 XPath 변경 사항(CR) 청크.
@@ -421,7 +523,7 @@ class CbprSr2026Chunk(BaseModel):
     """
 
     chunk_id:        str
-    msg_type:        str  = "pacs.008"
+    msg_type:        str  = "pacs.008"   # usage_guideline에서 추출; 파싱 실패 시 기본값
     doc_type:        str  = "cbpr_sr2026_cr"
     cr_id:           str  = ""
     cr_title:        str  = ""
@@ -548,6 +650,7 @@ def _build_mx_field_path(
 def chunk_mx_guidebook(
     pdf_path: str,
     msg_type: Optional[str] = None,
+    category: Optional[str] = None,
 ) -> list[MXFieldChunk]:
     """
     MX (ISO 20022) 가이드북 PDF를 필드 단위 청크 목록으로 변환한다.
@@ -561,9 +664,11 @@ def chunk_mx_guidebook(
     Args:
         pdf_path : MX 가이드북 PDF 경로 (예: MX_pacs_008_001_14.pdf)
         msg_type : MX 타입 (기본: 파일명 자동 추론, 예 "pacs.008")
+        category : 카테고리 폴더명 (기본: PDF 부모 폴더명 자동 추출,
+                   예 "data/MX/pacs/foo.pdf" → "pacs")
 
     Returns:
-        MXFieldChunk 목록
+        MXFieldChunk 목록 (각 청크에 category 메타데이터 포함)
     """
     path = Path(pdf_path)
     if not path.exists():
@@ -573,6 +678,16 @@ def chunk_mx_guidebook(
     if msg_type is None:
         m = _RE_MX_TYPE_FROM_FILE.search(path.stem)
         msg_type = f"{m.group(1).lower()}.{m.group(2)}" if m else "pacs.008"
+
+    # category 자동 추론: PDF 직계 부모 폴더명을 사용
+    # data/MX/pacs/MX_pacs_008_001_14.pdf → "pacs"
+    if category is None:
+        category = path.parent.name
+        grandparent = path.parents[1].name if len(path.parents) > 1 else ""
+        if grandparent.upper() not in ("MT", "MX", "DATA", ""):
+            log.warning("deep_pdf_nesting_category_inferred",
+                        pdf_path=str(path), category=category,
+                        hint="Pass category= explicitly if wrong")
 
     # 텍스트 추출
     pages = _extract_pages(pdf_path)
@@ -608,6 +723,7 @@ def chunk_mx_guidebook(
             chunk_id=make_chunk_id(msg_type, "full", "doc"),
             msg_type=msg_type,
             doc_type="mx_guide",
+            category=category,
             section_title="Full Document",
             text=full_text[:8000],
         )]
@@ -655,6 +771,7 @@ def chunk_mx_guidebook(
             xml_tag=xml_tag,
             doc_type="mx_guide",
             page_label=page,
+            category=category,
             section_title=f"{field_name} <{xml_tag}>",
             section_num=sec_num,
             multiplicity=multiplicity,

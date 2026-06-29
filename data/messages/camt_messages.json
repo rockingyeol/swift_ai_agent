@@ -1,0 +1,2865 @@
+{
+  "description": "SWIFT ISO 20022 camt 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "DRAFT2camt.078.001.01",
+      "name": "Intra Balance Movement Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2camt.080.001.01",
+      "name": "Intra Balance Movement Modification Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2camt.081.001.01",
+      "name": "Intra Balance Movement Modification Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2camt.082.001.01",
+      "name": "Intra Balance Movement Cancellation Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2camt.083.001.01",
+      "name": "Intra Balance Movement Cancellation Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2camt.091.001.01",
+      "name": "Cash Settlement Initiation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.064.001.01",
+      "name": "Limit Utilisation Journal Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.065.001.01",
+      "name": "Limit Utilisation Journal Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.066.001.01",
+      "name": "Intra Balance Movement Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.067.001.01",
+      "name": "Intra Balance Movement Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.068.001.01",
+      "name": "Intra Balance Movement Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.072.001.01",
+      "name": "Intra Balance Movement Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.074.001.01",
+      "name": "Intra Balance Movement Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.075.001.01",
+      "name": "Intra Balance Movement Cancellation Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.076.001.01",
+      "name": "Billing Report Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.078.001.01",
+      "name": "Intra Balance Movement Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.080.001.01",
+      "name": "Intra Balance Movement Modification Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.081.001.01",
+      "name": "Intra Balance Movement Modification Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.082.001.01",
+      "name": "Intra Balance Movement Cancellation Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.083.001.01",
+      "name": "Intra Balance Movement Cancellation Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.084.001.01",
+      "name": "Intra Balance Movement Posting Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3camt.091.001.01",
+      "name": "Cash Settlement Initiation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.064.001.01",
+      "name": "Limit Utilisation Journal Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.065.001.01",
+      "name": "Limit Utilisation Journal Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.066.001.01",
+      "name": "Intra Balance Movement Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.067.001.01",
+      "name": "Intra Balance Movement Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.068.001.01",
+      "name": "Intra Balance Movement Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.072.001.01",
+      "name": "Intra Balance Movement Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.073.001.01",
+      "name": "Intra Balance Movement Modification Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.074.001.01",
+      "name": "Intra Balance Movement Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.075.001.01",
+      "name": "Intra Balance Movement Cancellation Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.076.001.01",
+      "name": "Billing Report Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.077.001.01",
+      "name": "Billing Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.079.001.01",
+      "name": "Intra Balance Movement Query Response V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4camt.085.001.01",
+      "name": "Intra Balance Movement Pending Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5camt.064.001.01",
+      "name": "Limit Utilisation Journal Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5camt.065.001.01",
+      "name": "Limit Utilisation Journal Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6camt.077.001.01",
+      "name": "Billing Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT7camt.077.001.01",
+      "name": "Billing Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.003.001.02",
+      "name": "Get Account V02",
+      "description": ""
+    },
+    {
+      "id": "camt.003.001.03",
+      "name": "Get Account V03",
+      "description": ""
+    },
+    {
+      "id": "camt.003.001.04",
+      "name": "Get Account V04",
+      "description": ""
+    },
+    {
+      "id": "camt.003.001.05",
+      "name": "Get Account V05",
+      "description": ""
+    },
+    {
+      "id": "camt.003.001.06",
+      "name": "Get Account V06",
+      "description": ""
+    },
+    {
+      "id": "camt.003.001.07",
+      "name": "Get Account V07",
+      "description": ""
+    },
+    {
+      "id": "camt.003.001.08",
+      "name": "Get Account V08",
+      "description": ""
+    },
+    {
+      "id": "camt.004.001.02",
+      "name": "Return Account V02",
+      "description": ""
+    },
+    {
+      "id": "camt.004.001.03",
+      "name": "Return Account V03",
+      "description": ""
+    },
+    {
+      "id": "camt.004.001.04",
+      "name": "Return Account V04",
+      "description": ""
+    },
+    {
+      "id": "camt.004.001.05",
+      "name": "Return Account V05",
+      "description": ""
+    },
+    {
+      "id": "camt.004.001.06",
+      "name": "Return Account V06",
+      "description": ""
+    },
+    {
+      "id": "camt.004.001.07",
+      "name": "Return Account V07",
+      "description": ""
+    },
+    {
+      "id": "camt.004.001.08",
+      "name": "Return Account V08",
+      "description": ""
+    },
+    {
+      "id": "camt.004.001.09",
+      "name": "Return Account V09",
+      "description": ""
+    },
+    {
+      "id": "camt.004.001.10",
+      "name": "Return Account V10",
+      "description": ""
+    },
+    {
+      "id": "camt.005.001.03",
+      "name": "Get Transaction V03",
+      "description": ""
+    },
+    {
+      "id": "camt.005.001.04",
+      "name": "Get Transaction V04",
+      "description": ""
+    },
+    {
+      "id": "camt.005.001.05",
+      "name": "Get Transaction V05",
+      "description": ""
+    },
+    {
+      "id": "camt.005.001.06",
+      "name": "Get Transaction V06",
+      "description": ""
+    },
+    {
+      "id": "camt.005.001.07",
+      "name": "Get Transaction V07",
+      "description": ""
+    },
+    {
+      "id": "camt.005.001.08",
+      "name": "Get Transaction V08",
+      "description": ""
+    },
+    {
+      "id": "camt.005.001.09",
+      "name": "Get Transaction V09",
+      "description": ""
+    },
+    {
+      "id": "camt.005.001.10",
+      "name": "Get Transaction V10",
+      "description": ""
+    },
+    {
+      "id": "camt.005.001.11",
+      "name": "Get Transaction V11",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.02",
+      "name": "Return Transaction V02",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.03",
+      "name": "Return Transaction V03",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.04",
+      "name": "Return Transaction V04",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.05",
+      "name": "Return Transaction V05",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.06",
+      "name": "Return Transaction V06",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.07",
+      "name": "Return Transaction V07",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.08",
+      "name": "Return Transaction V08",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.09",
+      "name": "Return Transaction V09",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.10",
+      "name": "Return Transaction V10",
+      "description": ""
+    },
+    {
+      "id": "camt.006.001.11",
+      "name": "Return Transaction V11",
+      "description": ""
+    },
+    {
+      "id": "camt.007.001.02",
+      "name": "Modify Transaction V02",
+      "description": ""
+    },
+    {
+      "id": "camt.007.001.03",
+      "name": "Modify Transaction V03",
+      "description": ""
+    },
+    {
+      "id": "camt.007.001.04",
+      "name": "Modify Transaction V04",
+      "description": ""
+    },
+    {
+      "id": "camt.007.001.05",
+      "name": "Modify Transaction V05",
+      "description": ""
+    },
+    {
+      "id": "camt.007.001.06",
+      "name": "Modify Transaction V06",
+      "description": ""
+    },
+    {
+      "id": "camt.007.001.07",
+      "name": "Modify Transaction V07",
+      "description": ""
+    },
+    {
+      "id": "camt.007.001.08",
+      "name": "Modify Transaction V08",
+      "description": ""
+    },
+    {
+      "id": "camt.007.001.09",
+      "name": "Modify Transaction V09",
+      "description": ""
+    },
+    {
+      "id": "camt.007.001.10",
+      "name": "Modify Transaction V10",
+      "description": ""
+    },
+    {
+      "id": "camt.007.002.01",
+      "name": "Request To Modify Payment",
+      "description": ""
+    },
+    {
+      "id": "camt.007.002.02",
+      "name": "Request To Modify Payment V02",
+      "description": ""
+    },
+    {
+      "id": "camt.007.002.03",
+      "name": "Request To Modify Payment V03",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.02",
+      "name": "Cancel Transaction V02",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.03",
+      "name": "Cancel Transaction V03",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.04",
+      "name": "Cancel Transaction V04",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.05",
+      "name": "Cancel Transaction V05",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.06",
+      "name": "Cancel Transaction V06",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.07",
+      "name": "Cancel Transaction V07",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.08",
+      "name": "Cancel Transaction V08",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.09",
+      "name": "Cancel Transaction V09",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.10",
+      "name": "Cancel Transaction V10",
+      "description": ""
+    },
+    {
+      "id": "camt.008.001.11",
+      "name": "Cancel Transaction V11",
+      "description": ""
+    },
+    {
+      "id": "camt.008.002.01",
+      "name": "Request To Cancel Payment",
+      "description": ""
+    },
+    {
+      "id": "camt.008.002.02",
+      "name": "Request To Cancel Payment V02",
+      "description": ""
+    },
+    {
+      "id": "camt.009.001.03",
+      "name": "Get Limit V03",
+      "description": ""
+    },
+    {
+      "id": "camt.009.001.04",
+      "name": "Get Limit V04",
+      "description": ""
+    },
+    {
+      "id": "camt.009.001.05",
+      "name": "Get Limit V05",
+      "description": ""
+    },
+    {
+      "id": "camt.009.001.06",
+      "name": "Get Limit V06",
+      "description": ""
+    },
+    {
+      "id": "camt.009.001.07",
+      "name": "Get Limit V07",
+      "description": ""
+    },
+    {
+      "id": "camt.009.001.08",
+      "name": "Get Limit V08",
+      "description": ""
+    },
+    {
+      "id": "camt.010.001.02",
+      "name": "Return Limit V02",
+      "description": ""
+    },
+    {
+      "id": "camt.010.001.03",
+      "name": "Return Limit V03",
+      "description": ""
+    },
+    {
+      "id": "camt.010.001.04",
+      "name": "Return Limit V04",
+      "description": ""
+    },
+    {
+      "id": "camt.010.001.05",
+      "name": "Return Limit V05",
+      "description": ""
+    },
+    {
+      "id": "camt.010.001.06",
+      "name": "Return Limit V06",
+      "description": ""
+    },
+    {
+      "id": "camt.010.001.07",
+      "name": "Return Limit V07",
+      "description": ""
+    },
+    {
+      "id": "camt.010.001.08",
+      "name": "Return Limit V08",
+      "description": ""
+    },
+    {
+      "id": "camt.010.001.09",
+      "name": "Return Limit V09",
+      "description": ""
+    },
+    {
+      "id": "camt.011.001.02",
+      "name": "Modify Limit V02",
+      "description": ""
+    },
+    {
+      "id": "camt.011.001.03",
+      "name": "Modify Limit V03",
+      "description": ""
+    },
+    {
+      "id": "camt.011.001.04",
+      "name": "Modify Limit V04",
+      "description": ""
+    },
+    {
+      "id": "camt.011.001.05",
+      "name": "Modify Limit V05",
+      "description": ""
+    },
+    {
+      "id": "camt.011.001.06",
+      "name": "Modify Limit V06",
+      "description": ""
+    },
+    {
+      "id": "camt.011.001.07",
+      "name": "Modify Limit V07",
+      "description": ""
+    },
+    {
+      "id": "camt.011.001.08",
+      "name": "Modify Limit V08",
+      "description": ""
+    },
+    {
+      "id": "camt.012.001.02",
+      "name": "Delete Limit V02",
+      "description": ""
+    },
+    {
+      "id": "camt.012.001.03",
+      "name": "Delete Limit V03",
+      "description": ""
+    },
+    {
+      "id": "camt.012.001.04",
+      "name": "Delete Limit V04",
+      "description": ""
+    },
+    {
+      "id": "camt.012.001.05",
+      "name": "Delete Limit V05",
+      "description": ""
+    },
+    {
+      "id": "camt.012.001.06",
+      "name": "Delete Limit V06",
+      "description": ""
+    },
+    {
+      "id": "camt.012.001.07",
+      "name": "Delete Limit V07",
+      "description": ""
+    },
+    {
+      "id": "camt.012.001.08",
+      "name": "Delete Limit V08",
+      "description": ""
+    },
+    {
+      "id": "camt.013.001.01",
+      "name": "Get Member V01",
+      "description": ""
+    },
+    {
+      "id": "camt.013.001.02",
+      "name": "Get Member V02",
+      "description": ""
+    },
+    {
+      "id": "camt.013.001.03",
+      "name": "Get Member V03",
+      "description": ""
+    },
+    {
+      "id": "camt.013.001.04",
+      "name": "Get Member V04",
+      "description": ""
+    },
+    {
+      "id": "camt.014.001.01",
+      "name": "Return Member V01",
+      "description": ""
+    },
+    {
+      "id": "camt.014.001.02",
+      "name": "Return Member V02",
+      "description": ""
+    },
+    {
+      "id": "camt.014.001.03",
+      "name": "Return Member V03",
+      "description": ""
+    },
+    {
+      "id": "camt.014.001.04",
+      "name": "Return Member V04",
+      "description": ""
+    },
+    {
+      "id": "camt.014.001.05",
+      "name": "Return Member V05",
+      "description": ""
+    },
+    {
+      "id": "camt.015.001.01",
+      "name": "Modify Member V01",
+      "description": ""
+    },
+    {
+      "id": "camt.015.001.02",
+      "name": "Modify Member V02",
+      "description": ""
+    },
+    {
+      "id": "camt.015.001.03",
+      "name": "Modify Member V03",
+      "description": ""
+    },
+    {
+      "id": "camt.015.001.04",
+      "name": "Modify Member V04",
+      "description": ""
+    },
+    {
+      "id": "camt.016.001.01",
+      "name": "Get Currency Exchange Rate V01",
+      "description": ""
+    },
+    {
+      "id": "camt.016.001.02",
+      "name": "Get Currency Exchange Rate V02",
+      "description": ""
+    },
+    {
+      "id": "camt.016.001.03",
+      "name": "Get Currency Exchange Rate V03",
+      "description": ""
+    },
+    {
+      "id": "camt.016.001.04",
+      "name": "Get Currency Exchange Rate V04",
+      "description": ""
+    },
+    {
+      "id": "camt.017.001.01",
+      "name": "Return Currency Exchange Rate V01",
+      "description": ""
+    },
+    {
+      "id": "camt.017.001.02",
+      "name": "Return Currency Exchange Rate V02",
+      "description": ""
+    },
+    {
+      "id": "camt.017.001.03",
+      "name": "Return Currency Exchange Rate V03",
+      "description": ""
+    },
+    {
+      "id": "camt.017.001.04",
+      "name": "Return Currency Exchange Rate V04",
+      "description": ""
+    },
+    {
+      "id": "camt.017.001.05",
+      "name": "Return Currency Exchange Rate V05",
+      "description": ""
+    },
+    {
+      "id": "camt.018.001.01",
+      "name": "Get Business Day Information V01",
+      "description": ""
+    },
+    {
+      "id": "camt.018.001.02",
+      "name": "Get Business Day Information V02",
+      "description": ""
+    },
+    {
+      "id": "camt.018.001.03",
+      "name": "Get Business Day Information V03",
+      "description": ""
+    },
+    {
+      "id": "camt.018.001.04",
+      "name": "Get Business Day Information V04",
+      "description": ""
+    },
+    {
+      "id": "camt.018.001.05",
+      "name": "Get Business Day Information V05",
+      "description": ""
+    },
+    {
+      "id": "camt.019.001.02",
+      "name": "Return Business Day Information V02",
+      "description": ""
+    },
+    {
+      "id": "camt.019.001.03",
+      "name": "Return Business Day Information V03",
+      "description": ""
+    },
+    {
+      "id": "camt.019.001.04",
+      "name": "Return Business Day Information V04",
+      "description": ""
+    },
+    {
+      "id": "camt.019.001.05",
+      "name": "Return Business Day Information V05",
+      "description": ""
+    },
+    {
+      "id": "camt.019.001.06",
+      "name": "Return Business Day Information V06",
+      "description": ""
+    },
+    {
+      "id": "camt.019.001.07",
+      "name": "Return Business Day Information V07",
+      "description": ""
+    },
+    {
+      "id": "camt.020.001.01",
+      "name": "Get General Business Information V01",
+      "description": ""
+    },
+    {
+      "id": "camt.020.001.02",
+      "name": "Get General Business Information V02",
+      "description": ""
+    },
+    {
+      "id": "camt.020.001.03",
+      "name": "Get General Business Information V03",
+      "description": ""
+    },
+    {
+      "id": "camt.020.001.04",
+      "name": "Get General Business Information V04",
+      "description": ""
+    },
+    {
+      "id": "camt.021.001.01",
+      "name": "Return General Business Information V01",
+      "description": ""
+    },
+    {
+      "id": "camt.021.001.02",
+      "name": "Return General Business Information V02",
+      "description": ""
+    },
+    {
+      "id": "camt.021.001.03",
+      "name": "Return General Business Information V03",
+      "description": ""
+    },
+    {
+      "id": "camt.021.001.04",
+      "name": "Return General Business Information V04",
+      "description": ""
+    },
+    {
+      "id": "camt.021.001.05",
+      "name": "Return General Business Information V05",
+      "description": ""
+    },
+    {
+      "id": "camt.021.001.06",
+      "name": "Return General Business Information V06",
+      "description": ""
+    },
+    {
+      "id": "camt.023.001.02",
+      "name": "Backup Payment V02",
+      "description": ""
+    },
+    {
+      "id": "camt.023.001.03",
+      "name": "Backup Payment V03",
+      "description": ""
+    },
+    {
+      "id": "camt.023.001.04",
+      "name": "Backup Payment V04",
+      "description": ""
+    },
+    {
+      "id": "camt.023.001.05",
+      "name": "Backup Payment V05",
+      "description": ""
+    },
+    {
+      "id": "camt.023.001.06",
+      "name": "Backup Payment V06",
+      "description": ""
+    },
+    {
+      "id": "camt.023.001.07",
+      "name": "Backup Payment V07",
+      "description": ""
+    },
+    {
+      "id": "camt.024.001.02",
+      "name": "Modify Standing Order V02",
+      "description": ""
+    },
+    {
+      "id": "camt.024.001.03",
+      "name": "Modify Standing Order V03",
+      "description": ""
+    },
+    {
+      "id": "camt.024.001.04",
+      "name": "Modify Standing Order V04",
+      "description": ""
+    },
+    {
+      "id": "camt.024.001.05",
+      "name": "Modify Standing Order V05",
+      "description": ""
+    },
+    {
+      "id": "camt.024.001.06",
+      "name": "Modify Standing Order V06",
+      "description": ""
+    },
+    {
+      "id": "camt.024.001.07",
+      "name": "Modify Standing Order V07",
+      "description": ""
+    },
+    {
+      "id": "camt.024.001.08",
+      "name": "Modify Standing Order V08",
+      "description": ""
+    },
+    {
+      "id": "camt.025.001.01",
+      "name": "Receipt V01",
+      "description": ""
+    },
+    {
+      "id": "camt.025.001.02",
+      "name": "Receipt V02",
+      "description": ""
+    },
+    {
+      "id": "camt.025.001.03",
+      "name": "Receipt V03",
+      "description": ""
+    },
+    {
+      "id": "camt.025.001.04",
+      "name": "Receipt V04",
+      "description": ""
+    },
+    {
+      "id": "camt.025.001.05",
+      "name": "Receipt V05",
+      "description": ""
+    },
+    {
+      "id": "camt.025.001.06",
+      "name": "Receipt V06",
+      "description": ""
+    },
+    {
+      "id": "camt.025.001.07",
+      "name": "Receipt V07",
+      "description": ""
+    },
+    {
+      "id": "camt.025.001.08",
+      "name": "Receipt V08",
+      "description": ""
+    },
+    {
+      "id": "camt.025.001.09",
+      "name": "Receipt V09",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.01",
+      "name": "Unable To Apply",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.02",
+      "name": "Unable To Apply V02",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.03",
+      "name": "Unable To Apply V03",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.04",
+      "name": "Unable To Apply V04",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.05",
+      "name": "Unable To Apply V05",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.06",
+      "name": "Unable To Apply V06",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.07",
+      "name": "Unable To Apply V07",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.08",
+      "name": "Unable To Apply V08",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.09",
+      "name": "Unable To Apply V09",
+      "description": ""
+    },
+    {
+      "id": "camt.026.001.10",
+      "name": "Unable To Apply V10",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.01",
+      "name": "Claim Non Receipt",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.02",
+      "name": "Claim Non Receipt V02",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.03",
+      "name": "Claim Non Receipt V03",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.04",
+      "name": "Claim Non Receipt V04",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.05",
+      "name": "Claim Non Receipt V05",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.06",
+      "name": "Claim Non Receipt V06",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.07",
+      "name": "Claim Non Receipt V07",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.08",
+      "name": "Claim Non Receipt V08",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.09",
+      "name": "Claim Non Receipt V09",
+      "description": ""
+    },
+    {
+      "id": "camt.027.001.10",
+      "name": "Claim Non Receipt V10",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.01",
+      "name": "Additional Payment Information",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.02",
+      "name": "Additional Payment Information V02",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.03",
+      "name": "Additional Payment Information V03",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.04",
+      "name": "Additional Payment Information V04",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.05",
+      "name": "Additional Payment Information V05",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.06",
+      "name": "Additional Payment Information V06",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.07",
+      "name": "Additional Payment Information V07",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.08",
+      "name": "Additional Payment Information V08",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.09",
+      "name": "Additional Payment Information V09",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.10",
+      "name": "Additional Payment Information V10",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.11",
+      "name": "Additional Payment Information V11",
+      "description": ""
+    },
+    {
+      "id": "camt.028.001.12",
+      "name": "Additional Payment Information V12",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.01",
+      "name": "Resolution Of Investigation",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.02",
+      "name": "Resolution Of Investigation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.03",
+      "name": "Resolution Of Investigation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.04",
+      "name": "Resolution Of Investigation V04",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.05",
+      "name": "Resolution Of Investigation V05",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.06",
+      "name": "Resolution Of Investigation V06",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.07",
+      "name": "Resolution Of Investigation V07",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.08",
+      "name": "Resolution Of Investigation V08",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.09",
+      "name": "Resolution Of Investigation V09",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.10",
+      "name": "Resolution Of Investigation V10",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.11",
+      "name": "Resolution Of Investigation V11",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.12",
+      "name": "Resolution Of Investigation V12",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.13",
+      "name": "Resolution Of Investigation V13",
+      "description": ""
+    },
+    {
+      "id": "camt.029.001.14",
+      "name": "Resolution Of Investigation V14",
+      "description": ""
+    },
+    {
+      "id": "camt.030.001.01",
+      "name": "Notification Of Case Assignment",
+      "description": ""
+    },
+    {
+      "id": "camt.030.001.02",
+      "name": "Notification Of Case Assignment V02",
+      "description": ""
+    },
+    {
+      "id": "camt.030.001.03",
+      "name": "Notification Of Case Assignment V03",
+      "description": ""
+    },
+    {
+      "id": "camt.030.001.04",
+      "name": "Notification Of Case Assignment V04",
+      "description": ""
+    },
+    {
+      "id": "camt.030.001.05",
+      "name": "Notification Of Case Assignment V05",
+      "description": ""
+    },
+    {
+      "id": "camt.030.001.06",
+      "name": "Notification Of Case Assignment V06",
+      "description": ""
+    },
+    {
+      "id": "camt.031.001.01",
+      "name": "Reject Case Assignment",
+      "description": ""
+    },
+    {
+      "id": "camt.031.001.02",
+      "name": "Reject Case Assignment V02",
+      "description": ""
+    },
+    {
+      "id": "camt.031.001.03",
+      "name": "Reject Investigation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.031.001.04",
+      "name": "Reject Investigation V04",
+      "description": ""
+    },
+    {
+      "id": "camt.031.001.05",
+      "name": "Reject Investigation V05",
+      "description": ""
+    },
+    {
+      "id": "camt.031.001.06",
+      "name": "Reject Investigation V06",
+      "description": ""
+    },
+    {
+      "id": "camt.031.001.07",
+      "name": "Reject Investigation V07",
+      "description": ""
+    },
+    {
+      "id": "camt.032.001.01",
+      "name": "Cancel Case Assignment",
+      "description": ""
+    },
+    {
+      "id": "camt.032.001.02",
+      "name": "Cancel Case Assignment V02",
+      "description": ""
+    },
+    {
+      "id": "camt.032.001.03",
+      "name": "Cancel Case Assignment V03",
+      "description": ""
+    },
+    {
+      "id": "camt.032.001.04",
+      "name": "Cancel Case Assignment V04",
+      "description": ""
+    },
+    {
+      "id": "camt.032.001.05",
+      "name": "Cancel Case Assignment V05",
+      "description": ""
+    },
+    {
+      "id": "camt.033.001.01",
+      "name": "Request For Duplicate Instruction",
+      "description": ""
+    },
+    {
+      "id": "camt.033.001.02",
+      "name": "Request For Duplicate V02",
+      "description": ""
+    },
+    {
+      "id": "camt.033.001.03",
+      "name": "Request For Duplicate V03",
+      "description": ""
+    },
+    {
+      "id": "camt.033.001.04",
+      "name": "Request For Duplicate V04",
+      "description": ""
+    },
+    {
+      "id": "camt.033.001.05",
+      "name": "Request For Duplicate V05",
+      "description": ""
+    },
+    {
+      "id": "camt.033.001.06",
+      "name": "Request For Duplicate V06",
+      "description": ""
+    },
+    {
+      "id": "camt.033.001.07",
+      "name": "Request For Duplicate V07",
+      "description": ""
+    },
+    {
+      "id": "camt.034.001.01",
+      "name": "Duplicate Instruction",
+      "description": ""
+    },
+    {
+      "id": "camt.034.001.02",
+      "name": "Duplicate V02",
+      "description": ""
+    },
+    {
+      "id": "camt.034.001.03",
+      "name": "Duplicate V03",
+      "description": ""
+    },
+    {
+      "id": "camt.034.001.04",
+      "name": "Duplicate V04",
+      "description": ""
+    },
+    {
+      "id": "camt.034.001.05",
+      "name": "Duplicate V05",
+      "description": ""
+    },
+    {
+      "id": "camt.034.001.06",
+      "name": "Duplicate V06",
+      "description": ""
+    },
+    {
+      "id": "camt.034.001.07",
+      "name": "Duplicate V07",
+      "description": ""
+    },
+    {
+      "id": "camt.035.001.01",
+      "name": "Proprietary Format Investigation",
+      "description": ""
+    },
+    {
+      "id": "camt.035.001.02",
+      "name": "Proprietary Format Investigation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.035.001.03",
+      "name": "Proprietary Format Investigation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.035.001.04",
+      "name": "Proprietary Format Investigation V04",
+      "description": ""
+    },
+    {
+      "id": "camt.035.001.05",
+      "name": "Proprietary Format Investigation V05",
+      "description": ""
+    },
+    {
+      "id": "camt.035.001.06",
+      "name": "Proprietary Format Investigation V06",
+      "description": ""
+    },
+    {
+      "id": "camt.036.001.01",
+      "name": "Debit Authorisation Response",
+      "description": ""
+    },
+    {
+      "id": "camt.036.001.02",
+      "name": "Debit Authorisation Response V02",
+      "description": ""
+    },
+    {
+      "id": "camt.036.001.03",
+      "name": "Debit Authorisation Response V03",
+      "description": ""
+    },
+    {
+      "id": "camt.036.001.04",
+      "name": "Debit Authorisation Response V04",
+      "description": ""
+    },
+    {
+      "id": "camt.036.001.05",
+      "name": "Debit Authorisation Response V05",
+      "description": ""
+    },
+    {
+      "id": "camt.036.001.06",
+      "name": "Debit Authorisation Response V06",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.01",
+      "name": "Debit Authorisation Request",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.02",
+      "name": "Debit Authorisation Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.03",
+      "name": "Debit Authorisation Request V03",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.04",
+      "name": "Debit Authorisation Request V04",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.05",
+      "name": "Debit Authorisation Request V05",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.06",
+      "name": "Debit Authorisation Request V06",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.07",
+      "name": "Debit Authorisation Request V07",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.08",
+      "name": "Debit Authorisation Request V08",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.09",
+      "name": "Debit Authorisation Request V09",
+      "description": ""
+    },
+    {
+      "id": "camt.037.001.10",
+      "name": "Debit Authorisation Request V10",
+      "description": ""
+    },
+    {
+      "id": "camt.038.001.01",
+      "name": "Case Status Report Request",
+      "description": ""
+    },
+    {
+      "id": "camt.038.001.02",
+      "name": "Case Status Report Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.038.001.03",
+      "name": "Case Status Report Request V03",
+      "description": ""
+    },
+    {
+      "id": "camt.038.001.04",
+      "name": "Case Status Report Request V04",
+      "description": ""
+    },
+    {
+      "id": "camt.038.001.05",
+      "name": "Case Status Report Request V05",
+      "description": ""
+    },
+    {
+      "id": "camt.039.001.01",
+      "name": "Case Status Report",
+      "description": ""
+    },
+    {
+      "id": "camt.039.001.02",
+      "name": "Case Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.039.001.03",
+      "name": "Case Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "camt.039.001.04",
+      "name": "Case Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "camt.039.001.05",
+      "name": "Case Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "camt.039.001.06",
+      "name": "Case Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "camt.040.001.02",
+      "name": "Fund Estimated Cash Forecast Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.040.001.03",
+      "name": "Fund Estimated Cash Forecast Report V03",
+      "description": ""
+    },
+    {
+      "id": "camt.040.001.04",
+      "name": "Fund Estimated Cash Forecast Report V04",
+      "description": ""
+    },
+    {
+      "id": "camt.041.001.02",
+      "name": "Fund Confirmed Cash Forecast Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.041.001.03",
+      "name": "Fund Confirmed Cash Forecast Report V03",
+      "description": ""
+    },
+    {
+      "id": "camt.041.001.04",
+      "name": "Fund Confirmed Cash Forecast Report V04",
+      "description": ""
+    },
+    {
+      "id": "camt.042.001.02",
+      "name": "Fund Detailed Estimated Cash Forecast Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.042.001.03",
+      "name": "Fund Detailed Estimated Cash Forecast Report V03",
+      "description": ""
+    },
+    {
+      "id": "camt.042.001.04",
+      "name": "Fund Detailed Estimated Cash Forecast Report V04",
+      "description": ""
+    },
+    {
+      "id": "camt.043.001.02",
+      "name": "Fund Detailed Confirmed Cash Forecast Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.043.001.03",
+      "name": "Fund Detailed Confirmed Cash Forecast Report V03",
+      "description": ""
+    },
+    {
+      "id": "camt.043.001.04",
+      "name": "Fund Detailed Confirmed Cash Forecast Report V04",
+      "description": ""
+    },
+    {
+      "id": "camt.044.001.01",
+      "name": "Fund Confirmed Cash Forecast Report Cancellation V01",
+      "description": ""
+    },
+    {
+      "id": "camt.044.001.02",
+      "name": "Fund Confirmed Cash Forecast Report Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.044.001.03",
+      "name": "Fund Confirmed Cash Forecast Report Cancellation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.045.001.01",
+      "name": "Fund Detailed Confirmed Cash Forecast Report Cancellation V01",
+      "description": ""
+    },
+    {
+      "id": "camt.045.001.02",
+      "name": "Fund Detailed Confirmed Cash Forecast Report Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.045.001.03",
+      "name": "Fund Detailed Confirmed Cash Forecast Report Cancellation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.046.001.01",
+      "name": "Get Reservation V01",
+      "description": ""
+    },
+    {
+      "id": "camt.046.001.02",
+      "name": "Get Reservation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.046.001.03",
+      "name": "Get Reservation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.046.001.04",
+      "name": "Get Reservation V04",
+      "description": ""
+    },
+    {
+      "id": "camt.046.001.05",
+      "name": "Get Reservation V05",
+      "description": ""
+    },
+    {
+      "id": "camt.046.001.06",
+      "name": "Get Reservation V06",
+      "description": ""
+    },
+    {
+      "id": "camt.046.001.07",
+      "name": "Get Reservation V07",
+      "description": ""
+    },
+    {
+      "id": "camt.046.001.08",
+      "name": "Get Reservation V08",
+      "description": ""
+    },
+    {
+      "id": "camt.047.001.01",
+      "name": "Return Reservation V01",
+      "description": ""
+    },
+    {
+      "id": "camt.047.001.02",
+      "name": "Return Reservation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.047.001.03",
+      "name": "Return Reservation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.047.001.04",
+      "name": "Return Reservation V04",
+      "description": ""
+    },
+    {
+      "id": "camt.047.001.05",
+      "name": "Return Reservation V05",
+      "description": ""
+    },
+    {
+      "id": "camt.047.001.06",
+      "name": "Return Reservation V06",
+      "description": ""
+    },
+    {
+      "id": "camt.047.001.07",
+      "name": "Return Reservation V07",
+      "description": ""
+    },
+    {
+      "id": "camt.047.001.08",
+      "name": "Return Reservation V08",
+      "description": ""
+    },
+    {
+      "id": "camt.048.001.01",
+      "name": "Modify Reservation V01",
+      "description": ""
+    },
+    {
+      "id": "camt.048.001.02",
+      "name": "Modify Reservation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.048.001.03",
+      "name": "Modify Reservation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.048.001.04",
+      "name": "Modify Reservation V04",
+      "description": ""
+    },
+    {
+      "id": "camt.048.001.05",
+      "name": "Modify Reservation V05",
+      "description": ""
+    },
+    {
+      "id": "camt.048.001.06",
+      "name": "Modify Reservation V06",
+      "description": ""
+    },
+    {
+      "id": "camt.048.001.07",
+      "name": "Modify Reservation V07",
+      "description": ""
+    },
+    {
+      "id": "camt.049.001.01",
+      "name": "Delete Reservation V01",
+      "description": ""
+    },
+    {
+      "id": "camt.049.001.02",
+      "name": "Delete Reservation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.049.001.03",
+      "name": "Delete Reservation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.049.001.04",
+      "name": "Delete Reservation V04",
+      "description": ""
+    },
+    {
+      "id": "camt.049.001.05",
+      "name": "Delete Reservation V05",
+      "description": ""
+    },
+    {
+      "id": "camt.049.001.06",
+      "name": "Delete Reservation V06",
+      "description": ""
+    },
+    {
+      "id": "camt.049.001.07",
+      "name": "Delete Reservation V07",
+      "description": ""
+    },
+    {
+      "id": "camt.050.001.01",
+      "name": "Liquidity Credit Transfer V01",
+      "description": ""
+    },
+    {
+      "id": "camt.050.001.02",
+      "name": "Liquidity Credit Transfer V02",
+      "description": ""
+    },
+    {
+      "id": "camt.050.001.03",
+      "name": "Liquidity Credit Transfer V03",
+      "description": ""
+    },
+    {
+      "id": "camt.050.001.04",
+      "name": "Liquidity Credit Transfer V04",
+      "description": ""
+    },
+    {
+      "id": "camt.050.001.05",
+      "name": "Liquidity Credit Transfer V05",
+      "description": ""
+    },
+    {
+      "id": "camt.050.001.06",
+      "name": "Liquidity Credit Transfer V06",
+      "description": ""
+    },
+    {
+      "id": "camt.050.001.07",
+      "name": "Liquidity Credit Transfer V07",
+      "description": ""
+    },
+    {
+      "id": "camt.051.001.01",
+      "name": "Liquidity Debit Transfer V01",
+      "description": ""
+    },
+    {
+      "id": "camt.051.001.02",
+      "name": "Liquidity Debit Transfer V02",
+      "description": ""
+    },
+    {
+      "id": "camt.051.001.03",
+      "name": "Liquidity Debit Transfer V03",
+      "description": ""
+    },
+    {
+      "id": "camt.051.001.04",
+      "name": "Liquidity Debit Transfer V04",
+      "description": ""
+    },
+    {
+      "id": "camt.051.001.05",
+      "name": "Liquidity Debit Transfer V05",
+      "description": ""
+    },
+    {
+      "id": "camt.051.001.06",
+      "name": "Liquidity Debit Transfer V06",
+      "description": ""
+    },
+    {
+      "id": "camt.051.001.07",
+      "name": "Liquidity Debit Transfer V07",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.01",
+      "name": "Bank To Customer Account Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.02",
+      "name": "Bank To Customer Account Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.03",
+      "name": "Bank To Customer Account Report V03",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.04",
+      "name": "Bank To Customer Account Report V04",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.05",
+      "name": "Bank To Customer Account Report V05",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.06",
+      "name": "Bank To Customer Account Report V06",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.07",
+      "name": "Bank To Customer Account Report V07",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.08",
+      "name": "Bank To Customer Account Report V08",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.09",
+      "name": "Bank To Customer Account Report V09",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.10",
+      "name": "Bank To Customer Account Report V10",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.11",
+      "name": "Bank To Customer Account Report V11",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.12",
+      "name": "Bank To Customer Account Report V12",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.13",
+      "name": "Bank To Customer Account Report V13",
+      "description": ""
+    },
+    {
+      "id": "camt.052.001.14",
+      "name": "Bank To Customer Account Report V14",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.01",
+      "name": "Bank To Customer Statement V01",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.02",
+      "name": "Bank To Customer Statement V02",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.03",
+      "name": "Bank To Customer Statement V03",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.04",
+      "name": "Bank To Customer Statement V04",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.05",
+      "name": "Bank To Customer Statement V05",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.06",
+      "name": "Bank To Customer Statement V06",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.07",
+      "name": "Bank To Customer Statement V07",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.08",
+      "name": "Bank To Customer Statement V08",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.09",
+      "name": "Bank To Customer Statement V09",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.10",
+      "name": "Bank To Customer Statement V10",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.11",
+      "name": "Bank To Customer Statement V11",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.12",
+      "name": "Bank To Customer Statement V12",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.13",
+      "name": "Bank To Customer Statement V13",
+      "description": ""
+    },
+    {
+      "id": "camt.053.001.14",
+      "name": "Bank To Customer Statement V14",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.01",
+      "name": "Bank To Customer Debit Credit Notification V01",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.02",
+      "name": "Bank To Customer Debit Credit Notification V02",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.03",
+      "name": "Bank To Customer Debit Credit Notification V03",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.04",
+      "name": "Bank To Customer Debit Credit Notification V04",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.05",
+      "name": "Bank To Customer Debit Credit Notification V05",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.06",
+      "name": "Bank To Customer Debit Credit Notification V06",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.07",
+      "name": "Bank To Customer Debit Credit Notification V07",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.08",
+      "name": "Bank To Customer Debit Credit Notification V08",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.09",
+      "name": "Bank To Customer Debit Credit Notification V09",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.10",
+      "name": "Bank To Customer Debit Credit Notification V10",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.11",
+      "name": "Bank To Customer Debit Credit Notification V11",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.12",
+      "name": "Bank To Customer Debit Credit Notification V12",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.13",
+      "name": "Bank To Customer Debit Credit Notification V13",
+      "description": ""
+    },
+    {
+      "id": "camt.054.001.14",
+      "name": "Bank To Customer Debit Credit Notification V14",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.01",
+      "name": "Customer Payment Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.02",
+      "name": "Customer Payment Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.03",
+      "name": "Customer Payment Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.04",
+      "name": "Customer Payment Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.05",
+      "name": "Customer Payment Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.06",
+      "name": "Customer Payment Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.07",
+      "name": "Customer Payment Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.08",
+      "name": "Customer Payment Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.09",
+      "name": "Customer Payment Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.10",
+      "name": "Customer Payment Cancellation Request V10",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.11",
+      "name": "Customer Payment Cancellation Request V11",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.12",
+      "name": "Customer Payment Cancellation Request V12",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.13",
+      "name": "Customer Payment Cancellation Request V13",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.01",
+      "name": "FI To FI Payment Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.02",
+      "name": "FI To FI Payment Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.03",
+      "name": "FI To FI Payment Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.04",
+      "name": "FI To FI Payment Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.05",
+      "name": "FI To FI Payment Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.06",
+      "name": "FI To FI Payment Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.07",
+      "name": "FI To FI Payment Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.08",
+      "name": "FI To FI Payment Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.09",
+      "name": "FI To FI Payment Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.10",
+      "name": "FI To FI Payment Cancellation Request V10",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.11",
+      "name": "FI To FI Payment Cancellation Request V11",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.12",
+      "name": "FI To FI Payment Cancellation Request V12",
+      "description": ""
+    },
+    {
+      "id": "camt.057.001.01",
+      "name": "Notification To Receive V01",
+      "description": ""
+    },
+    {
+      "id": "camt.057.001.02",
+      "name": "Notification To Receive V02",
+      "description": ""
+    },
+    {
+      "id": "camt.057.001.03",
+      "name": "Notification To Receive V03",
+      "description": ""
+    },
+    {
+      "id": "camt.057.001.04",
+      "name": "Notification To Receive V04",
+      "description": ""
+    },
+    {
+      "id": "camt.057.001.05",
+      "name": "Notification To Receive V05",
+      "description": ""
+    },
+    {
+      "id": "camt.057.001.06",
+      "name": "Notification To Receive V06",
+      "description": ""
+    },
+    {
+      "id": "camt.057.001.07",
+      "name": "Notification To Receive V07",
+      "description": ""
+    },
+    {
+      "id": "camt.057.001.08",
+      "name": "Notification To Receive V08",
+      "description": ""
+    },
+    {
+      "id": "camt.057.001.09",
+      "name": "Notification To Receive V09",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.01",
+      "name": "Notification To Receive Cancellation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.02",
+      "name": "Notification To Receive Cancellation Advice V02",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.03",
+      "name": "Notification To Receive Cancellation Advice V03",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.04",
+      "name": "Notification To Receive Cancellation Advice V04",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.05",
+      "name": "Notification To Receive Cancellation Advice V05",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.06",
+      "name": "Notification To Receive Cancellation Advice V06",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.07",
+      "name": "Notification To Receive Cancellation Advice V07",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.08",
+      "name": "Notification To Receive Cancellation Advice V08",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.09",
+      "name": "Notification To Receive Cancellation Advice V09",
+      "description": ""
+    },
+    {
+      "id": "camt.058.001.10",
+      "name": "Notification To Receive Cancellation Advice V10",
+      "description": ""
+    },
+    {
+      "id": "camt.059.001.01",
+      "name": "Notification To Receive Status Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.059.001.02",
+      "name": "Notification To Receive Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.059.001.03",
+      "name": "Notification To Receive Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "camt.059.001.04",
+      "name": "Notification To Receive Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "camt.059.001.05",
+      "name": "Notification To Receive Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "camt.059.001.06",
+      "name": "Notification To Receive Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "camt.059.001.07",
+      "name": "Notification To Receive Status Report V07",
+      "description": ""
+    },
+    {
+      "id": "camt.059.001.08",
+      "name": "Notification To Receive Status Report V08",
+      "description": ""
+    },
+    {
+      "id": "camt.059.001.09",
+      "name": "Notification To Receive Status Report V09",
+      "description": ""
+    },
+    {
+      "id": "camt.060.001.01",
+      "name": "Account Reporting Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.060.001.02",
+      "name": "Account Reporting Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.060.001.03",
+      "name": "Account Reporting Request V03",
+      "description": ""
+    },
+    {
+      "id": "camt.060.001.04",
+      "name": "Account Reporting Request V04",
+      "description": ""
+    },
+    {
+      "id": "camt.060.001.05",
+      "name": "Account Reporting Request V05",
+      "description": ""
+    },
+    {
+      "id": "camt.060.001.06",
+      "name": "Account Reporting Request V06",
+      "description": ""
+    },
+    {
+      "id": "camt.060.001.07",
+      "name": "Account Reporting Request V07",
+      "description": ""
+    },
+    {
+      "id": "camt.061.001.01",
+      "name": "Pay In Call V01",
+      "description": ""
+    },
+    {
+      "id": "camt.061.001.02",
+      "name": "Pay In Call V02",
+      "description": ""
+    },
+    {
+      "id": "camt.062.001.01",
+      "name": "Pay In Schedule V01",
+      "description": ""
+    },
+    {
+      "id": "camt.062.001.02",
+      "name": "Pay In Schedule V02",
+      "description": ""
+    },
+    {
+      "id": "camt.062.001.03",
+      "name": "Pay In Schedule V03",
+      "description": ""
+    },
+    {
+      "id": "camt.063.001.01",
+      "name": "Pay In Schedule Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "camt.063.001.02",
+      "name": "Pay In Event Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "camt.064.001.01",
+      "name": "Limit Utilisation Journal Query V01",
+      "description": ""
+    },
+    {
+      "id": "camt.065.001.01",
+      "name": "Limit Utilisation Journal Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.066.001.01",
+      "name": "Intra Balance Movement Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "camt.066.001.02",
+      "name": "Intra Balance Movement Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "camt.067.001.01",
+      "name": "Intra Balance Movement Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "camt.067.001.02",
+      "name": "Intra Balance Movement Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "camt.068.001.01",
+      "name": "Intra Balance Movement Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "camt.068.001.02",
+      "name": "Intra Balance Movement Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.069.001.01",
+      "name": "Get Standing Order V01",
+      "description": ""
+    },
+    {
+      "id": "camt.069.001.02",
+      "name": "Get Standing Order V02",
+      "description": ""
+    },
+    {
+      "id": "camt.069.001.03",
+      "name": "Get Standing Order V03",
+      "description": ""
+    },
+    {
+      "id": "camt.069.001.04",
+      "name": "Get Standing Order V04",
+      "description": ""
+    },
+    {
+      "id": "camt.069.001.05",
+      "name": "Get Standing Order V05",
+      "description": ""
+    },
+    {
+      "id": "camt.070.001.01",
+      "name": "Return Standing Order V01",
+      "description": ""
+    },
+    {
+      "id": "camt.070.001.02",
+      "name": "Return Standing Order V02",
+      "description": ""
+    },
+    {
+      "id": "camt.070.001.03",
+      "name": "Return Standing Order V03",
+      "description": ""
+    },
+    {
+      "id": "camt.070.001.04",
+      "name": "Return Standing Order V04",
+      "description": ""
+    },
+    {
+      "id": "camt.070.001.05",
+      "name": "Return Standing Order V05",
+      "description": ""
+    },
+    {
+      "id": "camt.070.001.06",
+      "name": "Return Standing Order V06",
+      "description": ""
+    },
+    {
+      "id": "camt.071.001.02",
+      "name": "Delete Standing Order V02",
+      "description": ""
+    },
+    {
+      "id": "camt.071.001.03",
+      "name": "Delete Standing Order V03",
+      "description": ""
+    },
+    {
+      "id": "camt.071.001.04",
+      "name": "Delete Standing Order V04",
+      "description": ""
+    },
+    {
+      "id": "camt.071.001.05",
+      "name": "Delete Standing Order V05",
+      "description": ""
+    },
+    {
+      "id": "camt.072.001.01",
+      "name": "Intra Balance Movement Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.072.001.02",
+      "name": "Intra Balance Movement Modification Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.073.001.01",
+      "name": "Intra Balance Movement Modification Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "camt.073.001.02",
+      "name": "Intra Balance Movement Modification Request Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "camt.074.001.01",
+      "name": "Intra Balance Movement Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.074.001.02",
+      "name": "Intra Balance Movement Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.075.001.01",
+      "name": "Intra Balance Movement Cancellation Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "camt.075.001.02",
+      "name": "Intra Balance Movement Cancellation Request Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "camt.076.001.01",
+      "name": "Billing Report Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.077.001.01",
+      "name": "Billing Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.078.001.01",
+      "name": "Intra Balance Movement Query V01",
+      "description": ""
+    },
+    {
+      "id": "camt.078.001.02",
+      "name": "Intra Balance Movement Query V02",
+      "description": ""
+    },
+    {
+      "id": "camt.079.001.01",
+      "name": "Intra Balance Movement Query Response V01",
+      "description": ""
+    },
+    {
+      "id": "camt.079.001.02",
+      "name": "Intra Balance Movement Query Response V02",
+      "description": ""
+    },
+    {
+      "id": "camt.080.001.01",
+      "name": "Intra Balance Movement Modification Query V01",
+      "description": ""
+    },
+    {
+      "id": "camt.080.001.02",
+      "name": "Intra Balance Movement Modification Query V02",
+      "description": ""
+    },
+    {
+      "id": "camt.081.001.01",
+      "name": "Intra Balance Movement Modification Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.081.001.02",
+      "name": "Intra Balance Movement Modification Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.082.001.01",
+      "name": "Intra Balance Movement Cancellation Query V01",
+      "description": ""
+    },
+    {
+      "id": "camt.082.001.02",
+      "name": "Intra Balance Movement Cancellation Query V02",
+      "description": ""
+    },
+    {
+      "id": "camt.083.001.01",
+      "name": "Intra Balance Movement Cancellation Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.083.001.02",
+      "name": "Intra Balance Movement Cancellation Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.084.001.01",
+      "name": "Intra Balance Movement Posting Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.084.001.02",
+      "name": "Intra Balance Movement Posting Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.085.001.01",
+      "name": "Intra Balance Movement Pending Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.085.001.02",
+      "name": "Intra Balance Movement Pending Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.086.001.01",
+      "name": "Bank Services Billing Statement V01",
+      "description": ""
+    },
+    {
+      "id": "camt.086.001.02",
+      "name": "Bank Services Billing Statement V02",
+      "description": ""
+    },
+    {
+      "id": "camt.086.001.03",
+      "name": "Bank Services Billing Statement V03",
+      "description": ""
+    },
+    {
+      "id": "camt.086.001.04",
+      "name": "Bank Services Billing Statement V04",
+      "description": ""
+    },
+    {
+      "id": "camt.086.001.05",
+      "name": "Bank Services Billing Statement V05",
+      "description": ""
+    },
+    {
+      "id": "camt.087.001.01",
+      "name": "Request To Modify Payment V01",
+      "description": ""
+    },
+    {
+      "id": "camt.087.001.02",
+      "name": "Request To Modify Payment V02",
+      "description": ""
+    },
+    {
+      "id": "camt.087.001.03",
+      "name": "Request To Modify Payment V03",
+      "description": ""
+    },
+    {
+      "id": "camt.087.001.04",
+      "name": "Request To Modify Payment V04",
+      "description": ""
+    },
+    {
+      "id": "camt.087.001.05",
+      "name": "Request To Modify Payment V05",
+      "description": ""
+    },
+    {
+      "id": "camt.087.001.06",
+      "name": "Request To Modify Payment V06",
+      "description": ""
+    },
+    {
+      "id": "camt.087.001.07",
+      "name": "Request To Modify Payment V07",
+      "description": ""
+    },
+    {
+      "id": "camt.087.001.08",
+      "name": "Request To Modify Payment V08",
+      "description": ""
+    },
+    {
+      "id": "camt.087.001.09",
+      "name": "Request To Modify Payment V09",
+      "description": ""
+    },
+    {
+      "id": "camt.088.001.01",
+      "name": "Net Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.088.001.02",
+      "name": "Net Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.088.001.03",
+      "name": "Net Report V03",
+      "description": ""
+    },
+    {
+      "id": "camt.088.001.04",
+      "name": "Net Report V04",
+      "description": ""
+    },
+    {
+      "id": "camt.091.001.01",
+      "name": "Cash Settlement Initiation Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.101.001.01",
+      "name": "Create Limit V01",
+      "description": ""
+    },
+    {
+      "id": "camt.101.001.02",
+      "name": "Create Limit V02",
+      "description": ""
+    },
+    {
+      "id": "camt.102.001.01",
+      "name": "Create Standing Order V01",
+      "description": ""
+    },
+    {
+      "id": "camt.102.001.02",
+      "name": "Create Standing Order V02",
+      "description": ""
+    },
+    {
+      "id": "camt.102.001.03",
+      "name": "Create Standing Order V03",
+      "description": ""
+    },
+    {
+      "id": "camt.103.001.01",
+      "name": "Create Reservation V01",
+      "description": ""
+    },
+    {
+      "id": "camt.103.001.02",
+      "name": "Create Reservation V02",
+      "description": ""
+    },
+    {
+      "id": "camt.103.001.03",
+      "name": "Create Reservation V03",
+      "description": ""
+    },
+    {
+      "id": "camt.104.001.01",
+      "name": "Create Member V01",
+      "description": ""
+    },
+    {
+      "id": "camt.105.001.01",
+      "name": "Charges Payment Notification V01",
+      "description": ""
+    },
+    {
+      "id": "camt.105.001.02",
+      "name": "Charges Payment Notification V02",
+      "description": ""
+    },
+    {
+      "id": "camt.105.001.03",
+      "name": "Charges Payment Notification V03",
+      "description": ""
+    },
+    {
+      "id": "camt.106.001.01",
+      "name": "Charges Payment Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.106.001.02",
+      "name": "Charges Payment Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.106.001.03",
+      "name": "Charges Payment Request V03",
+      "description": ""
+    },
+    {
+      "id": "camt.107.001.01",
+      "name": "Cheque Presentment Notification V01",
+      "description": ""
+    },
+    {
+      "id": "camt.107.001.02",
+      "name": "Cheque Presentment Notification V02",
+      "description": ""
+    },
+    {
+      "id": "camt.108.001.01",
+      "name": "Cheque Cancellation Or Stop Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.108.001.02",
+      "name": "Cheque Cancellation Or Stop Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.109.001.01",
+      "name": "Cheque Cancellation Or Stop Report V01",
+      "description": ""
+    },
+    {
+      "id": "camt.109.001.02",
+      "name": "Cheque Cancellation Or Stop Report V02",
+      "description": ""
+    },
+    {
+      "id": "camt.110.001.01",
+      "name": "Investigation Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.110.001.02",
+      "name": "Investigation Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.111.001.01",
+      "name": "Investigation Response V01",
+      "description": ""
+    },
+    {
+      "id": "camt.111.001.02",
+      "name": "Investigation Response V02",
+      "description": ""
+    },
+    {
+      "id": "camt.111.001.03",
+      "name": "Investigation Response V03",
+      "description": ""
+    },
+    {
+      "id": "camt.998.001.01",
+      "name": "Proprietary Message V01",
+      "description": ""
+    },
+    {
+      "id": "camt.998.001.02",
+      "name": "Proprietary Message V02",
+      "description": ""
+    },
+    {
+      "id": "camt.998.001.03",
+      "name": "Cash Management Proprietary Message V03",
+      "description": ""
+    },
+    {
+      "id": "pacs.006.001.01",
+      "name": "Payment Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "pain.006.001.01",
+      "name": "Payment Cancellation Request V01",
+      "description": ""
+    }
+  ]
+}

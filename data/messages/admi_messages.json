@@ -1,0 +1,150 @@
+{
+  "description": "SWIFT ISO 20022 admi 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "DRAFT2admi.007.001.01",
+      "name": "Receipt Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3admi.007.001.01",
+      "name": "Receipt Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4admi.005.001.01",
+      "name": "Report Query Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4admi.006.001.01",
+      "name": "Resend Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5admi.006.001.01",
+      "name": "Resend Request V01",
+      "description": ""
+    },
+    {
+      "id": "admi.001.001.01",
+      "name": "Report",
+      "description": ""
+    },
+    {
+      "id": "admi.002.001.01",
+      "name": "Message Reject V01",
+      "description": ""
+    },
+    {
+      "id": "admi.003.001.01",
+      "name": "Delete Notification",
+      "description": ""
+    },
+    {
+      "id": "admi.004.001.01",
+      "name": "System Event Notification V01",
+      "description": ""
+    },
+    {
+      "id": "admi.004.001.02",
+      "name": "System Event Notification V02",
+      "description": ""
+    },
+    {
+      "id": "admi.005.001.01",
+      "name": "Report Query Request V01",
+      "description": ""
+    },
+    {
+      "id": "admi.005.001.02",
+      "name": "Report Query Request V02",
+      "description": ""
+    },
+    {
+      "id": "admi.006.001.01",
+      "name": "Resend Request V01",
+      "description": ""
+    },
+    {
+      "id": "admi.007.001.01",
+      "name": "Receipt Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "admi.008.001.01",
+      "name": "System Status Request Or Notification V01",
+      "description": ""
+    },
+    {
+      "id": "admi.009.001.01",
+      "name": "Static Data Request V01",
+      "description": ""
+    },
+    {
+      "id": "admi.009.001.02",
+      "name": "Static Data Request V02",
+      "description": ""
+    },
+    {
+      "id": "admi.010.001.01",
+      "name": "Static Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "admi.010.001.02",
+      "name": "Static Data Report V02",
+      "description": ""
+    },
+    {
+      "id": "admi.011.001.01",
+      "name": "System Event Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "admi.014.001.01",
+      "name": "Delivery Status Notification V01",
+      "description": ""
+    },
+    {
+      "id": "admi.014.001.02",
+      "name": "Delivery Status Notification V02",
+      "description": ""
+    },
+    {
+      "id": "admi.016.001.01",
+      "name": "Participant Status Notification V01",
+      "description": ""
+    },
+    {
+      "id": "admi.017.001.01",
+      "name": "Processing Request V01",
+      "description": ""
+    },
+    {
+      "id": "admi.017.001.02",
+      "name": "Processing Request V02",
+      "description": ""
+    },
+    {
+      "id": "admi.024.001.01",
+      "name": "Notification Of Correspondence V01",
+      "description": ""
+    },
+    {
+      "id": "admi.998.001.01",
+      "name": "Proprietary Message V01",
+      "description": ""
+    },
+    {
+      "id": "admi.998.001.02",
+      "name": "Administration Proprietary Message V02",
+      "description": ""
+    },
+    {
+      "id": "admi.998.001.03",
+      "name": "Administration Proprietary Message V03",
+      "description": ""
+    }
+  ]
+}

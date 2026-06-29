@@ -1,0 +1,135 @@
+{
+  "description": "SWIFT ISO 20022 secl 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "secl.001.001.02",
+      "name": "Trade Leg Notification V02",
+      "description": ""
+    },
+    {
+      "id": "secl.001.001.03",
+      "name": "Trade Leg Notification V03",
+      "description": ""
+    },
+    {
+      "id": "secl.001.001.04",
+      "name": "Trade Leg Notification V04",
+      "description": ""
+    },
+    {
+      "id": "secl.001.001.05",
+      "name": "Trade Leg Notification V05",
+      "description": ""
+    },
+    {
+      "id": "secl.002.001.02",
+      "name": "Trade Leg Notification Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "secl.002.001.03",
+      "name": "Trade Leg Notification Cancellation V03",
+      "description": ""
+    },
+    {
+      "id": "secl.002.001.04",
+      "name": "Trade Leg Notification Cancellation V04",
+      "description": ""
+    },
+    {
+      "id": "secl.002.001.05",
+      "name": "Trade Leg Notification Cancellation V05",
+      "description": ""
+    },
+    {
+      "id": "secl.003.001.02",
+      "name": "Trade Leg Statement V02",
+      "description": ""
+    },
+    {
+      "id": "secl.003.001.03",
+      "name": "Trade Leg Statement V03",
+      "description": ""
+    },
+    {
+      "id": "secl.003.001.04",
+      "name": "Trade Leg Statement V04",
+      "description": ""
+    },
+    {
+      "id": "secl.003.001.05",
+      "name": "Trade Leg Statement V05",
+      "description": ""
+    },
+    {
+      "id": "secl.004.001.02",
+      "name": "Net Position V02",
+      "description": ""
+    },
+    {
+      "id": "secl.004.001.03",
+      "name": "Net Position V03",
+      "description": ""
+    },
+    {
+      "id": "secl.004.001.04",
+      "name": "Net Position V04",
+      "description": ""
+    },
+    {
+      "id": "secl.005.001.02",
+      "name": "Margin Report V02",
+      "description": ""
+    },
+    {
+      "id": "secl.006.001.02",
+      "name": "Default Fund Contribution Report V02",
+      "description": ""
+    },
+    {
+      "id": "secl.007.001.02",
+      "name": "Buy In Notification V02",
+      "description": ""
+    },
+    {
+      "id": "secl.007.001.03",
+      "name": "Buy In Notification V03",
+      "description": ""
+    },
+    {
+      "id": "secl.008.001.02",
+      "name": "Buy In Response V02",
+      "description": ""
+    },
+    {
+      "id": "secl.008.001.03",
+      "name": "Buy In Response V03",
+      "description": ""
+    },
+    {
+      "id": "secl.009.001.02",
+      "name": "Buy In Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "secl.009.001.03",
+      "name": "Buy In Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "secl.010.001.02",
+      "name": "Settlement Obligation Report V02",
+      "description": ""
+    },
+    {
+      "id": "secl.010.001.03",
+      "name": "Settlement Obligation Report V03",
+      "description": ""
+    },
+    {
+      "id": "secl.010.001.04",
+      "name": "Settlement Obligation Report V04",
+      "description": ""
+    }
+  ]
+}

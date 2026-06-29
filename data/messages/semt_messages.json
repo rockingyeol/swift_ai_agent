@@ -1,0 +1,1450 @@
+{
+  "description": "SWIFT ISO 20022 semt 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "DRAFT2semt.030.001.01",
+      "name": "Securities Settlement Conditions Modification Request Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2semt.032.001.01",
+      "name": "Securities Transaction Cancellation Request Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2semt.033.001.01",
+      "name": "Securities Transaction Cancellation Request Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3semt.030.001.01",
+      "name": "Securities Settlement Conditions Modification Request Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3semt.031.001.01",
+      "name": "Securities Settlement Conditions Modification Request Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3semt.032.001.01",
+      "name": "Securities Transaction Cancellation Request Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3semt.033.001.01",
+      "name": "Securities Transaction Cancellation Request Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3semt.040.001.01",
+      "name": "Securities Account Position Response V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4semt.025.001.01",
+      "name": "Securities Account Position Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4semt.028.001.01",
+      "name": "Intra Position Movement Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4semt.030.001.01",
+      "name": "Securities Settlement Conditions Modification Request Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4semt.031.001.01",
+      "name": "Securities Settlement Conditions Modification Request Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4semt.032.001.01",
+      "name": "Securities Transaction Cancellation Request Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4semt.033.001.01",
+      "name": "Securities Transaction Cancellation Request Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4semt.044.001.01",
+      "name": "Securities Transaction Penalties Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5semt.025.001.01",
+      "name": "Securities Account Position Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5semt.028.001.01",
+      "name": "Intra Position Movement Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5semt.044.001.01",
+      "name": "Securities Transaction Penalties Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6semt.026.001.01",
+      "name": "Securities Settlement Transaction Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6semt.029.001.01",
+      "name": "Intra Position Movement Query Response V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6semt.034.001.01",
+      "name": "Intra Position Movement Pending Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT7semt.026.001.01",
+      "name": "Securities Settlement Transaction Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT9semt.027.001.01",
+      "name": "Securities Settlement Transaction Query Response V01",
+      "description": ""
+    },
+    {
+      "id": "semt.001.001.01",
+      "name": "Securities Message Rejection",
+      "description": ""
+    },
+    {
+      "id": "semt.001.001.02",
+      "name": "Securities Message Rejection V02",
+      "description": ""
+    },
+    {
+      "id": "semt.001.001.03",
+      "name": "Securities Message Rejection V03",
+      "description": ""
+    },
+    {
+      "id": "semt.001.001.04",
+      "name": "Securities Message Rejection V04",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.01",
+      "name": "Custody Statement Of Holdings",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.02",
+      "name": "Custody Statement Of Holdings V02",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.03",
+      "name": "Securities Balance Custody Report V03",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.04",
+      "name": "Securities Balance Custody Report V04",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.05",
+      "name": "Securities Balance Custody Report V05",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.06",
+      "name": "Securities Balance Custody Report V06",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.07",
+      "name": "Securities Balance Custody Report V07",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.08",
+      "name": "Securities Balance Custody Report V08",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.09",
+      "name": "Securities Balance Custody Report V09",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.10",
+      "name": "Securities Balance Custody Report V10",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.11",
+      "name": "Securities Balance Custody Report V11",
+      "description": ""
+    },
+    {
+      "id": "semt.002.001.12",
+      "name": "Securities Balance Custody Report V12",
+      "description": ""
+    },
+    {
+      "id": "semt.002.002.03",
+      "name": "Securities Balance Custody Report .002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.002.002.04",
+      "name": "Securities Balance Custody Report V04 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.002.002.05",
+      "name": "Securities Balance Custody Report 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.002.002.06",
+      "name": "Securities Balance Custody Report 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.002.002.07",
+      "name": "Securities Balance Custody Report 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.002.002.08",
+      "name": "Securities Balance Custody Report 002V08",
+      "description": ""
+    },
+    {
+      "id": "semt.002.002.09",
+      "name": "Securities Balance Custody Report 002V09",
+      "description": ""
+    },
+    {
+      "id": "semt.002.002.10",
+      "name": "Securities Balance Custody Report 002V10",
+      "description": ""
+    },
+    {
+      "id": "semt.002.002.11",
+      "name": "Securities Balance Custody Report 002V11",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.01",
+      "name": "Accounting Statement Of Holdings",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.02",
+      "name": "Accounting Statement Of Holdings V02",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.03",
+      "name": "Securities Balance Accounting Report V03",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.04",
+      "name": "Securities Balance Accounting Report V04",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.05",
+      "name": "Securities Balance Accounting Report V05",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.06",
+      "name": "Securities Balance Accounting Report V06",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.07",
+      "name": "Securities Balance Accounting Report V07",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.08",
+      "name": "Securities Balance Accounting Report V08",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.09",
+      "name": "Securities Balance Accounting Report V09",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.10",
+      "name": "Securities Balance Accounting Report V10",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.11",
+      "name": "Securities Balance Accounting Report V11",
+      "description": ""
+    },
+    {
+      "id": "semt.003.001.12",
+      "name": "Securities Balance Accounting Report V12",
+      "description": ""
+    },
+    {
+      "id": "semt.003.002.03",
+      "name": "Securities Balance Accounting Report .002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.003.002.04",
+      "name": "Securities Balance Accounting Report V04 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.003.002.05",
+      "name": "Securities Balance Accounting Report 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.003.002.06",
+      "name": "Securities Balance Accounting Report 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.003.002.07",
+      "name": "Securities Balance Accounting Report 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.003.002.08",
+      "name": "Securities Balance Accounting Report 002V08",
+      "description": ""
+    },
+    {
+      "id": "semt.003.002.09",
+      "name": "Securities Balance Accounting Report 002V09",
+      "description": ""
+    },
+    {
+      "id": "semt.003.002.10",
+      "name": "Securities Balance Accounting Report 002V10",
+      "description": ""
+    },
+    {
+      "id": "semt.003.002.11",
+      "name": "Securities Balance Accounting Report 002V11",
+      "description": ""
+    },
+    {
+      "id": "semt.004.001.01",
+      "name": "Custody Statement Of Holdings Cancellation",
+      "description": ""
+    },
+    {
+      "id": "semt.004.001.02",
+      "name": "Custody Statement Of Holdings Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "semt.005.001.01",
+      "name": "Accounting Statement Of Holdings Cancellation",
+      "description": ""
+    },
+    {
+      "id": "semt.005.001.02",
+      "name": "Accounting Statement Of Holdings Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "semt.006.001.01",
+      "name": "Statement Of Investment Fund Transactions",
+      "description": ""
+    },
+    {
+      "id": "semt.006.001.02",
+      "name": "Statement Of Investment Fund Transactions V02",
+      "description": ""
+    },
+    {
+      "id": "semt.006.001.03",
+      "name": "Statement Of Investment Fund Transactions V03",
+      "description": ""
+    },
+    {
+      "id": "semt.007.001.01",
+      "name": "Statement Of Investment Fund Transactions Cancellation",
+      "description": ""
+    },
+    {
+      "id": "semt.007.001.02",
+      "name": "Statement Of Investment Fund Transactions Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "semt.007.001.03",
+      "name": "Statement Of Investment Fund Transactions Cancellation V03",
+      "description": ""
+    },
+    {
+      "id": "semt.008.001.01",
+      "name": "Regulatory Transaction Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.009.001.01",
+      "name": "Regulatory Transaction Report Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "semt.012.001.01",
+      "name": "Alternative Funds Accounting Statement Of Holdings V01",
+      "description": ""
+    },
+    {
+      "id": "semt.013.001.01",
+      "name": "Intra Position Movement Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "semt.013.001.02",
+      "name": "Intra Position Movement Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "semt.013.001.03",
+      "name": "Intra Position Movement Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "semt.013.001.04",
+      "name": "Intra Position Movement Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "semt.013.001.05",
+      "name": "Intra Position Movement Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "semt.013.001.06",
+      "name": "Intra Position Movement Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "semt.013.001.07",
+      "name": "Intra Position Movement Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "semt.013.002.01",
+      "name": "Intra Position Movement Instruction .002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.013.002.02",
+      "name": "Intra Position Movement Instruction V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.013.002.03",
+      "name": "Intra Position Movement Instruction 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.013.002.04",
+      "name": "Intra Position Movement Instruction 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.013.002.05",
+      "name": "Intra Position Movement Instruction 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.013.002.06",
+      "name": "Intra Position Movement Instruction 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.014.001.01",
+      "name": "Intra Position Movement Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "semt.014.001.02",
+      "name": "Intra Position Movement Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "semt.014.001.03",
+      "name": "Intra Position Movement Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "semt.014.001.04",
+      "name": "Intra Position Movement Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "semt.014.001.05",
+      "name": "Intra Position Movement Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "semt.014.001.06",
+      "name": "Intra Position Movement Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "semt.014.001.07",
+      "name": "Intra Position Movement Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "semt.014.001.08",
+      "name": "Intra Position Movement Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "semt.014.001.09",
+      "name": "Intra Position Movement Status Advice V09",
+      "description": ""
+    },
+    {
+      "id": "semt.014.002.01",
+      "name": "Intra Position Movement Status Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.014.002.02",
+      "name": "Intra Position Movement Status Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.014.002.03",
+      "name": "Intra Position Movement Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.014.002.04",
+      "name": "Intra Position Movement Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.014.002.05",
+      "name": "Intra Position Movement Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.014.002.06",
+      "name": "Intra Position Movement Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.014.002.07",
+      "name": "Intra Position Movement Status Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.01",
+      "name": "Intra Position Movement Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.02",
+      "name": "Intra Position Movement Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.03",
+      "name": "Intra Position Movement Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.04",
+      "name": "Intra Position Movement Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.05",
+      "name": "Intra Position Movement Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.06",
+      "name": "Intra Position Movement Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.07",
+      "name": "Intra Position Movement Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.08",
+      "name": "Intra Position Movement Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.09",
+      "name": "Intra Position Movement Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "semt.015.001.10",
+      "name": "Intra Position Movement Confirmation V10",
+      "description": ""
+    },
+    {
+      "id": "semt.015.002.01",
+      "name": "Intra Position Movement Confirmation .002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.015.002.02",
+      "name": "Intra Position Movement Confirmation V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.015.002.03",
+      "name": "Intra Position Movement Confirmation 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.015.002.04",
+      "name": "Intra Position Movement Confirmation 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.015.002.05",
+      "name": "Intra Position Movement Confirmation 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.015.002.06",
+      "name": "Intra Position Movement Confirmation 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.015.002.07",
+      "name": "Intra Position Movement Confirmation 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.015.002.08",
+      "name": "Intra Position Movement Confirmation 002V08",
+      "description": ""
+    },
+    {
+      "id": "semt.015.002.09",
+      "name": "Intra Position Movement Confirmation 002V09",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.01",
+      "name": "Intra Position Movement Posting Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.02",
+      "name": "Intra Position Movement Posting Report V02",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.03",
+      "name": "Intra Position Movement Posting Report V03",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.04",
+      "name": "Intra Position Movement Posting Report V04",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.05",
+      "name": "Intra Position Movement Posting Report V05",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.06",
+      "name": "Intra Position Movement Posting Report V06",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.07",
+      "name": "Intra Position Movement Posting Report V07",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.08",
+      "name": "Intra Position Movement Posting Report V08",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.09",
+      "name": "Intra Position Movement Posting Report V09",
+      "description": ""
+    },
+    {
+      "id": "semt.016.001.10",
+      "name": "Intra Position Movement Posting Report V10",
+      "description": ""
+    },
+    {
+      "id": "semt.016.002.01",
+      "name": "Intra Position Movement Posting Report .002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.016.002.02",
+      "name": "Intra Position Movement Posting Report V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.016.002.03",
+      "name": "Intra Position Movement Posting Report 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.016.002.04",
+      "name": "Intra Position Movement Posting Report 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.016.002.05",
+      "name": "Intra Position Movement Posting Report 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.016.002.06",
+      "name": "Intra Position Movement Posting Report 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.016.002.07",
+      "name": "Intra Position Movement Posting Report 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.016.002.08",
+      "name": "Intra Position Movement Posting Report 002V08",
+      "description": ""
+    },
+    {
+      "id": "semt.016.002.09",
+      "name": "Intra Position Movement Posting Report 002V09",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.01",
+      "name": "Securities Transaction Posting Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.02",
+      "name": "Securities Transaction Posting Report V02",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.03",
+      "name": "Securities Transaction Posting Report V03",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.04",
+      "name": "Securities Transaction Posting Report V04",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.05",
+      "name": "Securities Transaction Posting Report V05",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.06",
+      "name": "Securities Transaction Posting Report V06",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.07",
+      "name": "Securities Transaction Posting Report V07",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.08",
+      "name": "Securities Transaction Posting Report V08",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.09",
+      "name": "Securities Transaction Posting Report V09",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.10",
+      "name": "Securities Transaction Posting Report V10",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.11",
+      "name": "Securities Transaction Posting Report V11",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.12",
+      "name": "Securities Transaction Posting Report V12",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.13",
+      "name": "Securities Transaction Posting Report V13",
+      "description": ""
+    },
+    {
+      "id": "semt.017.001.14",
+      "name": "Securities Transaction Posting Report V14",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.01",
+      "name": "Securities Transaction Posting Report .002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.02",
+      "name": "Securities Transaction Posting Report V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.03",
+      "name": "Securities Transaction Posting Report 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.04",
+      "name": "Securities Transaction Posting Report 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.05",
+      "name": "Securities Transaction Posting Report 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.06",
+      "name": "Securities Transaction Posting Report 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.07",
+      "name": "Securities Transaction Posting Report 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.08",
+      "name": "Securities Transaction Posting Report 002V08",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.09",
+      "name": "Securities Transaction Posting Report 002V09",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.10",
+      "name": "Securities Transaction Posting Report 002V10",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.11",
+      "name": "Securities Transaction Posting Report 002V11",
+      "description": ""
+    },
+    {
+      "id": "semt.017.002.12",
+      "name": "Securities Transaction Posting Report 002V12",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.01",
+      "name": "Securities Transaction Pending Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.02",
+      "name": "Securities Transaction Pending Report V02",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.03",
+      "name": "Securities Transaction Pending Report V03",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.04",
+      "name": "Securities Transaction Pending Report V04",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.05",
+      "name": "Securities Transaction Pending Report V05",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.06",
+      "name": "Securities Transaction Pending Report V06",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.07",
+      "name": "Securities Transaction Pending Report V07",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.08",
+      "name": "Securities Transaction Pending Report V08",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.09",
+      "name": "Securities Transaction Pending Report V09",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.10",
+      "name": "Securities Transaction Pending Report V10",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.11",
+      "name": "Securities Transaction Pending Report V11",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.12",
+      "name": "Securities Transaction Pending Report V12",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.13",
+      "name": "Securities Transaction Pending Report V13",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.14",
+      "name": "Securities Transaction Pending Report V14",
+      "description": ""
+    },
+    {
+      "id": "semt.018.001.15",
+      "name": "Securities Transaction Pending Report V15",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.01",
+      "name": "Securities Transaction Pending Report .002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.02",
+      "name": "Securities Transaction Pending Report V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.03",
+      "name": "Securities Transaction Pending Report 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.04",
+      "name": "Securities Transaction Pending Report 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.05",
+      "name": "Securities Transaction Pending Report 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.06",
+      "name": "Securities Transaction Pending Report 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.07",
+      "name": "Securities Transaction Pending Report 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.08",
+      "name": "Securities Transaction Pending Report 002V08",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.09",
+      "name": "Securities Transaction Pending Report 002V09",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.10",
+      "name": "Securities Transaction Pending Report 002V10",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.11",
+      "name": "Securities Transaction Pending Report 002V11",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.12",
+      "name": "Securities Transaction Pending Report 002V12",
+      "description": ""
+    },
+    {
+      "id": "semt.018.002.13",
+      "name": "Securities Transaction Pending Report 002V13",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.01",
+      "name": "Securities Settlement Transaction Allegement Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.02",
+      "name": "Securities Settlement Transaction Allegement Report V02",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.03",
+      "name": "Securities Settlement Transaction Allegement Report V03",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.04",
+      "name": "Securities Settlement Transaction Allegement Report V04",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.05",
+      "name": "Securities Settlement Transaction Allegement Report V05",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.06",
+      "name": "Securities Settlement Transaction Allegement Report V06",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.07",
+      "name": "Securities Settlement Transaction Allegement Report V07",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.08",
+      "name": "Securities Settlement Transaction Allegement Report V08",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.09",
+      "name": "Securities Settlement Transaction Allegement Report V09",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.10",
+      "name": "Securities Settlement Transaction Allegement Report V10",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.11",
+      "name": "Securities Settlement Transaction Allegement Report V11",
+      "description": ""
+    },
+    {
+      "id": "semt.019.001.12",
+      "name": "Securities Settlement Transaction Allegement Report V12",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.01",
+      "name": "Securities Settlement Transaction Allegement Report .002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.02",
+      "name": "Securities Settlement Transaction Allegement Report V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.03",
+      "name": "Securities Settlement Transaction Allegement Report 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.04",
+      "name": "Securities Settlement Transaction Allegement Report 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.05",
+      "name": "Securities Settlement Transaction Allegement Report 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.06",
+      "name": "Securities Settlement Transaction Allegement Report 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.07",
+      "name": "Securities Settlement Transaction Allegement Report 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.08",
+      "name": "Securities Settlement Transaction Allegement Report 002V08",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.09",
+      "name": "Securities Settlement Transaction Allegement Report 002V09",
+      "description": ""
+    },
+    {
+      "id": "semt.019.002.10",
+      "name": "Securities Settlement Transaction Allegement Report 002V10",
+      "description": ""
+    },
+    {
+      "id": "semt.020.001.01",
+      "name": "Securities Message Cancellation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "semt.020.001.02",
+      "name": "Securities Message Cancellation Advice V02",
+      "description": ""
+    },
+    {
+      "id": "semt.020.001.03",
+      "name": "Securities Message Cancellation Advice V03",
+      "description": ""
+    },
+    {
+      "id": "semt.020.001.04",
+      "name": "Securities Message Cancellation Advice V04",
+      "description": ""
+    },
+    {
+      "id": "semt.020.001.05",
+      "name": "Securities Message Cancellation Advice V05",
+      "description": ""
+    },
+    {
+      "id": "semt.020.001.06",
+      "name": "Securities Message Cancellation Advice V06",
+      "description": ""
+    },
+    {
+      "id": "semt.020.001.07",
+      "name": "Securities Message Cancellation Advice V07",
+      "description": ""
+    },
+    {
+      "id": "semt.020.002.01",
+      "name": "Securities Message Cancellation Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.020.002.02",
+      "name": "Securities Message Cancellation Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.020.002.03",
+      "name": "Securities Message Cancellation Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.020.002.04",
+      "name": "Securities Message Cancellation Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.020.002.05",
+      "name": "Securities Message Cancellation Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.020.002.06",
+      "name": "Securities Message Cancellation Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.020.002.07",
+      "name": "Securities Message Cancellation Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.021.001.01",
+      "name": "Securities Statement Query V01",
+      "description": ""
+    },
+    {
+      "id": "semt.021.001.02",
+      "name": "Securities Statement Query V02",
+      "description": ""
+    },
+    {
+      "id": "semt.021.001.03",
+      "name": "Securities Statement Query V03",
+      "description": ""
+    },
+    {
+      "id": "semt.021.001.04",
+      "name": "Securities Statement Query V04",
+      "description": ""
+    },
+    {
+      "id": "semt.021.001.05",
+      "name": "Securities Statement Query V05",
+      "description": ""
+    },
+    {
+      "id": "semt.021.001.06",
+      "name": "Securities Statement Query V06",
+      "description": ""
+    },
+    {
+      "id": "semt.021.001.07",
+      "name": "Securities Statement Query V07",
+      "description": ""
+    },
+    {
+      "id": "semt.021.001.08",
+      "name": "Securities Statement Query V08",
+      "description": ""
+    },
+    {
+      "id": "semt.021.001.09",
+      "name": "Securities Statement Query V09",
+      "description": ""
+    },
+    {
+      "id": "semt.021.002.01",
+      "name": "Securities Statement Query .002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.021.002.02",
+      "name": "Securities Statement Query V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "semt.021.002.03",
+      "name": "Securities Statement Query 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.021.002.04",
+      "name": "Securities Statement Query 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.021.002.05",
+      "name": "Securities Statement Query 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.021.002.06",
+      "name": "Securities Statement Query 002V06",
+      "description": ""
+    },
+    {
+      "id": "semt.021.002.07",
+      "name": "Securities Statement Query 002V07",
+      "description": ""
+    },
+    {
+      "id": "semt.021.002.08",
+      "name": "Securities Statement Query 002V08",
+      "description": ""
+    },
+    {
+      "id": "semt.022.001.01",
+      "name": "Securities Settlement Transaction Audit Trail Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.022.001.02",
+      "name": "Securities Settlement Transaction Audit Trail Report V02",
+      "description": ""
+    },
+    {
+      "id": "semt.022.001.03",
+      "name": "Securities Settlement Transaction Audit Trail Report V03",
+      "description": ""
+    },
+    {
+      "id": "semt.022.001.04",
+      "name": "Securities Settlement Transaction Audit Trail Report V04",
+      "description": ""
+    },
+    {
+      "id": "semt.022.001.05",
+      "name": "Securities Settlement Transaction Audit Trail Report V05",
+      "description": ""
+    },
+    {
+      "id": "semt.022.001.06",
+      "name": "Securities Settlement Transaction Audit Trail Report V06",
+      "description": ""
+    },
+    {
+      "id": "semt.022.001.07",
+      "name": "Securities Settlement Transaction Audit Trail Report V07",
+      "description": ""
+    },
+    {
+      "id": "semt.022.002.01",
+      "name": "Securities Settlement Transaction Audit Trail Report 002V01",
+      "description": ""
+    },
+    {
+      "id": "semt.022.002.02",
+      "name": "Securities Settlement Transaction Audit Trail Report 002V02",
+      "description": ""
+    },
+    {
+      "id": "semt.022.002.03",
+      "name": "Securities Settlement Transaction Audit Trail Report 002V03",
+      "description": ""
+    },
+    {
+      "id": "semt.022.002.04",
+      "name": "Securities Settlement Transaction Audit Trail Report 002V04",
+      "description": ""
+    },
+    {
+      "id": "semt.022.002.05",
+      "name": "Securities Settlement Transaction Audit Trail Report 002V05",
+      "description": ""
+    },
+    {
+      "id": "semt.023.001.01",
+      "name": "Securities End Of Process Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.023.001.02",
+      "name": "Securities End Of Process Report V02",
+      "description": ""
+    },
+    {
+      "id": "semt.024.001.01",
+      "name": "Total Portfolio Valuation Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.025.001.01",
+      "name": "Securities Account Position Query V01",
+      "description": ""
+    },
+    {
+      "id": "semt.026.001.01",
+      "name": "Securities Settlement Transaction Query V01",
+      "description": ""
+    },
+    {
+      "id": "semt.027.001.01",
+      "name": "Securities Settlement Transaction Query Response V01",
+      "description": ""
+    },
+    {
+      "id": "semt.028.001.01",
+      "name": "Intra Position Movement Query V01",
+      "description": ""
+    },
+    {
+      "id": "semt.029.001.01",
+      "name": "Intra Position Movement Query Response V01",
+      "description": ""
+    },
+    {
+      "id": "semt.030.001.01",
+      "name": "Securities Settlement Conditions Modification Request Query V01",
+      "description": ""
+    },
+    {
+      "id": "semt.031.001.01",
+      "name": "Securities Settlement Conditions Modification Request Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.032.001.01",
+      "name": "Securities Transaction Cancellation Request Query V01",
+      "description": ""
+    },
+    {
+      "id": "semt.033.001.01",
+      "name": "Securities Transaction Cancellation Request Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.034.001.01",
+      "name": "Intra Position Movement Pending Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.040.001.01",
+      "name": "Securities Account Position Response V01",
+      "description": ""
+    },
+    {
+      "id": "semt.041.001.01",
+      "name": "Securities Balance Transparency Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.041.001.02",
+      "name": "Securities Balance Transparency Report V02",
+      "description": ""
+    },
+    {
+      "id": "semt.042.001.01",
+      "name": "Securities Balance Transparency Report Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "semt.044.001.01",
+      "name": "Securities Transaction Penalties Report V01",
+      "description": ""
+    },
+    {
+      "id": "semt.998.001.01",
+      "name": "Proprietary Message V01",
+      "description": ""
+    },
+    {
+      "id": "semt.998.001.02",
+      "name": "Securities Management Proprietary Message V02",
+      "description": ""
+    },
+    {
+      "id": "semt.998.001.03",
+      "name": "Securities Management Proprietary Message V03",
+      "description": ""
+    }
+  ]
+}

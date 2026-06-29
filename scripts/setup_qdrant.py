@@ -30,8 +30,14 @@ Qdrant 컬렉션 설정 및 MT 가이드북 PDF 인제스트 스크립트.
 from __future__ import annotations
 
 import argparse
+import io
 import os
 import sys
+
+# Windows 콘솔에서 유니코드(✓/✗ 등) 출력 시 cp949 오류 방지
+if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf-8-sig"):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 import time
 from collections import Counter
 from pathlib import Path

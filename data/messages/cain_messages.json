@@ -1,0 +1,620 @@
+{
+  "description": "SWIFT ISO 20022 cain 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "caad.005.001.02",
+      "name": "Reconciliation Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "caad.005.001.03",
+      "name": "Reconciliation Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "caad.005.001.04",
+      "name": "Reconciliation Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "caad.005.001.05",
+      "name": "Reconciliation Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "caad.006.001.02",
+      "name": "Reconciliation Response V02",
+      "description": ""
+    },
+    {
+      "id": "caad.006.001.03",
+      "name": "Reconciliation Response V03",
+      "description": ""
+    },
+    {
+      "id": "caad.006.001.04",
+      "name": "Reconciliation Response V04",
+      "description": ""
+    },
+    {
+      "id": "caad.006.001.05",
+      "name": "Reconciliation Response V05",
+      "description": ""
+    },
+    {
+      "id": "caad.007.001.02",
+      "name": "Error V02",
+      "description": ""
+    },
+    {
+      "id": "caad.007.001.03",
+      "name": "Error V03",
+      "description": ""
+    },
+    {
+      "id": "caad.007.001.04",
+      "name": "Error V04",
+      "description": ""
+    },
+    {
+      "id": "caad.007.001.05",
+      "name": "Error V05",
+      "description": ""
+    },
+    {
+      "id": "cain.001.001.01",
+      "name": "Acquirer Authorisation Initiation",
+      "description": ""
+    },
+    {
+      "id": "cain.001.001.02",
+      "name": "Authorisation Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.001.001.03",
+      "name": "Authorisation Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.001.001.04",
+      "name": "Authorisation Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cain.001.001.05",
+      "name": "Authorisation Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "cain.002.001.01",
+      "name": "Acquirer Authorisation Response",
+      "description": ""
+    },
+    {
+      "id": "cain.002.001.02",
+      "name": "Authorisation Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.002.001.03",
+      "name": "Authorisation Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.002.001.04",
+      "name": "Authorisation Response V04",
+      "description": ""
+    },
+    {
+      "id": "cain.002.001.05",
+      "name": "Authorisation Response V05",
+      "description": ""
+    },
+    {
+      "id": "cain.003.001.01",
+      "name": "Acquirer Financial Initiation",
+      "description": ""
+    },
+    {
+      "id": "cain.003.001.02",
+      "name": "Financial Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.003.001.03",
+      "name": "Financial Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.003.001.04",
+      "name": "Financial Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cain.003.001.05",
+      "name": "Financial Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "cain.004.001.01",
+      "name": "Acquirer Financial Response",
+      "description": ""
+    },
+    {
+      "id": "cain.004.001.02",
+      "name": "Financial Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.004.001.03",
+      "name": "Financial Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.004.001.04",
+      "name": "Financial Response V04",
+      "description": ""
+    },
+    {
+      "id": "cain.004.001.05",
+      "name": "Financial Response V05",
+      "description": ""
+    },
+    {
+      "id": "cain.005.001.01",
+      "name": "Acquirer Reversal Initiation",
+      "description": ""
+    },
+    {
+      "id": "cain.005.001.02",
+      "name": "Reversal Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.005.001.03",
+      "name": "Reversal Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.005.001.04",
+      "name": "Reversal Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cain.005.001.05",
+      "name": "Reversal Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "cain.006.001.01",
+      "name": "Acquirer Reversal Response",
+      "description": ""
+    },
+    {
+      "id": "cain.006.001.02",
+      "name": "Reversal Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.006.001.03",
+      "name": "Reversal Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.006.001.04",
+      "name": "Reversal Response V04",
+      "description": ""
+    },
+    {
+      "id": "cain.006.001.05",
+      "name": "Reversal Response V05",
+      "description": ""
+    },
+    {
+      "id": "cain.007.001.01",
+      "name": "Reconciliation Initiation",
+      "description": ""
+    },
+    {
+      "id": "cain.008.001.01",
+      "name": "Reconciliation Response",
+      "description": ""
+    },
+    {
+      "id": "cain.009.001.01",
+      "name": "Network Management Initiation",
+      "description": ""
+    },
+    {
+      "id": "cain.010.001.01",
+      "name": "Network Management Response",
+      "description": ""
+    },
+    {
+      "id": "cain.011.001.01",
+      "name": "Key Exchange Initiation",
+      "description": ""
+    },
+    {
+      "id": "cain.012.001.01",
+      "name": "Key Exchange Response",
+      "description": ""
+    },
+    {
+      "id": "cain.013.001.01",
+      "name": "Acquirer Rejection",
+      "description": ""
+    },
+    {
+      "id": "cain.014.001.01",
+      "name": "Retrieval Fulfilment Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cain.014.001.02",
+      "name": "Retrieval Fulfilment Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.014.001.03",
+      "name": "Retrieval Fulfilment Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.014.001.04",
+      "name": "Retrieval Fulfilment Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cain.015.001.01",
+      "name": "Retrieval Fulfilment Response V01",
+      "description": ""
+    },
+    {
+      "id": "cain.015.001.02",
+      "name": "Retrieval Fulfilment Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.015.001.03",
+      "name": "Retrieval Fulfilment Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.015.001.04",
+      "name": "Retrieval Fulfilment Response V04",
+      "description": ""
+    },
+    {
+      "id": "cain.016.001.01",
+      "name": "Inquiry Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cain.016.001.02",
+      "name": "Inquiry Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.016.001.03",
+      "name": "Inquiry Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.016.001.04",
+      "name": "Inquiry Verification Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cain.017.001.01",
+      "name": "Inquiry Response V01",
+      "description": ""
+    },
+    {
+      "id": "cain.017.001.02",
+      "name": "Inquiry Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.017.001.03",
+      "name": "Inquiry Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.017.001.04",
+      "name": "Inquiry Verification Response V04",
+      "description": ""
+    },
+    {
+      "id": "cain.018.001.01",
+      "name": "Verification Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cain.018.001.02",
+      "name": "Verification Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.018.001.03",
+      "name": "Verification Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.019.001.01",
+      "name": "Verification Response V01",
+      "description": ""
+    },
+    {
+      "id": "cain.019.001.02",
+      "name": "Verification Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.019.001.03",
+      "name": "Verification Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.020.001.01",
+      "name": "Amendment V01",
+      "description": ""
+    },
+    {
+      "id": "cain.020.001.02",
+      "name": "Amendment V02",
+      "description": ""
+    },
+    {
+      "id": "cain.020.001.03",
+      "name": "Amendment V03",
+      "description": ""
+    },
+    {
+      "id": "cain.020.001.04",
+      "name": "Amendment V04",
+      "description": ""
+    },
+    {
+      "id": "cain.021.001.01",
+      "name": "Retrieval Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cain.021.001.02",
+      "name": "Retrieval Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.021.001.03",
+      "name": "Retrieval Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.021.001.04",
+      "name": "Retrieval Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cain.022.001.01",
+      "name": "Retrieval Response V01",
+      "description": ""
+    },
+    {
+      "id": "cain.022.001.02",
+      "name": "Retrieval Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.022.001.03",
+      "name": "Retrieval Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.022.001.04",
+      "name": "Retrieval Response V04",
+      "description": ""
+    },
+    {
+      "id": "cain.023.001.01",
+      "name": "Card Management Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cain.023.001.02",
+      "name": "Card Management Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.023.001.03",
+      "name": "Card Management Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.023.001.04",
+      "name": "Card Management Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cain.024.001.01",
+      "name": "Card Management Response V01",
+      "description": ""
+    },
+    {
+      "id": "cain.024.001.02",
+      "name": "Card Management Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.024.001.03",
+      "name": "Card Management Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.024.001.04",
+      "name": "Card Management Response V04",
+      "description": ""
+    },
+    {
+      "id": "cain.025.001.01",
+      "name": "Addendum Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cain.025.001.02",
+      "name": "Addendum Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.025.001.03",
+      "name": "Addendum Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.025.001.04",
+      "name": "Addendum Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cain.026.001.01",
+      "name": "Addendum Response V01",
+      "description": ""
+    },
+    {
+      "id": "cain.026.001.02",
+      "name": "Addendum Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.026.001.03",
+      "name": "Addendum Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.026.001.04",
+      "name": "Addendum Response V04",
+      "description": ""
+    },
+    {
+      "id": "cain.027.001.01",
+      "name": "Charge Back Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cain.027.001.02",
+      "name": "Charge Back Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cain.027.001.03",
+      "name": "Charge Back Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cain.027.001.04",
+      "name": "Charge Back Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cain.028.001.01",
+      "name": "Charge Back Response V01",
+      "description": ""
+    },
+    {
+      "id": "cain.028.001.02",
+      "name": "Charge Back Response V02",
+      "description": ""
+    },
+    {
+      "id": "cain.028.001.03",
+      "name": "Charge Back Response V03",
+      "description": ""
+    },
+    {
+      "id": "cain.028.001.04",
+      "name": "Charge Back Response V04",
+      "description": ""
+    },
+    {
+      "id": "canm.001.001.02",
+      "name": "Network Management Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "canm.001.001.03",
+      "name": "Network Management Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "canm.001.001.04",
+      "name": "Network Management Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "canm.001.001.05",
+      "name": "Network Management Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "canm.002.001.02",
+      "name": "Network Management Response V02",
+      "description": ""
+    },
+    {
+      "id": "canm.002.001.03",
+      "name": "Network Management Response V03",
+      "description": ""
+    },
+    {
+      "id": "canm.002.001.04",
+      "name": "Network Management Response V04",
+      "description": ""
+    },
+    {
+      "id": "canm.002.001.05",
+      "name": "Network Management Response V05",
+      "description": ""
+    },
+    {
+      "id": "canm.003.001.02",
+      "name": "Key Exchange Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "canm.003.001.03",
+      "name": "Key Exchange Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "canm.003.001.04",
+      "name": "Key Exchange Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "canm.003.001.05",
+      "name": "Key Exchange Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "canm.004.001.02",
+      "name": "Key Exchange Response V02",
+      "description": ""
+    },
+    {
+      "id": "canm.004.001.03",
+      "name": "Key Exchange Response V03",
+      "description": ""
+    },
+    {
+      "id": "canm.004.001.04",
+      "name": "Key Exchange Response V04",
+      "description": ""
+    },
+    {
+      "id": "canm.004.001.05",
+      "name": "Key Exchange Response V05",
+      "description": ""
+    }
+  ]
+}

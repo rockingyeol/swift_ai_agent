@@ -1,0 +1,225 @@
+{
+  "description": "SWIFT ISO 20022 catp 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "catp.001.001.01",
+      "name": "ATM Withdrawal Request V01",
+      "description": ""
+    },
+    {
+      "id": "catp.001.001.02",
+      "name": "ATM Withdrawal Request V02",
+      "description": ""
+    },
+    {
+      "id": "catp.001.001.03",
+      "name": "ATM Withdrawal Request V03",
+      "description": ""
+    },
+    {
+      "id": "catp.002.001.01",
+      "name": "ATM Withdrawal Response V01",
+      "description": ""
+    },
+    {
+      "id": "catp.002.001.02",
+      "name": "ATM Withdrawal Response V02",
+      "description": ""
+    },
+    {
+      "id": "catp.002.001.03",
+      "name": "ATM Withdrawal Response V03",
+      "description": ""
+    },
+    {
+      "id": "catp.003.001.01",
+      "name": "ATM Withdrawal Completion Advice V01",
+      "description": ""
+    },
+    {
+      "id": "catp.003.001.02",
+      "name": "ATM Withdrawal Completion Advice V02",
+      "description": ""
+    },
+    {
+      "id": "catp.003.001.03",
+      "name": "ATM Withdrawal Completion Advice V03",
+      "description": ""
+    },
+    {
+      "id": "catp.004.001.01",
+      "name": "ATM Withdrawal Completion Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "catp.004.001.02",
+      "name": "ATM Withdrawal Completion Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "catp.004.001.03",
+      "name": "ATM Withdrawal Completion Acknowledgement V03",
+      "description": ""
+    },
+    {
+      "id": "catp.005.001.01",
+      "name": "ATM Reject V01",
+      "description": ""
+    },
+    {
+      "id": "catp.005.001.02",
+      "name": "ATM Reject V02",
+      "description": ""
+    },
+    {
+      "id": "catp.006.001.01",
+      "name": "ATM Inquiry Request V01",
+      "description": ""
+    },
+    {
+      "id": "catp.006.001.02",
+      "name": "ATM Inquiry Request V02",
+      "description": ""
+    },
+    {
+      "id": "catp.006.001.03",
+      "name": "ATM Inquiry Request V03",
+      "description": ""
+    },
+    {
+      "id": "catp.007.001.01",
+      "name": "ATM Inquiry Response V01",
+      "description": ""
+    },
+    {
+      "id": "catp.007.001.02",
+      "name": "ATM Inquiry Response V02",
+      "description": ""
+    },
+    {
+      "id": "catp.007.001.03",
+      "name": "ATM Inquiry Response V03",
+      "description": ""
+    },
+    {
+      "id": "catp.008.001.01",
+      "name": "ATM Completion Advice V01",
+      "description": ""
+    },
+    {
+      "id": "catp.008.001.02",
+      "name": "ATM Completion Advice V02",
+      "description": ""
+    },
+    {
+      "id": "catp.008.001.03",
+      "name": "ATM Completion Advice V03",
+      "description": ""
+    },
+    {
+      "id": "catp.009.001.01",
+      "name": "ATM Completion Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "catp.009.001.02",
+      "name": "ATM Completion Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "catp.009.001.03",
+      "name": "ATM Completion Acknowledgement V03",
+      "description": ""
+    },
+    {
+      "id": "catp.010.001.01",
+      "name": "ATMPIN Management Request V01",
+      "description": ""
+    },
+    {
+      "id": "catp.010.001.02",
+      "name": "ATMPIN Management Request V02",
+      "description": ""
+    },
+    {
+      "id": "catp.010.001.03",
+      "name": "ATMPIN Management Request V03",
+      "description": ""
+    },
+    {
+      "id": "catp.011.001.01",
+      "name": "ATMPIN Management Response V01",
+      "description": ""
+    },
+    {
+      "id": "catp.011.001.02",
+      "name": "ATMPIN Management Response V02",
+      "description": ""
+    },
+    {
+      "id": "catp.011.001.03",
+      "name": "ATMPIN Management Response V03",
+      "description": ""
+    },
+    {
+      "id": "catp.012.001.01",
+      "name": "ATM Deposit Request V01",
+      "description": ""
+    },
+    {
+      "id": "catp.012.001.02",
+      "name": "ATM Deposit Request V02",
+      "description": ""
+    },
+    {
+      "id": "catp.013.001.01",
+      "name": "ATM Deposit Response V01",
+      "description": ""
+    },
+    {
+      "id": "catp.013.001.02",
+      "name": "ATM Deposit Response V02",
+      "description": ""
+    },
+    {
+      "id": "catp.014.001.01",
+      "name": "ATM Deposit Completion Advice V01",
+      "description": ""
+    },
+    {
+      "id": "catp.014.001.02",
+      "name": "ATM Deposit Completion Advice V02",
+      "description": ""
+    },
+    {
+      "id": "catp.015.001.01",
+      "name": "ATM Deposit Completion Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "catp.015.001.02",
+      "name": "ATM Deposit Completion Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "catp.016.001.01",
+      "name": "ATM Transfer Request V01",
+      "description": ""
+    },
+    {
+      "id": "catp.016.001.02",
+      "name": "ATM Transfer Request V02",
+      "description": ""
+    },
+    {
+      "id": "catp.017.001.01",
+      "name": "ATM Transfer Response V01",
+      "description": ""
+    },
+    {
+      "id": "catp.017.001.02",
+      "name": "ATM Transfer Response V02",
+      "description": ""
+    }
+  ]
+}

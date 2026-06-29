@@ -1,0 +1,105 @@
+{
+  "description": "SWIFT ISO 20022 canm 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "cain.009.001.01",
+      "name": "Network Management Initiation",
+      "description": ""
+    },
+    {
+      "id": "cain.010.001.01",
+      "name": "Network Management Response",
+      "description": ""
+    },
+    {
+      "id": "cain.011.001.01",
+      "name": "Key Exchange Initiation",
+      "description": ""
+    },
+    {
+      "id": "cain.012.001.01",
+      "name": "Key Exchange Response",
+      "description": ""
+    },
+    {
+      "id": "canm.001.001.02",
+      "name": "Network Management Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "canm.001.001.03",
+      "name": "Network Management Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "canm.001.001.04",
+      "name": "Network Management Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "canm.001.001.05",
+      "name": "Network Management Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "canm.002.001.02",
+      "name": "Network Management Response V02",
+      "description": ""
+    },
+    {
+      "id": "canm.002.001.03",
+      "name": "Network Management Response V03",
+      "description": ""
+    },
+    {
+      "id": "canm.002.001.04",
+      "name": "Network Management Response V04",
+      "description": ""
+    },
+    {
+      "id": "canm.002.001.05",
+      "name": "Network Management Response V05",
+      "description": ""
+    },
+    {
+      "id": "canm.003.001.02",
+      "name": "Key Exchange Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "canm.003.001.03",
+      "name": "Key Exchange Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "canm.003.001.04",
+      "name": "Key Exchange Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "canm.003.001.05",
+      "name": "Key Exchange Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "canm.004.001.02",
+      "name": "Key Exchange Response V02",
+      "description": ""
+    },
+    {
+      "id": "canm.004.001.03",
+      "name": "Key Exchange Response V03",
+      "description": ""
+    },
+    {
+      "id": "canm.004.001.04",
+      "name": "Key Exchange Response V04",
+      "description": ""
+    },
+    {
+      "id": "canm.004.001.05",
+      "name": "Key Exchange Response V05",
+      "description": ""
+    }
+  ]
+}

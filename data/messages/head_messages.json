@@ -1,0 +1,45 @@
+{
+  "description": "SWIFT ISO 20022 head 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "DRAFT2head.002.001.01",
+      "name": "Business File Header V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3head.002.001.01",
+      "name": "Business File Header V01",
+      "description": ""
+    },
+    {
+      "id": "head.001.001.01",
+      "name": "Business Application Header V01",
+      "description": ""
+    },
+    {
+      "id": "head.001.001.02",
+      "name": "Business Application Header V02",
+      "description": ""
+    },
+    {
+      "id": "head.001.001.03",
+      "name": "Business Application Header V03",
+      "description": ""
+    },
+    {
+      "id": "head.001.001.04",
+      "name": "Business Application Header V04",
+      "description": ""
+    },
+    {
+      "id": "head.002.001.01",
+      "name": "Business File Header V01",
+      "description": ""
+    },
+    {
+      "id": "nvlp.002.001.02",
+      "name": "Business File Envelope V02",
+      "description": ""
+    }
+  ]
+}

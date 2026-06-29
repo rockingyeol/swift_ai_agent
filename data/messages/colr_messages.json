@@ -1,0 +1,400 @@
+{
+  "description": "SWIFT ISO 20022 colr 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "DRAFT3colr.001.001.01",
+      "name": "Collateral Value Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4colr.001.001.01",
+      "name": "Collateral Value Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4colr.002.001.01",
+      "name": "Collateral Value Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4colr.019.001.01",
+      "name": "Triparty Collateral Transaction Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4colr.020.001.01",
+      "name": "Triparty Collateral Transaction Instruction Processing Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4colr.021.001.01",
+      "name": "Triparty Collateral Allegement Notification V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4colr.022.001.01",
+      "name": "Triparty Collateral And Exposure Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4colr.023.001.01",
+      "name": "Triparty Collateral Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4colr.024.001.01",
+      "name": "Triparty Collateral Allegement Notification Cancellation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "colr.001.001.01",
+      "name": "Collateral Value Query V01",
+      "description": ""
+    },
+    {
+      "id": "colr.001.001.02",
+      "name": "Collateral Value Query V02",
+      "description": ""
+    },
+    {
+      "id": "colr.002.001.01",
+      "name": "Collateral Value Report V01",
+      "description": ""
+    },
+    {
+      "id": "colr.002.001.02",
+      "name": "Collateral Value Report V02",
+      "description": ""
+    },
+    {
+      "id": "colr.003.001.02",
+      "name": "Margin Call Request V02",
+      "description": ""
+    },
+    {
+      "id": "colr.003.001.03",
+      "name": "Margin Call Request V03",
+      "description": ""
+    },
+    {
+      "id": "colr.003.001.04",
+      "name": "Margin Call Request V04",
+      "description": ""
+    },
+    {
+      "id": "colr.003.001.05",
+      "name": "Margin Call Request V05",
+      "description": ""
+    },
+    {
+      "id": "colr.004.001.02",
+      "name": "Margin Call Response V02",
+      "description": ""
+    },
+    {
+      "id": "colr.004.001.03",
+      "name": "Margin Call Response V03",
+      "description": ""
+    },
+    {
+      "id": "colr.004.001.04",
+      "name": "Margin Call Response V04",
+      "description": ""
+    },
+    {
+      "id": "colr.004.001.05",
+      "name": "Margin Call Response V05",
+      "description": ""
+    },
+    {
+      "id": "colr.005.001.02",
+      "name": "Collateral Management Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "colr.005.001.03",
+      "name": "Collateral Management Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "colr.005.001.04",
+      "name": "Collateral Management Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "colr.005.001.05",
+      "name": "Collateral Management Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "colr.005.001.06",
+      "name": "Collateral Management Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "colr.006.001.02",
+      "name": "Collateral Management Cancellation Status V02",
+      "description": ""
+    },
+    {
+      "id": "colr.006.001.03",
+      "name": "Collateral Management Cancellation Status V03",
+      "description": ""
+    },
+    {
+      "id": "colr.006.001.04",
+      "name": "Collateral Management Cancellation Status V04",
+      "description": ""
+    },
+    {
+      "id": "colr.006.001.05",
+      "name": "Collateral Management Cancellation Status V05",
+      "description": ""
+    },
+    {
+      "id": "colr.007.001.02",
+      "name": "Collateral Proposal V02",
+      "description": ""
+    },
+    {
+      "id": "colr.007.001.03",
+      "name": "Collateral Proposal V03",
+      "description": ""
+    },
+    {
+      "id": "colr.007.001.04",
+      "name": "Collateral Proposal V04",
+      "description": ""
+    },
+    {
+      "id": "colr.007.001.05",
+      "name": "Collateral Proposal V05",
+      "description": ""
+    },
+    {
+      "id": "colr.007.001.06",
+      "name": "Collateral Proposal V06",
+      "description": ""
+    },
+    {
+      "id": "colr.008.001.02",
+      "name": "Collateral Proposal Response V02",
+      "description": ""
+    },
+    {
+      "id": "colr.008.001.03",
+      "name": "Collateral Proposal Response V03",
+      "description": ""
+    },
+    {
+      "id": "colr.008.001.04",
+      "name": "Collateral Proposal Response V04",
+      "description": ""
+    },
+    {
+      "id": "colr.008.001.05",
+      "name": "Collateral Proposal Response V05",
+      "description": ""
+    },
+    {
+      "id": "colr.008.001.06",
+      "name": "Collateral Proposal Response V06",
+      "description": ""
+    },
+    {
+      "id": "colr.009.001.02",
+      "name": "Margin Call Dispute Notification V02",
+      "description": ""
+    },
+    {
+      "id": "colr.009.001.03",
+      "name": "Margin Call Dispute Notification V03",
+      "description": ""
+    },
+    {
+      "id": "colr.009.001.04",
+      "name": "Margin Call Dispute Notification V04",
+      "description": ""
+    },
+    {
+      "id": "colr.009.001.05",
+      "name": "Margin Call Dispute Notification V05",
+      "description": ""
+    },
+    {
+      "id": "colr.010.001.02",
+      "name": "Collateral Substitution Request V02",
+      "description": ""
+    },
+    {
+      "id": "colr.010.001.03",
+      "name": "Collateral Substitution Request V03",
+      "description": ""
+    },
+    {
+      "id": "colr.010.001.04",
+      "name": "Collateral Substitution Request V04",
+      "description": ""
+    },
+    {
+      "id": "colr.010.001.05",
+      "name": "Collateral Substitution Request V05",
+      "description": ""
+    },
+    {
+      "id": "colr.011.001.02",
+      "name": "Collateral Substitution Response V02",
+      "description": ""
+    },
+    {
+      "id": "colr.011.001.03",
+      "name": "Collateral Substitution Response V03",
+      "description": ""
+    },
+    {
+      "id": "colr.011.001.04",
+      "name": "Collateral Substitution Response V04",
+      "description": ""
+    },
+    {
+      "id": "colr.011.001.05",
+      "name": "Collateral Substitution Response V05",
+      "description": ""
+    },
+    {
+      "id": "colr.012.001.02",
+      "name": "Collateral Substitution Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "colr.012.001.03",
+      "name": "Collateral Substitution Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "colr.012.001.04",
+      "name": "Collateral Substitution Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "colr.012.001.05",
+      "name": "Collateral Substitution Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "colr.013.001.02",
+      "name": "Interest Payment Request V02",
+      "description": ""
+    },
+    {
+      "id": "colr.013.001.03",
+      "name": "Interest Payment Request V03",
+      "description": ""
+    },
+    {
+      "id": "colr.013.001.04",
+      "name": "Interest Payment Request V04",
+      "description": ""
+    },
+    {
+      "id": "colr.013.001.05",
+      "name": "Interest Payment Request V05",
+      "description": ""
+    },
+    {
+      "id": "colr.014.001.02",
+      "name": "Interest Payment Response V02",
+      "description": ""
+    },
+    {
+      "id": "colr.014.001.03",
+      "name": "Interest Payment Response V03",
+      "description": ""
+    },
+    {
+      "id": "colr.014.001.04",
+      "name": "Interest Payment Response V04",
+      "description": ""
+    },
+    {
+      "id": "colr.014.001.05",
+      "name": "Interest Payment Response V05",
+      "description": ""
+    },
+    {
+      "id": "colr.015.001.02",
+      "name": "Interest Payment Statement V02",
+      "description": ""
+    },
+    {
+      "id": "colr.015.001.03",
+      "name": "Interest Payment Statement V03",
+      "description": ""
+    },
+    {
+      "id": "colr.015.001.04",
+      "name": "Interest Payment Statement V04",
+      "description": ""
+    },
+    {
+      "id": "colr.015.001.05",
+      "name": "Interest Payment Statement V05",
+      "description": ""
+    },
+    {
+      "id": "colr.016.001.01",
+      "name": "Collateral Valuation Report V01",
+      "description": ""
+    },
+    {
+      "id": "colr.016.001.02",
+      "name": "Collateral And Exposure Report V02",
+      "description": ""
+    },
+    {
+      "id": "colr.016.001.03",
+      "name": "Collateral And Exposure Report V03",
+      "description": ""
+    },
+    {
+      "id": "colr.016.001.04",
+      "name": "Collateral And Exposure Report V04",
+      "description": ""
+    },
+    {
+      "id": "colr.016.001.05",
+      "name": "Collateral And Exposure Report V05",
+      "description": ""
+    },
+    {
+      "id": "colr.019.001.01",
+      "name": "Triparty Collateral Transaction Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "colr.020.001.01",
+      "name": "Triparty Collateral Transaction Instruction Processing Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "colr.021.001.01",
+      "name": "Triparty Collateral Allegement Notification V01",
+      "description": ""
+    },
+    {
+      "id": "colr.022.001.01",
+      "name": "Triparty Collateral And Exposure Report V01",
+      "description": ""
+    },
+    {
+      "id": "colr.023.001.01",
+      "name": "Triparty Collateral Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "colr.024.001.01",
+      "name": "Triparty Collateral Allegement Notification Cancellation Advice V01",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,2716 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SWIFT AI Agent — Test UI</title>
+  <style>
+    /* ── Reset & Base ───────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:        #0f1117;
+      --surface:   #1a1d27;
+      --surface2:  #252836;
+      --border:    #2e3245;
+      --accent:    #4f6ef7;
+      --accent2:   #7b8ff5;
+      --text:      #e2e8f0;
+      --muted:     #8892a4;
+      --green:     #34d399;
+      --yellow:    #fbbf24;
+      --red:       #f87171;
+      --orange:    #fb923c;
+      --radius:    8px;
+      --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    }
+    html, body { height: 100%; background: var(--bg); color: var(--text);
+                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                 font-size: 14px; line-height: 1.5; }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    button { cursor: pointer; border: none; border-radius: var(--radius);
+             padding: 8px 16px; font-size: 13px; font-weight: 600;
+             transition: opacity .15s, transform .1s; }
+    button:hover { opacity: .9; }
+    button:active { transform: scale(.97); }
+    button:disabled { opacity: .45; cursor: not-allowed; }
+    textarea, select, input {
+      background: var(--surface2); color: var(--text); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 8px 12px; width: 100%; font-size: 13px;
+      transition: border-color .15s;
+    }
+    textarea:focus, select:focus, input:focus {
+      outline: none; border-color: var(--accent);
+    }
+    textarea { font-family: var(--font-mono); resize: vertical; }
+    label { display: block; font-size: 12px; font-weight: 600; color: var(--muted);
+            text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+    hr { border: none; border-top: 1px solid var(--border); }
+
+    /* ── Layout ─────────────────────────────────────────────────────────── */
+    #app { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+
+    /* Header */
+    #header {
+      display: flex; align-items: center; gap: 12px;
+      padding: 0 20px; height: 52px; background: var(--surface);
+      border-bottom: 1px solid var(--border); flex-shrink: 0;
+    }
+    #header h1 { font-size: 15px; font-weight: 700; letter-spacing: .02em; }
+    #header h1 span { color: var(--accent2); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 600;
+    }
+    .badge .dot { width: 7px; height: 7px; border-radius: 50%; }
+    .badge-ok    { background: rgba(52,211,153,.15); color: var(--green); }
+    .badge-ok .dot    { background: var(--green); }
+    .badge-warn  { background: rgba(251,191,36,.15); color: var(--yellow); }
+    .badge-warn .dot  { background: var(--yellow); }
+    .badge-err   { background: rgba(248,113,113,.15); color: var(--red); }
+    .badge-err .dot   { background: var(--red); }
+    .badge-info  { background: rgba(79,110,247,.15); color: var(--accent2); }
+    .badge-info .dot  { background: var(--accent2); }
+    .spacer { flex: 1; }
+    #api-url-input { width: 260px; height: 30px; padding: 0 10px; font-size: 12px; }
+
+    /* Main split */
+    #main { display: flex; flex: 1; overflow: hidden; }
+
+    /* Left Panel */
+    #left {
+      width: 440px; min-width: 340px; flex-shrink: 0;
+      display: flex; flex-direction: column;
+      border-right: 1px solid var(--border); overflow-y: auto;
+    }
+    .panel-header {
+      padding: 14px 18px 10px; border-bottom: 1px solid var(--border);
+      font-size: 12px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--muted);
+    }
+    .form-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 14px; }
+
+    /* Category tabs (MT/MX) */
+    .cat-tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); }
+    .cat-tab {
+      flex: 1; padding: 8px 0; text-align: center; font-size: 12px; font-weight: 700;
+      color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent;
+      margin-bottom: -1px; transition: color .15s, border-color .15s;
+      letter-spacing: .06em; text-transform: uppercase;
+    }
+    .cat-tab:hover { color: var(--text); }
+    .cat-tab.active { color: var(--accent2); border-bottom-color: var(--accent); }
+    .cat-panel { display: none; padding-top: 10px; }
+    .cat-panel.active { display: block; }
+    .msg-type-select {
+      width: 100%; background: var(--surface2); color: var(--text);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 8px 12px; font-size: 13px; cursor: pointer;
+    }
+    .msg-type-select:focus { outline: none; border-color: var(--accent); }
+    .cat-hint { font-size: 11px; color: var(--muted); margin-top: 6px; line-height: 1.4; }
+    /* 3단계 선택 레이아웃 */
+    .type-cascade { display: flex; flex-direction: column; gap: 6px; }
+    .cascade-row  { display: flex; gap: 6px; align-items: center; }
+    .cascade-row label { margin: 0; min-width: 56px; font-size: 11px; }
+    .cascade-row select { flex: 1; }
+    .refresh-btn {
+      background: var(--surface2); color: var(--muted);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 6px 10px; font-size: 12px; cursor: pointer;
+      transition: color .15s, border-color .15s; flex-shrink: 0;
+    }
+    .refresh-btn:hover { color: var(--accent2); border-color: var(--accent); }
+    .refresh-btn.spinning svg { animation: spin .7s linear infinite; }
+
+    /* Sample picker (legacy — kept for JS compat) */
+    .sample-chips { display: none; }
+    .chip { display: none; }
+
+    /* Submit row */
+    .submit-row { display: flex; gap: 8px; align-items: center; }
+    .btn-primary { background: var(--accent); color: #fff; flex: 1; padding: 10px; }
+    .btn-secondary { background: var(--surface2); color: var(--text);
+                     border: 1px solid var(--border); }
+    .btn-danger   { background: rgba(248,113,113,.15); color: var(--red);
+                    border: 1px solid rgba(248,113,113,.3); }
+    .btn-success  { background: rgba(52,211,153,.15); color: var(--green);
+                    border: 1px solid rgba(52,211,153,.3); }
+    .btn-warning  { background: rgba(251,191,36,.15); color: var(--yellow);
+                    border: 1px solid rgba(251,191,36,.3); }
+    .btn-sm       { padding: 6px 12px; font-size: 12px; }
+    .spinner {
+      display: inline-block; width: 14px; height: 14px;
+      border: 2px solid rgba(255,255,255,.3); border-top-color: #fff;
+      border-radius: 50%; animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Right Panel */
+    #right { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+    /* Tabs */
+    .tabs { display: flex; border-bottom: 1px solid var(--border); flex-shrink: 0;
+            padding: 0 18px; background: var(--surface); }
+    .tab {
+      padding: 12px 14px; font-size: 12px; font-weight: 600; color: var(--muted);
+      cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
+      transition: color .15s, border-color .15s;
+    }
+    .tab:hover { color: var(--text); }
+    .tab.active { color: var(--accent2); border-bottom-color: var(--accent); }
+
+    /* Tab content */
+    .tab-content { flex: 1; overflow-y: auto; padding: 18px; }
+    .tab-pane { display: none; }
+    .tab-pane.active { display: block; }
+
+    /* Cards */
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px; margin-bottom: 14px;
+    }
+    .card-title { font-size: 11px; font-weight: 700; text-transform: uppercase;
+                  letter-spacing: .08em; color: var(--muted); margin-bottom: 12px; }
+
+    /* Verdict display */
+    .verdict-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .verdict-badge { font-size: 22px; font-weight: 800; letter-spacing: .02em; }
+    .v-pass    { color: var(--green); }
+    .v-warning { color: var(--yellow); }
+    .v-reject  { color: var(--red); }
+    .v-pending { color: var(--orange); }
+    .v-error   { color: var(--muted); }
+
+    /* Meta grid */
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                 gap: 10px; }
+    .meta-item { background: var(--surface2); border-radius: var(--radius);
+                 padding: 10px 12px; }
+    .meta-item .key { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+    .meta-item .val { font-size: 13px; font-weight: 600; }
+
+    /* Problems list */
+    .problem-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 8px 10px; border-radius: 6px; margin-bottom: 6px;
+      background: rgba(248,113,113,.08); border: 1px solid rgba(248,113,113,.2);
+    }
+    .problem-item.warn {
+      background: rgba(251,191,36,.08); border-color: rgba(251,191,36,.2);
+    }
+    .problem-code { font-size: 11px; font-weight: 700; color: var(--red);
+                    font-family: var(--font-mono); white-space: nowrap; margin-top: 1px; }
+    .problem-code.warn { color: var(--yellow); }
+    .problem-field { font-size: 11px; color: var(--accent2);
+                     font-family: var(--font-mono); background: rgba(79,110,247,.1);
+                     padding: 1px 6px; border-radius: 4px; }
+    .problem-desc { font-size: 12px; color: var(--text); flex: 1; }
+
+    /* Code block */
+    .code-block {
+      background: #0d1117; border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 14px; font-family: var(--font-mono); font-size: 12px;
+      white-space: pre-wrap; word-break: break-all; color: #c9d1d9; max-height: 500px;
+      overflow-y: auto; line-height: 1.6;
+    }
+
+    /* HITL Panel */
+    #hitl-panel {
+      background: rgba(251,191,36,.05); border-top: 2px solid var(--yellow);
+      padding: 16px 20px; flex-shrink: 0;
+    }
+    #hitl-panel .hitl-title {
+      font-size: 13px; font-weight: 700; color: var(--yellow);
+      display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
+    }
+    .hitl-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: flex-start; }
+    .hitl-comment { flex: 1; min-width: 200px; }
+    .hitl-comment textarea { min-height: 38px; height: 38px; resize: none; }
+
+    /* Thread History */
+    #threads-panel {
+      border-top: 1px solid var(--border); flex-shrink: 0;
+      max-height: 180px; overflow-y: auto;
+    }
+    .threads-header {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 18px; background: var(--surface);
+      border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1;
+    }
+    .threads-header span { font-size: 11px; font-weight: 700; text-transform: uppercase;
+                           letter-spacing: .08em; color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 8px 14px; text-align: left; font-size: 12px;
+             border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; background: var(--surface);
+         position: sticky; top: 0; }
+    tr:hover td { background: var(--surface2); }
+    td.mono { font-family: var(--font-mono); font-size: 11px; }
+    .thread-row { cursor: pointer; }
+
+    /* Toast */
+    #toast {
+      position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 10px 16px;
+      font-size: 13px; opacity: 0; transform: translateY(8px);
+      transition: opacity .25s, transform .25s; pointer-events: none;
+    }
+    #toast.show { opacity: 1; transform: translateY(0); }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    /* Empty state */
+    .empty-state { display: flex; flex-direction: column; align-items: center;
+                   justify-content: center; height: 100%; gap: 12px;
+                   color: var(--muted); text-align: center; }
+    .empty-state svg { opacity: .3; }
+    .empty-state p { font-size: 13px; }
+
+    /* Syntax highlight helpers */
+    .tag-name  { color: #79c0ff; }
+    .tag-value { color: #a5d6ff; }
+
+    /* Collapsible section */
+    details summary {
+      cursor: pointer; padding: 8px 10px; background: var(--surface2);
+      border-radius: 6px; font-size: 12px; font-weight: 600; color: var(--muted);
+      list-style: none; display: flex; align-items: center; gap: 6px;
+      margin-bottom: 8px;
+    }
+    details summary::before { content: '▶'; font-size: 10px; transition: transform .2s; }
+    details[open] summary::before { transform: rotate(90deg); }
+    details summary::-webkit-details-marker { display: none; }
+
+    .tag-chip {
+      display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px;
+      border-radius: 4px; font-size: 11px; font-family: var(--font-mono);
+      background: rgba(79,110,247,.12); color: var(--accent2); margin: 2px;
+    }
+
+    /* NLP Panel */
+    .nlp-desc {
+      font-size: 12px; color: var(--muted); line-height: 1.6;
+      padding: 8px 0 6px; margin-bottom: 4px;
+    }
+    .nlp-examples { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 2px; }
+    .nlp-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 5px 11px; border-radius: 999px; font-size: 11px; font-weight: 600;
+      cursor: pointer; transition: background .15s, color .15s;
+      border: 1px solid var(--border); background: var(--surface2); color: var(--muted);
+    }
+    .nlp-chip:hover { background: rgba(79,110,247,.15); color: var(--accent2); border-color: var(--accent); }
+    .nlp-chip.active { background: rgba(79,110,247,.2); color: var(--accent2); border-color: var(--accent); }
+    .nlp-chip-icon { font-size: 13px; }
+    .nlp-section-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--muted); margin: 10px 0 5px;
+    }
+
+    /* Mapping Rule Output */
+    .mapping-summary-box {
+      background: rgba(99,102,241,.08); border: 1px solid rgba(99,102,241,.25);
+      border-radius: var(--radius); padding: 12px 14px; margin-bottom: 12px;
+      font-size: 13px; line-height: 1.7; color: var(--text);
+    }
+    .mx-path-chip {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-family: var(--font-mono); font-size: 11px;
+      background: rgba(52,211,153,.1); color: #34d399; margin: 2px 0;
+    }
+    .constraint-item {
+      display: flex; gap: 8px; padding: 6px 0;
+      border-bottom: 1px solid var(--border); font-size: 12px; color: var(--muted);
+    }
+    .constraint-item::before { content: '⚠'; flex-shrink: 0; }
+
+    @media (max-width: 900px) {
+      #main { flex-direction: column; }
+      #left { width: 100%; border-right: none; border-bottom: 1px solid var(--border);
+              max-height: 50vh; }
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ── Header ─────────────────────────────────────────────────────── -->
+  <header id="header">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+         style="color:var(--accent2)">
+      <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+      <path d="M2 17l10 5 10-5"/>
+      <path d="M2 12l10 5 10-5"/>
+    </svg>
+    <h1>SWIFT AI Agent &nbsp;<span>Test UI</span></h1>
+    <span id="health-badge" class="badge badge-info">
+      <span class="dot"></span><span id="health-text">연결 확인 중…</span>
+    </span>
+    <div class="spacer"></div>
+    <label for="api-url-input" style="margin:0;white-space:nowrap">API</label>
+    <input id="api-url-input" type="text" value="" placeholder="http://localhost:8000" />
+    <button class="btn-secondary btn-sm" onclick="checkHealth()">연결 확인</button>
+    <button class="btn-secondary btn-sm" id="cache-clear-btn" onclick="clearCache()"
+      title="스키마 캐시 초기화"
+      style="border-color:#f59e0b;color:#f59e0b;white-space:nowrap;flex-shrink:0">
+      🗑 캐시
+    </button>
+  </header>
+
+  <!-- ── Main ───────────────────────────────────────────────────────── -->
+  <div id="main">
+
+    <!-- Left Panel: Input Form -->
+    <div id="left">
+      <div class="panel-header">입력 설정</div>
+      <div class="form-body">
+
+        <!-- Category Browser (MT / MX) -->
+        <div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px">
+            <label style="margin:0">전문 유형 탐색</label>
+            <button class="refresh-btn" id="refresh-types-btn" onclick="refreshMsgTypes()" title="학습된 전문 목록 갱신">
+              <svg id="refresh-icon" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 4 23 10 17 10"/>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+              </svg>
+              갱신
+            </button>
+          </div>
+          <div class="cat-tabs">
+            <div class="cat-tab active" id="cat-tab-mt"  onclick="switchCatTab('mt')">MT 전문</div>
+            <div class="cat-tab"        id="cat-tab-mx"  onclick="switchCatTab('mx')">MX 전문</div>
+            <div class="cat-tab"        id="cat-tab-nlp" onclick="switchCatTab('nlp')">💬 자연어</div>
+          </div>
+
+          <!-- MT panel — 3단계: 카테고리 → 세부 전문 -->
+          <div class="cat-panel active" id="cat-panel-mt">
+            <div class="type-cascade">
+              <div class="cascade-row">
+                <label>카테고리</label>
+                <select class="msg-type-select" id="mt-cat-select" onchange="onMtCatChange()">
+                  <option value="">— 카테고리 선택 —</option>
+                </select>
+              </div>
+              <div class="cascade-row">
+                <label>전문 유형</label>
+                <select class="msg-type-select" id="mt-type-select" onchange="onCatSelectChange('mt')" disabled>
+                  <option value="">— 전문 유형 선택 —</option>
+                </select>
+              </div>
+            </div>
+            <p class="cat-hint" id="mt-cat-hint">카테고리를 먼저 선택하세요.</p>
+          </div>
+
+          <!-- MX panel — 3단계: 도메인 → 세부 전문 -->
+          <div class="cat-panel" id="cat-panel-mx">
+            <div class="type-cascade">
+              <div class="cascade-row">
+                <label>도메인</label>
+                <select class="msg-type-select" id="mx-cat-select" onchange="onMxCatChange()">
+                  <option value="">— 도메인 선택 —</option>
+                </select>
+              </div>
+              <div class="cascade-row">
+                <label>전문 유형</label>
+                <select class="msg-type-select" id="mx-type-select" onchange="onCatSelectChange('mx')" disabled>
+                  <option value="">— 전문 유형 선택 —</option>
+                </select>
+              </div>
+            </div>
+            <p class="cat-hint" id="mx-cat-hint">도메인을 먼저 선택하세요.</p>
+          </div>
+
+          <!-- NLP panel — 자연어 질문 -->
+          <div class="cat-panel" id="cat-panel-nlp">
+            <p class="nlp-desc">SWIFT 필드 매핑 규칙, 전문 개요, 코드워드 분기 등을 자연어로 질문하세요.</p>
+            <div class="nlp-section-label">예시 질문</div>
+            <div class="nlp-examples">
+              <span class="nlp-chip" onclick="loadNlpExample('MT103 Field 72에 /ACC/ 코드워드가 있으면 pacs.008 어느 엘리먼트로 매핑하나요?', 'explain')">
+                <span class="nlp-chip-icon">🔀</span>Field 72 /ACC/ 매핑
+              </span>
+              <span class="nlp-chip" onclick="loadNlpExample('MT103 Field 50K는 pacs.008 어느 엘리먼트로 매핑되나요?', 'explain')">
+                <span class="nlp-chip-icon">🔀</span>Field 50K 매핑
+              </span>
+              <span class="nlp-chip" onclick="loadNlpExample('MT103이란 무엇인가요? 목적과 주요 필드를 설명해주세요.', 'explain')">
+                <span class="nlp-chip-icon">📖</span>MT103 설명
+              </span>
+              <span class="nlp-chip" onclick="loadNlpExample('pacs.008이란 무엇이고 어떤 용도로 사용되나요?', 'explain')">
+                <span class="nlp-chip-icon">📖</span>pacs.008 설명
+              </span>
+              <span class="nlp-chip" onclick="loadNlpExample('MT103 RETURN 전문을 pacs.004로 매핑할 때 OrgnlTxRef 구조는 어떻게 채우나요?', 'explain')">
+                <span class="nlp-chip-icon">🔀</span>pacs.004 반환 매핑
+              </span>
+              <span class="nlp-chip" onclick="loadNlpExample('MT202 Field 58A는 pacs.009 어느 엘리먼트로 매핑되나요?', 'explain')">
+                <span class="nlp-chip-icon">🔀</span>MT202 Field 58A 매핑
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message Textarea (hidden in NLP mode) -->
+        <div id="msg-input-wrap">
+          <label>전문 내용 <span id="msg-len" style="font-weight:400;color:var(--muted)"></span></label>
+          <textarea id="msg-input" rows="14" placeholder="SWIFT MT 또는 MX 전문을 입력하세요…
+예: {1:F01...}{4:\n:20:REF001\n...-}"></textarea>
+        </div>
+
+        <!-- NLP Textarea (visible only in NLP mode) -->
+        <div id="nlp-input-wrap" style="display:none">
+          <label>자연어 질문</label>
+          <textarea id="nlp-input" rows="6"
+            placeholder="SWIFT 전문 관련 질문을 자유롭게 입력하세요…
+예: MT103 Field 72에 /ACC/ 코드워드가 있으면 pacs.008 어느 엘리먼트로 매핑하나요?"></textarea>
+        </div>
+
+        <!-- Msg Type + Intent -->
+        <div style="display:flex;gap:10px">
+          <div style="flex:1">
+            <label>전문 유형</label>
+            <input id="msg-type" type="text" placeholder="MT103 / pacs.008 / …" />
+          </div>
+          <div style="flex:1">
+            <label>처리 의도</label>
+            <select id="intent">
+              <option value="">자동 감지</option>
+              <option value="analyze">analyze — 검증·분석</option>
+              <option value="generate">generate — 전문 생성</option>
+              <option value="map">map — 형식 변환</option>
+              <option value="explain">explain — 설명·매핑 규칙</option>
+              <option value="schema">schema — 스키마 트리 탐색</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="submit-row">
+          <button class="btn-primary" id="submit-btn" onclick="submitConvert()">
+            <span id="submit-label">전송 (POST /convert)</span>
+          </button>
+          <button class="btn-secondary btn-sm" onclick="clearForm()" title="입력 초기화">✕</button>
+        </div>
+
+        <!-- Active Thread Info -->
+        <div id="thread-info" style="display:none;padding:10px 12px;background:var(--surface2);
+             border-radius:var(--radius);border:1px solid var(--border);font-size:12px">
+          <div style="color:var(--muted);margin-bottom:4px">현재 처리 스레드</div>
+          <div style="font-family:var(--font-mono);color:var(--accent2)" id="thread-id-display"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right Panel: Results -->
+    <div id="right">
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <div class="tab active" data-tab="overview"   onclick="switchTab('overview')">개요</div>
+        <div class="tab"        data-tab="output"     onclick="switchTab('output')">출력</div>
+        <div class="tab"        data-tab="validation" onclick="switchTab('validation')">검증 상세</div>
+        <div class="tab"        data-tab="raw"        onclick="switchTab('raw')">Raw JSON</div>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+
+        <!-- Overview Tab -->
+        <div class="tab-pane active" id="tab-overview">
+          <div id="overview-empty" class="empty-state">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+            <p>전문을 입력하고 <strong>전송</strong> 버튼을 누르세요.</p>
+          </div>
+          <div id="overview-content" style="display:none">
+            <div class="card">
+              <div class="card-title">처리 결과</div>
+              <div class="verdict-row" id="verdict-row"></div>
+              <div style="margin-top:14px;font-size:12px;color:var(--muted)" id="result-msg"></div>
+            </div>
+            <div class="meta-grid" id="meta-grid"></div>
+            <div class="card" id="guidebook-card" style="display:none">
+              <div class="card-title">가이드북 근거</div>
+              <div id="guidebook-list"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Output Tab -->
+        <div class="tab-pane" id="tab-output">
+          <div id="output-empty" class="empty-state">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            <p>결과가 없습니다.</p>
+          </div>
+          <div id="output-content" style="display:none"></div>
+        </div>
+
+        <!-- Validation Tab -->
+        <div class="tab-pane" id="tab-validation">
+          <div id="validation-empty" class="empty-state">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p>검증 결과가 없습니다.</p>
+          </div>
+          <div id="validation-content" style="display:none"></div>
+        </div>
+
+        <!-- Raw JSON Tab -->
+        <div class="tab-pane" id="tab-raw">
+          <div id="raw-empty" class="empty-state">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+            <p>JSON 응답이 없습니다.</p>
+          </div>
+          <div id="raw-content" style="display:none">
+            <div style="display:flex;justify-content:flex-end;margin-bottom:8px">
+              <button class="btn-secondary btn-sm" onclick="copyRaw()">📋 복사</button>
+            </div>
+            <pre class="code-block" id="raw-json"></pre>
+          </div>
+        </div>
+
+      </div><!-- /tab-content -->
+
+      <!-- HITL Panel -->
+      <div id="hitl-panel" style="display:none">
+        <div class="hitl-title">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+          HITL 검수 대기 중
+          <span id="hitl-verdict-badge" class="badge badge-warn" style="font-size:11px"></span>
+        </div>
+        <div id="hitl-reason" style="font-size:12px;color:var(--muted);margin-bottom:10px"></div>
+        <div class="hitl-actions">
+          <button class="btn-success btn-sm" onclick="sendResume('approve')">✓ 승인</button>
+          <button class="btn-danger  btn-sm" onclick="sendResume('reject')">✗ 거부</button>
+          <div class="hitl-comment" style="display:flex;gap:6px;align-items:flex-end">
+            <div style="flex:1">
+              <label style="margin-bottom:4px">수정 의견</label>
+              <textarea id="hitl-comment" placeholder="수정 내용 또는 거부 사유…" style="min-height:36px;height:36px"></textarea>
+            </div>
+            <button class="btn-warning btn-sm" style="white-space:nowrap;flex-shrink:0"
+                    onclick="sendResume('modify')">✎ 수정 후 승인</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thread History -->
+      <div id="threads-panel">
+        <div class="threads-header">
+          <span>처리 이력</span>
+          <div class="spacer"></div>
+          <button class="btn-secondary btn-sm" onclick="loadThreads()" style="height:26px;padding:0 10px">새로고침</button>
+          <button class="btn-secondary btn-sm" onclick="clearHistory()" style="height:26px;padding:0 10px">비우기</button>
+        </div>
+        <table id="threads-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Thread ID</th>
+              <th>에이전트</th>
+              <th>유형</th>
+              <th>판정</th>
+              <th>상태</th>
+              <th>시간(ms)</th>
+            </tr>
+          </thead>
+          <tbody id="threads-tbody"></tbody>
+        </table>
+      </div>
+
+    </div><!-- /right -->
+  </div><!-- /main -->
+</div><!-- /app -->
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════
+   State
+═══════════════════════════════════════════════════════════════════════ */
+let API = '';
+let currentThreadId = null;
+let lastResponse = null;
+let historyRows = [];
+let historySeq = 0;
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Samples
+═══════════════════════════════════════════════════════════════════════ */
+const SAMPLES = {
+  mt103_valid: {
+    msg_type: 'MT103', intent: 'analyze',
+    message: `{1:F01BNPAFRPPXXXX0000000000}
+{2:O1030900240115DEUTDEFFXXXX00000000002401150900N}
+{4:
+:20:REF20240115001
+:23B:CRED
+:32A:240115EUR10000,00
+:50K:/DE89370400440532013000
+ORDERING CUSTOMER NAME
+123 SENDER STREET
+BERLIN GERMANY
+:59:/FR7630006000011234567890189
+BENEFICIARY CORP
+456 RECEIVER AVE
+PARIS FRANCE
+:71A:SHA
+-}`
+  },
+  mt103_error: {
+    msg_type: 'MT103', intent: 'analyze',
+    message: `{1:F01BNPAFRPPXXXX0000000000}
+{2:O1030900240115DEUTDEFFXXXX00000000002401150900N}
+{4:
+:20:REF-THAT-IS-WAY-TOO-LONG-FOR-SWIFT
+:23B:CRED
+:32A:BADDATE_EUR9999,99
+:50K:/DE89370400440532013000
+ORDERING CUSTOMER
+-}`
+  },
+  mt101_valid: {
+    msg_type: 'MT101', intent: 'analyze',
+    message: `{1:F01BNPAFRPPXXXX0000000000}
+{2:O1010900240115DEUTDEFFXXXX00000000002401150900N}
+{4:
+:20:REF-MT101-001
+:28D:1/1
+:30:240115
+:50H:/DE89370400440532013000
+ORDERING CUSTOMER NAME
+123 SENDER STREET
+BERLIN GERMANY
+:52A:DEUTDEFFXXX
+:21:TRX-B-001
+:32B:EUR10000,00
+:57A:BNPAFRPPXXX
+:59:/FR7630006000011234567890189
+BENEFICIARY CORP
+456 RECEIVER AVE
+PARIS FRANCE
+:71A:SHA
+-}`
+  },
+  pacs008: {
+    msg_type: 'pacs.008', intent: 'analyze',
+    message: `<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+  <FIToFICstmrCdtTrf>
+    <GrpHdr>
+      <MsgId>MSGID20240115001</MsgId>
+      <CreDtTm>2024-01-15T09:00:00</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <SttlmInf><SttlmMtd>CLRG</SttlmMtd></SttlmInf>
+    </GrpHdr>
+    <CdtTrfTxInf>
+      <PmtId>
+        <EndToEndId>E2EIDREF001</EndToEndId>
+        <TxId>TXID20240115001</TxId>
+      </PmtId>
+      <IntrBkSttlmAmt Ccy="EUR">10000.00</IntrBkSttlmAmt>
+      <IntrBkSttlmDt>2024-01-15</IntrBkSttlmDt>
+      <Dbtr><Nm>ORDERING CUSTOMER NAME</Nm></Dbtr>
+      <DbtrAgt><FinInstnId><BICFI>DEUTDEFFXXX</BICFI></FinInstnId></DbtrAgt>
+      <CdtrAgt><FinInstnId><BICFI>BNPAFRPPXXX</BICFI></FinInstnId></CdtrAgt>
+      <Cdtr><Nm>BENEFICIARY CORP</Nm></Cdtr>
+      <CdtrAcct><Id><IBAN>FR7630006000011234567890189</IBAN></Id></CdtrAcct>
+    </CdtTrfTxInf>
+  </FIToFICstmrCdtTrf>
+</Document>`
+  },
+  generate: {
+    msg_type: 'MT103', intent: 'generate',
+    message: `EUR 10,000을 독일 DEUTDEFFXXX 은행에서 프랑스 BNPAFRPPXXX 은행으로 당일(2024-01-15) 송금하는 MT103 전문을 작성해 주세요. 수수료는 SHA(양측 부담)로 처리합니다.`
+  },
+  explain_mt112: {
+    msg_type: 'MT112', intent: 'explain',
+    message: `MT112 전문은 무엇인가요? 전문의 이름, 사용 목적, 주요 필드를 설명해주세요.`
+  },
+  explain_pacs008: {
+    msg_type: 'pacs.008', intent: 'explain',
+    message: `pacs.008 전문에 대해 설명해주세요. 어떤 상황에서 사용하는지와 주요 필드를 알려주세요.`
+  },
+  mt112_valid: {
+    msg_type: 'MT112', intent: 'analyze',
+    message: `{1:F01KORBKRSEAAAA0000000000}{2:I112CHASEUS3NYNYN}{4:
+:20:CXLREQ20260607
+:21:REQ111-99988
+:30:260607
+:32B:USD5000,00
+:52A:KORBKRSE
+:76A:/STPD/
+Requesting cancellation of payment REF111-99988
+sent on 260602 due to incorrect beneficiary.
+-}`
+  },
+  mt103_map: {
+    msg_type: 'MT103', intent: 'map',
+    message: `{1:F01BNPAFRPPXXXX0000000000}
+{2:O1030900240115DEUTDEFFXXXX00000000002401150900N}
+{4:
+:20:REF20240115001
+:23B:CRED
+:32A:240115EUR10000,00
+:50K:/DE89370400440532013000
+ORDERING CUSTOMER NAME
+:59:/FR7630006000011234567890189
+BENEFICIARY CORP
+:71A:SHA
+-}`
+  }
+};
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Init
+═══════════════════════════════════════════════════════════════════════ */
+window.addEventListener('DOMContentLoaded', () => {
+  const origin = window.location.origin;
+  API = (origin && origin !== 'null' && /localhost:8000/.test(origin))
+      ? origin
+      : 'http://localhost:8000';
+  document.getElementById('api-url-input').value = API;
+
+  document.querySelectorAll('[data-sample]').forEach(el => {
+    el.addEventListener('click', () => loadSample(el.dataset.sample));
+  });
+
+  document.getElementById('msg-input').addEventListener('input', updateMsgLen);
+
+  // 기본 내장 목록으로 드롭다운 초기 렌더링
+  buildMtCatSelect();
+  buildMxDomainSelect();
+
+  // 초기 헬스체크 후 전문 목록도 자동 갱신 시도
+  checkHealth();
+  refreshMsgTypes().catch(() => {});
+});
+
+function updateMsgLen() {
+  const len = document.getElementById('msg-input').value.length;
+  document.getElementById('msg-len').textContent = len > 0 ? `(${len.toLocaleString()}자)` : '';
+}
+
+function getApiUrl() {
+  const v = document.getElementById('api-url-input').value.trim().replace(/\/$/, '');
+  API = v || 'http://localhost:8000';
+  return API;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Health Check
+═══════════════════════════════════════════════════════════════════════ */
+async function clearCache() {
+  const btn = document.getElementById('cache-clear-btn');
+  const orig = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = '⏳ 초기화 중…';
+  try {
+    const r = await fetch(`${getApiUrl()}/admin/cache/clear`, { method: 'POST' });
+    const data = await r.json();
+    if (data.ok) {
+      btn.innerHTML = `✅ ${data.deleted}개 삭제됨`;
+      btn.style.borderColor = '#4ade80';
+      btn.style.color = '#4ade80';
+    } else {
+      btn.innerHTML = '❌ 실패';
+    }
+  } catch(e) {
+    btn.innerHTML = '❌ 오류';
+  } finally {
+    setTimeout(() => {
+      btn.innerHTML = orig;
+      btn.style.borderColor = '#f59e0b';
+      btn.style.color = '#f59e0b';
+      btn.disabled = false;
+    }, 2000);
+  }
+}
+
+async function checkHealth() {
+  const badge = document.getElementById('health-badge');
+  const text  = document.getElementById('health-text');
+  badge.className = 'badge badge-info';
+  text.textContent = '확인 중…';
+  try {
+    const r = await fetch(`${getApiUrl()}/health`, { signal: AbortSignal.timeout(5000) });
+    if (r.ok) {
+      const data = await r.json();
+      const ok = data.status === 'ok';
+      badge.className = `badge ${ok ? 'badge-ok' : 'badge-warn'}`;
+      text.textContent = ok
+        ? `연결됨 v${data.version}`
+        : `Degraded (Prowide 미연결) v${data.version}`;
+    } else {
+      badge.className = 'badge badge-err';
+      text.textContent = `HTTP ${r.status}`;
+    }
+  } catch(e) {
+    badge.className = 'badge badge-err';
+    text.textContent = `연결 실패 — ${getApiUrl()}`;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Sample Loading
+═══════════════════════════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════════════════════
+   MT 카테고리 메타데이터
+═══════════════════════════════════════════════════════════════════════ */
+const MT_CATEGORIES = {
+  'Cat1': { label: 'Category 1 — Customer Payments & Cheques', range: [100, 199] },
+  'Cat2': { label: 'Category 2 — Financial Institution Transfers', range: [200, 299] },
+  'Cat3': { label: 'Category 3 — Treasury Markets (FX/MM/Derivatives)', range: [300, 399] },
+  'Cat4': { label: 'Category 4 — Collections & Cash Letters', range: [400, 499] },
+  'Cat5': { label: 'Category 5 — Securities Markets', range: [500, 599] },
+  'Cat6': { label: 'Category 6 — Treasury Markets (Commodities & Syndications)', range: [600, 699] },
+  'Cat7': { label: 'Category 7 — Documentary Credits & Guarantees', range: [700, 799] },
+  'Cat8': { label: 'Category 8 — Travellers Cheques', range: [800, 899] },
+  'Cat9': { label: 'Category 9 — Cash Management & Customer Status', range: [900, 999] },
+  'CatN': { label: 'Common Group (n)', range: [0, 0] },
+};
+
+// 서버에서 받은 도메인 레이블 캐시 { "camt": {name_en, name_ko}, ... }
+// refreshMsgTypes() 호출 시 갱신됨
+let _mxDomainCache = {};
+
+// 도메인 표시 레이블 반환 — 서버 캐시 우선, 없으면 코드만
+function getMxDomainLabel(domain) {
+  const d = _mxDomainCache[domain];
+  if (d?.name_en) return d.name_ko ? `${domain} — ${d.name_en} (${d.name_ko})` : `${domain} — ${d.name_en}`;
+  return domain;
+}
+
+// 하위 호환용 (buildMxDomainSelect 내부에서만 참조)
+const MX_DOMAINS = {
+};
+
+// MX 전문 유형별 설명 { en, ko } — prefix 2파트 매핑 (버전 무관)
+const MX_TYPE_NAMES = {
+  // pacs — Payments Clearing & Settlement
+  'pacs.002': { en:'FI to FI Payment Status Report',              ko:'금융기관 간 지급 상태 보고서' },
+  'pacs.003': { en:'FI to FI Customer Direct Debit',              ko:'금융기관 간 고객 직접 출금' },
+  'pacs.004': { en:'Payment Return',                              ko:'지급 반환' },
+  'pacs.007': { en:'FI to FI Payment Reversal',                   ko:'금융기관 간 지급 취소' },
+  'pacs.008': { en:'FI to FI Customer Credit Transfer',           ko:'금융기관 간 고객 신용 이체' },
+  'pacs.009': { en:'Financial Institution Credit Transfer',       ko:'금융기관 신용 이체' },
+  'pacs.010': { en:'Financial Institution Direct Debit',          ko:'금융기관 직접 출금' },
+  'pacs.028': { en:'FI to FI Payment Status Request',             ko:'금융기관 간 지급 상태 요청' },
+  'pacs.029': { en:'FI to FI Payment Cancellation Request',       ko:'금융기관 간 지급 취소 요청' },
+  // camt — Cash Management
+  'camt.003': { en:'Account Query Definition',                    ko:'계좌 조회 요청' },
+  'camt.004': { en:'Account Query Response',                      ko:'계좌 조회 응답' },
+  'camt.005': { en:'Transaction Query Definition',                ko:'거래 조회 요청' },
+  'camt.006': { en:'Transaction Query Response',                  ko:'거래 조회 응답' },
+  'camt.007': { en:'Modify Transaction',                          ko:'거래 수정' },
+  'camt.008': { en:'Cancel Transaction',                          ko:'거래 취소' },
+  'camt.009': { en:'Limit Query Definition',                      ko:'한도 조회 요청' },
+  'camt.010': { en:'Limit Query Response',                        ko:'한도 조회 응답' },
+  'camt.011': { en:'Modify Limit',                                ko:'한도 수정' },
+  'camt.012': { en:'Delete Limit',                                ko:'한도 삭제' },
+  'camt.013': { en:'Member Query Definition',                     ko:'회원 조회 요청' },
+  'camt.014': { en:'Member Query Response',                       ko:'회원 조회 응답' },
+  'camt.015': { en:'Modify Member',                               ko:'회원 정보 수정' },
+  'camt.016': { en:'Currency Exchange Rate Query Definition',     ko:'환율 조회 요청' },
+  'camt.017': { en:'Currency Exchange Rate Query Response',       ko:'환율 조회 응답' },
+  'camt.018': { en:'Business Day Information Query Definition',   ko:'영업일 정보 조회 요청' },
+  'camt.019': { en:'Business Day Information Query Response',     ko:'영업일 정보 조회 응답' },
+  'camt.020': { en:'Receipt',                                     ko:'수령 확인' },
+  'camt.021': { en:'Broadcast',                                   ko:'방송 전문' },
+  'camt.023': { en:'Backup Payment',                              ko:'백업 지급' },
+  'camt.024': { en:'Modify Standing Order',                       ko:'상시 지급 지시 수정' },
+  'camt.025': { en:'Receipt',                                     ko:'수령 확인' },
+  'camt.026': { en:'Unable to Apply',                             ko:'처리 불가 통보' },
+  'camt.027': { en:'Claim Non Receipt',                           ko:'미수취 청구' },
+  'camt.028': { en:'Additional Payment Information',              ko:'추가 지급 정보' },
+  'camt.029': { en:'Resolution of Investigation',                 ko:'조사 해결' },
+  'camt.030': { en:'Notification of Case Assignment',             ko:'조사 사건 할당 통지' },
+  'camt.031': { en:'Reject Investigation',                        ko:'조사 거부' },
+  'camt.032': { en:'Cancel Case Assignment',                      ko:'조사 사건 할당 취소' },
+  'camt.033': { en:'Request for Duplicate',                       ko:'중복 요청' },
+  'camt.034': { en:'Duplicate',                                   ko:'중복 전문' },
+  'camt.035': { en:'Proprietary Format Investigation',            ko:'독자 형식 조사' },
+  'camt.036': { en:'Debit Authorisation Response',                ko:'출금 승인 응답' },
+  'camt.037': { en:'Debit Authorisation Request',                 ko:'출금 승인 요청' },
+  'camt.038': { en:'Case Status Report Request',                  ko:'조사 사건 상태 보고 요청' },
+  'camt.039': { en:'Case Status Report',                          ko:'조사 사건 상태 보고서' },
+  'camt.046': { en:'Reserved Cash In/Out Query Definition',       ko:'예약 자금 입출금 조회 요청' },
+  'camt.047': { en:'Reserved Cash In/Out Query Response',         ko:'예약 자금 입출금 조회 응답' },
+  'camt.048': { en:'Modify Reserved Cash In or Out',              ko:'예약 자금 입출금 수정' },
+  'camt.049': { en:'Delete Reserved Cash In or Out',              ko:'예약 자금 입출금 삭제' },
+  'camt.050': { en:'Liquidity Credit Transfer',                   ko:'유동성 입금 이체' },
+  'camt.051': { en:'Liquidity Debit Transfer',                    ko:'유동성 출금 이체' },
+  'camt.052': { en:'Bank to Customer Account Report',             ko:'은행-고객 계좌 보고서' },
+  'camt.053': { en:'Bank to Customer Statement',                  ko:'은행-고객 거래 명세서' },
+  'camt.054': { en:'Bank to Customer Debit Credit Notification',  ko:'은행-고객 입출금 통지' },
+  'camt.055': { en:'Customer Payment Cancellation Request',       ko:'고객 지급 취소 요청' },
+  'camt.056': { en:'FI to FI Payment Cancellation Request',       ko:'금융기관 간 지급 취소 요청' },
+  'camt.057': { en:'Notification to Receive',                     ko:'수취 통지' },
+  'camt.058': { en:'Notification to Receive Cancellation Advice', ko:'수취 통지 취소 안내' },
+  'camt.059': { en:'Notification to Receive Status Report',       ko:'수취 통지 상태 보고서' },
+  'camt.060': { en:'Account Reporting Request',                   ko:'계좌 보고 요청' },
+  'camt.069': { en:'Standing Order Query Definition',             ko:'상시 지급 지시 조회 요청' },
+  'camt.070': { en:'Standing Order Query Response',               ko:'상시 지급 지시 조회 응답' },
+  'camt.071': { en:'Delete Standing Order',                       ko:'상시 지급 지시 삭제' },
+  'camt.086': { en:'BSB Advice',                                  ko:'BSB 통지' },
+  'camt.087': { en:'Request to Modify Payment',                   ko:'결제 수정 요청' },
+  'camt.088': { en:'Additional Remittance Information',           ko:'추가 송금 정보' },
+  'camt.089': { en:'Return Additional Remittance Information',    ko:'추가 송금 정보 응답' },
+  'camt.090': { en:'Account Notification',                        ko:'계좌 통지' },
+  'camt.091': { en:'Return Account Notification',                 ko:'계좌 통지 응답' },
+  'camt.092': { en:'Account Closing Notification',                ko:'계좌 해지 통지' },
+  'camt.098': { en:'Account Switch Information',                  ko:'계좌 전환 정보' },
+  'camt.101': { en:'Create Standing Order',                       ko:'상시 지급 지시 생성' },
+  'camt.102': { en:'Cancel Standing Order',                       ko:'상시 지급 지시 취소' },
+  'camt.103': { en:'Standing Order Query Definition',             ko:'상시 지급 지시 조회 요청' },
+  'camt.104': { en:'Standing Order Query Response',               ko:'상시 지급 지시 조회 응답' },
+  'camt.105': { en:'Charges Payment Notification',                ko:'수수료 지급 통지' },
+  'camt.106': { en:'Charges Payment Request',                     ko:'수수료 지급 요청' },
+  'camt.107': { en:'Charges Correction Request',                  ko:'수수료 수정 요청' },
+  'camt.108': { en:'Charges Breakdown Notification',              ko:'수수료 명세 통지' },
+  'camt.109': { en:'Charges Breakdown Correction Request',        ko:'수수료 명세 수정 요청' },
+  // pain — Payments Initiation
+  'pain.001': { en:'Customer Credit Transfer Initiation',         ko:'고객 신용 이체 개시' },
+  'pain.002': { en:'Customer Payment Status Report',              ko:'고객 지급 상태 보고서' },
+  'pain.007': { en:'Customer Payment Reversal',                   ko:'고객 지급 취소' },
+  'pain.008': { en:'Customer Direct Debit Initiation',            ko:'고객 직접 출금 개시' },
+  'pain.009': { en:'Mandate Initiation Request',                  ko:'위임 개시 요청' },
+  'pain.010': { en:'Mandate Amendment Request',                   ko:'위임 수정 요청' },
+  'pain.011': { en:'Mandate Cancellation Request',                ko:'위임 취소 요청' },
+  'pain.012': { en:'Mandate Acceptance Report',                   ko:'위임 수락 보고서' },
+  'pain.013': { en:'Creditor Payment Activation Request',         ko:'수취인 지급 활성화 요청' },
+  'pain.014': { en:'Creditor Payment Activation Request Status Report', ko:'수취인 지급 활성화 상태 보고서' },
+  'pain.017': { en:'Mandate Copy Request',                        ko:'위임 사본 요청' },
+  'pain.018': { en:'Mandate Suspension Request',                  ko:'위임 일시 중지 요청' },
+  // acmt — Account Management
+  'acmt.001': { en:'Account Opening Instruction',                 ko:'계좌 개설 지시' },
+  'acmt.002': { en:'Account Details Confirmation',                ko:'계좌 정보 확인' },
+  'acmt.003': { en:'Account Management Status Report',            ko:'계좌 관리 상태 보고서' },
+  'acmt.005': { en:'Request for Account Management Status Report',ko:'계좌 관리 상태 보고 요청' },
+  'acmt.007': { en:'Account Opening Request',                     ko:'계좌 개설 요청' },
+  'acmt.008': { en:'Account Opening Amendment Request',           ko:'계좌 개설 수정 요청' },
+  'acmt.009': { en:'Account Opening Additional Information Request',ko:'계좌 개설 추가 정보 요청' },
+  'acmt.010': { en:'Account Request Acknowledgement',             ko:'계좌 요청 접수 확인' },
+  'acmt.011': { en:'Account Request Rejection',                   ko:'계좌 요청 거부' },
+  'acmt.012': { en:'Account Additional Information Request',      ko:'계좌 추가 정보 요청' },
+  'acmt.013': { en:'Account Report Request',                      ko:'계좌 보고 요청' },
+  'acmt.014': { en:'Account Report',                              ko:'계좌 보고서' },
+  'acmt.015': { en:'Account Excluded Mandate Maintenance Request',ko:'계좌 제외 위임 유지 요청' },
+  'acmt.016': { en:'Account Excluded Mandate Maintenance Amendment Request',ko:'계좌 제외 위임 유지 수정 요청' },
+  'acmt.017': { en:'Account Mandate Maintenance Request',         ko:'계좌 위임 유지 요청' },
+  'acmt.018': { en:'Account Mandate Maintenance Amendment Request',ko:'계좌 위임 유지 수정 요청' },
+  'acmt.019': { en:'Account Closing Request',                     ko:'계좌 해지 요청' },
+  'acmt.020': { en:'Account Closing Amendment Request',           ko:'계좌 해지 수정 요청' },
+  'acmt.021': { en:'Account Closing Additional Information Request',ko:'계좌 해지 추가 정보 요청' },
+  'acmt.022': { en:'Identification Modification Advice',          ko:'식별 정보 수정 통지' },
+  'acmt.023': { en:'Identification Verification Request',         ko:'식별 정보 검증 요청' },
+  'acmt.024': { en:'Identification Verification Report',          ko:'식별 정보 검증 보고서' },
+  'acmt.027': { en:'Notification to Counterpart Bank',            ko:'거래 상대 은행 통지' },
+  // auth — Authorities
+  'auth.001': { en:'Information Request Opening',                 ko:'정보 요청 개시' },
+  'auth.002': { en:'Information Request Response',                ko:'정보 요청 응답' },
+  'auth.003': { en:'Information Request Status Change Notification',ko:'정보 요청 상태 변경 통지' },
+  // fxtr — FX Trade
+  'fxtr.008': { en:'Foreign Exchange Trade Instruction',          ko:'외환 거래 지시' },
+  'fxtr.014': { en:'Foreign Exchange Trade Confirmation',         ko:'외환 거래 확인' },
+  'fxtr.015': { en:'Foreign Exchange Trade Status and Details Notification',ko:'외환 거래 상태 및 상세 통지' },
+  'fxtr.016': { en:'Foreign Exchange Trade Capture Report',       ko:'외환 거래 캡처 보고서' },
+  'fxtr.017': { en:'Foreign Exchange Trade Capture Report Acknowledgement',ko:'외환 거래 캡처 보고서 확인' },
+  // remt — Remittance
+  'remt.001': { en:'Remittance Location Advice',                  ko:'송금 위치 통지' },
+  'remt.002': { en:'Remittance Advice',                           ko:'송금 통지' },
+  // sese — Securities Settlement
+  'sese.001': { en:'Transfer Out Instruction',                    ko:'출고 지시' },
+  'sese.002': { en:'Transfer Out Cancellation Request',           ko:'출고 취소 요청' },
+  'sese.003': { en:'Transfer Out Confirmation',                   ko:'출고 확인' },
+  'sese.004': { en:'Reversal of Transfer Out Confirmation',       ko:'출고 확인 취소' },
+  'sese.005': { en:'Transfer In Instruction',                     ko:'입고 지시' },
+  'sese.006': { en:'Transfer In Cancellation Request',            ko:'입고 취소 요청' },
+  'sese.007': { en:'Transfer In Confirmation',                    ko:'입고 확인' },
+  'sese.008': { en:'Reversal of Transfer In Confirmation',        ko:'입고 확인 취소' },
+  'sese.009': { en:'Request for Transfer Status Report',          ko:'이체 상태 보고 요청' },
+  'sese.010': { en:'Transfer Status Report',                      ko:'이체 상태 보고서' },
+  'sese.011': { en:'Transfer Instruction Status Report',          ko:'이체 지시 상태 보고서' },
+  'sese.012': { en:'Portfolio Transfer Instruction',              ko:'포트폴리오 이체 지시' },
+  'sese.013': { en:'Portfolio Transfer Confirmation',             ko:'포트폴리오 이체 확인' },
+  'sese.014': { en:'Portfolio Transfer Cancellation Request',     ko:'포트폴리오 이체 취소 요청' },
+  'sese.018': { en:'Securities Settlement Transaction Instruction',ko:'유가증권 결제 거래 지시' },
+  'sese.019': { en:'Securities Settlement Transaction Cancellation Request',ko:'유가증권 결제 거래 취소 요청' },
+  'sese.020': { en:'Securities Settlement Transaction Counterparty Response',ko:'유가증권 결제 거래 상대방 응답' },
+  'sese.021': { en:'Securities Settlement Transaction Modification Request',ko:'유가증권 결제 거래 수정 요청' },
+  'sese.022': { en:'Securities Settlement Transaction Status Advice',ko:'유가증권 결제 거래 상태 통지' },
+  'sese.023': { en:'Securities Settlement Transaction Allegement Notification',ko:'유가증권 결제 거래 주장 통지' },
+  'sese.024': { en:'Securities Settlement Transaction Confirmation',ko:'유가증권 결제 거래 확인' },
+  'sese.025': { en:'Securities Settlement Transaction Reversal Advice',ko:'유가증권 결제 거래 취소 통지' },
+  'sese.026': { en:'Securities Settlement Obligation Minimisation', ko:'유가증권 결제 의무 최소화' },
+  'sese.027': { en:'Securities Settlement Transaction Processing Status Advice',ko:'유가증권 결제 거래 처리 상태 통지' },
+  'sese.028': { en:'Securities Settlement Allegement Removal Advice',ko:'유가증권 결제 주장 제거 통지' },
+  'sese.029': { en:'Securities Settlement Transaction Generation Notification',ko:'유가증권 결제 거래 생성 통지' },
+  'sese.030': { en:'Custodian to Intermediary Message',           ko:'수탁자-중개자 전문' },
+};
+
+function getMxTypeName(msgType) {
+  const prefix = msgType.split('.').slice(0, 2).join('.');
+  return MX_TYPE_NAMES[prefix] || MX_TYPE_NAMES[msgType] || null;
+}
+
+// { en: '영문 공식명', ko: '한국어 명칭' }
+const MT_TYPE_NAMES = {
+  'MT101': { en:'Request for Transfer',                                       ko:'송금 요청' },
+  'MT102': { en:'Multiple Customer Credit Transfer',                          ko:'복수 고객 신용 이체' },
+  'MT102+':{ en:'Multiple Customer Credit Transfer (STP)',                    ko:'복수 고객 신용 이체 (STP)' },
+  'MT103': { en:'Single Customer Credit Transfer',                            ko:'단일 고객 신용 이체' },
+  'MT103+':{ en:'Single Customer Credit Transfer (STP)',                      ko:'단일 고객 신용 이체 (STP)' },
+  'MT104': { en:'Direct Debit and Request for Debit Transfer',                ko:'직접 출금 및 출금 이체 요청' },
+  'MT105': { en:'EDIFACT Envelope',                                           ko:'EDIFACT 봉투' },
+  'MT107': { en:'General Direct Debit Message',                               ko:'일반 직접 출금 전문' },
+  'MT110': { en:'Advice of Cheque(s)',                                        ko:'수표 통지' },
+  'MT111': { en:'Request for Stop Payment of a Cheque',                      ko:'수표 지급 정지 요청' },
+  'MT112': { en:'Status of a Request for Stop Payment of a Cheque',          ko:'수표 지급 정지 요청 상태' },
+  'MT190': { en:'Advice of Charges, Interest and Other Adjustments',         ko:'수수료·이자 및 기타 조정 통지' },
+  'MT191': { en:'Request for Payment of Charges, Interest and Other Expenses',ko:'수수료·이자 및 기타 비용 지급 요청' },
+  'MT192': { en:'Request for Cancellation',                                   ko:'취소 요청' },
+  'MT195': { en:'Queries',                                                    ko:'조회' },
+  'MT196': { en:'Answers',                                                    ko:'답변' },
+  'MT198': { en:'Proprietary Message',                                        ko:'독자 전문' },
+  'MT199': { en:'Free Format Message',                                        ko:'자유 형식 전문' },
+  'MT200': { en:'Financial Institution Transfer for Its Own Account',         ko:'금융기관 자기 계정 이체' },
+  'MT201': { en:'Multiple Financial Institution Transfer for Its Own Account',ko:'금융기관 자기 계정 복수 이체' },
+  'MT202': { en:'General Financial Institution Transfer',                     ko:'일반 금융기관 이체' },
+  'MT202COV':{ en:'General Financial Institution Transfer (Cover)',           ko:'일반 금융기관 이체 (커버)' },
+  'MT203': { en:'Multiple General Financial Institution Transfer',            ko:'복수 일반 금융기관 이체' },
+  'MT204': { en:'Financial Markets Direct Debit Message',                    ko:'금융 시장 직접 출금 전문' },
+  'MT205': { en:'Financial Institution Transfer Execution',                   ko:'금융기관 이체 실행' },
+  'MT205COV':{ en:'Financial Institution Transfer Execution (Cover)',         ko:'금융기관 이체 실행 (커버)' },
+  'MT210': { en:'Notice to Receive',                                          ko:'수취 통지' },
+  'MT290': { en:'Advice of Charges, Interest and Other Adjustments',         ko:'수수료·이자 및 기타 조정 통지' },
+  'MT292': { en:'Request for Cancellation',                                   ko:'취소 요청' },
+  'MT295': { en:'Queries',                                                    ko:'조회' },
+  'MT296': { en:'Answers',                                                    ko:'답변' },
+  'MT298': { en:'Proprietary Message',                                        ko:'독자 전문' },
+  'MT299': { en:'Free Format Message',                                        ko:'자유 형식 전문' },
+  'MT300': { en:'Foreign Exchange Confirmation',                              ko:'외환 확인' },
+  'MT303': { en:'Forex/Currency Option Allocation Instruction',               ko:'외환/통화 옵션 배분 지시' },
+  'MT304': { en:'Advice/Instruction of a Third Party Deal',                  ko:'제3자 거래 통지/지시' },
+  'MT305': { en:'Foreign Currency Option Confirmation',                       ko:'외화 옵션 확인' },
+  'MT306': { en:'Foreign Currency Option Confirmation',                       ko:'외화 옵션 확인' },
+  'MT320': { en:'Fixed Loan/Deposit Confirmation',                            ko:'고정 대출/예금 확인' },
+  'MT321': { en:'Instruction to Settle a Third Party Loan/Deposit',          ko:'제3자 대출/예금 결제 지시' },
+  'MT330': { en:'Call/Notice Loan/Deposit Confirmation',                      ko:'콜/통지 대출/예금 확인' },
+  'MT340': { en:'Forward Rate Agreement Confirmation',                        ko:'선도 금리 계약 확인 (FRA)' },
+  'MT341': { en:'Forward Rate Agreement Settlement Confirmation',             ko:'선도 금리 계약 결제 확인' },
+  'MT350': { en:'Advice of Loan/Deposit Interest Payment',                   ko:'대출/예금 이자 지급 통지' },
+  'MT360': { en:'Single Currency Interest Rate Derivative Confirmation',      ko:'단일 통화 금리 파생상품 확인' },
+  'MT361': { en:'Cross Currency Interest Rate Swap Confirmation',             ko:'교차 통화 금리 스왑 확인' },
+  'MT362': { en:'Interest Rate Reset/Advice of Payment',                     ko:'금리 재설정/지급 통지' },
+  'MT364': { en:'Single Currency Interest Rate Derivative Termination Confirmation', ko:'단일 통화 금리 파생 종료 확인' },
+  'MT365': { en:'Cross Currency Interest Rate Swap Termination Confirmation', ko:'교차 통화 금리 스왑 종료 확인' },
+  'MT380': { en:'Foreign Exchange Order',                                     ko:'외환 주문' },
+  'MT381': { en:'Foreign Exchange Order Confirmation',                        ko:'외환 주문 확인' },
+  'MT390': { en:'Advice of Charges, Interest and Other Adjustments',         ko:'수수료·이자 및 기타 조정 통지' },
+  'MT392': { en:'Request for Cancellation',                                   ko:'취소 요청' },
+  'MT395': { en:'Queries',                                                    ko:'조회' },
+  'MT396': { en:'Answers',                                                    ko:'답변' },
+  'MT398': { en:'Proprietary Message',                                        ko:'독자 전문' },
+  'MT399': { en:'Free Format Message',                                        ko:'자유 형식 전문' },
+  'MT400': { en:'Advice of Payment',                                          ko:'지급 통지' },
+  'MT405': { en:'Clean Collection',                                           ko:'클린 추심' },
+  'MT410': { en:'Acknowledgement',                                            ko:'접수 확인' },
+  'MT412': { en:'Advice of Acceptance',                                       ko:'인수 통지' },
+  'MT416': { en:'Advice of Non-Payment/Non-Acceptance',                      ko:'미지급/미인수 통지' },
+  'MT420': { en:'Tracer',                                                     ko:'추적 조회' },
+  'MT422': { en:'Advice of Fate and Request for Instructions',                ko:'처리 결과 통지 및 지시 요청' },
+  'MT430': { en:'Amendment of Instructions',                                  ko:'지시 수정' },
+  'MT450': { en:'Cash Letter Credit Advice',                                  ko:'현금 서한 입금 통지' },
+  'MT455': { en:'Cash Letter Credit Adjustment Advice',                       ko:'현금 서한 입금 조정 통지' },
+  'MT456': { en:'Advice of Dishonour',                                        ko:'부도 통지' },
+  'MT490': { en:'Advice of Charges, Interest and Other Adjustments',         ko:'수수료·이자 및 기타 조정 통지' },
+  'MT492': { en:'Request for Cancellation',                                   ko:'취소 요청' },
+  'MT495': { en:'Queries',                                                    ko:'조회' },
+  'MT496': { en:'Answers',                                                    ko:'답변' },
+  'MT498': { en:'Proprietary Message',                                        ko:'독자 전문' },
+  'MT499': { en:'Free Format Message',                                        ko:'자유 형식 전문' },
+  'MT900': { en:'Confirmation of Debit',                                      ko:'출금 확인' },
+  'MT910': { en:'Confirmation of Credit',                                     ko:'입금 확인' },
+  'MT920': { en:'Request Message',                                            ko:'조회 요청 전문' },
+  'MT935': { en:'Rate Change Advice',                                         ko:'금리 변경 통지' },
+  'MT940': { en:'Customer Statement Message',                                 ko:'고객 거래 명세서' },
+  'MT941': { en:'Balance Report',                                             ko:'잔액 보고서' },
+  'MT942': { en:'Interim Transaction Report',                                 ko:'중간 거래 보고서' },
+  'MT950': { en:'Statement Message',                                          ko:'거래 명세서' },
+  'MT960': { en:'Request for Broadcast',                                      ko:'방송 요청' },
+  'MT961': { en:'Receive Broadcast',                                          ko:'방송 수신' },
+  'MT962': { en:'Key Service Message',                                        ko:'키 서비스 전문' },
+  'MT963': { en:'Key Acknowledgement Message',                                ko:'키 확인 전문' },
+  'MT964': { en:'Error Message',                                              ko:'오류 전문' },
+  'MT965': { en:'Response Message',                                           ko:'응답 전문' },
+  'MT966': { en:'Disconnect Message',                                         ko:'연결 해제 전문' },
+  'MT967': { en:'Disconnect Acknowledgement Message',                         ko:'연결 해제 확인 전문' },
+  'MT970': { en:'Netting Statement',                                          ko:'네팅 명세서' },
+  'MT971': { en:'Netting Balance Report',                                     ko:'네팅 잔액 보고서' },
+  'MT972': { en:'Netting Interim Statement',                                  ko:'네팅 중간 명세서' },
+  'MT973': { en:'Netting Request Message',                                    ko:'네팅 요청 전문' },
+  'MT985': { en:'Status Inquiry',                                             ko:'상태 조회' },
+  'MT986': { en:'Status Report',                                              ko:'상태 보고서' },
+  'MT990': { en:'Advice of Charges, Interest and Other Adjustments',         ko:'수수료·이자 및 기타 조정 통지' },
+  'MT992': { en:'Request for Cancellation',                                   ko:'취소 요청' },
+  'MT995': { en:'Queries',                                                    ko:'조회' },
+  'MT996': { en:'Answers',                                                    ko:'답변' },
+  'MT998': { en:'Proprietary Message',                                        ko:'독자 전문' },
+  'MT999': { en:'Free Format Message',                                        ko:'자유 형식 전문' },
+};
+
+// 전문 유형 → 카테고리 분류
+function getMtCategory(msgType) {
+  const clean = msgType.replace(/^MT/i, '');
+  const num = parseInt(clean, 10);
+  if (isNaN(num)) return 'CatN';
+  if (num >= 100 && num <= 199) return 'Cat1';
+  if (num >= 200 && num <= 299) return 'Cat2';
+  if (num >= 300 && num <= 399) return 'Cat3';
+  if (num >= 400 && num <= 499) return 'Cat4';
+  if (num >= 500 && num <= 599) return 'Cat5';
+  if (num >= 600 && num <= 699) return 'Cat6';
+  if (num >= 700 && num <= 799) return 'Cat7';
+  if (num >= 800 && num <= 899) return 'Cat8';
+  if (num >= 900 && num <= 999) return 'Cat9';
+  return 'CatN';
+}
+
+function getMxDomain(msgType) {
+  return (msgType || '').split('.')[0].toLowerCase() || 'other';
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   전문 유형 데이터 (기본값 + 서버 갱신)
+═══════════════════════════════════════════════════════════════════════ */
+// 기본 내장 목록 — 서버 응답(type 문자열 배열)으로 교체됨
+let _mtTypes = [
+  'MT101','MT102','MT103','MT104','MT105','MT107',
+  'MT110','MT111','MT112',
+  'MT200','MT202','MT202COV','MT203','MT205',
+  'MT300','MT320',
+  'MT400','MT410','MT416','MT420',
+  'MT900','MT910','MT940','MT942','MT950',
+  'MT999',
+];
+let _mxTypes = [
+  'pacs.008','pacs.009',
+  'camt.003','camt.052','camt.053','camt.054',
+  'pain.001','pain.002',
+];
+
+// LLM 사전생성 캐시 { "camt.003.001.08": {name_en, name_ko} }
+let _mxDescCache = {};
+
+// 카테고리별로 그룹핑된 MT 목록 (문자열 배열)
+function groupMtByCategory(types) {
+  const groups = {};
+  for (const t of types) {
+    const cat = getMtCategory(t);
+    if (!groups[cat]) groups[cat] = [];
+    groups[cat].push(t);
+  }
+  return groups;
+}
+
+function groupMxByDomain(types) {
+  const groups = {};
+  for (const t of types) {
+    const domain = getMxDomain(t);
+    if (!groups[domain]) groups[domain] = [];
+    groups[domain].push(t);
+  }
+  return groups;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   드롭다운 렌더링
+═══════════════════════════════════════════════════════════════════════ */
+function buildMtCatSelect() {
+  const groups = groupMtByCategory(_mtTypes);
+  const sel = document.getElementById('mt-cat-select');
+  sel.innerHTML = '<option value="">— 카테고리 선택 —</option>';
+  for (const [cat, meta] of Object.entries(MT_CATEGORIES)) {
+    if (!groups[cat]) continue;
+    const opt = document.createElement('option');
+    opt.value = cat;
+    opt.textContent = `${meta.label} (${groups[cat].length}종)`;
+    sel.appendChild(opt);
+  }
+  if (groups['CatN']?.length) {
+    const opt = document.createElement('option');
+    opt.value = 'CatN';
+    opt.textContent = `Common Group (n) (${groups['CatN'].length}종)`;
+    sel.appendChild(opt);
+  }
+}
+
+function buildMxDomainSelect() {
+  const groups = groupMxByDomain(_mxTypes);
+  const sel = document.getElementById('mx-cat-select');
+  sel.innerHTML = '<option value="">— 도메인 선택 —</option>';
+  for (const domain of Object.keys(groups).sort()) {
+    if (!groups[domain]) continue;
+    const label = getMxDomainLabel(domain);
+    const opt = document.createElement('option');
+    opt.value = domain;
+    opt.textContent = `${label} (${groups[domain].length}종)`;
+    sel.appendChild(opt);
+  }
+}
+
+function onMtCatChange() {
+  const cat = document.getElementById('mt-cat-select').value;
+  const typeSel = document.getElementById('mt-type-select');
+  typeSel.innerHTML = '<option value="">— 전문 유형 선택 —</option>';
+  typeSel.disabled = !cat;
+  if (!cat) {
+    document.getElementById('mt-cat-hint').textContent = '카테고리를 먼저 선택하세요.';
+    return;
+  }
+  const groups = groupMtByCategory(_mtTypes);
+  const types = groups[cat] || [];
+  for (const t of types) {
+    const opt = document.createElement('option');
+    opt.value = t;
+    const info = MT_TYPE_NAMES[t];
+    opt.textContent = info ? `${t} — ${info.en} (${info.ko})` : t;
+    typeSel.appendChild(opt);
+  }
+  const meta = MT_CATEGORIES[cat] || {};
+  document.getElementById('mt-cat-hint').textContent =
+    `${meta.label || cat} — ${types.length}종의 전문 유형이 있습니다.`;
+}
+
+function onMxCatChange() {
+  const domain = document.getElementById('mx-cat-select').value;
+  const typeSel = document.getElementById('mx-type-select');
+  typeSel.innerHTML = '<option value="">— 전문 유형 선택 —</option>';
+  typeSel.disabled = !domain;
+  if (!domain) {
+    document.getElementById('mx-cat-hint').textContent = '도메인을 먼저 선택하세요.';
+    return;
+  }
+  const groups = groupMxByDomain(_mxTypes);
+  const types = groups[domain] || [];
+  for (const t of types) {
+    const opt = document.createElement('option');
+    opt.value = t;
+    const cached = _mxDescCache[t];
+    const info = getMxTypeName(t);
+    if (cached?.name_en) {
+      opt.textContent = cached.name_ko
+        ? `${t} — ${cached.name_en} (${cached.name_ko})`
+        : `${t} — ${cached.name_en}`;
+    } else if (info) {
+      opt.textContent = `${t} — ${info.en} (${info.ko})`;
+    } else {
+      opt.textContent = t;
+    }
+    typeSel.appendChild(opt);
+  }
+  const label = getMxDomainLabel(domain);
+  document.getElementById('mx-cat-hint').textContent =
+    `${label} — ${types.length}종의 전문 유형이 있습니다.`;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   서버에서 전문 유형 갱신
+═══════════════════════════════════════════════════════════════════════ */
+async function refreshMsgTypes() {
+  const btn = document.getElementById('refresh-types-btn');
+  btn.classList.add('spinning');
+  btn.disabled = true;
+  try {
+    const r = await fetch(`${getApiUrl()}/msg-types`, { signal: AbortSignal.timeout(15000) });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const data = await r.json();
+
+    if (data.mt?.length)  _mtTypes = data.mt;
+    // MX: 캐시 있으면 [{type,name_en,name_ko}], 없으면 문자열 배열
+    if (data.mx?.length) {
+      if (typeof data.mx[0] === 'string') {
+        _mxTypes = data.mx;
+      } else {
+        _mxTypes = data.mx.map(o => o.type);
+        data.mx.forEach(o => {
+          if (o.name_en || o.name_ko) _mxDescCache[o.type] = o;
+        });
+      }
+    }
+    // 도메인 레이블 캐시 갱신
+    if (data.domains && typeof data.domains === 'object') {
+      _mxDomainCache = data.domains;
+    }
+
+    buildMtCatSelect();
+    buildMxDomainSelect();
+
+    document.getElementById('mt-type-select').innerHTML = '<option value="">— 전문 유형 선택 —</option>';
+    document.getElementById('mt-type-select').disabled = true;
+    document.getElementById('mx-type-select').innerHTML = '<option value="">— 전문 유형 선택 —</option>';
+    document.getElementById('mx-type-select').disabled = true;
+
+    const total = (data.mt?.length || 0) + (data.mx?.length || 0);
+    toast(`✓ 전문 목록 갱신됨 — MT ${data.mt?.length||0}종 · MX ${data.mx?.length||0}종 (총 ${total}종)`);
+  } catch(e) {
+    toast(`전문 목록 갱신 실패: ${e.message}`, 'warn');
+  } finally {
+    btn.classList.remove('spinning');
+    btn.disabled = false;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Category Browser (MT / MX)
+═══════════════════════════════════════════════════════════════════════ */
+
+// 전문 유형별 설명 결과 캐시 (세션 내 메모리)
+const EXPLAIN_CACHE = {};
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Field Example Values (주요 필드 예시값)
+═══════════════════════════════════════════════════════════════════════ */
+const FIELD_EXAMPLES = {
+  // MT 공통
+  ':20:':   'REF-20240115-001',
+  ':21:':   'REF-20240115-001',
+  ':21R:':  'REF-20240115-001',
+  ':23B:':  'CRED',
+  ':23E:':  'SDVA',
+  ':26T:':  '001',
+  ':28C:':  '00001/001',
+  ':28D:':  '1/1',
+  ':30:':   '240115',
+  ':32A:':  '240115EUR10000,00',
+  ':32B:':  'EUR10000,00',
+  ':33B:':  'EUR10000,00',
+  ':36:':   '1,1234',
+  ':50A:':  'DEUTDEFFXXX',
+  ':50K:':  '/DE89370400440532013000\nORDERING CUSTOMER NAME\n123 SENDER STREET\nBERLIN GERMANY',
+  ':50F:':  '/DE89370400440532013000\n1/ORDERING CUSTOMER NAME\n2/123 SENDER STREET\n3/BERLIN GERMANY',
+  ':51A:':  'DEUTDEFFXXX',
+  ':52A:':  'DEUTDEFFXXX',
+  ':52D:':  'DEUTSCHE BANK AG\nFRANKFURT GERMANY',
+  ':53A:':  'CHASUS33XXX',
+  ':53B:':  '/DE89370400440532013000',
+  ':54A:':  'BNPAFRPPXXX',
+  ':55A:':  'MIDLGB22XXX',
+  ':56A:':  'BNPAFRPPXXX',
+  ':57A:':  'BNPAFRPPXXX',
+  ':57D:':  'BNP PARIBAS\nPARIS FRANCE',
+  ':59:':   '/FR7630006000011234567890189\nBENEFICIARY CORP\n456 RECEIVER AVE\nPARIS FRANCE',
+  ':59A:':  '/FR7630006000011234567890189\nBNPAFRPPXXX',
+  ':59F:':  '/FR7630006000011234567890189\n1/BENEFICIARY CORP\n2/456 RECEIVER AVE\n3/PARIS FRANCE',
+  ':70:':   'INVOICE 2024-001 PAYMENT',
+  ':71A:':  'SHA',
+  ':71F:':  'EUR25,00',
+  ':71G:':  'EUR5,00',
+  ':72:':   '/BNF/URGENT PAYMENT',
+  ':76A:':  '/STPD/\nCancellation requested due to incorrect beneficiary.',
+  ':77B:':  '/BENEFRES/FR',
+  ':77T:':  '/ENVELOP/...',
+  // MX 공통
+  '<MsgId>':             'MSGID-20240115-001',
+  '<CreDtTm>':           '2024-01-15T09:00:00',
+  '<NbOfTxs>':           '1',
+  '<SttlmMtd>':          'CLRG',
+  '<EndToEndId>':        'E2E-20240115-001',
+  '<TxId>':              'TX-20240115-001',
+  '<IntrBkSttlmAmt>':    '10000.00 (Ccy="EUR")',
+  '<IntrBkSttlmDt>':     '2024-01-15',
+  '<ChrgBr>':            'SHAR',
+  '<BICFI>':             'DEUTDEFFXXX',
+  '<IBAN>':              'DE89370400440532013000',
+  '<Nm>':                'ORDERING CUSTOMER NAME',
+};
+
+function fieldExample(tag, fieldName) {
+  if (FIELD_EXAMPLES[tag]) return FIELD_EXAMPLES[tag];
+
+  // MX 태그 이름 패턴으로 샘플 추론
+  const t = tag.replace(/[<>\/]/g, '').toLowerCase();
+  if (/msgid|txid|instrid|endtoendid|ref$|id$/.test(t))      return 'REF-20240115-001';
+  if (/credttm|crttm|dttm/.test(t))                           return '2024-01-15T09:00:00';
+  if (/sttlmdt|trddt|valdt|dt$|date/.test(t))                return '2024-01-15';
+  if (/intrbnksttlmamt|ttlamt|amt$|amount/.test(t))           return '10000.00';
+  if (/txnmnlamt|nmnlamt/.test(t))                            return '10000.00 (Ccy="EUR")';
+  if (/ccy$|currency/.test(t))                                return 'EUR';
+  if (/bicfi|bic$/.test(t))                                   return 'DEUTDEFFXXX';
+  if (/iban/.test(t))                                         return 'DE89370400440532013000';
+  if (/nm$|name/.test(t))                                     return 'COMPANY NAME';
+  if (/adr|address|strt/.test(t))                             return '123 MAIN STREET';
+  if (/ctry$|country/.test(t))                                return 'DE';
+  if (/rate$|dealrate|fixdrt/.test(t))                        return '0.0500';
+  if (/nboftxs|count/.test(t))                                return '1';
+  if (/ctrlsum|sum/.test(t))                                   return '10000.00';
+  if (/chrg|charge/.test(t))                                   return 'SHAR';
+  if (/sttlmmtd|method/.test(t))                              return 'CLRG';
+  if (/tp$|type$/.test(t))                                    return 'NEWT';
+  if (/sts$|status/.test(t))                                   return 'NEWT';
+  if (/ind$|indicator/.test(t))                               return 'false';
+  if (/lei/.test(t))                                          return '7LTWFZYICNSX8D621K86';
+  if (/owner|holder|prncpl/.test(t))                          return 'JOHN DOE';
+  if (/acctopng|openingtype|opngtp/.test(t))                  return 'NEWA';
+  if (/acct$|account/.test(t))                                return 'ACC-001';
+  if (/org|orgn|organisation/.test(t))                        return 'SAMPLE CORP';
+  if (/prtfl|portfolio/.test(t))                              return 'PORT-001';
+  if (/fnd|fund/.test(t))                                     return 'FUND-001';
+  if (/mifid|esg|tax|rgltry|regul/.test(t))                   return 'ELIG';
+  if (/pstlcd|postalcode|zip/.test(t))                        return '10001';
+  if (/twn|town|city/.test(t))                                return 'NEW YORK';
+  if (/prvnc|province|state/.test(t))                         return 'NY';
+  if (/email/.test(t))                                        return 'contact@example.com';
+  if (/phon|mobile|fax/.test(t))                              return '+1-212-555-0100';
+  if (/acctchck|check|vrfctn/.test(t))                        return 'PASS';
+  if (/scndry|secondary/.test(t))                             return 'JANE DOE';
+
+  // fieldName 기반 fallback (필드명에 한국어 포함 가능)
+  if (fieldName) {
+    const n = fieldName.toLowerCase();
+    if (/소유자|owner|holder/.test(n))    return 'JOHN DOE';
+    if (/계좌|account|acct/.test(n))      return 'ACC-001';
+    if (/유형|type|종류/.test(n))         return 'NEWA';
+    if (/주소|address/.test(n))           return '123 MAIN STREET';
+    if (/통신|연락|contact/.test(n))      return 'contact@example.com';
+    if (/확인|check|검증/.test(n))        return 'PASS';
+    if (/날짜|date|일시/.test(n))         return '2024-01-15';
+    if (/금액|amount|잔액/.test(n))       return '10000.00';
+  }
+  return '';
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Generate from Fields (주요 필드 입력값으로 전문 생성)
+═══════════════════════════════════════════════════════════════════════ */
+function generateFromFields() {
+  const msgType = window._explainMsgType || document.getElementById('msg-type').value.trim();
+  if (!msgType) { toast('⚠ 전문 유형을 먼저 선택하세요', 'warn'); return; }
+
+  // 입력된 필드값 수집 (xml_path 포함)
+  const rows = [];
+  let i = 0;
+  while (true) {
+    const el = document.getElementById(`field-input-${i}`);
+    if (!el) break;
+    const val = el.value.trim();
+    if (val) {
+      const pathHint = el.dataset.xmlpath ? ` [경로: ${el.dataset.xmlpath}]` : '';
+      rows.push(`${el.dataset.tag} (${el.dataset.name})${pathHint}: ${val}`);
+    }
+    i++;
+  }
+
+  if (rows.length === 0) { toast('⚠ 입력값을 하나 이상 입력하세요', 'warn'); return; }
+
+  const prompt =
+    `${msgType} 전문을 생성해주세요.\n` +
+    `아래 [필드 목록]에 있는 모든 필드와 값을 빠짐없이 전문에 포함하십시오. 누락하면 안 됩니다.\n` +
+    `[경로] 정보가 있는 필드는 해당 XML 경로에 값을 배치하십시오.\n\n` +
+    `[필드 목록 — 총 ${rows.length}개, 전부 포함 필수]\n` +
+    rows.join('\n');
+
+  document.getElementById('msg-input').value = prompt;
+  document.getElementById('msg-type').value  = msgType;
+  document.getElementById('intent').value    = 'generate';
+  updateMsgLen();
+
+  // 바로 전송
+  submitConvert();
+}
+
+function switchCatTab(cat) {
+  ['mt', 'mx', 'nlp'].forEach(c => {
+    document.getElementById(`cat-tab-${c}`).classList.toggle('active', c === cat);
+    document.getElementById(`cat-panel-${c}`).classList.toggle('active', c === cat);
+  });
+
+  const isNlp = cat === 'nlp';
+  document.getElementById('msg-input-wrap').style.display  = isNlp ? 'none'  : '';
+  document.getElementById('nlp-input-wrap').style.display  = isNlp ? ''      : 'none';
+  document.getElementById('msg-type').parentElement.style.display = isNlp ? 'none' : '';
+
+  if (isNlp) {
+    document.getElementById('intent').value = 'explain';
+    document.getElementById('submit-label').textContent = '질문 전송 (POST /convert)';
+  } else {
+    document.getElementById('submit-label').textContent = '전송 (POST /convert)';
+  }
+}
+
+function loadNlpExample(query, intent) {
+  document.getElementById('nlp-input').value = query;
+  document.getElementById('intent').value = intent || 'explain';
+  document.querySelectorAll('.nlp-chip').forEach(c =>
+    c.classList.toggle('active', c.getAttribute('onclick')?.includes(query.slice(0, 20)))
+  );
+  toast('💬 예시 질문 로드됨');
+}
+
+function onCatSelectChange(cat) {
+  const select  = document.getElementById(`${cat}-type-select`);
+  const msgType = select.value;
+  if (!msgType) return;
+
+  const query = `${msgType} 전문에 대해 설명해주세요. 전문의 이름, 목적, 주요 필드를 알려주세요.`;
+  document.getElementById('msg-input').value = query;
+  document.getElementById('msg-type').value  = msgType;
+  document.getElementById('intent').value    = 'explain';
+  updateMsgLen();
+
+}
+
+
+function loadSample(key) {
+  const s = SAMPLES[key];
+  if (!s) return;
+  document.getElementById('msg-input').value = s.message;
+  document.getElementById('msg-type').value  = s.msg_type || '';
+  document.getElementById('intent').value    = s.intent   || '';
+  updateMsgLen();
+  document.querySelectorAll('.chip').forEach(c =>
+    c.classList.toggle('active', c.dataset.sample === key)
+  );
+  toast(`📋 '${key}' 샘플 로드됨`);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Submit / Convert
+═══════════════════════════════════════════════════════════════════════ */
+async function submitConvert() {
+  const isNlp  = document.getElementById('cat-tab-nlp').classList.contains('active');
+  const msg    = isNlp
+    ? document.getElementById('nlp-input').value.trim()
+    : document.getElementById('msg-input').value.trim();
+  const type   = isNlp ? '' : document.getElementById('msg-type').value.trim();
+  const intent = document.getElementById('intent').value;
+
+  if (!msg) { toast(isNlp ? '⚠ 질문을 입력하세요' : '⚠ 전문 내용을 입력하세요', 'warn'); return; }
+
+  setLoading(true);
+  clearResults();
+  document.getElementById('hitl-panel').style.display = 'none';
+
+  const body = { raw_message: msg, msg_type: type };
+  if (intent) body.user_intent = intent;
+
+  try {
+    const r = await fetch(`${getApiUrl()}/convert`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.detail || `HTTP ${r.status}`);
+    handleResponse(data);
+  } catch(e) {
+    toast(`❌ 오류: ${e.message}`, 'err');
+    setLoading(false);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Resume (HITL)
+═══════════════════════════════════════════════════════════════════════ */
+async function sendResume(action) {
+  if (!currentThreadId) { toast('스레드 ID가 없습니다', 'warn'); return; }
+  const comment = document.getElementById('hitl-comment').value.trim();
+  setLoading(true);
+  try {
+    const r = await fetch(`${getApiUrl()}/resume`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ thread_id: currentThreadId, action, comment: comment || null }),
+    });
+    const data = await r.json();
+    if (!r.ok) throw new Error(data.detail || `HTTP ${r.status}`);
+    document.getElementById('hitl-comment').value = '';
+    handleResponse(data);
+    toast(`✓ ${action} 처리 완료`);
+  } catch(e) {
+    toast(`❌ 재개 실패: ${e.message}`, 'err');
+    setLoading(false);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Handle Response
+═══════════════════════════════════════════════════════════════════════ */
+function handleResponse(data) {
+  lastResponse = data;
+  currentThreadId = data.thread_id;
+
+  // Thread info display
+  document.getElementById('thread-info').style.display = 'block';
+  document.getElementById('thread-id-display').textContent = data.thread_id;
+
+  // Raw JSON
+  document.getElementById('raw-empty').style.display = 'none';
+  document.getElementById('raw-content').style.display = 'block';
+  document.getElementById('raw-json').textContent = JSON.stringify(data, null, 2);
+
+  // HITL panel
+  const isHitl = data.status === 'pending_hitl';
+  const hitlEl = document.getElementById('hitl-panel');
+  hitlEl.style.display = isHitl ? 'block' : 'none';
+  if (isHitl) {
+    const verdict = (data.hitl_payload?.validation_result?.verdict) || '';
+    document.getElementById('hitl-verdict-badge').textContent = verdict || '검수 필요';
+    document.getElementById('hitl-reason').textContent =
+      `판정: ${verdict || 'N/A'} — ${data.message}`;
+  }
+
+  // Render Overview
+  renderOverview(data);
+  // Render Output
+  renderOutput(data.output, data);
+  // Render Validation
+  renderValidation(data.validation_result, data.output);
+
+  // Add to history
+  addHistoryRow(data);
+
+  setLoading(false);
+
+  // Auto-switch to best tab
+  if (['explanation', 'mapping_rule', 'general_answer'].includes(data.output?.type)) {
+    switchTab('output');
+  } else if (data.output?.draft || data.output?.enhanced || data.output?.type === 'mapped_message') {
+    // 생성/변환 결과는 검토가 필요하므로 출력 탭으로
+    switchTab('output');
+  } else if (data.output?.type === 'analysis') {
+    switchTab('validation');
+  } else if (data.status === 'pending_hitl') {
+    switchTab('overview');
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Render Overview
+═══════════════════════════════════════════════════════════════════════ */
+function renderOverview(data) {
+  document.getElementById('overview-empty').style.display = 'none';
+  document.getElementById('overview-content').style.display = 'block';
+
+  const verdict = data.output?.verdict
+    || data.validation_result?.verdict
+    || (data.status === 'pending_hitl' ? 'PENDING' : data.status === 'failed' ? 'ERROR' : '—');
+
+  const vClass = {
+    PASS: 'v-pass', WARNING: 'v-warning', REJECT: 'v-reject',
+    PENDING: 'v-pending', PENDING_REVIEW: 'v-pending', ERROR: 'v-error'
+  }[verdict] || 'v-error';
+
+  const statusBadge = {
+    completed:    '<span class="badge badge-ok"><span class="dot"></span>완료</span>',
+    pending_hitl: '<span class="badge badge-warn"><span class="dot"></span>HITL 대기</span>',
+    failed:       '<span class="badge badge-err"><span class="dot"></span>실패</span>',
+  }[data.status] || '';
+
+  // explanation / mapping_rule 타입은 별도 verdict 표시
+  const isExplain     = data.output?.type === 'explanation';
+  const isMappingRule = data.output?.type === 'mapping_rule';
+  const verdictDisplay = isExplain
+    ? `<div class="verdict-badge" style="background:#6366f1;font-size:14px">📖 설명</div>`
+    : isMappingRule
+      ? `<div class="verdict-badge" style="background:#0e7490;font-size:14px">🔀 매핑 규칙</div>`
+      : data.output?.type === 'general_answer'
+        ? `<div class="verdict-badge" style="background:#7c3aed;font-size:14px">💬 Q&A</div>`
+        : `<div class="verdict-badge ${vClass}">${verdict}</div>`;
+
+  document.getElementById('verdict-row').innerHTML = `
+    ${verdictDisplay}
+    ${statusBadge}
+    ${data.routed_agent ? `<span class="badge badge-info"><span class="dot"></span>${data.routed_agent}</span>` : ''}
+  `;
+  document.getElementById('result-msg').textContent = isExplain
+    ? `${data.output?.full_name || ''} — ${data.output?.korean_name || ''}`
+    : (data.message || '');
+
+  // Meta grid
+  const meta = [
+    { key: 'Thread ID', val: data.thread_id?.slice(0,8) + '…' || '—' },
+    { key: '에이전트',   val: data.routed_agent || '—' },
+    { key: '전문 유형',  val: (data.hitl_payload?.msg_type || '—') },
+    { key: '처리 시간',  val: data.processing_time_ms ? `${data.processing_time_ms.toFixed(0)} ms` : '—' },
+    { key: 'Prowide',   val: data.validation_result?.rule_engine?.degraded === true ? '⚠ Degraded' : '연결됨' },
+    { key: '가이드북 참조', val: (data.validation_result?.guidebook_basis?.length || 0) + '건' },
+  ];
+  document.getElementById('meta-grid').innerHTML = meta.map(m => `
+    <div class="meta-item"><div class="key">${m.key}</div><div class="val">${m.val}</div></div>
+  `).join('');
+
+  // Guidebook basis
+  const basis = data.validation_result?.guidebook_basis || [];
+  if (basis.length > 0) {
+    document.getElementById('guidebook-card').style.display = 'block';
+    const basisChips = basis
+      .filter(b => (b.page != null) || b.source)   // field 없어도 page/source 있으면 표시
+      .map(b => {
+        const src   = b.source ? `<span style="color:#a5b4fc;font-size:10px;display:block;margin-bottom:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:160px" title="${esc(b.source)}">${esc(b.source)}</span>` : '';
+        const page  = b.page != null ? `p.${b.page}` : '';
+        const field = (b.field && b.field !== 'SYSTEM') ? ` :${b.field}:` : '';
+        const rule  = b.rule_id ? ` ${b.rule_id}` : '';
+        return `<span class="tag-chip" style="display:inline-flex;flex-direction:column;vertical-align:top;max-width:170px">${src}<span>${page}${field}${rule}</span></span>`;
+      })
+      .join('');
+    document.getElementById('guidebook-list').innerHTML = basisChips || '<span style="color:var(--muted);font-size:12px">근거 없음</span>';
+  } else {
+    document.getElementById('guidebook-card').style.display = 'none';
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Render Output
+═══════════════════════════════════════════════════════════════════════ */
+function renderOutput(output, data) {
+  const empty   = document.getElementById('output-empty');
+  const content = document.getElementById('output-content');
+
+  if (!output) { empty.style.display='flex'; content.style.display='none'; return; }
+  empty.style.display = 'none';
+  content.style.display = 'block';
+
+  let html = '';
+
+  // ── Explanation type ─────────────────────────────────────────────────────
+  if (output.type === 'explanation') {
+    const o = output;
+    const mandatoryBadge = m => m
+      ? '<span style="color:#4ade80;font-weight:700;font-size:11px">필수</span>'
+      : '<span style="color:#94a3b8;font-size:11px">선택</span>';
+
+    html += `
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+        <div class="verdict-badge" style="background:#6366f1;font-size:14px;padding:6px 16px">${esc(o.msg_type||'')}</div>
+        <div>
+          <div style="font-size:18px;font-weight:700;color:var(--text)">${esc(o.full_name||'')}</div>
+          <div style="font-size:13px;color:var(--muted)">${esc(o.korean_name||'')}</div>
+        </div>
+      </div>
+      ${o.flow_description ? `<div style="font-size:12px;color:#6366f1;margin-bottom:10px">🔀 ${esc(o.flow_description)}</div>` : ''}
+      <p style="color:var(--text);line-height:1.7;margin:0">${esc(o.purpose||'')}</p>
+    </div>`;
+
+    if (o.use_cases?.length) {
+      html += `<div class="card">
+        <div class="card-title">📌 사용 시나리오</div>
+        <ul style="padding-left:18px;margin:0;color:var(--text);line-height:1.9">
+          ${o.use_cases.map(u => `<li>${esc(u)}</li>`).join('')}
+        </ul>
+      </div>`;
+    }
+
+    // 현재 설명 중인 전문 유형 저장 (생성 버튼에서 사용)
+    window._explainMsgType = o.msg_type || '';
+
+    if (o.sections?.length) {
+      // ── MX 필드 구조 → 섹션 카드 블록 ───────────────────────────────────
+      // 외부 래퍼 시작 — 헤더 + 섹션 카드를 하나의 블록으로 묶음
+      html += `<div style="border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:16px">
+        <!-- 필드 구조 헤더 -->
+        <div style="padding:10px 14px;background:var(--surface2);border-bottom:1px solid var(--border);
+                    display:flex;align-items:center;gap:8px">
+          <span style="font-weight:700;font-size:13px">📋 필드 구조</span>
+          <span style="color:var(--muted);font-size:11px">${o.sections.length}개 블록</span>
+        </div>
+        <!-- 섹션 카드 영역 -->
+        <div style="padding:10px 12px;display:flex;flex-direction:column;gap:6px">`;
+
+      o.sections.forEach((sec) => {
+        const mBadge = sec.status === 'Mandatory'
+          ? '<span style="background:#14532d;color:#4ade80;border-radius:3px;padding:1px 6px;font-size:10px;font-weight:700">M</span>'
+          : '<span style="background:#1e293b;color:#94a3b8;border-radius:3px;padding:1px 6px;font-size:10px">O</span>';
+        const fieldsHtml = (sec.fields || []).map(f => {
+          const fm = f.status === 'Mandatory'
+            ? '<span style="background:#14532d;color:#4ade80;border-radius:3px;padding:1px 5px;font-size:10px;font-weight:700">M</span>'
+            : '<span style="background:#1e293b;color:#94a3b8;border-radius:3px;padding:1px 5px;font-size:10px">O</span>';
+          return `<tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:5px 8px;font-family:monospace;color:#6366f1;font-size:12px;white-space:nowrap">${esc(f.tag)}</td>
+            <td style="padding:5px 8px;font-size:12px;color:var(--text)">${esc(f.label)}</td>
+            <td style="padding:5px 8px;text-align:center">${fm}</td>
+            <td style="padding:5px 8px;font-size:11px;color:#f59e0b;white-space:nowrap">${esc(f.multiplicity||'')}</td>
+            <td style="padding:5px 8px;font-size:11px;color:#6366f1;white-space:nowrap">${esc(f.type||'')}</td>
+            <td style="padding:5px 8px;font-size:11px;color:var(--muted)">${esc(f.definition||'')}</td>
+            <td style="padding:5px 8px;font-size:11px;color:#10b981;white-space:nowrap">${esc(f.example||'')}</td>
+          </tr>`;
+        }).join('');
+        html += `<div style="border:1px solid var(--border);border-radius:6px;overflow:hidden">
+          <div style="padding:8px 14px;background:var(--surface2);border-bottom:1px solid var(--border);
+                      display:flex;align-items:center;gap:8px;cursor:pointer"
+               onclick="toggleSchemaSection(this)">
+            <span class="schema-sec-toggle" style="color:var(--muted);font-size:12px">▼</span>
+            <span style="font-family:monospace;color:#0ea5e9;font-weight:700;font-size:13px">${esc(sec.block||'')}</span>
+            <span style="color:var(--muted);font-size:12px">${esc(sec.label||'')}</span>
+            ${mBadge}
+            <span style="color:#f59e0b;font-size:11px">${esc(sec.multiplicity||'')}</span>
+            <span style="color:#6366f1;font-size:11px">${esc(sec.type||'')}</span>
+          </div>
+          <div class="schema-sec-body">
+            ${sec.definition ? `<div style="padding:6px 14px;font-size:12px;color:var(--muted);border-bottom:1px solid var(--border)">${esc(sec.definition)}</div>` : ''}
+            ${fieldsHtml ? `<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px">
+              <thead><tr style="color:var(--muted);border-bottom:1px solid var(--border);font-size:11px">
+                <th style="padding:4px 8px;text-align:left">태그</th>
+                <th style="padding:4px 8px;text-align:left">명칭</th>
+                <th style="padding:4px 8px;text-align:center">M/O</th>
+                <th style="padding:4px 8px;text-align:left">다중도</th>
+                <th style="padding:4px 8px;text-align:left">타입</th>
+                <th style="padding:4px 8px;text-align:left">설명</th>
+                <th style="padding:4px 8px;text-align:left">예시</th>
+              </tr></thead>
+              <tbody>${fieldsHtml}</tbody>
+            </table></div>` : '<div style="padding:8px 14px;color:var(--muted);font-size:12px">필드 없음</div>'}
+          </div>
+        </div>`;
+      });
+
+      html += `</div></div>`; // 섹션 카드 영역 + 외부 래퍼 닫기
+
+    } else if (o.key_fields?.length) {
+      // ── 일반 설명 → 주요 필드 테이블 ────────────────────────────────────
+      html += `<div class="card" id="key-fields-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+          <div class="card-title" style="margin:0">📋 주요 필드</div>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:10px;padding:6px 10px;background:var(--surface2);border-radius:6px;border-left:3px solid #6366f1">
+          가이드북 기준 <b style="color:#4ade80">필수 [1..1] / Mandatory</b> 필드 및 <b style="color:#94a3b8">실무 핵심 Optional</b> 필드
+        </div>
+        <table style="width:100%;border-collapse:collapse;font-size:13px">
+          <thead>
+            <tr style="color:var(--muted);border-bottom:1px solid var(--border)">
+              <th style="padding:6px 8px;text-align:left;width:80px">태그</th>
+              <th style="padding:6px 8px;text-align:left;width:110px">명칭</th>
+              <th style="padding:6px 8px;text-align:center;width:46px">M/O</th>
+              <th style="padding:6px 8px;text-align:left">설명</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${o.key_fields.map((f, i) => `<tr style="border-bottom:1px solid var(--border)">
+              <td style="padding:7px 8px;font-family:monospace;color:#6366f1">${esc(f.tag)}</td>
+              <td style="padding:7px 8px;color:var(--text);font-weight:500">${esc(f.name)}</td>
+              <td style="padding:7px 8px;text-align:center">${mandatoryBadge(f.mandatory)}</td>
+              <td style="padding:7px 8px;color:var(--muted);font-size:12px">${esc(f.description)}</td>
+            </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>`;
+    }
+
+    if (o.special_codes?.length) {
+      html += `<div class="card">
+        <div class="card-title">🔤 특수 코드 / 값</div>
+        ${o.special_codes.map(c => `
+          <div style="display:flex;gap:12px;padding:6px 0;border-bottom:1px solid var(--border)">
+            <code style="color:#f59e0b;min-width:80px">${esc(c.code)}</code>
+            <span style="color:var(--text)">${esc(c.meaning)}</span>
+          </div>`).join('')}
+      </div>`;
+    }
+
+    if (o.related_messages?.length) {
+      html += `<div class="card">
+        <div class="card-title">🔗 관련 전문</div>
+        ${o.related_messages.map(r => `
+          <div style="display:flex;gap:12px;padding:6px 0;border-bottom:1px solid var(--border)">
+            <span class="tag-chip" style="background:#1e293b;color:#6366f1">${esc(r.msg_type)}</span>
+            <span style="color:var(--text)">${esc(r.relationship)}</span>
+          </div>`).join('')}
+      </div>`;
+    }
+
+    if (o.guidebook_basis?.length) {
+      html += `<div class="card">
+        <div class="card-title">📚 가이드북 근거</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          ${o.guidebook_basis.filter(b => b.field && b.field !== 'SYSTEM').map(b =>
+            `<span class="tag-chip" title="${b.source||''}">${b.source ? b.source+' ' : ''}p.${b.page} :${b.field}:</span>`
+          ).join('')}
+        </div>
+      </div>`;
+    }
+  }
+
+  // ── Schema Tree type ─────────────────────────────────────────────────────
+  if (output.type === 'schema_tree') {
+    const st = output;
+    const filterLabel = st.filter_mode === 'all' ? '전체 필드' : '필수 필드';
+    const filterColor = st.filter_mode === 'all' ? '#6366f1' : '#10b981';
+
+    html += `
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+        <div class="verdict-badge" style="background:#0ea5e9;font-size:13px;padding:5px 14px">🌲 스키마</div>
+        <div style="font-size:15px;font-weight:700;color:var(--text)">${esc(st.msg_type||'')}</div>
+        <span style="font-size:11px;padding:2px 8px;border-radius:10px;background:${filterColor}22;color:${filterColor};border:1px solid ${filterColor}44">${filterLabel}</span>
+        ${st.cached ? '<span style="font-size:11px;color:var(--muted)">⚡ 캐시</span>' : ''}
+      </div>
+      ${st.explanation ? `<p style="color:var(--text);line-height:1.7;margin:0;font-size:13px">${esc(st.explanation)}</p>` : ''}
+    </div>`;
+
+    if (st.sections?.length) {
+      st.sections.forEach((sec, si) => {
+        const secMandatory = sec.mandatory === 'M' || sec.status === 'Mandatory';
+        const mBadge = secMandatory
+          ? '<span style="background:#14532d;color:#4ade80;border-radius:3px;padding:1px 6px;font-size:10px;font-weight:700">M</span>'
+          : '<span style="background:#1e293b;color:#94a3b8;border-radius:3px;padding:1px 6px;font-size:10px">O</span>';
+
+        function renderFieldRows(fields, depth) {
+          depth = depth || 0;
+          const indent = depth * 18;
+          const tagColor = depth === 0 ? '#6366f1' : depth === 1 ? '#818cf8' : '#a5b4fc';
+          const bgStyle  = depth === 0 ? '' : depth === 1 ? 'background:rgba(99,102,241,0.05)' : 'background:rgba(99,102,241,0.09)';
+          let rows = '';
+          (fields || []).forEach((f, fi) => {
+            const fMandatory = f.mandatory === 'M' || f.status === 'Mandatory';
+            const isChoice   = f.choice === true;
+            const fm = fMandatory && !isChoice
+              ? '<span style="background:#14532d;color:#4ade80;border-radius:3px;padding:1px 5px;font-size:10px;font-weight:700">M</span>'
+              : '<span style="background:#1e293b;color:#94a3b8;border-radius:3px;padding:1px 5px;font-size:10px">O</span>';
+            const hasChildren = f.children && f.children.length > 0;
+            const prefix = depth > 0
+              ? `<span style="color:var(--muted);user-select:none">${isChoice ? '{Or}&nbsp;' : '└&nbsp;'}</span>`
+              : '';
+            rows += `
+            <tr style="border-bottom:1px solid var(--border);${bgStyle}">
+              <td style="padding:5px 8px;padding-left:${8+indent}px;font-family:monospace;color:${tagColor};font-size:12px;white-space:nowrap">${prefix}${esc(f.xml_tag||f.tag||'')}</td>
+              <td style="padding:5px 8px;font-size:12px;color:var(--text)">${esc(f.name||f.label||'')}</td>
+              <td style="padding:5px 8px;text-align:center">${fm}</td>
+              <td style="padding:5px 8px;font-size:11px;color:#f59e0b;white-space:nowrap">${esc(f.multiplicity||'')}</td>
+              <td style="padding:5px 8px;font-size:11px;color:#6366f1;white-space:nowrap">${esc(f.type||'')}</td>
+              <td style="padding:5px 8px;font-size:11px;color:var(--muted)">${esc(f.description||f.definition||'')}</td>
+              <td style="padding:5px 8px;font-size:11px;color:#10b981;white-space:nowrap">${esc(f.example||'')}</td>
+            </tr>`;
+            if (hasChildren) {
+              rows += renderFieldRows(f.children, depth + 1);
+            }
+          });
+          return rows;
+        }
+        const fieldsHtml = renderFieldRows(sec.fields, 0);
+
+        html += `<div class="card" style="padding:0;overflow:hidden;margin-bottom:8px">
+          <div style="padding:8px 14px;background:var(--surface2);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;cursor:pointer"
+               onclick="toggleSchemaSection(this)">
+            <span class="schema-sec-toggle" style="color:var(--muted);font-size:12px">▼</span>
+            <span style="font-family:monospace;color:#0ea5e9;font-weight:700;font-size:13px">${esc(sec.xml_tag||sec.section||sec.block||'')}</span>
+            <span style="color:var(--muted);font-size:12px">${esc(sec.description||sec.label||'')}</span>
+            ${mBadge}
+            <span style="color:#f59e0b;font-size:11px">${esc(sec.multiplicity||'')}</span>
+            <span style="color:#6366f1;font-size:11px">${esc(sec.type||'')}</span>
+          </div>
+          <div class="schema-sec-body">
+            ${(sec.description||sec.definition) ? `<div style="padding:6px 14px;font-size:12px;color:var(--muted);border-bottom:1px solid var(--border)">${esc(sec.description||sec.definition)}</div>` : ''}
+            ${fieldsHtml ? `<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px">
+              <thead><tr style="color:var(--muted);border-bottom:1px solid var(--border);font-size:11px">
+                <th style="padding:4px 8px;text-align:left">태그</th>
+                <th style="padding:4px 8px;text-align:left">명칭</th>
+                <th style="padding:4px 8px;text-align:center">M/O</th>
+                <th style="padding:4px 8px;text-align:left">다중도</th>
+                <th style="padding:4px 8px;text-align:left">타입</th>
+                <th style="padding:4px 8px;text-align:left">설명</th>
+                <th style="padding:4px 8px;text-align:left">예시</th>
+              </tr></thead>
+              <tbody>${fieldsHtml}</tbody>
+            </table></div>` : '<div style="padding:8px 14px;color:var(--muted);font-size:12px">필드 없음</div>'}
+          </div>
+        </div>`;
+      });
+    } else {
+      const errMsg = st.schema_parse_error || '스키마 섹션을 생성하지 못했습니다.';
+      html += `<div class="card">
+        <div style="color:#f87171;font-size:13px;font-weight:600;margin-bottom:6px">⚠ 스키마 생성 실패</div>
+        <div style="color:var(--muted);font-size:12px;white-space:pre-wrap">${esc(errMsg)}</div>
+        <div style="margin-top:10px;font-size:11px;color:var(--muted)">
+          서버 로그에서 <code>schema_sections_parse_failed</code> 이벤트를 확인하거나,
+          Raw JSON 탭의 <code>schema_parse_error</code> 필드를 확인하세요.
+        </div>
+      </div>`;
+    }
+  }
+
+  // ── General Answer type ──────────────────────────────────────────────────
+  if (output.type === 'general_answer') {
+    const md = (output.answer || '답변을 생성하지 못했습니다.')
+      .replace(/^## (.+)$/gm, '<h3 style="font-size:14px;font-weight:700;color:var(--accent2);margin:14px 0 6px">$1</h3>')
+      .replace(/^### (.+)$/gm, '<h4 style="font-size:13px;font-weight:700;color:var(--text);margin:10px 0 4px">$1</h4>')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/^- (.+)$/gm, '<li style="margin:3px 0">$1</li>')
+      .replace(/(<li.*<\/li>\n?)+/g, s => `<ul style="padding-left:18px;margin:6px 0">${s}</ul>`)
+      .replace(/\n\n/g, '</p><p style="margin:8px 0">')
+      .replace(/\n/g, '<br>');
+
+    html += `
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+        <div class="verdict-badge" style="background:#7c3aed;font-size:12px;padding:5px 12px">💬 Q&amp;A</div>
+        <div style="font-size:12px;color:var(--muted);font-style:italic">${esc(output.query||'')}</div>
+      </div>
+      <div style="font-size:13px;color:var(--text);line-height:1.8">
+        <p style="margin:0">${md}</p>
+      </div>
+    </div>`;
+
+    if (output.guidebook_basis?.length) {
+      html += `<div class="card">
+        <div class="card-title">📚 참조 가이드라인</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          ${output.guidebook_basis.filter(b => b.field && b.field !== 'SYSTEM').map(b =>
+            `<span class="tag-chip" title="${b.source||''}">${b.source ? b.source+' ' : ''}p.${b.page ?? '?'} :${b.field}:</span>`
+          ).join('')}
+        </div>
+      </div>`;
+    }
+  }
+
+  // ── Mapping Rule type ────────────────────────────────────────────────────
+  if (output.type === 'mapping_rule') {
+    const o = output;
+    html += `
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+        <div class="verdict-badge" style="background:#0e7490;font-size:13px;padding:6px 14px">🔀 매핑 규칙</div>
+        <div>
+          <div style="font-size:16px;font-weight:700;color:var(--text)">${esc(o.source_field||'')}
+            <span style="color:var(--muted);font-weight:400;font-size:13px"> — ${esc(o.source_msg_type||'')} → ${esc(o.target_msg_type||'')}</span>
+          </div>
+        </div>
+      </div>
+      <div class="mapping-summary-box">${esc(o.mapping_summary||'')}</div>
+    </div>`;
+
+    if (o.mapping_details?.length) {
+      html += `<div class="card">
+        <div class="card-title">📋 매핑 상세</div>
+        <table style="width:100%;border-collapse:collapse;font-size:12px">
+          <thead>
+            <tr style="color:var(--muted);border-bottom:1px solid var(--border)">
+              <th style="padding:6px 10px;text-align:left;width:140px">조건 / 코드워드</th>
+              <th style="padding:6px 10px;text-align:left">MX 경로</th>
+              <th style="padding:6px 10px;text-align:left;width:130px">값 힌트</th>
+              <th style="padding:6px 10px;text-align:left;width:160px">비고</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${o.mapping_details.map(d => `
+            <tr style="border-bottom:1px solid var(--border)">
+              <td style="padding:7px 10px;font-family:var(--font-mono);color:#f59e0b;font-size:11px">${esc(d.condition||'')}</td>
+              <td style="padding:7px 10px"><span class="mx-path-chip">${esc(d.mx_path||'')}</span></td>
+              <td style="padding:7px 10px;color:var(--muted);font-size:11px">${esc(d.mx_value_hint||'—')}</td>
+              <td style="padding:7px 10px;color:var(--muted);font-size:11px">${esc(d.notes||'')}</td>
+            </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>`;
+    }
+
+    if (o.constraints?.length) {
+      html += `<div class="card">
+        <div class="card-title">⚠ 주의사항 / 제약</div>
+        ${o.constraints.map(c => `<div class="constraint-item">${esc(c)}</div>`).join('')}
+      </div>`;
+    }
+
+    if (o.guidebook_refs?.length) {
+      html += `<div class="card">
+        <div class="card-title">📚 가이드북 참조</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          ${o.guidebook_refs.map(r => `<span class="tag-chip">${esc(r)}</span>`).join('')}
+        </div>
+      </div>`;
+    }
+  }
+
+  // Analysis type
+  if (output.type === 'analysis') {
+    html += `<div class="card">
+      <div class="card-title">분석 결과</div>
+      <div class="verdict-badge ${verdictClass(output.verdict)}" style="font-size:18px;margin-bottom:8px">${output.verdict || '—'}</div>
+    </div>`;
+    if (output.details) {
+      html += `<details open><summary>상세 분석 JSON</summary>
+        <pre class="code-block">${esc(JSON.stringify(output.details, null, 2))}</pre>
+      </details>`;
+    }
+  }
+
+  // Generated message
+  if (output.draft) {
+    // HITL 대기 중이면 검토 안내 배너 표시
+    const isPending = data?.status === 'pending_hitl';
+    if (isPending) {
+      html += `<div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.4);
+                            border-radius:8px;padding:12px 16px;margin-bottom:12px;
+                            display:flex;align-items:center;gap:10px">
+        <span style="font-size:18px">👀</span>
+        <div>
+          <div style="font-weight:700;color:var(--yellow);font-size:13px">검수 대기 — 아래 전문을 확인 후 하단 HITL 패널에서 승인/거부하세요</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">생성된 전문은 승인 후 PII 마스킹이 복원되어 확정됩니다.</div>
+        </div>
+      </div>`;
+    }
+    html += `<div class="card">
+      <div class="card-title" style="display:flex;justify-content:space-between;align-items:center">
+        <span>생성된 전문 초안</span>
+        <button class="btn-secondary btn-sm" onclick="copyText(${JSON.stringify(output.draft)})">📋 복사</button>
+      </div>
+      <pre class="code-block" style="margin-top:8px">${esc(output.draft)}</pre>
+    </div>`;
+  }
+
+  // Mapped message
+  if (output.type === 'mapped_message') {
+    const dirLabel = output.direction === 'mt_to_mx' ? 'MT → MX (Uplift)' : 'MX → MT (Downlift)';
+    const isPending = data?.status === 'pending_hitl';
+
+    // 검수 배너
+    if (isPending) {
+      html += `<div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.4);
+                            border-radius:8px;padding:12px 16px;margin-bottom:12px;
+                            display:flex;align-items:center;gap:10px">
+        <span style="font-size:18px">🔄</span>
+        <div>
+          <div style="font-weight:700;color:var(--yellow);font-size:13px">변환 검수 대기 — 매핑 결과를 확인 후 하단 HITL 패널에서 승인/거부하세요</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">승인 시 PII 마스킹이 복원됩니다.</div>
+        </div>
+      </div>`;
+    }
+
+    html += `<div class="card">
+      <div class="card-title">🔄 변환 방향: ${esc(dirLabel)}</div>
+    </div>`;
+
+    // Prowide 초안
+    if (output.prowide_draft) {
+      html += `<details open><summary>Prowide 1차 변환 초안</summary>
+        <pre class="code-block">${esc(output.prowide_draft)}</pre>
+      </details>`;
+    }
+
+    // LLM 보강본
+    if (output.enhanced && output.enhanced !== output.prowide_draft) {
+      html += `<details open><summary>LLM 보강 최종 전문</summary>
+        <div style="margin-bottom:6px;display:flex;justify-content:flex-end">
+          <button class="btn-secondary btn-sm" onclick="copyText(${JSON.stringify(output.enhanced)})">📋 복사</button>
+        </div>
+        <pre class="code-block">${esc(output.enhanced)}</pre>
+      </details>`;
+    }
+
+    // Prowide/LLM 결과가 없으면 LLM 필드 매핑 테이블 표시
+    if (!output.prowide_draft && !output.enhanced) {
+      const mappings = output.mapper_output?.mappings || [];
+      if (mappings.length > 0) {
+        html += `<div class="card">
+          <div class="card-title" style="display:flex;justify-content:space-between;align-items:center">
+            <span>📋 LLM 필드 매핑 명세</span>
+            <span style="font-size:11px;color:var(--muted)">총 ${mappings.length}개 필드</span>
+          </div>
+          <table style="width:100%;border-collapse:collapse;font-size:12px">
+            <thead>
+              <tr style="border-bottom:1px solid var(--border);color:var(--muted)">
+                <th style="text-align:left;padding:6px 10px;width:90px">MT 태그</th>
+                <th style="text-align:left;padding:6px 10px;width:130px">MT 값</th>
+                <th style="text-align:left;padding:6px 10px;width:200px">MX 경로</th>
+                <th style="text-align:left;padding:6px 10px">MX 값</th>
+                <th style="text-align:center;padding:6px 10px;width:60px">상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${mappings.map(m => `
+              <tr style="border-bottom:1px solid var(--border)${m.is_unmapped?';opacity:.5':''}">
+                <td style="padding:7px 10px;font-family:var(--font-mono);color:var(--accent2)">${esc(m.mt_tag||'')}</td>
+                <td style="padding:7px 10px;font-family:var(--font-mono);color:var(--muted);word-break:break-all">${esc(m.mt_value||'')}</td>
+                <td style="padding:7px 10px;font-family:var(--font-mono);color:#34d399;font-size:11px">${(m.mx_paths||[]).join('<br>')}</td>
+                <td style="padding:7px 10px;color:var(--text);word-break:break-all">${esc(m.mx_value||'')}</td>
+                <td style="padding:7px 10px;text-align:center">
+                  ${m.is_unmapped
+                    ? '<span style="color:var(--red);font-size:11px">미매핑</span>'
+                    : '<span style="color:var(--green);font-size:11px">✓</span>'}
+                </td>
+              </tr>`).join('')}
+            </tbody>
+          </table>
+        </div>`;
+      }
+    }
+
+    if (output.unmapped_fields?.length > 0) {
+      html += `<div class="card"><div class="card-title">⚠️ 변환 불가 필드</div>${
+        output.unmapped_fields.map(f => `<span class="tag-chip" style="color:var(--red)">${esc(typeof f === 'string' ? f : (f.mt_tag||JSON.stringify(f)))}</span>`).join('')
+      }</div>`;
+    }
+    if (output.warnings?.length > 0) {
+      html += `<div class="card"><div class="card-title">경고</div>${
+        output.warnings.map(w => `<div class="problem-item warn">
+          <div class="problem-desc">${esc(typeof w === 'string' ? w : JSON.stringify(w))}</div>
+        </div>`).join('')
+      }</div>`;
+    }
+  }
+
+  // Rejected
+  if (output.status === 'rejected') {
+    html += `<div class="card" style="border-color:rgba(248,113,113,.4)">
+      <div class="card-title" style="color:var(--red)">거부됨</div>
+      <div>${esc(output.reason || '검수자가 처리를 거부하였습니다.')}</div>
+    </div>`;
+  }
+
+  content.innerHTML = html || `<div class="empty-state" style="height:auto;padding:40px"><p>출력 데이터 없음</p></div>`;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Prowide 오류 메시지 한글 번역
+═══════════════════════════════════════════════════════════════════════ */
+const _PROWIDE_CODE_KO = {
+  'DUP_TAG':    '중복 태그',
+  'FMT_CCY':    '통화 코드 형식 오류',
+  'FMT_AMT':    '금액 형식 오류',
+  'FMT_DATE':   '날짜 형식 오류',
+  'FMT_BIC':    'BIC 형식 오류',
+  'FMT_IBAN':   'IBAN 형식 오류',
+  'MISSING':    '필수 필드 누락',
+  'PARSE_FAILED': '파싱 실패',
+  'INVALID_TAG': '유효하지 않은 태그',
+  'HTTP_ERR':   'HTTP 오류',
+  'SVC_ERR':    '서비스 오류',
+};
+
+function _translateProwideDesc(code, desc) {
+  if (!desc) return desc;
+  let s = desc;
+  // 패턴 기반 번역
+  s = s.replace(/^Duplicate tag :?(\w+):? detected in Block (\d+)$/i,
+    (_, tag, blk) => `Block ${blk}에 :${tag}: 태그가 중복됨`);
+  s = s.replace(/^(\w+) currency code invalid \(3!a\): (.+)$/i,
+    (_, tag, val) => `:${tag}: 통화 코드 형식 오류 (3자리 알파벳 필요): "${val}"`);
+  s = s.replace(/^(\w+) amount format invalid \(comma decimal required\): (.+)$/i,
+    (_, tag, val) => `:${tag}: 금액 형식 오류 (콤마 소수점 필요, 예: 1000,00): "${val}"`);
+  s = s.replace(/^(\w+) date format invalid[^:]*: (.+)$/i,
+    (_, tag, val) => `:${tag}: 날짜 형식 오류 (YYMMDD 필요): "${val}"`);
+  s = s.replace(/^Mandatory field :?(\w+):? missing$/i,
+    (_, tag) => `:${tag}: 필수 필드 누락`);
+  s = s.replace(/^Field :?(\w+):? not allowed in this message type$/i,
+    (_, tag) => `:${tag}: 이 전문 유형에서 허용되지 않는 필드`);
+  s = s.replace(/^Invalid BIC[^:]*: (.+)$/i,
+    (_, val) => `유효하지 않은 BIC: "${val}"`);
+  s = s.replace(/^Parse (error|failed)[: ]*(.*)$/i,
+    (_, __, rest) => `파싱 실패${rest ? ': ' + rest : ''}`);
+  return s;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Render Validation
+═══════════════════════════════════════════════════════════════════════ */
+function renderValidation(vr, output) {
+  const empty   = document.getElementById('validation-empty');
+  const content = document.getElementById('validation-content');
+
+  if (!vr && !(output?.field_analysis?.length)) { empty.style.display='flex'; content.style.display='none'; return; }
+  empty.style.display = 'none';
+  content.style.display = 'block';
+
+  let html = '';
+
+  // Rule Engine
+  const re = vr.rule_engine;
+  if (re) {
+    const problems = re.problems || [];
+    html += `<div class="card">
+      <div class="card-title" style="display:flex;justify-content:space-between">
+        <span>Prowide 구문 검증</span>
+        ${re.degraded ? '<span style="color:var(--yellow);font-size:11px">⚠ Degraded</span>' : ''}
+      </div>`;
+    if (problems.length === 0) {
+      html += `<div style="color:var(--green);font-size:13px">✓ 구문 검증 통과</div>`;
+    } else {
+      html += problems.map(p => `
+        <div class="problem-item">
+          <div>
+            <div class="problem-code">${esc(_PROWIDE_CODE_KO[p.code] || p.code || '?')}</div>
+            ${p.field ? `<div class="problem-field">:${esc(p.field)}:</div>` : ''}
+          </div>
+          <div class="problem-desc">${esc(_translateProwideDesc(p.code, p.desc||''))}</div>
+        </div>`).join('');
+    }
+    html += '</div>';
+  }
+
+  // Semantic (LLM)
+  const sem = vr.semantic;
+  if (sem) {
+    const violations = sem.violations || [];
+    const warnings   = sem.warnings   || [];
+    const conds      = sem.conditional_rules || [];
+
+    // page → source 맵 (violations/warnings/conds 공통 사용)
+    const _pageSource = {};
+    (vr.guidebook_basis || []).forEach(b => {
+      if (b.page != null && b.source) _pageSource[b.page] = b.source;
+    });
+    const _srcBadge = (page, rule_id) => {
+      const src = (page != null && _pageSource[page]) ? _pageSource[page] : '';
+      return `
+        ${rule_id ? `<span class="tag-chip" style="margin-left:6px">${esc(rule_id)}</span>` : ''}
+        ${page != null ? `<span style="color:var(--muted);font-size:11px;margin-left:4px">p.${page}</span>` : ''}
+        ${src ? `<span style="color:#a5b4fc;font-size:10px;margin-left:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:180px;display:inline-block;vertical-align:middle" title="${esc(src)}">${esc(src)}</span>` : ''}`;
+    };
+
+    if (violations.length > 0) {
+      html += `<div class="card">
+        <div class="card-title">LLM 위반 사항</div>
+        ${violations.map(v => `
+          <div class="problem-item">
+            ${v.field ? `<div><div class="problem-field">:${esc(v.field)}:</div></div>` : ''}
+            <div class="problem-desc">
+              ${esc(v.issue || v.desc || JSON.stringify(v))}
+              ${_srcBadge(v.page, v.rule_id)}
+            </div>
+          </div>`).join('')}
+      </div>`;
+    }
+
+    if (warnings.length > 0) {
+      html += `<div class="card">
+        <div class="card-title">LLM 경고</div>
+        ${warnings.map(w => `
+          <div class="problem-item warn">
+            ${w.field ? `<div><div class="problem-field warn">:${esc(w.field)}:</div></div>` : ''}
+            <div class="problem-desc">
+              ${esc(w.issue || w.desc || JSON.stringify(w))}
+              ${_srcBadge(w.page, w.rule_id)}
+            </div>
+          </div>`).join('')}
+      </div>`;
+    }
+
+    if (violations.length === 0 && warnings.length === 0) {
+      html += `<div class="card">
+        <div class="card-title">LLM 의미 분석</div>
+        <div style="color:var(--green);font-size:13px">✓ 위반 사항 없음</div>
+      </div>`;
+    }
+
+    if (conds.length > 0) {
+      // page → source 맵 (guidebook_basis에서 추출)
+      const _pageSource = {};
+      (vr.guidebook_basis || []).forEach(b => {
+        if (b.page != null && b.source) _pageSource[b.page] = b.source;
+      });
+
+      html += `<details open><summary style="cursor:pointer;padding:8px 0;font-weight:600">▼ 조건부 규칙 (${conds.length}개)</summary>
+        ${conds.map(c => {
+          const srcName = (c.page != null && _pageSource[c.page]) ? _pageSource[c.page] : '';
+          return `
+          <div style="padding:8px 12px;margin-bottom:4px;background:var(--surface2);border-radius:6px;font-size:12px;border-left:3px solid ${c.triggered?'var(--yellow)':'var(--border)'}">
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+              <span class="tag-chip">${esc(c.rule_id||'?')}</span>
+              ${c.page != null ? `<span style="color:var(--muted)">p.${c.page}</span>` : ''}
+              ${srcName ? `<span style="color:#a5b4fc;font-size:10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px" title="${esc(srcName)}">${esc(srcName)}</span>` : ''}
+              <span style="color:${c.triggered?'var(--yellow)':'var(--green)'}">
+                ${c.triggered?'발동됨':'미발동'}
+              </span>
+            </div>
+            <div style="margin-top:4px;color:var(--muted)">${esc(c.why||'')}</div>
+          </div>`;
+        }).join('')}
+      </details>`;
+    }
+  }
+
+  // Field Analysis
+  const fields = output?.field_analysis || [];
+  if (fields.length > 0) {
+    // sequence별 그룹핑
+    const hasSeq = fields.some(f => f.sequence);
+    let tableBody = '';
+    if (hasSeq) {
+      const groups = {};
+      const order  = [];
+      fields.forEach(f => {
+        const key = f.sequence || '—';
+        if (!groups[key]) { groups[key] = []; order.push(key); }
+        groups[key].push(f);
+      });
+      order.forEach(seq => {
+        const label = seq === '—' ? '공통' : `Sequence ${seq}`;
+        tableBody += `<tr><td colspan="3" style="padding:8px 10px 4px;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:.05em;background:var(--surface2)">${esc(label)}</td></tr>`;
+        groups[seq].forEach(f => {
+          tableBody += `<tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:7px 10px;font-family:var(--font-mono);color:var(--accent2);white-space:nowrap">${esc(f.tag||'')}</td>
+            <td style="padding:7px 10px;font-family:var(--font-mono);color:var(--text);word-break:break-all">${esc(f.value||'')}</td>
+            <td style="padding:7px 10px;color:var(--muted);line-height:1.5">${esc(f.description||'')}</td>
+          </tr>`;
+        });
+      });
+    } else {
+      tableBody = fields.map(f => `
+        <tr style="border-bottom:1px solid var(--border)">
+          <td style="padding:7px 10px;font-family:var(--font-mono);color:var(--accent2);white-space:nowrap">${esc(f.tag||'')}</td>
+          <td style="padding:7px 10px;font-family:var(--font-mono);color:var(--text);word-break:break-all">${esc(f.value||'')}</td>
+          <td style="padding:7px 10px;color:var(--muted);line-height:1.5">${esc(f.description||'')}</td>
+        </tr>`).join('');
+    }
+    html += `<div class="card">
+      <div class="card-title">📋 전문 필드 해석</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px">
+        <thead>
+          <tr style="border-bottom:1px solid var(--border);color:var(--muted)">
+            <th style="text-align:left;padding:6px 10px;width:90px">태그</th>
+            <th style="text-align:left;padding:6px 10px;width:180px">값</th>
+            <th style="text-align:left;padding:6px 10px">설명</th>
+          </tr>
+        </thead>
+        <tbody>${tableBody}</tbody>
+      </table>
+    </div>`;
+  }
+
+  content.innerHTML = html || `<div class="empty-state" style="height:auto;padding:40px"><p>검증 데이터 없음</p></div>`;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   Thread History
+═══════════════════════════════════════════════════════════════════════ */
+function addHistoryRow(data) {
+  historySeq++;
+  const verdict = data.output?.verdict || data.validation_result?.verdict || '—';
+  historyRows.unshift({
+    seq: historySeq,
+    thread_id: data.thread_id,
+    agent: data.routed_agent || '—',
+    msg_type: data.hitl_payload?.msg_type || '—',
+    verdict,
+    status: data.status,
+    ms: data.processing_time_ms?.toFixed(0) || '—',
+  });
+  renderHistory();
+}
+
+function renderHistory() {
+  const tbody = document.getElementById('threads-tbody');
+  tbody.innerHTML = historyRows.map(r => {
+    const vc = {PASS:'var(--green)',WARNING:'var(--yellow)',REJECT:'var(--red)',
+                PENDING_REVIEW:'var(--orange)','—':'var(--muted)'}[r.verdict] || 'var(--muted)';
+    const sc = {completed:'var(--green)',pending_hitl:'var(--yellow)',
+                failed:'var(--red)'}[r.status] || 'var(--muted)';
+    return `<tr class="thread-row" onclick="loadThread('${r.thread_id}')" title="클릭하여 상세 조회">
+      <td>${r.seq}</td>
+      <td class="mono">${r.thread_id.slice(0,12)}…</td>
+      <td>${r.agent}</td>
+      <td class="mono">${r.msg_type}</td>
+      <td style="color:${vc};font-weight:600">${r.verdict}</td>
+      <td style="color:${sc}">${r.status}</td>
+      <td class="mono">${r.ms}</td>
+    </tr>`;
+  }).join('');
+}
+
+async function loadThreads() {
+  try {
+    const r = await fetch(`${getApiUrl()}/threads`);
+    const data = await r.json();
+    toast(`스레드 ${data.total}개 조회됨`);
+  } catch(e) { toast(`조회 실패: ${e.message}`, 'warn'); }
+}
+
+async function loadThread(tid) {
+  try {
+    const r = await fetch(`${getApiUrl()}/convert/${tid}`);
+    if (!r.ok) { toast(`스레드 조회 실패 (HTTP ${r.status})`, 'warn'); return; }
+    const data = await r.json();
+    handleResponse(data);
+    toast(`Thread ${tid.slice(0,8)}… 로드됨`);
+  } catch(e) { toast(`조회 실패: ${e.message}`, 'warn'); }
+}
+
+function clearHistory() {
+  historyRows = [];
+  historySeq  = 0;
+  document.getElementById('threads-tbody').innerHTML = '';
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   UI Helpers
+═══════════════════════════════════════════════════════════════════════ */
+function switchTab(name) {
+  document.querySelectorAll('.tab').forEach(t =>
+    t.classList.toggle('active', t.dataset.tab === name)
+  );
+  document.querySelectorAll('.tab-pane').forEach(p =>
+    p.classList.toggle('active', p.id === `tab-${name}`)
+  );
+}
+
+function setLoading(on) {
+  const btn   = document.getElementById('submit-btn');
+  const label = document.getElementById('submit-label');
+  btn.disabled = on;
+  label.innerHTML = on
+    ? '<span class="spinner"></span> 처리 중…'
+    : '전송 (POST /convert)';
+}
+
+function clearResults() {
+  ['overview','output','validation','raw'].forEach(t => {
+    document.getElementById(`tab-${t}`)?.querySelectorAll('[id$="-content"]').forEach(el => {
+      el.style.display = 'none';
+    });
+    document.getElementById(`tab-${t}`)?.querySelectorAll('[id$="-empty"]').forEach(el => {
+      el.style.display = 'flex';
+    });
+  });
+  document.getElementById('raw-content').style.display = 'none';
+  document.getElementById('raw-empty').style.display  = 'flex';
+  document.getElementById('overview-content').style.display = 'none';
+  document.getElementById('overview-empty').style.display   = 'flex';
+  document.getElementById('output-content').style.display   = 'none';
+  document.getElementById('output-empty').style.display     = 'flex';
+  document.getElementById('validation-content').style.display = 'none';
+  document.getElementById('validation-empty').style.display   = 'flex';
+  switchTab('overview');
+}
+
+function clearForm() {
+  document.getElementById('msg-input').value = '';
+  document.getElementById('msg-type').value  = '';
+  document.getElementById('intent').value    = '';
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  updateMsgLen();
+  clearResults();
+  document.getElementById('hitl-panel').style.display = 'none';
+  document.getElementById('thread-info').style.display = 'none';
+  currentThreadId = null;
+  lastResponse    = null;
+}
+
+function verdictClass(v) {
+  return {PASS:'v-pass',WARNING:'v-warning',REJECT:'v-reject',
+          PENDING_REVIEW:'v-pending',ERROR:'v-error'}[v] || 'v-error';
+}
+
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ── Schema Tree Renderer ───────────────────────────────────────────────────
+let _schemaNodeCounter = 0;
+
+function renderSchemaNode(node, depth) {
+  if (!node) return '';
+  const nodeId = 'sn-' + (_schemaNodeCounter++);
+  const hasChildren = node.children && node.children.length > 0;
+  const indent = depth * 20;
+  const isMandatory = (node.status || '').toLowerCase() === 'mandatory';
+
+  const statusBadge = isMandatory
+    ? '<span style="background:#14532d;color:#4ade80;border-radius:3px;padding:1px 5px;font-size:10px;font-weight:700">M</span>'
+    : '<span style="background:#1e293b;color:#94a3b8;border-radius:3px;padding:1px 5px;font-size:10px">O</span>';
+
+  const multiBadge = node.multiplicity
+    ? `<span style="color:#f59e0b;font-size:10px;margin-left:4px">${esc(node.multiplicity)}</span>`
+    : '';
+
+  const typeBadge = node.type
+    ? `<span style="color:#6366f1;font-size:10px;margin-left:6px">${esc(node.type)}</span>`
+    : '';
+
+  const exampleBadge = (node.example && node.example !== '-')
+    ? `<span style="color:#10b981;font-size:10px;margin-left:6px" title="예시값">= ${esc(node.example)}</span>`
+    : '';
+
+  const toggleIcon = hasChildren ? '<span class="schema-toggle" style="cursor:pointer;user-select:none;margin-right:4px">▼</span>' : '<span style="display:inline-block;width:16px;margin-right:4px"></span>';
+
+  const childrenHtml = hasChildren
+    ? `<div class="schema-children" style="margin-left:${indent + 20}px">${node.children.map(c => renderSchemaNode(c, depth + 1)).join('')}</div>`
+    : '';
+
+  return `
+  <div class="schema-node" data-id="${nodeId}" style="margin:2px 0">
+    <div class="schema-row" style="display:flex;align-items:center;gap:6px;padding:4px 6px;border-radius:4px;cursor:pointer;margin-left:${indent}px"
+         onclick="schemaToggle(this)" title="${esc(node.definition || '')}">
+      ${toggleIcon}
+      ${statusBadge}
+      <span style="color:#e2e8f0;font-weight:${isMandatory ? '700' : '400'}">${esc(node.tag)}</span>
+      <span style="color:#94a3b8;font-size:11px">${esc(node.label)}</span>
+      ${multiBadge}${typeBadge}${exampleBadge}
+    </div>
+    ${node.definition ? `<div class="schema-def" style="margin-left:${indent + 36}px;font-size:11px;color:#64748b;padding:0 6px 4px;display:none">${esc(node.definition)}</div>` : ''}
+    ${childrenHtml}
+  </div>`;
+}
+
+function schemaToggle(rowEl) {
+  const node = rowEl.closest('.schema-node');
+  const children = node.querySelector(':scope > .schema-children');
+  const def = node.querySelector(':scope > .schema-def');
+  const toggle = rowEl.querySelector('.schema-toggle');
+  if (children) {
+    const collapsed = children.style.display === 'none';
+    children.style.display = collapsed ? '' : 'none';
+    if (toggle) toggle.textContent = collapsed ? '▼' : '▶';
+  }
+  if (def) {
+    def.style.display = def.style.display === 'none' ? '' : 'none';
+  }
+}
+
+function toggleSchemaSection(headerEl) {
+  const body = headerEl.nextElementSibling;
+  const toggle = headerEl.querySelector('.schema-sec-toggle');
+  if (!body) return;
+  const collapsed = body.style.display === 'none';
+  body.style.display = collapsed ? '' : 'none';
+  if (toggle) toggle.textContent = collapsed ? '▼' : '▶';
+}
+
+function schemaExpandAll() {
+  document.querySelectorAll('#schema-tree-root .schema-children').forEach(el => el.style.display = '');
+  document.querySelectorAll('#schema-tree-root .schema-toggle').forEach(el => el.textContent = '▼');
+}
+
+function schemaCollapseAll() {
+  document.querySelectorAll('#schema-tree-root .schema-children').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('#schema-tree-root .schema-toggle').forEach(el => el.textContent = '▶');
+}
+
+function copyRaw() {
+  const text = document.getElementById('raw-json').textContent;
+  copyText(text);
+}
+
+function copyText(text) {
+  navigator.clipboard?.writeText(text).then(() => toast('📋 클립보드에 복사됨'))
+    .catch(() => toast('복사 실패', 'warn'));
+}
+
+let _toastTimer = null;
+function toast(msg, type = 'ok') {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.style.borderColor = type === 'err' ? 'var(--red)' : type === 'warn' ? 'var(--yellow)' : 'var(--border)';
+  el.classList.add('show');
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => el.classList.remove('show'), 2800);
+}
+</script>
+</body>
+</html>

@@ -32,8 +32,16 @@ public class ValidationService {
     // SWIFT amount: 숫자 + 쉼표 소수점 (예: 1234,56)
     private static final Pattern AMOUNT_FMT  = Pattern.compile("^\\d+(,\\d+)?$");
 
+    // ── 23B 유효 Bank Operation Code (4!c) ─────────────────────────────────────
+    private static final Set<String> VALID_23B_CODES = Set.of("CRED", "SPAY", "SPRI", "SSTD");
+
+    // ── 71A 유효 Details of Charges (3!a) ──────────────────────────────────────
+    private static final Set<String> VALID_71A_CODES = Set.of("BEN", "OUR", "SHA");
+
     // ── MT 타입별 필수 필드 정의 ────────────────────────────────────────────────
     private static final Map<String, List<String>> MANDATORY_FIELDS = Map.of(
+            // MT101 Request for Transfer — Seq A: 20/28D/30, Seq B(min 1): 21/32B
+            "101", List.of("20", "28D", "30", "21", "32B"),
             "103", List.of("20", "23B", "32A", "50K", "59"),
             "202", List.of("20", "21", "32A", "58A"),
             "900", List.of("20", "21", "25", "32A"),
@@ -266,6 +274,22 @@ public class ValidationService {
                                 "Tag " + name + " BIC portion format invalid: " + bicLine));
                     }
                 }
+                case "32B" -> {
+                    // 3!a 15d  예: EUR10000,00  (날짜 없는 통화+금액)
+                    if (v.length() < 4) {
+                        problems.add(problem("FMT_32B", "32B",
+                                "Tag 32B is too short (expected 3+amount): " + v));
+                    } else {
+                        String ccy = v.substring(0, 3);
+                        String amt = v.substring(3);
+                        if (!CURRENCY.matcher(ccy).matches())
+                            problems.add(problem("FMT_CCY", "32B",
+                                    "32B currency code invalid (3!a): " + ccy));
+                        if (!AMOUNT_FMT.matcher(amt).matches())
+                            problems.add(problem("FMT_AMT", "32B",
+                                    "32B amount format invalid (comma decimal required): " + amt));
+                    }
+                }
                 case "20" -> {
                     // 16x 참조 번호: 슬래시 시작/끝 금지, 최대 16자
                     if (v.length() > 16)
@@ -274,6 +298,29 @@ public class ValidationService {
                     if (v.startsWith("/") || v.endsWith("/"))
                         problems.add(problem("FMT_20", "20",
                                 "Tag 20 must not start or end with '/'"));
+                    if (v.contains("//"))
+                        problems.add(problem("FMT_20", "20",
+                                "Tag 20 must not contain double slash (//)"));
+                }
+                case "23B" -> {
+                    // 4!c — 정확히 4자 대문자, 유효 코드: CRED/SPAY/SPRI/SSTD
+                    if (v.length() != 4 || !v.equals(v.toUpperCase())) {
+                        problems.add(problem("FMT_23B", "23B",
+                                "Tag 23B must be exactly 4 uppercase characters (4!c), got: " + v));
+                    } else if (!VALID_23B_CODES.contains(v)) {
+                        problems.add(problem("FMT_23B", "23B",
+                                "Tag 23B invalid code '" + v + "'. Valid codes: CRED, SPAY, SPRI, SSTD"));
+                    }
+                }
+                case "71A" -> {
+                    // 3!a — 정확히 3자 대문자, 유효 코드: BEN/OUR/SHA
+                    if (v.length() != 3 || !v.equals(v.toUpperCase())) {
+                        problems.add(problem("FMT_71A", "71A",
+                                "Tag 71A must be exactly 3 uppercase characters (3!a), got: " + v));
+                    } else if (!VALID_71A_CODES.contains(v)) {
+                        problems.add(problem("FMT_71A", "71A",
+                                "Tag 71A invalid code '" + v + "'. Valid codes: BEN, OUR, SHA"));
+                    }
                 }
                 default -> { /* 그 외 필드는 Prowide 상세 검증 또는 LLM에 위임 */ }
             }

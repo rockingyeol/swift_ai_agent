@@ -1,0 +1,95 @@
+{
+  "description": "SWIFT ISO 20022 trea 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "trea.001.001.02",
+      "name": "Create Non Deliverable Forward Opening V02",
+      "description": ""
+    },
+    {
+      "id": "trea.002.001.02",
+      "name": "Amend Non Deliverable Forward Opening V02",
+      "description": ""
+    },
+    {
+      "id": "trea.003.001.02",
+      "name": "Cancel Non Deliverable Forward Opening V02",
+      "description": ""
+    },
+    {
+      "id": "trea.004.001.02",
+      "name": "Create Non Deliverable Forward Valuation V02",
+      "description": ""
+    },
+    {
+      "id": "trea.005.001.02",
+      "name": "Amend Non Deliverable Forward Valuation V02",
+      "description": ""
+    },
+    {
+      "id": "trea.006.001.02",
+      "name": "Cancel Non Deliverable Forward Valuation V02",
+      "description": ""
+    },
+    {
+      "id": "trea.007.001.02",
+      "name": "Non Deliverable Forward Notification V02",
+      "description": ""
+    },
+    {
+      "id": "trea.008.001.02",
+      "name": "Status Notification V02",
+      "description": ""
+    },
+    {
+      "id": "trea.009.001.02",
+      "name": "Create Foreign Exchange Option V02",
+      "description": ""
+    },
+    {
+      "id": "trea.009.001.03",
+      "name": "Create Foreign Exchange Option V03",
+      "description": ""
+    },
+    {
+      "id": "trea.010.001.02",
+      "name": "Amend Foreign Exchange Option V02",
+      "description": ""
+    },
+    {
+      "id": "trea.010.001.03",
+      "name": "Amend Foreign Exchange Option V03",
+      "description": ""
+    },
+    {
+      "id": "trea.011.001.02",
+      "name": "Cancel Foreign Exchange Option V02",
+      "description": ""
+    },
+    {
+      "id": "trea.011.001.03",
+      "name": "Cancel Foreign Exchange Option V03",
+      "description": ""
+    },
+    {
+      "id": "trea.012.001.02",
+      "name": "Foreign Exchange Option Notification V02",
+      "description": ""
+    },
+    {
+      "id": "trea.012.001.03",
+      "name": "Foreign Exchange Option Notification V03",
+      "description": ""
+    },
+    {
+      "id": "trea.012.001.04",
+      "name": "Foreign Exchange Option Notification V04",
+      "description": ""
+    },
+    {
+      "id": "trea.013.001.01",
+      "name": "Withdrawal Notification V01",
+      "description": ""
+    }
+  ]
+}

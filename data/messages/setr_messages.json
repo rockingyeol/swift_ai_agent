@@ -1,0 +1,675 @@
+{
+  "description": "SWIFT ISO 20022 setr 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "setr.001.001.02",
+      "name": "Redemption Bulk Order V02",
+      "description": ""
+    },
+    {
+      "id": "setr.001.001.03",
+      "name": "Redemption Bulk Order V03",
+      "description": ""
+    },
+    {
+      "id": "setr.001.001.04",
+      "name": "Redemption Bulk Order V04",
+      "description": ""
+    },
+    {
+      "id": "setr.001.001.05",
+      "name": "Redemption Bulk Order V05",
+      "description": ""
+    },
+    {
+      "id": "setr.002.001.02",
+      "name": "Redemption Bulk Order Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.002.001.03",
+      "name": "Redemption Bulk Order Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "setr.002.001.04",
+      "name": "Redemption Bulk Order Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "setr.002.001.05",
+      "name": "Redemption Bulk Order Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "setr.003.001.02",
+      "name": "Redemption Bulk Order Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "setr.003.001.03",
+      "name": "Redemption Bulk Order Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "setr.003.001.04",
+      "name": "Redemption Bulk Order Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "setr.003.001.05",
+      "name": "Redemption Bulk Order Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "setr.004.001.02",
+      "name": "Redemption Multiple Order V02",
+      "description": ""
+    },
+    {
+      "id": "setr.004.001.03",
+      "name": "Redemption Order V03",
+      "description": ""
+    },
+    {
+      "id": "setr.004.001.04",
+      "name": "Redemption Order V04",
+      "description": ""
+    },
+    {
+      "id": "setr.004.001.05",
+      "name": "Redemption Order V05",
+      "description": ""
+    },
+    {
+      "id": "setr.004.002.01",
+      "name": "Redemption Order . Minus V01",
+      "description": ""
+    },
+    {
+      "id": "setr.005.001.02",
+      "name": "Redemption Multiple Order Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.005.001.03",
+      "name": "Redemption Order Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "setr.005.001.04",
+      "name": "Redemption Order Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "setr.005.001.05",
+      "name": "Redemption Order Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "setr.006.001.02",
+      "name": "Redemption Multiple Order Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "setr.006.001.03",
+      "name": "Redemption Order Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "setr.006.001.04",
+      "name": "Redemption Order Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "setr.006.001.05",
+      "name": "Redemption Order Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "setr.006.001.06",
+      "name": "Redemption Order Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "setr.006.002.01",
+      "name": "Redemption Order Confirmation . Minus V01",
+      "description": ""
+    },
+    {
+      "id": "setr.007.001.02",
+      "name": "Subscription Bulk Order V02",
+      "description": ""
+    },
+    {
+      "id": "setr.007.001.03",
+      "name": "Subscription Bulk Order V03",
+      "description": ""
+    },
+    {
+      "id": "setr.007.001.04",
+      "name": "Subscription Bulk Order V04",
+      "description": ""
+    },
+    {
+      "id": "setr.007.001.05",
+      "name": "Subscription Bulk Order V05",
+      "description": ""
+    },
+    {
+      "id": "setr.008.001.02",
+      "name": "Subscription Bulk Order Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.008.001.03",
+      "name": "Subscription Bulk Order Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "setr.008.001.04",
+      "name": "Subscription Bulk Order Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "setr.008.001.05",
+      "name": "Subscription Bulk Order Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "setr.009.001.02",
+      "name": "Subscription Bulk Order Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "setr.009.001.03",
+      "name": "Subscription Bulk Order Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "setr.009.001.04",
+      "name": "Subscription Bulk Order Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "setr.009.001.05",
+      "name": "Subscription Bulk Order Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "setr.010.001.02",
+      "name": "Subscription Multiple Order V02",
+      "description": ""
+    },
+    {
+      "id": "setr.010.001.03",
+      "name": "Subscription Order V03",
+      "description": ""
+    },
+    {
+      "id": "setr.010.001.04",
+      "name": "Subscription Order V04",
+      "description": ""
+    },
+    {
+      "id": "setr.010.001.05",
+      "name": "Subscription Order V05",
+      "description": ""
+    },
+    {
+      "id": "setr.010.002.01",
+      "name": "Subscription Order . Minus V01",
+      "description": ""
+    },
+    {
+      "id": "setr.011.001.02",
+      "name": "Subscription Multiple Order Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.011.001.03",
+      "name": "Subscription Order Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "setr.011.001.04",
+      "name": "Subscription Order Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "setr.011.001.05",
+      "name": "Subscription Order Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "setr.012.001.02",
+      "name": "Subscription Multiple Order Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "setr.012.001.03",
+      "name": "Subscription Order Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "setr.012.001.04",
+      "name": "Subscription Order Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "setr.012.001.05",
+      "name": "Subscription Order Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "setr.012.001.06",
+      "name": "Subscription Order Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "setr.012.002.01",
+      "name": "Subscription Order Confirmation . Minus V01",
+      "description": ""
+    },
+    {
+      "id": "setr.013.001.02",
+      "name": "Switch Order V02",
+      "description": ""
+    },
+    {
+      "id": "setr.013.001.03",
+      "name": "Switch Order V03",
+      "description": ""
+    },
+    {
+      "id": "setr.013.001.04",
+      "name": "Switch Order V04",
+      "description": ""
+    },
+    {
+      "id": "setr.013.001.05",
+      "name": "Switch Order V05",
+      "description": ""
+    },
+    {
+      "id": "setr.014.001.02",
+      "name": "Switch Order Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.014.001.03",
+      "name": "Switch Order Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "setr.014.001.04",
+      "name": "Switch Order Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "setr.014.001.05",
+      "name": "Switch Order Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "setr.015.001.02",
+      "name": "Switch Order Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "setr.015.001.03",
+      "name": "Switch Order Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "setr.015.001.04",
+      "name": "Switch Order Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "setr.015.001.05",
+      "name": "Switch Order Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "setr.016.001.02",
+      "name": "Order Instruction Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "setr.016.001.03",
+      "name": "Order Instruction Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "setr.016.001.04",
+      "name": "Order Instruction Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "setr.016.001.05",
+      "name": "Order Instruction Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "setr.016.002.01",
+      "name": "Order Instruction Status Report . Minus V01",
+      "description": ""
+    },
+    {
+      "id": "setr.017.001.02",
+      "name": "Order Cancellation Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "setr.017.001.03",
+      "name": "Order Cancellation Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "setr.017.001.04",
+      "name": "Order Cancellation Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "setr.017.001.05",
+      "name": "Order Cancellation Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "setr.018.001.02",
+      "name": "Request For Order Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "setr.018.001.03",
+      "name": "Request For Order Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "setr.018.001.04",
+      "name": "Request For Order Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "setr.018.001.05",
+      "name": "Request For Order Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "setr.027.001.01",
+      "name": "Securities Trade Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "setr.027.001.02",
+      "name": "Securities Trade Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "setr.027.001.03",
+      "name": "Securities Trade Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "setr.027.001.04",
+      "name": "Securities Trade Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "setr.027.001.05",
+      "name": "Securities Trade Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "setr.029.001.01",
+      "name": "Securities Trade Confirmation Cancellation V01",
+      "description": ""
+    },
+    {
+      "id": "setr.029.001.02",
+      "name": "Securities Trade Confirmation Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "setr.030.001.01",
+      "name": "Securities Trade Confirmation Response V01",
+      "description": ""
+    },
+    {
+      "id": "setr.030.001.02",
+      "name": "Securities Trade Confirmation Response V02",
+      "description": ""
+    },
+    {
+      "id": "setr.030.001.03",
+      "name": "Securities Trade Confirmation Response V03",
+      "description": ""
+    },
+    {
+      "id": "setr.033.001.01",
+      "name": "List Order",
+      "description": ""
+    },
+    {
+      "id": "setr.034.001.01",
+      "name": "List Order Cancel Request",
+      "description": ""
+    },
+    {
+      "id": "setr.035.001.01",
+      "name": "List Order Status",
+      "description": ""
+    },
+    {
+      "id": "setr.036.001.01",
+      "name": "List Order Status Request",
+      "description": ""
+    },
+    {
+      "id": "setr.037.001.01",
+      "name": "List Execute Instruction",
+      "description": ""
+    },
+    {
+      "id": "setr.038.001.01",
+      "name": "Cross Order",
+      "description": ""
+    },
+    {
+      "id": "setr.039.001.01",
+      "name": "Cross Order Cancel Request",
+      "description": ""
+    },
+    {
+      "id": "setr.040.001.01",
+      "name": "Cross Order Modification Request",
+      "description": ""
+    },
+    {
+      "id": "setr.044.001.01",
+      "name": "Securities Trade Confirmation Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "setr.044.001.02",
+      "name": "Securities Trade Confirmation Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "setr.044.001.03",
+      "name": "Securities Trade Confirmation Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "setr.044.001.04",
+      "name": "Securities Trade Confirmation Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "setr.047.001.01",
+      "name": "Subscription Order Confirmation Cancellation Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "setr.047.001.02",
+      "name": "Subscription Order Confirmation Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.047.001.03",
+      "name": "Subscription Order Confirmation Cancellation Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "setr.048.001.01",
+      "name": "Subscription Order Confirmation Amendment V01",
+      "description": ""
+    },
+    {
+      "id": "setr.049.001.01",
+      "name": "Subscription Bulk Order Confirmation Cancellation Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "setr.049.001.02",
+      "name": "Subscription Bulk Order Confirmation Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.049.001.03",
+      "name": "Subscription Bulk Order Confirmation Cancellation Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "setr.050.001.01",
+      "name": "Subscription Bulk Order Confirmation Amendment V01",
+      "description": ""
+    },
+    {
+      "id": "setr.051.001.01",
+      "name": "Redemption Order Confirmation Cancellation Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "setr.051.001.02",
+      "name": "Redemption Order Confirmation Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.051.001.03",
+      "name": "Redemption Order Confirmation Cancellation Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "setr.052.001.01",
+      "name": "Redemption Order Confirmation Amendment V01",
+      "description": ""
+    },
+    {
+      "id": "setr.053.001.01",
+      "name": "Redemption Bulk Order Confirmation Cancellation Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "setr.053.001.02",
+      "name": "Redemption Bulk Order Confirmation Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.053.001.03",
+      "name": "Redemption Bulk Order Confirmation Cancellation Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "setr.054.001.01",
+      "name": "Redemption Bulk Order Confirmation Amendment V01",
+      "description": ""
+    },
+    {
+      "id": "setr.055.001.01",
+      "name": "Switch Order Confirmation Cancellation Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "setr.055.001.02",
+      "name": "Switch Order Confirmation Cancellation Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "setr.055.001.03",
+      "name": "Switch Order Confirmation Cancellation Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "setr.056.001.01",
+      "name": "Switch Order Confirmation Amendment V01",
+      "description": ""
+    },
+    {
+      "id": "setr.057.001.01",
+      "name": "Order Confirmation Status Report V01",
+      "description": ""
+    },
+    {
+      "id": "setr.057.001.02",
+      "name": "Order Confirmation Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "setr.057.001.03",
+      "name": "Order Confirmation Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "setr.058.001.01",
+      "name": "Request For Order Confirmation Status Report V01",
+      "description": ""
+    },
+    {
+      "id": "setr.058.001.02",
+      "name": "Request For Order Confirmation Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "setr.058.001.03",
+      "name": "Request For Order Confirmation Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "setr.059.001.01",
+      "name": "Alternative Funds Subscription Order V01",
+      "description": ""
+    },
+    {
+      "id": "setr.060.001.01",
+      "name": "Alternative Funds Redemption Order V01",
+      "description": ""
+    },
+    {
+      "id": "setr.061.001.01",
+      "name": "Alternative Funds Subscription Order Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "setr.062.001.01",
+      "name": "Alternative Funds Redemption Order Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "setr.064.001.01",
+      "name": "Alternative Funds Order Instruction Status Report V01",
+      "description": ""
+    },
+    {
+      "id": "setr.065.001.01",
+      "name": "Investment Fund Order Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "setr.066.001.01",
+      "name": "Investment Fund Cancellation Advice V01",
+      "description": ""
+    }
+  ]
+}

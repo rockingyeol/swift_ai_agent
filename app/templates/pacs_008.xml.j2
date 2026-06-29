@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+  <FIToFICstmrCdtTrf>
+    <GrpHdr>
+      <MsgId>{{ msg_id | default('MSGID-' ~ range(1000,9999)|random) }}</MsgId>
+      <CreDtTm>{{ created_dt | default('1970-01-01T00:00:00') }}</CreDtTm>
+      <NbOfTxs>{{ transactions | length }}</NbOfTxs>
+      <SttlmInf>
+        <SttlmMtd>CLRG</SttlmMtd>
+      </SttlmInf>
+      {% if instg_agt %}
+      <InstgAgt>
+        <FinInstnId><BICFI>{{ instg_agt }}</BICFI></FinInstnId>
+      </InstgAgt>
+      {% endif %}
+      {% if instd_agt %}
+      <InstdAgt>
+        <FinInstnId><BICFI>{{ instd_agt }}</BICFI></FinInstnId>
+      </InstdAgt>
+      {% endif %}
+    </GrpHdr>
+    {% for tx in transactions %}
+    <CdtTrfTxInf>
+      <PmtId>
+        <EndToEndId>{{ tx.end_to_end_id | default('NOTPROVIDED') }}</EndToEndId>
+        <TxId>{{ tx.tx_id | default(tx.end_to_end_id | default('NOTPROVIDED')) }}</TxId>
+      </PmtId>
+      {% if tx.sttlm_dt %}
+      <IntrBkSttlmDt>{{ tx.sttlm_dt }}</IntrBkSttlmDt>
+      {% endif %}
+      <IntrBkSttlmAmt Ccy="{{ tx.currency | default('XXX') }}">{{ tx.amount | default('0') }}</IntrBkSttlmAmt>
+      {% if tx.charge_bearer %}
+      <ChrgBr>{{ tx.charge_bearer }}</ChrgBr>
+      {% endif %}
+      {% if tx.dbtr_agt %}
+      <DbtrAgt>
+        <FinInstnId><BICFI>{{ tx.dbtr_agt }}</BICFI></FinInstnId>
+      </DbtrAgt>
+      {% endif %}
+      <Dbtr>
+        {% if tx.dbtr_name %}<Nm>{{ tx.dbtr_name }}</Nm>{% endif %}
+        {% if tx.dbtr_iban %}
+        <Id><IBAN>{{ tx.dbtr_iban }}</IBAN></Id>
+        {% endif %}
+      </Dbtr>
+      {% if tx.cdtr_agt %}
+      <CdtrAgt>
+        <FinInstnId><BICFI>{{ tx.cdtr_agt }}</BICFI></FinInstnId>
+      </CdtrAgt>
+      {% endif %}
+      <Cdtr>
+        {% if tx.cdtr_name %}<Nm>{{ tx.cdtr_name }}</Nm>{% endif %}
+        {% if tx.cdtr_iban %}
+        <CdtrAcct><Id><IBAN>{{ tx.cdtr_iban }}</IBAN></Id></CdtrAcct>
+        {% endif %}
+      </Cdtr>
+      {% if tx.remittance_info %}
+      <RmtInf><Ustrd>{{ tx.remittance_info }}</Ustrd></RmtInf>
+      {% endif %}
+    </CdtTrfTxInf>
+    {% endfor %}
+  </FIToFICstmrCdtTrf>
+</Document>

@@ -1,0 +1,85 @@
+{
+  "description": "SWIFT ISO 20022 cafr 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "cafr.001.001.01",
+      "name": "Fraud Reporting Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cafr.001.001.02",
+      "name": "Fraud Reporting Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cafr.001.001.03",
+      "name": "Fraud Reporting Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cafr.001.001.04",
+      "name": "Fraud Reporting Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cafr.002.001.01",
+      "name": "Fraud Reporting Response V01",
+      "description": ""
+    },
+    {
+      "id": "cafr.002.001.02",
+      "name": "Fraud Reporting Response V02",
+      "description": ""
+    },
+    {
+      "id": "cafr.002.001.03",
+      "name": "Fraud Reporting Response V03",
+      "description": ""
+    },
+    {
+      "id": "cafr.002.001.04",
+      "name": "Fraud Reporting Response V04",
+      "description": ""
+    },
+    {
+      "id": "cafr.003.001.01",
+      "name": "Fraud Disposition Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cafr.003.001.02",
+      "name": "Fraud Disposition Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cafr.003.001.03",
+      "name": "Fraud Disposition Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cafr.003.001.04",
+      "name": "Fraud Disposition Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cafr.004.001.01",
+      "name": "Fraud Disposition Response V01",
+      "description": ""
+    },
+    {
+      "id": "cafr.004.001.02",
+      "name": "Fraud Disposition Response V02",
+      "description": ""
+    },
+    {
+      "id": "cafr.004.001.03",
+      "name": "Fraud Disposition Response V03",
+      "description": ""
+    },
+    {
+      "id": "cafr.004.001.04",
+      "name": "Fraud Disposition Response V04",
+      "description": ""
+    }
+  ]
+}

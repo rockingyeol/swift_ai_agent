@@ -1,0 +1,45 @@
+{
+  "description": "SWIFT ISO 20022 casr 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "casr.001.001.01",
+      "name": "Settlement Reporting Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "casr.001.001.02",
+      "name": "Settlement Reporting Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "casr.001.001.03",
+      "name": "Settlement Reporting Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "casr.001.001.04",
+      "name": "Settlement Reporting Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "casr.002.001.01",
+      "name": "Settlement Reporting Response V01",
+      "description": ""
+    },
+    {
+      "id": "casr.002.001.02",
+      "name": "Settlement Reporting Response V02",
+      "description": ""
+    },
+    {
+      "id": "casr.002.001.03",
+      "name": "Settlement Reporting Response V03",
+      "description": ""
+    },
+    {
+      "id": "casr.002.001.04",
+      "name": "Settlement Reporting Response V04",
+      "description": ""
+    }
+  ]
+}

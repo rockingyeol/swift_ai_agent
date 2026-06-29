@@ -1,0 +1,2795 @@
+{
+  "description": "SWIFT ISO 20022 sese 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "sese.001.001.01",
+      "name": "Transfer Out Instruction",
+      "description": ""
+    },
+    {
+      "id": "sese.001.001.02",
+      "name": "Transfer Out Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "sese.001.001.03",
+      "name": "Transfer Out Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "sese.001.001.04",
+      "name": "Transfer Out Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "sese.001.001.05",
+      "name": "Transfer Out Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "sese.001.001.06",
+      "name": "Transfer Out Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "sese.001.001.07",
+      "name": "Transfer Out Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "sese.001.001.08",
+      "name": "Transfer Out Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "sese.001.001.09",
+      "name": "Transfer Out Instruction V09",
+      "description": ""
+    },
+    {
+      "id": "sese.001.001.10",
+      "name": "Transfer Out Instruction V10",
+      "description": ""
+    },
+    {
+      "id": "sese.002.001.01",
+      "name": "Transfer Out Cancellation Instruction",
+      "description": ""
+    },
+    {
+      "id": "sese.002.001.02",
+      "name": "Transfer Out Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "sese.002.001.03",
+      "name": "Transfer Out Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "sese.002.001.04",
+      "name": "Transfer Out Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "sese.002.001.05",
+      "name": "Transfer Out Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "sese.002.001.06",
+      "name": "Transfer Out Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "sese.002.001.07",
+      "name": "Transfer Out Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "sese.002.001.08",
+      "name": "Transfer Out Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "sese.002.001.09",
+      "name": "Transfer Out Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.01",
+      "name": "Transfer Out Confirmation",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.02",
+      "name": "Transfer Out Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.03",
+      "name": "Transfer Out Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.04",
+      "name": "Transfer Out Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.05",
+      "name": "Transfer Out Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.06",
+      "name": "Transfer Out Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.07",
+      "name": "Transfer Out Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.08",
+      "name": "Transfer Out Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.09",
+      "name": "Transfer Out Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "sese.003.001.10",
+      "name": "Transfer Out Confirmation V10",
+      "description": ""
+    },
+    {
+      "id": "sese.004.001.01",
+      "name": "Reversal Of Transfer Out Confirmation",
+      "description": ""
+    },
+    {
+      "id": "sese.004.001.02",
+      "name": "Reversal Of Transfer Out Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "sese.004.001.03",
+      "name": "Reversal Of Transfer Out Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "sese.004.001.04",
+      "name": "Reversal Of Transfer Out Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "sese.004.001.05",
+      "name": "Reversal Of Transfer Out Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "sese.004.001.06",
+      "name": "Reversal Of Transfer Out Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "sese.004.001.07",
+      "name": "Reversal Of Transfer Out Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "sese.004.001.08",
+      "name": "Reversal Of Transfer Out Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "sese.004.001.09",
+      "name": "Reversal Of Transfer Out Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.01",
+      "name": "Transfer In Instruction",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.02",
+      "name": "Transfer In Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.03",
+      "name": "Transfer In Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.04",
+      "name": "Transfer In Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.05",
+      "name": "Transfer In Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.06",
+      "name": "Transfer In Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.07",
+      "name": "Transfer In Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.08",
+      "name": "Transfer In Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.09",
+      "name": "Transfer In Instruction V09",
+      "description": ""
+    },
+    {
+      "id": "sese.005.001.10",
+      "name": "Transfer In Instruction V10",
+      "description": ""
+    },
+    {
+      "id": "sese.006.001.01",
+      "name": "Transfer In Cancellation Instruction",
+      "description": ""
+    },
+    {
+      "id": "sese.006.001.02",
+      "name": "Transfer In Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "sese.006.001.03",
+      "name": "Transfer In Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "sese.006.001.04",
+      "name": "Transfer In Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "sese.006.001.05",
+      "name": "Transfer In Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "sese.006.001.06",
+      "name": "Transfer In Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "sese.006.001.07",
+      "name": "Transfer In Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "sese.006.001.08",
+      "name": "Transfer In Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "sese.006.001.09",
+      "name": "Transfer In Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.01",
+      "name": "Transfer In Confirmation",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.02",
+      "name": "Transfer In Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.03",
+      "name": "Transfer In Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.04",
+      "name": "Transfer In Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.05",
+      "name": "Transfer In Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.06",
+      "name": "Transfer In Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.07",
+      "name": "Transfer In Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.08",
+      "name": "Transfer In Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.09",
+      "name": "Transfer In Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "sese.007.001.10",
+      "name": "Transfer In Confirmation V10",
+      "description": ""
+    },
+    {
+      "id": "sese.008.001.01",
+      "name": "Reversal Of Transfer In Confirmation",
+      "description": ""
+    },
+    {
+      "id": "sese.008.001.02",
+      "name": "Reversal Of Transfer In Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "sese.008.001.03",
+      "name": "Reversal Of Transfer In Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "sese.008.001.04",
+      "name": "Reversal Of Transfer In Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "sese.008.001.05",
+      "name": "Reversal Of Transfer In Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "sese.008.001.06",
+      "name": "Reversal Of Transfer In Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "sese.008.001.07",
+      "name": "Reversal Of Transfer In Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "sese.008.001.08",
+      "name": "Reversal Of Transfer In Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "sese.008.001.09",
+      "name": "Reversal Of Transfer In Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "sese.009.001.01",
+      "name": "Request For Transfer Status Report",
+      "description": ""
+    },
+    {
+      "id": "sese.009.001.02",
+      "name": "Request For Transfer Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "sese.009.001.03",
+      "name": "Request For Transfer Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "sese.009.001.04",
+      "name": "Request For Transfer Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "sese.009.001.05",
+      "name": "Request For Transfer Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "sese.009.001.06",
+      "name": "Request For Transfer Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "sese.009.001.07",
+      "name": "Request For Transfer Status Report V07",
+      "description": ""
+    },
+    {
+      "id": "sese.009.001.08",
+      "name": "Request For Transfer Status Report V08",
+      "description": ""
+    },
+    {
+      "id": "sese.009.001.09",
+      "name": "Request For Transfer Status Report V09",
+      "description": ""
+    },
+    {
+      "id": "sese.010.001.01",
+      "name": "Transfer Cancellation Status Report",
+      "description": ""
+    },
+    {
+      "id": "sese.010.001.02",
+      "name": "Transfer Cancellation Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "sese.010.001.03",
+      "name": "Transfer Cancellation Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "sese.010.001.04",
+      "name": "Transfer Cancellation Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "sese.010.001.05",
+      "name": "Transfer Cancellation Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "sese.010.001.06",
+      "name": "Transfer Cancellation Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "sese.010.001.07",
+      "name": "Transfer Cancellation Status Report V07",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.01",
+      "name": "Transfer Instruction Status Report",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.02",
+      "name": "Transfer Instruction Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.03",
+      "name": "Transfer Instruction Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.04",
+      "name": "Transfer Instruction Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.05",
+      "name": "Transfer Instruction Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.06",
+      "name": "Transfer Instruction Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.07",
+      "name": "Transfer Instruction Status Report V07",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.08",
+      "name": "Transfer Instruction Status Report V08",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.09",
+      "name": "Transfer Instruction Status Report V09",
+      "description": ""
+    },
+    {
+      "id": "sese.011.001.10",
+      "name": "Transfer Instruction Status Report V10",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.02",
+      "name": "PEP Or ISA Or Portfolio Transfer Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.03",
+      "name": "Portfolio Transfer Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.04",
+      "name": "Portfolio Transfer Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.05",
+      "name": "Portfolio Transfer Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.06",
+      "name": "Portfolio Transfer Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.07",
+      "name": "Portfolio Transfer Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.08",
+      "name": "Portfolio Transfer Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.09",
+      "name": "Portfolio Transfer Instruction V09",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.10",
+      "name": "Portfolio Transfer Instruction V10",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.11",
+      "name": "Portfolio Transfer Instruction V11",
+      "description": ""
+    },
+    {
+      "id": "sese.012.001.12",
+      "name": "Portfolio Transfer Instruction V12",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.02",
+      "name": "PEP Or ISA Or Portfolio Transfer Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.03",
+      "name": "Portfolio Transfer Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.04",
+      "name": "Portfolio Transfer Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.05",
+      "name": "Portfolio Transfer Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.06",
+      "name": "Portfolio Transfer Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.07",
+      "name": "Portfolio Transfer Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.08",
+      "name": "Portfolio Transfer Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.09",
+      "name": "Portfolio Transfer Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.10",
+      "name": "Portfolio Transfer Confirmation V10",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.11",
+      "name": "Portfolio Transfer Confirmation V11",
+      "description": ""
+    },
+    {
+      "id": "sese.013.001.12",
+      "name": "Portfolio Transfer Confirmation V12",
+      "description": ""
+    },
+    {
+      "id": "sese.014.001.02",
+      "name": "PEP Or ISA Or Portfolio Transfer Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "sese.014.001.03",
+      "name": "Portfolio Transfer Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "sese.014.001.04",
+      "name": "Portfolio Transfer Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "sese.014.001.05",
+      "name": "Portfolio Transfer Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "sese.014.001.06",
+      "name": "Portfolio Transfer Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "sese.014.001.07",
+      "name": "Portfolio Transfer Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "sese.014.001.08",
+      "name": "Portfolio Transfer Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "sese.014.001.09",
+      "name": "Portfolio Transfer Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.01",
+      "name": "PEP Or ISA Or Portfolio Information V01",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.02",
+      "name": "Account Holding Information V02",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.03",
+      "name": "Account Holding Information V03",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.04",
+      "name": "Account Holding Information V04",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.05",
+      "name": "Account Holding Information V05",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.06",
+      "name": "Account Holding Information V06",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.07",
+      "name": "Account Holding Information V07",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.08",
+      "name": "Account Holding Information V08",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.09",
+      "name": "Account Holding Information V09",
+      "description": ""
+    },
+    {
+      "id": "sese.018.001.10",
+      "name": "Account Holding Information V10",
+      "description": ""
+    },
+    {
+      "id": "sese.019.001.01",
+      "name": "Request For PEP Or ISA Or Portfolio Information V01",
+      "description": ""
+    },
+    {
+      "id": "sese.019.001.02",
+      "name": "Account Holding Information Request V02",
+      "description": ""
+    },
+    {
+      "id": "sese.019.001.03",
+      "name": "Account Holding Information Request V03",
+      "description": ""
+    },
+    {
+      "id": "sese.019.001.04",
+      "name": "Account Holding Information Request V04",
+      "description": ""
+    },
+    {
+      "id": "sese.019.001.05",
+      "name": "Account Holding Information Request V05",
+      "description": ""
+    },
+    {
+      "id": "sese.019.001.06",
+      "name": "Account Holding Information Request V06",
+      "description": ""
+    },
+    {
+      "id": "sese.019.001.07",
+      "name": "Account Holding Information Request V07",
+      "description": ""
+    },
+    {
+      "id": "sese.019.001.08",
+      "name": "Account Holding Information Request V08",
+      "description": ""
+    },
+    {
+      "id": "sese.019.001.09",
+      "name": "Account Holding Information Request V09",
+      "description": ""
+    },
+    {
+      "id": "sese.020.001.01",
+      "name": "Securities Transaction Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "sese.020.001.02",
+      "name": "Securities Transaction Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "sese.020.001.03",
+      "name": "Securities Transaction Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "sese.020.001.04",
+      "name": "Securities Transaction Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "sese.020.001.05",
+      "name": "Securities Transaction Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "sese.020.001.06",
+      "name": "Securities Transaction Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "sese.020.001.07",
+      "name": "Securities Transaction Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "sese.020.001.08",
+      "name": "Securities Transaction Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "sese.020.001.09",
+      "name": "Securities Transaction Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "sese.020.002.01",
+      "name": "Securities Transaction Cancellation Request .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.020.002.02",
+      "name": "Securities Transaction Cancellation Request V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.020.002.03",
+      "name": "Securities Transaction Cancellation Request 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.020.002.04",
+      "name": "Securities Transaction Cancellation Request 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.020.002.05",
+      "name": "Securities Transaction Cancellation Request 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.020.002.06",
+      "name": "Securities Transaction Cancellation Request 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.020.002.07",
+      "name": "Securities Transaction Cancellation Request 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.021.001.01",
+      "name": "Securities Transaction Status Query V01",
+      "description": ""
+    },
+    {
+      "id": "sese.021.001.02",
+      "name": "Securities Transaction Status Query V02",
+      "description": ""
+    },
+    {
+      "id": "sese.021.001.03",
+      "name": "Securities Transaction Status Query V03",
+      "description": ""
+    },
+    {
+      "id": "sese.021.001.04",
+      "name": "Securities Transaction Status Query V04",
+      "description": ""
+    },
+    {
+      "id": "sese.021.001.05",
+      "name": "Securities Transaction Status Query V05",
+      "description": ""
+    },
+    {
+      "id": "sese.021.001.06",
+      "name": "Securities Transaction Status Query V06",
+      "description": ""
+    },
+    {
+      "id": "sese.021.001.07",
+      "name": "Securities Transaction Status Query V07",
+      "description": ""
+    },
+    {
+      "id": "sese.021.001.08",
+      "name": "Securities Transaction Status Query V08",
+      "description": ""
+    },
+    {
+      "id": "sese.021.002.01",
+      "name": "Securities Transaction Status Query .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.021.002.02",
+      "name": "Securities Transaction Status Query V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.021.002.03",
+      "name": "Securities Transaction Status Query 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.021.002.04",
+      "name": "Securities Transaction Status Query 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.021.002.05",
+      "name": "Securities Transaction Status Query 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.021.002.06",
+      "name": "Securities Transaction Status Query 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.022.001.01",
+      "name": "Securities Status Or Statement Query Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "sese.022.001.02",
+      "name": "Securities Status Or Statement Query Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "sese.022.001.03",
+      "name": "Securities Status Or Statement Query Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "sese.022.001.04",
+      "name": "Securities Status Or Statement Query Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "sese.022.001.05",
+      "name": "Securities Status Or Statement Query Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "sese.022.001.06",
+      "name": "Securities Status Or Statement Query Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "sese.022.001.07",
+      "name": "Securities Status Or Statement Query Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "sese.022.001.08",
+      "name": "Securities Status Or Statement Query Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "sese.022.002.01",
+      "name": "Securities Status Or Statement Query Status Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.022.002.02",
+      "name": "Securities Status Or Statement Query Status Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.022.002.03",
+      "name": "Securities Status Or Statement Query Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.022.002.04",
+      "name": "Securities Status Or Statement Query Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.022.002.05",
+      "name": "Securities Status Or Statement Query Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.022.002.06",
+      "name": "Securities Status Or Statement Query Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.01",
+      "name": "Securities Settlement Transaction Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.02",
+      "name": "Securities Settlement Transaction Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.03",
+      "name": "Securities Settlement Transaction Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.04",
+      "name": "Securities Settlement Transaction Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.05",
+      "name": "Securities Settlement Transaction Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.06",
+      "name": "Securities Settlement Transaction Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.07",
+      "name": "Securities Settlement Transaction Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.08",
+      "name": "Securities Settlement Transaction Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.09",
+      "name": "Securities Settlement Transaction Instruction V09",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.10",
+      "name": "Securities Settlement Transaction Instruction V10",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.11",
+      "name": "Securities Settlement Transaction Instruction V11",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.12",
+      "name": "Securities Settlement Transaction Instruction V12",
+      "description": ""
+    },
+    {
+      "id": "sese.023.001.13",
+      "name": "Securities Settlement Transaction Instruction V13",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.01",
+      "name": "Securities Settlement Transaction Instruction .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.02",
+      "name": "Securities Settlement Transaction Instruction V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.03",
+      "name": "Securities Settlement Transaction Instruction 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.04",
+      "name": "Securities Settlement Transaction Instruction 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.05",
+      "name": "Securities Settlement Transaction Instruction 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.06",
+      "name": "Securities Settlement Transaction Instruction 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.07",
+      "name": "Securities Settlement Transaction Instruction 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.08",
+      "name": "Securities Settlement Transaction Instruction 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.09",
+      "name": "Securities Settlement Transaction Instruction 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.10",
+      "name": "Securities Settlement Transaction Instruction 002V10",
+      "description": ""
+    },
+    {
+      "id": "sese.023.002.11",
+      "name": "Securities Settlement Transaction Instruction 002V11",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.01",
+      "name": "Securities Settlement Transaction Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.02",
+      "name": "Securities Settlement Transaction Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.03",
+      "name": "Securities Settlement Transaction Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.04",
+      "name": "Securities Settlement Transaction Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.05",
+      "name": "Securities Settlement Transaction Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.06",
+      "name": "Securities Settlement Transaction Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.07",
+      "name": "Securities Settlement Transaction Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.08",
+      "name": "Securities Settlement Transaction Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.09",
+      "name": "Securities Settlement Transaction Status Advice V09",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.10",
+      "name": "Securities Settlement Transaction Status Advice V10",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.11",
+      "name": "Securities Settlement Transaction Status Advice V11",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.12",
+      "name": "Securities Settlement Transaction Status Advice V12",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.13",
+      "name": "Securities Settlement Transaction Status Advice V13",
+      "description": ""
+    },
+    {
+      "id": "sese.024.001.14",
+      "name": "Securities Settlement Transaction Status Advice V14",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.01",
+      "name": "Securities Settlement Transaction Status Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.02",
+      "name": "Securities Settlement Transaction Status Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.03",
+      "name": "Securities Settlement Transaction Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.04",
+      "name": "Securities Settlement Transaction Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.05",
+      "name": "Securities Settlement Transaction Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.06",
+      "name": "Securities Settlement Transaction Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.07",
+      "name": "Securities Settlement Transaction Status Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.08",
+      "name": "Securities Settlement Transaction Status Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.09",
+      "name": "Securities Settlement Transaction Status Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.10",
+      "name": "Securities Settlement Transaction Status Advice 002V10",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.11",
+      "name": "Securities Settlement Transaction Status Advice 002V11",
+      "description": ""
+    },
+    {
+      "id": "sese.024.002.12",
+      "name": "Securities Settlement Transaction Status Advice 002V12",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.01",
+      "name": "Securities Settlement Transaction Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.02",
+      "name": "Securities Settlement Transaction Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.03",
+      "name": "Securities Settlement Transaction Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.04",
+      "name": "Securities Settlement Transaction Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.05",
+      "name": "Securities Settlement Transaction Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.06",
+      "name": "Securities Settlement Transaction Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.07",
+      "name": "Securities Settlement Transaction Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.08",
+      "name": "Securities Settlement Transaction Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.09",
+      "name": "Securities Settlement Transaction Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.10",
+      "name": "Securities Settlement Transaction Confirmation V10",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.11",
+      "name": "Securities Settlement Transaction Confirmation V11",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.12",
+      "name": "Securities Settlement Transaction Confirmation V12",
+      "description": ""
+    },
+    {
+      "id": "sese.025.001.13",
+      "name": "Securities Settlement Transaction Confirmation V13",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.01",
+      "name": "Securities Settlement Transaction Confirmation .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.02",
+      "name": "Securities Settlement Transaction Confirmation V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.03",
+      "name": "Securities Settlement Transaction Confirmation 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.04",
+      "name": "Securities Settlement Transaction Confirmation 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.05",
+      "name": "Securities Settlement Transaction Confirmation 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.06",
+      "name": "Securities Settlement Transaction Confirmation 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.07",
+      "name": "Securities Settlement Transaction Confirmation 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.08",
+      "name": "Securities Settlement Transaction Confirmation 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.09",
+      "name": "Securities Settlement Transaction Confirmation 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.10",
+      "name": "Securities Settlement Transaction Confirmation 002V10",
+      "description": ""
+    },
+    {
+      "id": "sese.025.002.11",
+      "name": "Securities Settlement Transaction Confirmation 002V11",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.01",
+      "name": "Securities Settlement Transaction Reversal Advice V01",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.02",
+      "name": "Securities Settlement Transaction Reversal Advice V02",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.03",
+      "name": "Securities Settlement Transaction Reversal Advice V03",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.04",
+      "name": "Securities Settlement Transaction Reversal Advice V04",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.05",
+      "name": "Securities Settlement Transaction Reversal Advice V05",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.06",
+      "name": "Securities Settlement Transaction Reversal Advice V06",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.07",
+      "name": "Securities Settlement Transaction Reversal Advice V07",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.08",
+      "name": "Securities Settlement Transaction Reversal Advice V08",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.09",
+      "name": "Securities Settlement Transaction Reversal Advice V09",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.10",
+      "name": "Securities Settlement Transaction Reversal Advice V10",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.11",
+      "name": "Securities Settlement Transaction Reversal Advice V11",
+      "description": ""
+    },
+    {
+      "id": "sese.026.001.12",
+      "name": "Securities Settlement Transaction Reversal Advice V12",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.01",
+      "name": "Securities Settlement Transaction Reversal Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.02",
+      "name": "Securities Settlement Transaction Reversal Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.03",
+      "name": "Securities Settlement Transaction Reversal Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.04",
+      "name": "Securities Settlement Transaction Reversal Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.05",
+      "name": "Securities Settlement Transaction Reversal Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.06",
+      "name": "Securities Settlement Transaction Reversal Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.07",
+      "name": "Securities Settlement Transaction Reversal Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.08",
+      "name": "Securities Settlement Transaction Reversal Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.09",
+      "name": "Securities Settlement Transaction Reversal Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.026.002.10",
+      "name": "Securities Settlement Transaction Reversal Advice 002V10",
+      "description": ""
+    },
+    {
+      "id": "sese.027.001.01",
+      "name": "Securities Transaction Cancellation Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "sese.027.001.02",
+      "name": "Securities Transaction Cancellation Request Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "sese.027.001.03",
+      "name": "Securities Transaction Cancellation Request Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "sese.027.001.04",
+      "name": "Securities Transaction Cancellation Request Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "sese.027.001.05",
+      "name": "Securities Transaction Cancellation Request Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "sese.027.001.06",
+      "name": "Securities Transaction Cancellation Request Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "sese.027.001.07",
+      "name": "Securities Transaction Cancellation Request Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "sese.027.001.08",
+      "name": "Securities Transaction Cancellation Request Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "sese.027.001.09",
+      "name": "Securities Transaction Cancellation Request Status Advice V09",
+      "description": ""
+    },
+    {
+      "id": "sese.027.002.01",
+      "name": "Securities Transaction Cancellation Request Status Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.027.002.02",
+      "name": "Securities Transaction Cancellation Request Status Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.027.002.03",
+      "name": "Securities Transaction Cancellation Request Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.027.002.04",
+      "name": "Securities Transaction Cancellation Request Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.027.002.05",
+      "name": "Securities Transaction Cancellation Request Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.027.002.06",
+      "name": "Securities Transaction Cancellation Request Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.027.002.07",
+      "name": "Securities Transaction Cancellation Request Status Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.01",
+      "name": "Securities Settlement Transaction Allegement Notification V01",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.02",
+      "name": "Securities Settlement Transaction Allegement Notification V02",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.03",
+      "name": "Securities Settlement Transaction Allegement Notification V03",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.04",
+      "name": "Securities Settlement Transaction Allegement Notification V04",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.05",
+      "name": "Securities Settlement Transaction Allegement Notification V05",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.06",
+      "name": "Securities Settlement Transaction Allegement Notification V06",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.07",
+      "name": "Securities Settlement Transaction Allegement Notification V07",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.08",
+      "name": "Securities Settlement Transaction Allegement Notification V08",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.09",
+      "name": "Securities Settlement Transaction Allegement Notification V09",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.10",
+      "name": "Securities Settlement Transaction Allegement Notification V10",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.11",
+      "name": "Securities Settlement Transaction Allegement Notification V11",
+      "description": ""
+    },
+    {
+      "id": "sese.028.001.12",
+      "name": "Securities Settlement Transaction Allegement Notification V12",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.01",
+      "name": "Securities Settlement Transaction Allegement Notification .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.02",
+      "name": "Securities Settlement Transaction Allegement Notification V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.03",
+      "name": "Securities Settlement Transaction Allegement Notification 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.04",
+      "name": "Securities Settlement Transaction Allegement Notification 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.05",
+      "name": "Securities Settlement Transaction Allegement Notification 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.06",
+      "name": "Securities Settlement Transaction Allegement Notification 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.07",
+      "name": "Securities Settlement Transaction Allegement Notification 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.08",
+      "name": "Securities Settlement Transaction Allegement Notification 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.09",
+      "name": "Securities Settlement Transaction Allegement Notification 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.028.002.10",
+      "name": "Securities Settlement Transaction Allegement Notification 002V10",
+      "description": ""
+    },
+    {
+      "id": "sese.029.001.01",
+      "name": "Securities Settlement Allegement Removal Advice V01",
+      "description": ""
+    },
+    {
+      "id": "sese.029.001.02",
+      "name": "Securities Settlement Allegement Removal Advice V02",
+      "description": ""
+    },
+    {
+      "id": "sese.029.001.03",
+      "name": "Securities Settlement Allegement Removal Advice V03",
+      "description": ""
+    },
+    {
+      "id": "sese.029.001.04",
+      "name": "Securities Settlement Allegement Removal Advice V04",
+      "description": ""
+    },
+    {
+      "id": "sese.029.001.05",
+      "name": "Securities Settlement Allegement Removal Advice V05",
+      "description": ""
+    },
+    {
+      "id": "sese.029.001.06",
+      "name": "Securities Settlement Allegement Removal Advice V06",
+      "description": ""
+    },
+    {
+      "id": "sese.029.001.07",
+      "name": "Securities Settlement Allegement Removal Advice V07",
+      "description": ""
+    },
+    {
+      "id": "sese.029.001.08",
+      "name": "Securities Settlement Allegement Removal Advice V08",
+      "description": ""
+    },
+    {
+      "id": "sese.029.002.01",
+      "name": "Securities Settlement Allegement Removal Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.029.002.02",
+      "name": "Securities Settlement Allegement Removal Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.029.002.03",
+      "name": "Securities Settlement Allegement Removal Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.029.002.04",
+      "name": "Securities Settlement Allegement Removal Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.029.002.05",
+      "name": "Securities Settlement Allegement Removal Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.029.002.06",
+      "name": "Securities Settlement Allegement Removal Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.01",
+      "name": "Securities Settlement Conditions Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.02",
+      "name": "Securities Settlement Conditions Modification Request V02",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.03",
+      "name": "Securities Settlement Conditions Modification Request V03",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.04",
+      "name": "Securities Settlement Conditions Modification Request V04",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.05",
+      "name": "Securities Settlement Conditions Modification Request V05",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.06",
+      "name": "Securities Settlement Conditions Modification Request V06",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.07",
+      "name": "Securities Settlement Conditions Modification Request V07",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.08",
+      "name": "Securities Settlement Conditions Modification Request V08",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.09",
+      "name": "Securities Settlement Conditions Modification Request V09",
+      "description": ""
+    },
+    {
+      "id": "sese.030.001.10",
+      "name": "Securities Settlement Conditions Modification Request V10",
+      "description": ""
+    },
+    {
+      "id": "sese.030.002.01",
+      "name": "Securities Settlement Conditions Modification Request .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.030.002.02",
+      "name": "Securities Settlement Conditions Modification Request V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.030.002.03",
+      "name": "Securities Settlement Conditions Modification Request 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.030.002.04",
+      "name": "Securities Settlement Conditions Modification Request 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.030.002.05",
+      "name": "Securities Settlement Conditions Modification Request 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.030.002.06",
+      "name": "Securities Settlement Conditions Modification Request 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.030.002.07",
+      "name": "Securities Settlement Conditions Modification Request 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.030.002.08",
+      "name": "Securities Settlement Conditions Modification Request 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.030.002.09",
+      "name": "Securities Settlement Conditions Modification Request 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.01",
+      "name": "Securities Settlement Condition Modification Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.02",
+      "name": "Securities Settlement Condition Modification Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.03",
+      "name": "Securities Settlement Condition Modification Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.04",
+      "name": "Securities Settlement Condition Modification Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.05",
+      "name": "Securities Settlement Condition Modification Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.06",
+      "name": "Securities Settlement Condition Modification Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.07",
+      "name": "Securities Settlement Condition Modification Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.08",
+      "name": "Securities Settlement Condition Modification Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.09",
+      "name": "Securities Settlement Condition Modification Status Advice V09",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.10",
+      "name": "Securities Settlement Condition Modification Status Advice V10",
+      "description": ""
+    },
+    {
+      "id": "sese.031.001.11",
+      "name": "Securities Settlement Condition Modification Status Advice V11",
+      "description": ""
+    },
+    {
+      "id": "sese.031.002.01",
+      "name": "Securities Settlement Condition Modification Status Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.031.002.02",
+      "name": "Securities Settlement Condition Modification Status Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.031.002.03",
+      "name": "Securities Settlement Condition Modification Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.031.002.04",
+      "name": "Securities Settlement Condition Modification Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.031.002.05",
+      "name": "Securities Settlement Condition Modification Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.031.002.06",
+      "name": "Securities Settlement Condition Modification Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.031.002.07",
+      "name": "Securities Settlement Condition Modification Status Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.031.002.08",
+      "name": "Securities Settlement Condition Modification Status Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.031.002.09",
+      "name": "Securities Settlement Condition Modification Status Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.01",
+      "name": "Securities Settlement Transaction Generation Notification V01",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.02",
+      "name": "Securities Settlement Transaction Generation Notification V02",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.03",
+      "name": "Securities Settlement Transaction Generation Notification V03",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.04",
+      "name": "Securities Settlement Transaction Generation Notification V04",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.05",
+      "name": "Securities Settlement Transaction Generation Notification V05",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.06",
+      "name": "Securities Settlement Transaction Generation Notification V06",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.07",
+      "name": "Securities Settlement Transaction Generation Notification V07",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.08",
+      "name": "Securities Settlement Transaction Generation Notification V08",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.09",
+      "name": "Securities Settlement Transaction Generation Notification V09",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.10",
+      "name": "Securities Settlement Transaction Generation Notification V10",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.11",
+      "name": "Securities Settlement Transaction Generation Notification V11",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.12",
+      "name": "Securities Settlement Transaction Generation Notification V12",
+      "description": ""
+    },
+    {
+      "id": "sese.032.001.13",
+      "name": "Securities Settlement Transaction Generation Notification V13",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.01",
+      "name": "Securities Settlement Transaction Generation Notification .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.02",
+      "name": "Securities Settlement Transaction Generation Notification V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.03",
+      "name": "Securities Settlement Transaction Generation Notification 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.04",
+      "name": "Securities Settlement Transaction Generation Notification 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.05",
+      "name": "Securities Settlement Transaction Generation Notification 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.06",
+      "name": "Securities Settlement Transaction Generation Notification 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.07",
+      "name": "Securities Settlement Transaction Generation Notification 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.08",
+      "name": "Securities Settlement Transaction Generation Notification 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.09",
+      "name": "Securities Settlement Transaction Generation Notification 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.10",
+      "name": "Securities Settlement Transaction Generation Notification 002V10",
+      "description": ""
+    },
+    {
+      "id": "sese.032.002.11",
+      "name": "Securities Settlement Transaction Generation Notification 002V11",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.01",
+      "name": "Securities Financing Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.02",
+      "name": "Securities Financing Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.03",
+      "name": "Securities Financing Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.04",
+      "name": "Securities Financing Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.05",
+      "name": "Securities Financing Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.06",
+      "name": "Securities Financing Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.07",
+      "name": "Securities Financing Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.08",
+      "name": "Securities Financing Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.09",
+      "name": "Securities Financing Instruction V09",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.10",
+      "name": "Securities Financing Instruction V10",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.11",
+      "name": "Securities Financing Instruction V11",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.12",
+      "name": "Securities Financing Instruction V12",
+      "description": ""
+    },
+    {
+      "id": "sese.033.001.13",
+      "name": "Securities Financing Instruction V13",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.01",
+      "name": "Securities Financing Instruction .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.02",
+      "name": "Securities Financing Instruction V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.03",
+      "name": "Securities Financing Instruction 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.04",
+      "name": "Securities Financing Instruction 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.05",
+      "name": "Securities Financing Instruction 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.06",
+      "name": "Securities Financing Instruction 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.07",
+      "name": "Securities Financing Instruction 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.08",
+      "name": "Securities Financing Instruction 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.09",
+      "name": "Securities Financing Instruction 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.10",
+      "name": "Securities Financing Instruction 002V10",
+      "description": ""
+    },
+    {
+      "id": "sese.033.002.11",
+      "name": "Securities Financing Instruction 002V11",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.01",
+      "name": "Securities Financing Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.02",
+      "name": "Securities Financing Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.03",
+      "name": "Securities Financing Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.04",
+      "name": "Securities Financing Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.05",
+      "name": "Securities Financing Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.06",
+      "name": "Securities Financing Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.07",
+      "name": "Securities Financing Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.08",
+      "name": "Securities Financing Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.09",
+      "name": "Securities Financing Status Advice V09",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.10",
+      "name": "Securities Financing Status Advice V10",
+      "description": ""
+    },
+    {
+      "id": "sese.034.001.11",
+      "name": "Securities Financing Status Advice V11",
+      "description": ""
+    },
+    {
+      "id": "sese.034.002.01",
+      "name": "Securities Financing Status Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.034.002.02",
+      "name": "Securities Financing Status Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.034.002.03",
+      "name": "Securities Financing Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.034.002.04",
+      "name": "Securities Financing Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.034.002.05",
+      "name": "Securities Financing Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.034.002.06",
+      "name": "Securities Financing Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.034.002.07",
+      "name": "Securities Financing Status Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.034.002.08",
+      "name": "Securities Financing Status Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.034.002.09",
+      "name": "Securities Financing Status Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.01",
+      "name": "Securities Financing Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.02",
+      "name": "Securities Financing Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.03",
+      "name": "Securities Financing Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.04",
+      "name": "Securities Financing Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.05",
+      "name": "Securities Financing Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.06",
+      "name": "Securities Financing Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.07",
+      "name": "Securities Financing Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.08",
+      "name": "Securities Financing Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.09",
+      "name": "Securities Financing Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.10",
+      "name": "Securities Financing Confirmation V10",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.11",
+      "name": "Securities Financing Confirmation V11",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.12",
+      "name": "Securities Financing Confirmation V12",
+      "description": ""
+    },
+    {
+      "id": "sese.035.001.13",
+      "name": "Securities Financing Confirmation V13",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.01",
+      "name": "Securities Financing Confirmation .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.02",
+      "name": "Securities Financing Confirmation V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.03",
+      "name": "Securities Financing Confirmation 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.04",
+      "name": "Securities Financing Confirmation 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.05",
+      "name": "Securities Financing Confirmation 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.06",
+      "name": "Securities Financing Confirmation 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.07",
+      "name": "Securities Financing Confirmation 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.08",
+      "name": "Securities Financing Confirmation 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.09",
+      "name": "Securities Financing Confirmation 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.10",
+      "name": "Securities Financing Confirmation 002V10",
+      "description": ""
+    },
+    {
+      "id": "sese.035.002.11",
+      "name": "Securities Financing Confirmation 002V11",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.01",
+      "name": "Securities Financing Modification Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.02",
+      "name": "Securities Financing Modification Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.03",
+      "name": "Securities Financing Modification Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.04",
+      "name": "Securities Financing Modification Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.05",
+      "name": "Securities Financing Modification Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.06",
+      "name": "Securities Financing Modification Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.07",
+      "name": "Securities Financing Modification Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.08",
+      "name": "Securities Financing Modification Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.09",
+      "name": "Securities Financing Modification Instruction V09",
+      "description": ""
+    },
+    {
+      "id": "sese.036.001.10",
+      "name": "Securities Financing Modification Instruction V10",
+      "description": ""
+    },
+    {
+      "id": "sese.036.002.01",
+      "name": "Securities Financing Modification Instruction .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.036.002.02",
+      "name": "Securities Financing Modification Instruction V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.036.002.03",
+      "name": "Securities Financing Modification Instruction 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.036.002.04",
+      "name": "Securities Financing Modification Instruction 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.036.002.05",
+      "name": "Securities Financing Modification Instruction 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.036.002.06",
+      "name": "Securities Financing Modification Instruction 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.036.002.07",
+      "name": "Securities Financing Modification Instruction 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.036.002.08",
+      "name": "Securities Financing Modification Instruction 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.037.001.01",
+      "name": "Portfolio Transfer Notification V01",
+      "description": ""
+    },
+    {
+      "id": "sese.037.001.02",
+      "name": "Portfolio Transfer Notification V02",
+      "description": ""
+    },
+    {
+      "id": "sese.037.001.03",
+      "name": "Portfolio Transfer Notification V03",
+      "description": ""
+    },
+    {
+      "id": "sese.037.001.04",
+      "name": "Portfolio Transfer Notification V04",
+      "description": ""
+    },
+    {
+      "id": "sese.037.001.05",
+      "name": "Portfolio Transfer Notification V05",
+      "description": ""
+    },
+    {
+      "id": "sese.037.001.06",
+      "name": "Portfolio Transfer Notification V06",
+      "description": ""
+    },
+    {
+      "id": "sese.037.001.07",
+      "name": "Portfolio Transfer Notification V07",
+      "description": ""
+    },
+    {
+      "id": "sese.037.001.08",
+      "name": "Portfolio Transfer Notification V08",
+      "description": ""
+    },
+    {
+      "id": "sese.037.001.09",
+      "name": "Portfolio Transfer Notification V09",
+      "description": ""
+    },
+    {
+      "id": "sese.037.002.01",
+      "name": "Portfolio Transfer Notification .002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.037.002.02",
+      "name": "Portfolio Transfer Notification V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "sese.037.002.03",
+      "name": "Portfolio Transfer Notification 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.037.002.04",
+      "name": "Portfolio Transfer Notification 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.037.002.05",
+      "name": "Portfolio Transfer Notification 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.037.002.06",
+      "name": "Portfolio Transfer Notification 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.037.002.07",
+      "name": "Portfolio Transfer Notification 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.01",
+      "name": "Securities Settlement Transaction Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.02",
+      "name": "Securities Settlement Transaction Modification Request V02",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.03",
+      "name": "Securities Settlement Transaction Modification Request V03",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.04",
+      "name": "Securities Settlement Transaction Modification Request V04",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.05",
+      "name": "Securities Settlement Transaction Modification Request V05",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.06",
+      "name": "Securities Settlement Transaction Modification Request V06",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.07",
+      "name": "Securities Settlement Transaction Modification Request V07",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.08",
+      "name": "Securities Settlement Transaction Modification Request V08",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.09",
+      "name": "Securities Settlement Transaction Modification Request V09",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.10",
+      "name": "Securities Settlement Transaction Modification Request V10",
+      "description": ""
+    },
+    {
+      "id": "sese.038.001.11",
+      "name": "Securities Settlement Transaction Modification Request V11",
+      "description": ""
+    },
+    {
+      "id": "sese.038.002.01",
+      "name": "Securities Settlement Transaction Modification Request 002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.038.002.02",
+      "name": "Securities Settlement Transaction Modification Request 002V02",
+      "description": ""
+    },
+    {
+      "id": "sese.038.002.03",
+      "name": "Securities Settlement Transaction Modification Request 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.038.002.04",
+      "name": "Securities Settlement Transaction Modification Request 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.038.002.05",
+      "name": "Securities Settlement Transaction Modification Request 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.038.002.06",
+      "name": "Securities Settlement Transaction Modification Request 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.038.002.07",
+      "name": "Securities Settlement Transaction Modification Request 002V07",
+      "description": ""
+    },
+    {
+      "id": "sese.038.002.08",
+      "name": "Securities Settlement Transaction Modification Request 002V08",
+      "description": ""
+    },
+    {
+      "id": "sese.038.002.09",
+      "name": "Securities Settlement Transaction Modification Request 002V09",
+      "description": ""
+    },
+    {
+      "id": "sese.039.001.01",
+      "name": "Securities Settlement Transaction Modification Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "sese.039.001.02",
+      "name": "Securities Settlement Transaction Modification Request Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "sese.039.001.03",
+      "name": "Securities Settlement Transaction Modification Request Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "sese.039.001.04",
+      "name": "Securities Settlement Transaction Modification Request Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "sese.039.001.05",
+      "name": "Securities Settlement Transaction Modification Request Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "sese.039.001.06",
+      "name": "Securities Settlement Transaction Modification Request Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "sese.039.001.07",
+      "name": "Securities Settlement Transaction Modification Request Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "sese.039.001.08",
+      "name": "Securities Settlement Transaction Modification Request Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "sese.039.002.01",
+      "name": "Securities Settlement Transaction Modification Request Status Advice 002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.039.002.02",
+      "name": "Securities Settlement Transaction Modification Request Status Advice 002V02",
+      "description": ""
+    },
+    {
+      "id": "sese.039.002.03",
+      "name": "Securities Settlement Transaction Modification Request Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.039.002.04",
+      "name": "Securities Settlement Transaction Modification Request Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.039.002.05",
+      "name": "Securities Settlement Transaction Modification Request Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "sese.039.002.06",
+      "name": "Securities Settlement Transaction Modification Request Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "sese.040.001.01",
+      "name": "Securities Settlement Transaction Counterparty Response V01",
+      "description": ""
+    },
+    {
+      "id": "sese.040.001.02",
+      "name": "Securities Settlement Transaction Counterparty Response V02",
+      "description": ""
+    },
+    {
+      "id": "sese.040.001.03",
+      "name": "Securities Settlement Transaction Counterparty Response V03",
+      "description": ""
+    },
+    {
+      "id": "sese.040.001.04",
+      "name": "Securities Settlement Transaction Counterparty Response V04",
+      "description": ""
+    },
+    {
+      "id": "sese.040.001.05",
+      "name": "Securities Settlement Transaction Counterparty Response V05",
+      "description": ""
+    },
+    {
+      "id": "sese.040.001.06",
+      "name": "Securities Settlement Transaction Counterparty Response V06",
+      "description": ""
+    },
+    {
+      "id": "sese.040.002.01",
+      "name": "Securities Settlement Transaction Counterparty Response 002V01",
+      "description": ""
+    },
+    {
+      "id": "sese.040.002.02",
+      "name": "Securities Settlement Transaction Counterparty Response 002V02",
+      "description": ""
+    },
+    {
+      "id": "sese.040.002.03",
+      "name": "Securities Settlement Transaction Counterparty Response 002V03",
+      "description": ""
+    },
+    {
+      "id": "sese.040.002.04",
+      "name": "Securities Settlement Transaction Counterparty Response 002V04",
+      "description": ""
+    },
+    {
+      "id": "sese.041.001.01",
+      "name": "Buy In Regulatory Advice V01",
+      "description": ""
+    },
+    {
+      "id": "sese.041.001.02",
+      "name": "Buy In Regulatory Advice V02",
+      "description": ""
+    },
+    {
+      "id": "sese.042.001.01",
+      "name": "Buy In Regulatory Advice Response V01",
+      "description": ""
+    },
+    {
+      "id": "sese.042.001.02",
+      "name": "Buy In Regulatory Advice Response V02",
+      "description": ""
+    },
+    {
+      "id": "sese.043.001.01",
+      "name": "Portfolio Transfer Completion V01",
+      "description": ""
+    },
+    {
+      "id": "sese.043.001.02",
+      "name": "Portfolio Transfer Completion V02",
+      "description": ""
+    }
+  ]
+}

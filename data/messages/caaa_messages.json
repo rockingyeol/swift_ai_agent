@@ -1,0 +1,1480 @@
+{
+  "description": "SWIFT ISO 20022 caaa 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "caaa.001.001.01",
+      "name": "Acceptor Authorisation Request V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.02",
+      "name": "Acceptor Authorisation Request V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.03",
+      "name": "Acceptor Authorisation Request V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.04",
+      "name": "Acceptor Authorisation Request V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.05",
+      "name": "Acceptor Authorisation Request V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.06",
+      "name": "Acceptor Authorisation Request V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.07",
+      "name": "Acceptor Authorisation Request V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.08",
+      "name": "Acceptor Authorisation Request V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.09",
+      "name": "Acceptor Authorisation Request V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.10",
+      "name": "Acceptor Authorisation Request V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.11",
+      "name": "Acceptor Authorisation Request V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.12",
+      "name": "Acceptor Authorisation Request V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.13",
+      "name": "Acceptor Authorisation Request V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.14",
+      "name": "Acceptor Authorisation Request V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.001.001.15",
+      "name": "Acceptor Authorisation Request V15",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.01",
+      "name": "Acceptor Authorisation Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.02",
+      "name": "Acceptor Authorisation Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.03",
+      "name": "Acceptor Authorisation Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.04",
+      "name": "Acceptor Authorisation Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.05",
+      "name": "Acceptor Authorisation Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.06",
+      "name": "Acceptor Authorisation Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.07",
+      "name": "Acceptor Authorisation Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.08",
+      "name": "Acceptor Authorisation Response V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.09",
+      "name": "Acceptor Authorisation Response V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.10",
+      "name": "Acceptor Authorisation Response V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.11",
+      "name": "Acceptor Authorisation Response V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.12",
+      "name": "Acceptor Authorisation Response V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.13",
+      "name": "Acceptor Authorisation Response V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.14",
+      "name": "Acceptor Authorisation Response V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.002.001.15",
+      "name": "Acceptor Authorisation Response V15",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.01",
+      "name": "Acceptor Completion Advice V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.02",
+      "name": "Acceptor Completion Advice V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.03",
+      "name": "Acceptor Completion Advice V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.04",
+      "name": "Acceptor Completion Advice V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.05",
+      "name": "Acceptor Completion Advice V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.06",
+      "name": "Acceptor Completion Advice V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.07",
+      "name": "Acceptor Completion Advice V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.08",
+      "name": "Acceptor Completion Advice V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.09",
+      "name": "Acceptor Completion Advice V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.10",
+      "name": "Acceptor Completion Advice V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.11",
+      "name": "Acceptor Completion Advice V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.12",
+      "name": "Acceptor Completion Advice V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.13",
+      "name": "Acceptor Completion Advice V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.14",
+      "name": "Acceptor Completion Advice V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.003.001.15",
+      "name": "Acceptor Completion Advice V15",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.01",
+      "name": "Acceptor Completion Advice Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.02",
+      "name": "Acceptor Completion Advice Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.03",
+      "name": "Acceptor Completion Advice Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.04",
+      "name": "Acceptor Completion Advice Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.05",
+      "name": "Acceptor Completion Advice Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.06",
+      "name": "Acceptor Completion Advice Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.07",
+      "name": "Acceptor Completion Advice Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.08",
+      "name": "Acceptor Completion Advice Response V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.09",
+      "name": "Acceptor Completion Advice Response V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.10",
+      "name": "Acceptor Completion Advice Response V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.11",
+      "name": "Acceptor Completion Advice Response V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.12",
+      "name": "Acceptor Completion Advice Response V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.13",
+      "name": "Acceptor Completion Advice Response V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.004.001.14",
+      "name": "Acceptor Completion Advice Response V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.01",
+      "name": "Acceptor Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.02",
+      "name": "Acceptor Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.03",
+      "name": "Acceptor Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.04",
+      "name": "Acceptor Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.05",
+      "name": "Acceptor Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.06",
+      "name": "Acceptor Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.07",
+      "name": "Acceptor Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.08",
+      "name": "Acceptor Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.09",
+      "name": "Acceptor Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.10",
+      "name": "Acceptor Cancellation Request V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.11",
+      "name": "Acceptor Cancellation Request V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.12",
+      "name": "Acceptor Cancellation Request V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.13",
+      "name": "Acceptor Cancellation Request V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.14",
+      "name": "Acceptor Cancellation Request V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.005.001.15",
+      "name": "Acceptor Cancellation Request V15",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.01",
+      "name": "Acceptor Cancellation Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.02",
+      "name": "Acceptor Cancellation Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.03",
+      "name": "Acceptor Cancellation Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.04",
+      "name": "Acceptor Cancellation Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.05",
+      "name": "Acceptor Cancellation Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.06",
+      "name": "Acceptor Cancellation Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.07",
+      "name": "Acceptor Cancellation Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.08",
+      "name": "Acceptor Cancellation Response V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.09",
+      "name": "Acceptor Cancellation Response V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.10",
+      "name": "Acceptor Cancellation Response V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.11",
+      "name": "Acceptor Cancellation Response V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.12",
+      "name": "Acceptor Cancellation Response V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.13",
+      "name": "Acceptor Cancellation Response V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.006.001.14",
+      "name": "Acceptor Cancellation Response V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.01",
+      "name": "Acceptor Cancellation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.02",
+      "name": "Acceptor Cancellation Advice V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.03",
+      "name": "Acceptor Cancellation Advice V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.04",
+      "name": "Acceptor Cancellation Advice V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.05",
+      "name": "Acceptor Cancellation Advice V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.06",
+      "name": "Acceptor Cancellation Advice V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.07",
+      "name": "Acceptor Cancellation Advice V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.08",
+      "name": "Acceptor Cancellation Advice V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.09",
+      "name": "Acceptor Cancellation Advice V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.10",
+      "name": "Acceptor Cancellation Advice V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.11",
+      "name": "Acceptor Cancellation Advice V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.12",
+      "name": "Acceptor Cancellation Advice V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.13",
+      "name": "Acceptor Cancellation Advice V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.14",
+      "name": "Acceptor Cancellation Advice V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.007.001.15",
+      "name": "Acceptor Cancellation Advice V15",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.01",
+      "name": "Acceptor Cancellation Advice Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.02",
+      "name": "Acceptor Cancellation Advice Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.03",
+      "name": "Acceptor Cancellation Advice Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.04",
+      "name": "Acceptor Cancellation Advice Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.05",
+      "name": "Acceptor Cancellation Advice Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.06",
+      "name": "Acceptor Cancellation Advice Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.07",
+      "name": "Acceptor Cancellation Advice Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.08",
+      "name": "Acceptor Cancellation Advice Response V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.09",
+      "name": "Acceptor Cancellation Advice Response V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.10",
+      "name": "Acceptor Cancellation Advice Response V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.11",
+      "name": "Acceptor Cancellation Advice Response V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.12",
+      "name": "Acceptor Cancellation Advice Response V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.13",
+      "name": "Acceptor Cancellation Advice Response V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.008.001.14",
+      "name": "Acceptor Cancellation Advice Response V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.01",
+      "name": "Acceptor Reconciliation Request V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.02",
+      "name": "Acceptor Reconciliation Request V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.03",
+      "name": "Acceptor Reconciliation Request V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.04",
+      "name": "Acceptor Reconciliation Request V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.05",
+      "name": "Acceptor Reconciliation Request V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.06",
+      "name": "Acceptor Reconciliation Request V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.07",
+      "name": "Acceptor Reconciliation Request V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.08",
+      "name": "Acceptor Reconciliation Request V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.09",
+      "name": "Acceptor Reconciliation Request V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.10",
+      "name": "Acceptor Reconciliation Request V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.11",
+      "name": "Acceptor Reconciliation Request V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.12",
+      "name": "Acceptor Reconciliation Request V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.13",
+      "name": "Acceptor Reconciliation Request V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.009.001.14",
+      "name": "Acceptor Reconciliation Request V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.01",
+      "name": "Acceptor Reconciliation Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.02",
+      "name": "Acceptor Reconciliation Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.03",
+      "name": "Acceptor Reconciliation Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.04",
+      "name": "Acceptor Reconciliation Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.05",
+      "name": "Acceptor Reconciliation Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.06",
+      "name": "Acceptor Reconciliation Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.07",
+      "name": "Acceptor Reconciliation Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.08",
+      "name": "Acceptor Reconciliation Response V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.09",
+      "name": "Acceptor Reconciliation Response V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.10",
+      "name": "Acceptor Reconciliation Response V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.11",
+      "name": "Acceptor Reconciliation Response V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.12",
+      "name": "Acceptor Reconciliation Response V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.010.001.13",
+      "name": "Acceptor Reconciliation Response V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.01",
+      "name": "Acceptor Batch Transfer V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.02",
+      "name": "Acceptor Batch Transfer V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.03",
+      "name": "Acceptor Batch Transfer V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.04",
+      "name": "Acceptor Batch Transfer V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.05",
+      "name": "Acceptor Batch Transfer V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.06",
+      "name": "Acceptor Batch Transfer V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.07",
+      "name": "Acceptor Batch Transfer V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.08",
+      "name": "Acceptor Batch Transfer V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.09",
+      "name": "Acceptor Batch Transfer V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.10",
+      "name": "Acceptor Batch Transfer V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.11",
+      "name": "Acceptor Batch Transfer V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.12",
+      "name": "Acceptor Batch Transfer V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.13",
+      "name": "Acceptor Batch Transfer V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.14",
+      "name": "Acceptor Batch Transfer V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.011.001.15",
+      "name": "Acceptor Batch Transfer V15",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.01",
+      "name": "Acceptor Batch Transfer Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.02",
+      "name": "Acceptor Batch Transfer Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.03",
+      "name": "Acceptor Batch Transfer Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.04",
+      "name": "Acceptor Batch Transfer Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.05",
+      "name": "Acceptor Batch Transfer Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.06",
+      "name": "Acceptor Batch Transfer Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.07",
+      "name": "Acceptor Batch Transfer Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.08",
+      "name": "Acceptor Batch Transfer Response V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.09",
+      "name": "Acceptor Batch Transfer Response V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.10",
+      "name": "Acceptor Batch Transfer Response V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.11",
+      "name": "Acceptor Batch Transfer Response V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.12",
+      "name": "Acceptor Batch Transfer Response V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.13",
+      "name": "Acceptor Batch Transfer Response V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.012.001.14",
+      "name": "Acceptor Batch Transfer Response V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.01",
+      "name": "Acceptor Diagnostic Request V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.02",
+      "name": "Acceptor Diagnostic Request V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.03",
+      "name": "Acceptor Diagnostic Request V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.04",
+      "name": "Acceptor Diagnostic Request V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.05",
+      "name": "Acceptor Diagnostic Request V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.06",
+      "name": "Acceptor Diagnostic Request V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.07",
+      "name": "Acceptor Diagnostic Request V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.08",
+      "name": "Acceptor Diagnostic Request V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.09",
+      "name": "Acceptor Diagnostic Request V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.10",
+      "name": "Acceptor Diagnostic Request V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.11",
+      "name": "Acceptor Diagnostic Request V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.12",
+      "name": "Acceptor Diagnostic Request V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.13",
+      "name": "Acceptor Diagnostic Request V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.013.001.14",
+      "name": "Acceptor Diagnostic Request V14",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.01",
+      "name": "Acceptor Diagnostic Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.02",
+      "name": "Acceptor Diagnostic Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.03",
+      "name": "Acceptor Diagnostic Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.04",
+      "name": "Acceptor Diagnostic Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.05",
+      "name": "Acceptor Diagnostic Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.06",
+      "name": "Acceptor Diagnostic Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.07",
+      "name": "Acceptor Diagnostic Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.08",
+      "name": "Acceptor Diagnostic Response V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.09",
+      "name": "Acceptor Diagnostic Response V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.10",
+      "name": "Acceptor Diagnostic Response V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.11",
+      "name": "Acceptor Diagnostic Response V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.12",
+      "name": "Acceptor Diagnostic Response V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.014.001.13",
+      "name": "Acceptor Diagnostic Response V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.015.001.01",
+      "name": "Acceptor Rejection V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.015.001.02",
+      "name": "Acceptor Rejection V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.015.001.03",
+      "name": "Acceptor Rejection V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.015.001.04",
+      "name": "Acceptor Rejection V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.015.001.05",
+      "name": "Acceptor Rejection V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.015.001.06",
+      "name": "Acceptor Rejection V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.01",
+      "name": "Acceptor Currency Conversion Request V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.02",
+      "name": "Acceptor Currency Conversion Request V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.03",
+      "name": "Acceptor Currency Conversion Request V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.04",
+      "name": "Acceptor Currency Conversion Request V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.05",
+      "name": "Acceptor Currency Conversion Request V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.06",
+      "name": "Acceptor Currency Conversion Request V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.07",
+      "name": "Acceptor Currency Conversion Request V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.08",
+      "name": "Acceptor Currency Conversion Request V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.09",
+      "name": "Acceptor Currency Conversion Request V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.10",
+      "name": "Acceptor Currency Conversion Request V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.11",
+      "name": "Acceptor Currency Conversion Request V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.12",
+      "name": "Acceptor Currency Conversion Request V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.016.001.13",
+      "name": "Acceptor Currency Conversion Request V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.01",
+      "name": "Acceptor Currency Conversion Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.02",
+      "name": "Acceptor Currency Conversion Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.03",
+      "name": "Acceptor Currency Conversion Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.04",
+      "name": "Acceptor Currency Conversion Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.05",
+      "name": "Acceptor Currency Conversion Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.06",
+      "name": "Acceptor Currency Conversion Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.07",
+      "name": "Acceptor Currency Conversion Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.08",
+      "name": "Acceptor Currency Conversion Response V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.09",
+      "name": "Acceptor Currency Conversion Response V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.10",
+      "name": "Acceptor Currency Conversion Response V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.11",
+      "name": "Acceptor Currency Conversion Response V11",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.12",
+      "name": "Acceptor Currency Conversion Response V12",
+      "description": ""
+    },
+    {
+      "id": "caaa.017.001.13",
+      "name": "Acceptor Currency Conversion Response V13",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.01",
+      "name": "Acceptor Currency Conversion Advice V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.02",
+      "name": "Acceptor Currency Conversion Advice V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.03",
+      "name": "Acceptor Currency Conversion Advice V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.04",
+      "name": "Acceptor Currency Conversion Advice V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.05",
+      "name": "Acceptor Currency Conversion Advice V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.06",
+      "name": "Acceptor Currency Conversion Advice V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.07",
+      "name": "Acceptor Currency Conversion Advice V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.08",
+      "name": "Acceptor Currency Conversion Advice V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.09",
+      "name": "Acceptor Currency Conversion Advice V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.018.001.10",
+      "name": "Acceptor Currency Conversion Advice V10",
+      "description": ""
+    },
+    {
+      "id": "caaa.019.001.01",
+      "name": "Acceptor Currency Conversion Advice Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.019.001.02",
+      "name": "Acceptor Currency Conversion Advice Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.019.001.03",
+      "name": "Acceptor Currency Conversion Advice Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.019.001.04",
+      "name": "Acceptor Currency Conversion Advice Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.019.001.05",
+      "name": "Acceptor Currency Conversion Advice Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.019.001.06",
+      "name": "Acceptor Currency Conversion Advice Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.019.001.07",
+      "name": "Acceptor Currency Conversion Advice Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.019.001.08",
+      "name": "Acceptor Currency Conversion Advice Response V08",
+      "description": ""
+    },
+    {
+      "id": "caaa.019.001.09",
+      "name": "Acceptor Currency Conversion Advice Response V09",
+      "description": ""
+    },
+    {
+      "id": "caaa.020.001.01",
+      "name": "Transaction Advice V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.020.001.02",
+      "name": "Transaction Advice V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.020.001.03",
+      "name": "Transaction Advice V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.020.001.04",
+      "name": "Transaction Advice V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.020.001.05",
+      "name": "Transaction Advice V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.020.001.06",
+      "name": "Transaction Advice V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.020.001.07",
+      "name": "Transaction Advice V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.021.001.01",
+      "name": "Transaction Advice Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.021.001.02",
+      "name": "Transaction Advice Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.021.001.03",
+      "name": "Transaction Advice Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.021.001.04",
+      "name": "Transaction Advice Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.021.001.05",
+      "name": "Transaction Advice Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.021.001.06",
+      "name": "Transaction Advice Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.021.001.07",
+      "name": "Transaction Advice Response V07",
+      "description": ""
+    },
+    {
+      "id": "caaa.022.001.01",
+      "name": "Acceptor Non Financial Request V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.022.001.02",
+      "name": "Acceptor Non Financial Request V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.022.001.03",
+      "name": "Acceptor Non Financial Request V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.022.001.04",
+      "name": "Acceptor Non Financial Request V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.022.001.05",
+      "name": "Acceptor Non Financial Request V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.022.001.06",
+      "name": "Acceptor Non Financial Request V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.023.001.01",
+      "name": "Acceptor Non Financial Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.023.001.02",
+      "name": "Acceptor Non Financial Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.023.001.03",
+      "name": "Acceptor Non Financial Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.023.001.04",
+      "name": "Acceptor Non Financial Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.023.001.05",
+      "name": "Acceptor Non Financial Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.023.001.06",
+      "name": "Acceptor Non Financial Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.024.001.01",
+      "name": "Acceptor Transaction Log Report Request V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.024.001.02",
+      "name": "Acceptor Transaction Log Report Request V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.024.001.03",
+      "name": "Acceptor Transaction Log Report Request V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.024.001.04",
+      "name": "Acceptor Transaction Log Report Request V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.024.001.05",
+      "name": "Acceptor Transaction Log Report Request V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.024.001.06",
+      "name": "Acceptor Transaction Log Report Request V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.025.001.01",
+      "name": "Acceptor Transaction Log Report Response V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.025.001.02",
+      "name": "Acceptor Transaction Log Report Response V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.025.001.03",
+      "name": "Acceptor Transaction Log Report Response V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.025.001.04",
+      "name": "Acceptor Transaction Log Report Response V04",
+      "description": ""
+    },
+    {
+      "id": "caaa.025.001.05",
+      "name": "Acceptor Transaction Log Report Response V05",
+      "description": ""
+    },
+    {
+      "id": "caaa.025.001.06",
+      "name": "Acceptor Transaction Log Report Response V06",
+      "description": ""
+    },
+    {
+      "id": "caaa.026.001.01",
+      "name": "Acceptor To Acquirer Batch File Exchange V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.026.001.02",
+      "name": "Acceptor To Acquirer Batch File Exchange V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.026.001.03",
+      "name": "Acceptor To Acquirer Batch File Exchange V03",
+      "description": ""
+    },
+    {
+      "id": "caaa.027.001.01",
+      "name": "Acquirer To Acceptor Batch File Exchange V01",
+      "description": ""
+    },
+    {
+      "id": "caaa.027.001.02",
+      "name": "Acquirer To Acceptor Batch File Exchange V02",
+      "description": ""
+    },
+    {
+      "id": "caaa.027.001.03",
+      "name": "Acquirer To Acceptor Batch File Exchange V03",
+      "description": ""
+    }
+  ]
+}

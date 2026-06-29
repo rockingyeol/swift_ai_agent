@@ -1,0 +1,205 @@
+{
+  "description": "SWIFT ISO 20022 caad 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "caad.001.001.01",
+      "name": "Batch Management Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "caad.001.001.02",
+      "name": "Batch Management Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "caad.001.001.03",
+      "name": "Batch Management Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "caad.001.001.04",
+      "name": "Batch Management Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "caad.002.001.01",
+      "name": "Batch Management Response V01",
+      "description": ""
+    },
+    {
+      "id": "caad.002.001.02",
+      "name": "Batch Management Response V02",
+      "description": ""
+    },
+    {
+      "id": "caad.002.001.03",
+      "name": "Batch Management Response V03",
+      "description": ""
+    },
+    {
+      "id": "caad.002.001.04",
+      "name": "Batch Management Response V04",
+      "description": ""
+    },
+    {
+      "id": "caad.003.001.01",
+      "name": "Batch Transfer Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "caad.003.001.02",
+      "name": "Batch Transfer Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "caad.003.001.03",
+      "name": "Batch Transfer Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "caad.003.001.04",
+      "name": "Batch Transfer Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "caad.004.001.01",
+      "name": "Batch Transfer Response V01",
+      "description": ""
+    },
+    {
+      "id": "caad.004.001.02",
+      "name": "Batch Transfer Response V02",
+      "description": ""
+    },
+    {
+      "id": "caad.004.001.03",
+      "name": "Batch Transfer Response V03",
+      "description": ""
+    },
+    {
+      "id": "caad.004.001.04",
+      "name": "Batch Transfer Response V04",
+      "description": ""
+    },
+    {
+      "id": "caad.005.001.02",
+      "name": "Reconciliation Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "caad.005.001.03",
+      "name": "Reconciliation Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "caad.005.001.04",
+      "name": "Reconciliation Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "caad.005.001.05",
+      "name": "Reconciliation Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "caad.006.001.02",
+      "name": "Reconciliation Response V02",
+      "description": ""
+    },
+    {
+      "id": "caad.006.001.03",
+      "name": "Reconciliation Response V03",
+      "description": ""
+    },
+    {
+      "id": "caad.006.001.04",
+      "name": "Reconciliation Response V04",
+      "description": ""
+    },
+    {
+      "id": "caad.006.001.05",
+      "name": "Reconciliation Response V05",
+      "description": ""
+    },
+    {
+      "id": "caad.007.001.02",
+      "name": "Error V02",
+      "description": ""
+    },
+    {
+      "id": "caad.007.001.03",
+      "name": "Error V03",
+      "description": ""
+    },
+    {
+      "id": "caad.007.001.04",
+      "name": "Error V04",
+      "description": ""
+    },
+    {
+      "id": "caad.007.001.05",
+      "name": "Error V05",
+      "description": ""
+    },
+    {
+      "id": "caad.008.001.01",
+      "name": "Administrative Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "caad.008.001.02",
+      "name": "Administrative Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "caad.008.001.03",
+      "name": "Administrative Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "caad.009.001.01",
+      "name": "Administrative Response V01",
+      "description": ""
+    },
+    {
+      "id": "caad.009.001.02",
+      "name": "Administrative Response V02",
+      "description": ""
+    },
+    {
+      "id": "caad.009.001.03",
+      "name": "Administrative Response V03",
+      "description": ""
+    },
+    {
+      "id": "caad.010.001.01",
+      "name": "Custom Report V01",
+      "description": ""
+    },
+    {
+      "id": "caad.010.001.02",
+      "name": "Custom Report V02",
+      "description": ""
+    },
+    {
+      "id": "caad.010.001.03",
+      "name": "Custom Report V03",
+      "description": ""
+    },
+    {
+      "id": "cain.007.001.01",
+      "name": "Reconciliation Initiation",
+      "description": ""
+    },
+    {
+      "id": "cain.008.001.01",
+      "name": "Reconciliation Response",
+      "description": ""
+    },
+    {
+      "id": "cain.013.001.01",
+      "name": "Acquirer Rejection",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "description": "SWIFT ISO 20022 pain 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "camt.055.001.01",
+      "name": "Customer Payment Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.02",
+      "name": "Customer Payment Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.03",
+      "name": "Customer Payment Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.04",
+      "name": "Customer Payment Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.05",
+      "name": "Customer Payment Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.06",
+      "name": "Customer Payment Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.07",
+      "name": "Customer Payment Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.08",
+      "name": "Customer Payment Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.09",
+      "name": "Customer Payment Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.10",
+      "name": "Customer Payment Cancellation Request V10",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.11",
+      "name": "Customer Payment Cancellation Request V11",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.12",
+      "name": "Customer Payment Cancellation Request V12",
+      "description": ""
+    },
+    {
+      "id": "camt.055.001.13",
+      "name": "Customer Payment Cancellation Request V13",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.02",
+      "name": "Customer Credit Transfer Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.03",
+      "name": "Customer Credit Transfer Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.04",
+      "name": "Customer Credit Transfer Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.05",
+      "name": "Customer Credit Transfer Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.06",
+      "name": "Customer Credit Transfer Initiation V06",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.07",
+      "name": "Customer Credit Transfer Initiation V07",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.08",
+      "name": "Customer Credit Transfer Initiation V08",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.09",
+      "name": "Customer Credit Transfer Initiation V09",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.10",
+      "name": "Customer Credit Transfer Initiation V10",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.11",
+      "name": "Customer Credit Transfer Initiation V11",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.12",
+      "name": "Customer Credit Transfer Initiation V12",
+      "description": ""
+    },
+    {
+      "id": "pain.001.001.13",
+      "name": "Customer Credit Transfer Initiation V13",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.02",
+      "name": "Payment Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.03",
+      "name": "Customer Payment Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.04",
+      "name": "Customer Payment Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.05",
+      "name": "Customer Payment Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.06",
+      "name": "Customer Payment Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.07",
+      "name": "Customer Payment Status Report V07",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.08",
+      "name": "Customer Payment Status Report V08",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.09",
+      "name": "Customer Payment Status Report V09",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.10",
+      "name": "Customer Payment Status Report V10",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.11",
+      "name": "Customer Payment Status Report V11",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.12",
+      "name": "Customer Payment Status Report V12",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.13",
+      "name": "Customer Payment Status Report V13",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.14",
+      "name": "Customer Payment Status Report V14",
+      "description": ""
+    },
+    {
+      "id": "pain.002.001.15",
+      "name": "Customer Payment Status Report V15",
+      "description": ""
+    },
+    {
+      "id": "pain.006.001.01",
+      "name": "Payment Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.01",
+      "name": "Customer Payment Reversal V01",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.02",
+      "name": "Customer Payment Reversal V02",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.03",
+      "name": "Customer Payment Reversal V03",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.04",
+      "name": "Customer Payment Reversal V04",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.05",
+      "name": "Customer Payment Reversal V05",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.06",
+      "name": "Customer Payment Reversal V06",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.07",
+      "name": "Customer Payment Reversal V07",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.08",
+      "name": "Customer Payment Reversal V08",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.09",
+      "name": "Customer Payment Reversal V09",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.10",
+      "name": "Customer Payment Reversal V10",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.11",
+      "name": "Customer Payment Reversal V11",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.12",
+      "name": "Customer Payment Reversal V12",
+      "description": ""
+    },
+    {
+      "id": "pain.007.001.13",
+      "name": "Customer Payment Reversal V13",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.01",
+      "name": "Customer Direct Debit Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.02",
+      "name": "Customer Direct Debit Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.03",
+      "name": "Customer Direct Debit Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.04",
+      "name": "Customer Direct Debit Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.05",
+      "name": "Customer Direct Debit Initiation V05",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.06",
+      "name": "Customer Direct Debit Initiation V06",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.07",
+      "name": "Customer Direct Debit Initiation V07",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.08",
+      "name": "Customer Direct Debit Initiation V08",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.09",
+      "name": "Customer Direct Debit Initiation V09",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.10",
+      "name": "Customer Direct Debit Initiation V10",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.11",
+      "name": "Customer Direct Debit Initiation V11",
+      "description": ""
+    },
+    {
+      "id": "pain.008.001.12",
+      "name": "Customer Direct Debit Initiation V12",
+      "description": ""
+    },
+    {
+      "id": "pain.009.001.01",
+      "name": "Mandate Initiation Request V01",
+      "description": ""
+    },
+    {
+      "id": "pain.009.001.02",
+      "name": "Mandate Initiation Request V02",
+      "description": ""
+    },
+    {
+      "id": "pain.009.001.03",
+      "name": "Mandate Initiation Request V03",
+      "description": ""
+    },
+    {
+      "id": "pain.009.001.04",
+      "name": "Mandate Initiation Request V04",
+      "description": ""
+    },
+    {
+      "id": "pain.009.001.05",
+      "name": "Mandate Initiation Request V05",
+      "description": ""
+    },
+    {
+      "id": "pain.009.001.06",
+      "name": "Mandate Initiation Request V06",
+      "description": ""
+    },
+    {
+      "id": "pain.009.001.07",
+      "name": "Mandate Initiation Request V07",
+      "description": ""
+    },
+    {
+      "id": "pain.009.001.08",
+      "name": "Mandate Initiation Request V08",
+      "description": ""
+    },
+    {
+      "id": "pain.010.001.01",
+      "name": "Mandate Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "pain.010.001.02",
+      "name": "Mandate Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "pain.010.001.03",
+      "name": "Mandate Amendment Request V03",
+      "description": ""
+    },
+    {
+      "id": "pain.010.001.04",
+      "name": "Mandate Amendment Request V04",
+      "description": ""
+    },
+    {
+      "id": "pain.010.001.05",
+      "name": "Mandate Amendment Request V05",
+      "description": ""
+    },
+    {
+      "id": "pain.010.001.06",
+      "name": "Mandate Amendment Request V06",
+      "description": ""
+    },
+    {
+      "id": "pain.010.001.07",
+      "name": "Mandate Amendment Request V07",
+      "description": ""
+    },
+    {
+      "id": "pain.010.001.08",
+      "name": "Mandate Amendment Request V08",
+      "description": ""
+    },
+    {
+      "id": "pain.011.001.01",
+      "name": "Mandate Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "pain.011.001.02",
+      "name": "Mandate Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "pain.011.001.03",
+      "name": "Mandate Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "pain.011.001.04",
+      "name": "Mandate Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "pain.011.001.05",
+      "name": "Mandate Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "pain.011.001.06",
+      "name": "Mandate Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "pain.011.001.07",
+      "name": "Mandate Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "pain.011.001.08",
+      "name": "Mandate Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "pain.012.001.01",
+      "name": "Mandate Acceptance Report V01",
+      "description": ""
+    },
+    {
+      "id": "pain.012.001.02",
+      "name": "Mandate Acceptance Report V02",
+      "description": ""
+    },
+    {
+      "id": "pain.012.001.03",
+      "name": "Mandate Acceptance Report V03",
+      "description": ""
+    },
+    {
+      "id": "pain.012.001.04",
+      "name": "Mandate Acceptance Report V04",
+      "description": ""
+    },
+    {
+      "id": "pain.012.001.05",
+      "name": "Mandate Acceptance Report V05",
+      "description": ""
+    },
+    {
+      "id": "pain.012.001.06",
+      "name": "Mandate Acceptance Report V06",
+      "description": ""
+    },
+    {
+      "id": "pain.012.001.07",
+      "name": "Mandate Acceptance Report V07",
+      "description": ""
+    },
+    {
+      "id": "pain.012.001.08",
+      "name": "Mandate Acceptance Report V08",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.01",
+      "name": "Creditor Payment Activation Request V01",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.02",
+      "name": "Creditor Payment Activation Request V02",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.03",
+      "name": "Creditor Payment Activation Request V03",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.04",
+      "name": "Creditor Payment Activation Request V04",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.05",
+      "name": "Creditor Payment Activation Request V05",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.06",
+      "name": "Creditor Payment Activation Request V06",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.07",
+      "name": "Creditor Payment Activation Request V07",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.08",
+      "name": "Creditor Payment Activation Request V08",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.09",
+      "name": "Creditor Payment Activation Request V09",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.10",
+      "name": "Creditor Payment Activation Request V10",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.11",
+      "name": "Creditor Payment Activation Request V11",
+      "description": ""
+    },
+    {
+      "id": "pain.013.001.12",
+      "name": "Creditor Payment Activation Request V12",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.01",
+      "name": "Creditor Payment Activation Request Status Report V01",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.02",
+      "name": "Creditor Payment Activation Request Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.03",
+      "name": "Creditor Payment Activation Request Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.04",
+      "name": "Creditor Payment Activation Request Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.05",
+      "name": "Creditor Payment Activation Request Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.06",
+      "name": "Creditor Payment Activation Request Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.07",
+      "name": "Creditor Payment Activation Request Status Report V07",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.08",
+      "name": "Creditor Payment Activation Request Status Report V08",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.09",
+      "name": "Creditor Payment Activation Request Status Report V09",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.10",
+      "name": "Creditor Payment Activation Request Status Report V10",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.11",
+      "name": "Creditor Payment Activation Request Status Report V11",
+      "description": ""
+    },
+    {
+      "id": "pain.014.001.12",
+      "name": "Creditor Payment Activation Request Status Report V12",
+      "description": ""
+    },
+    {
+      "id": "pain.017.001.01",
+      "name": "Mandate Copy Request V01",
+      "description": ""
+    },
+    {
+      "id": "pain.017.001.02",
+      "name": "Mandate Copy Request V02",
+      "description": ""
+    },
+    {
+      "id": "pain.017.001.03",
+      "name": "Mandate Copy Request V03",
+      "description": ""
+    },
+    {
+      "id": "pain.017.001.04",
+      "name": "Mandate Copy Request V04",
+      "description": ""
+    },
+    {
+      "id": "pain.018.001.01",
+      "name": "Mandate Suspension Request V01",
+      "description": ""
+    },
+    {
+      "id": "pain.018.001.02",
+      "name": "Mandate Suspension Request V02",
+      "description": ""
+    },
+    {
+      "id": "pain.018.001.03",
+      "name": "Mandate Suspension Request V03",
+      "description": ""
+    },
+    {
+      "id": "pain.018.001.04",
+      "name": "Mandate Suspension Request V04",
+      "description": ""
+    },
+    {
+      "id": "pain.998.001.01",
+      "name": "Proprietary Message V01",
+      "description": ""
+    },
+    {
+      "id": "pain.998.001.03",
+      "name": "Payment Initiation Proprietary Message V03",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "description": "SWIFT ISO 20022 catm 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "catm.001.001.01",
+      "name": "Status Report V01",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.02",
+      "name": "Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.03",
+      "name": "Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.04",
+      "name": "Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.05",
+      "name": "Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.06",
+      "name": "Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.07",
+      "name": "Status Report V07",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.08",
+      "name": "Status Report V08",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.09",
+      "name": "Status Report V09",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.10",
+      "name": "Status Report V10",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.11",
+      "name": "Status Report V11",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.12",
+      "name": "Status Report V12",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.13",
+      "name": "Status Report V13",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.14",
+      "name": "Status Report V14",
+      "description": ""
+    },
+    {
+      "id": "catm.001.001.15",
+      "name": "Status Report V15",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.01",
+      "name": "Management Plan Replacement V01",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.02",
+      "name": "Management Plan Replacement V02",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.03",
+      "name": "Management Plan Replacement V03",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.04",
+      "name": "Management Plan Replacement V04",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.05",
+      "name": "Management Plan Replacement V05",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.06",
+      "name": "Management Plan Replacement V06",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.07",
+      "name": "Management Plan Replacement V07",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.08",
+      "name": "Management Plan Replacement V08",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.09",
+      "name": "Management Plan Replacement V09",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.10",
+      "name": "Management Plan Replacement V10",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.11",
+      "name": "Management Plan Replacement V11",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.12",
+      "name": "Management Plan Replacement V12",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.13",
+      "name": "Management Plan Replacement V13",
+      "description": ""
+    },
+    {
+      "id": "catm.002.001.14",
+      "name": "Management Plan Replacement V14",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.01",
+      "name": "Acceptor Configuration Update V01",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.02",
+      "name": "Acceptor Configuration Update V02",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.03",
+      "name": "Acceptor Configuration Update V03",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.04",
+      "name": "Acceptor Configuration Update V04",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.05",
+      "name": "Acceptor Configuration Update V05",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.06",
+      "name": "Acceptor Configuration Update V06",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.07",
+      "name": "Acceptor Configuration Update V07",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.08",
+      "name": "Acceptor Configuration Update V08",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.09",
+      "name": "Acceptor Configuration Update V09",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.10",
+      "name": "Acceptor Configuration Update V10",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.11",
+      "name": "Acceptor Configuration Update V11",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.12",
+      "name": "Acceptor Configuration Update V12",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.13",
+      "name": "Acceptor Configuration Update V13",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.14",
+      "name": "Acceptor Configuration Update V14",
+      "description": ""
+    },
+    {
+      "id": "catm.003.001.15",
+      "name": "Acceptor Configuration Update V15",
+      "description": ""
+    },
+    {
+      "id": "catm.004.001.01",
+      "name": "Terminal Management Rejection V01",
+      "description": ""
+    },
+    {
+      "id": "catm.004.001.02",
+      "name": "Terminal Management Rejection V02",
+      "description": ""
+    },
+    {
+      "id": "catm.004.001.03",
+      "name": "Terminal Management Rejection V03",
+      "description": ""
+    },
+    {
+      "id": "catm.004.001.04",
+      "name": "Terminal Management Rejection V04",
+      "description": ""
+    },
+    {
+      "id": "catm.004.001.05",
+      "name": "Terminal Management Rejection V05",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.01",
+      "name": "Maintenance Delegation Request V01",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.02",
+      "name": "Maintenance Delegation Request V02",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.03",
+      "name": "Maintenance Delegation Request V03",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.04",
+      "name": "Maintenance Delegation Request V04",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.05",
+      "name": "Maintenance Delegation Request V05",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.06",
+      "name": "Maintenance Delegation Request V06",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.07",
+      "name": "Maintenance Delegation Request V07",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.08",
+      "name": "Maintenance Delegation Request V08",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.09",
+      "name": "Maintenance Delegation Request V09",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.10",
+      "name": "Maintenance Delegation Request V10",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.11",
+      "name": "Maintenance Delegation Request V11",
+      "description": ""
+    },
+    {
+      "id": "catm.005.001.12",
+      "name": "Maintenance Delegation Request V12",
+      "description": ""
+    },
+    {
+      "id": "catm.006.001.01",
+      "name": "Maintenance Delegation Response V01",
+      "description": ""
+    },
+    {
+      "id": "catm.006.001.02",
+      "name": "Maintenance Delegation Response V02",
+      "description": ""
+    },
+    {
+      "id": "catm.006.001.03",
+      "name": "Maintenance Delegation Response V03",
+      "description": ""
+    },
+    {
+      "id": "catm.006.001.04",
+      "name": "Maintenance Delegation Response V04",
+      "description": ""
+    },
+    {
+      "id": "catm.006.001.05",
+      "name": "Maintenance Delegation Response V05",
+      "description": ""
+    },
+    {
+      "id": "catm.006.001.06",
+      "name": "Maintenance Delegation Response V06",
+      "description": ""
+    },
+    {
+      "id": "catm.006.001.07",
+      "name": "Maintenance Delegation Response V07",
+      "description": ""
+    },
+    {
+      "id": "catm.006.001.08",
+      "name": "Maintenance Delegation Response V08",
+      "description": ""
+    },
+    {
+      "id": "catm.007.001.01",
+      "name": "Certificate Management Request V01",
+      "description": ""
+    },
+    {
+      "id": "catm.007.001.02",
+      "name": "Certificate Management Request V02",
+      "description": ""
+    },
+    {
+      "id": "catm.007.001.03",
+      "name": "Certificate Management Request V03",
+      "description": ""
+    },
+    {
+      "id": "catm.007.001.04",
+      "name": "Certificate Management Request V04",
+      "description": ""
+    },
+    {
+      "id": "catm.007.001.05",
+      "name": "Certificate Management Request V05",
+      "description": ""
+    },
+    {
+      "id": "catm.007.001.06",
+      "name": "Certificate Management Request V06",
+      "description": ""
+    },
+    {
+      "id": "catm.007.001.07",
+      "name": "Certificate Management Request V07",
+      "description": ""
+    },
+    {
+      "id": "catm.007.001.08",
+      "name": "Certificate Management Request V08",
+      "description": ""
+    },
+    {
+      "id": "catm.008.001.01",
+      "name": "Certificate Management Response V01",
+      "description": ""
+    },
+    {
+      "id": "catm.008.001.02",
+      "name": "Certificate Management Response V02",
+      "description": ""
+    },
+    {
+      "id": "catm.008.001.03",
+      "name": "Certificate Management Response V03",
+      "description": ""
+    },
+    {
+      "id": "catm.008.001.04",
+      "name": "Certificate Management Response V04",
+      "description": ""
+    },
+    {
+      "id": "catm.008.001.05",
+      "name": "Certificate Management Response V05",
+      "description": ""
+    },
+    {
+      "id": "catm.008.001.06",
+      "name": "Certificate Management Response V06",
+      "description": ""
+    },
+    {
+      "id": "catm.008.001.07",
+      "name": "Certificate Management Response V07",
+      "description": ""
+    }
+  ]
+}

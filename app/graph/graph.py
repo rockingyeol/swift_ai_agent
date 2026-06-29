@@ -16,8 +16,10 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import END, StateGraph
 
 from app.agents.analyzer import run_analyzer
+from app.agents.explainer import run_explainer
 from app.agents.generator import run_generator
 from app.agents.mapper import run_mapper
+from app.agents.schema_explorer import run_schema_explorer
 from app.audit.logger import write_audit
 from app.graph.state import AgentState
 from app.graph.supervisor import classify_intent, route
@@ -55,6 +57,8 @@ def build_graph() -> StateGraph:
     g.add_node("analyzer", run_analyzer)
     g.add_node("generator", run_generator)
     g.add_node("mapper", run_mapper)
+    g.add_node("explainer", run_explainer)            # 전문 설명 전용 (HITL 불필요)
+    g.add_node("schema_explorer", run_schema_explorer)  # 스키마 트리 탐색 (HITL 불필요)
     g.add_node("hitl_checkpoint", hitl_checkpoint)
     g.add_node("unmask", unmask_pii)
     g.add_node("reject", _handle_rejection)
@@ -63,10 +67,15 @@ def build_graph() -> StateGraph:
     g.set_entry_point("pii_mask")
     g.add_edge("pii_mask", "supervisor")
     g.add_conditional_edges("supervisor", route, {
-        "analyzer": "analyzer",
-        "generator": "generator",
-        "mapper": "mapper",
+        "analyzer":       "analyzer",
+        "generator":      "generator",
+        "mapper":         "mapper",
+        "explainer":      "explainer",
+        "schema_explorer": "schema_explorer",
     })
+    # explainer / schema_explorer는 HITL 없이 바로 unmask → audit
+    g.add_edge("explainer", "unmask")
+    g.add_edge("schema_explorer", "unmask")
     for agent in ("analyzer", "generator", "mapper"):
         g.add_edge(agent, "hitl_checkpoint")
 

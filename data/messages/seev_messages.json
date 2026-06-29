@@ -1,0 +1,2530 @@
+{
+  "description": "SWIFT ISO 20022 seev 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "seev.001.001.01",
+      "name": "Meeting Notification",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.02",
+      "name": "Meeting Notification V02",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.03",
+      "name": "Meeting Notification V03",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.04",
+      "name": "Meeting Notification V04",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.05",
+      "name": "Meeting Notification V05",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.06",
+      "name": "Meeting Notification V06",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.07",
+      "name": "Meeting Notification V07",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.08",
+      "name": "Meeting Notification V08",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.09",
+      "name": "Meeting Notification V09",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.10",
+      "name": "Meeting Notification V10",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.11",
+      "name": "Meeting Notification V11",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.12",
+      "name": "Meeting Notification V12",
+      "description": ""
+    },
+    {
+      "id": "seev.001.001.13",
+      "name": "Meeting Notification V13",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.01",
+      "name": "Meeting Cancellation",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.02",
+      "name": "Meeting Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.03",
+      "name": "Meeting Cancellation V03",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.04",
+      "name": "Meeting Cancellation V04",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.05",
+      "name": "Meeting Cancellation V05",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.06",
+      "name": "Meeting Cancellation V06",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.07",
+      "name": "Meeting Cancellation V07",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.08",
+      "name": "Meeting Cancellation V08",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.09",
+      "name": "Meeting Cancellation V09",
+      "description": ""
+    },
+    {
+      "id": "seev.002.001.10",
+      "name": "Meeting Cancellation V10",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.01",
+      "name": "Meeting Entitlement Notification",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.02",
+      "name": "Meeting Entitlement Notification V02",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.03",
+      "name": "Meeting Entitlement Notification V03",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.04",
+      "name": "Meeting Entitlement Notification V04",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.05",
+      "name": "Meeting Entitlement Notification V05",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.06",
+      "name": "Meeting Entitlement Notification V06",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.07",
+      "name": "Meeting Entitlement Notification V07",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.08",
+      "name": "Meeting Entitlement Notification V08",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.09",
+      "name": "Meeting Entitlement Notification V09",
+      "description": ""
+    },
+    {
+      "id": "seev.003.001.10",
+      "name": "Meeting Entitlement Notification V10",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.01",
+      "name": "Meeting Instruction",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.02",
+      "name": "Meeting Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.03",
+      "name": "Meeting Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.04",
+      "name": "Meeting Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.05",
+      "name": "Meeting Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.06",
+      "name": "Meeting Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.07",
+      "name": "Meeting Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.08",
+      "name": "Meeting Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.09",
+      "name": "Meeting Instruction V09",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.10",
+      "name": "Meeting Instruction V10",
+      "description": ""
+    },
+    {
+      "id": "seev.004.001.11",
+      "name": "Meeting Instruction V11",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.01",
+      "name": "Meeting Instruction Cancellation Request",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.02",
+      "name": "Meeting Instruction Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.03",
+      "name": "Meeting Instruction Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.04",
+      "name": "Meeting Instruction Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.05",
+      "name": "Meeting Instruction Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.06",
+      "name": "Meeting Instruction Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.07",
+      "name": "Meeting Instruction Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.08",
+      "name": "Meeting Instruction Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.09",
+      "name": "Meeting Instruction Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "seev.005.001.10",
+      "name": "Meeting Instruction Cancellation Request V10",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.01",
+      "name": "Meeting Instruction Status",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.02",
+      "name": "Meeting Instruction Status V02",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.03",
+      "name": "Meeting Instruction Status V03",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.04",
+      "name": "Meeting Instruction Status V04",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.05",
+      "name": "Meeting Instruction Status V05",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.06",
+      "name": "Meeting Instruction Status V06",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.07",
+      "name": "Meeting Instruction Status V07",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.08",
+      "name": "Meeting Instruction Status V08",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.09",
+      "name": "Meeting Instruction Status V09",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.10",
+      "name": "Meeting Instruction Status V10",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.11",
+      "name": "Meeting Instruction Status V11",
+      "description": ""
+    },
+    {
+      "id": "seev.006.001.12",
+      "name": "Meeting Instruction Status V12",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.01",
+      "name": "Meeting Vote Execution Confirmation",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.02",
+      "name": "Meeting Vote Execution Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.03",
+      "name": "Meeting Vote Execution Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.04",
+      "name": "Meeting Vote Execution Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.05",
+      "name": "Meeting Vote Execution Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.06",
+      "name": "Meeting Vote Execution Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.07",
+      "name": "Meeting Vote Execution Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.08",
+      "name": "Meeting Vote Execution Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.09",
+      "name": "Meeting Vote Execution Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.10",
+      "name": "Meeting Vote Execution Confirmation V10",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.11",
+      "name": "Meeting Vote Execution Confirmation V11",
+      "description": ""
+    },
+    {
+      "id": "seev.007.001.12",
+      "name": "Meeting Vote Execution Confirmation V12",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.01",
+      "name": "Meeting Result Dissemination",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.02",
+      "name": "Meeting Result Dissemination V02",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.03",
+      "name": "Meeting Result Dissemination V03",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.04",
+      "name": "Meeting Result Dissemination V04",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.05",
+      "name": "Meeting Result Dissemination V05",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.06",
+      "name": "Meeting Result Dissemination V06",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.07",
+      "name": "Meeting Result Dissemination V07",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.08",
+      "name": "Meeting Result Dissemination V08",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.09",
+      "name": "Meeting Result Dissemination V09",
+      "description": ""
+    },
+    {
+      "id": "seev.008.001.10",
+      "name": "Meeting Result Dissemination V10",
+      "description": ""
+    },
+    {
+      "id": "seev.009.001.01",
+      "name": "Agent CA Notification Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.009.001.02",
+      "name": "Agent CA Notification Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.009.001.03",
+      "name": "Agent CA Notification Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.010.001.01",
+      "name": "Agent CA Notification Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.011.001.01",
+      "name": "Agent CA Notification Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.011.001.02",
+      "name": "Agent CA Notification Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.011.001.03",
+      "name": "Agent CA Notification Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.011.001.04",
+      "name": "Agent CA Notification Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.012.001.01",
+      "name": "Agent CA Election Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.013.001.01",
+      "name": "Agent CA Election Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.014.001.01",
+      "name": "Agent CA Election Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.015.001.01",
+      "name": "Agent CA Election Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.016.001.01",
+      "name": "Agent CA Distribution Breakdown Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.017.001.01",
+      "name": "Agent CA Global Distribution Authorisation Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.018.001.01",
+      "name": "Agent CA Global Distribution Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.019.001.01",
+      "name": "Agent CA Movement Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "seev.020.001.01",
+      "name": "Agent CA Movement Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.021.001.01",
+      "name": "Agent CA Movement Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "seev.022.001.01",
+      "name": "Agent CA Movement Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.023.001.01",
+      "name": "Agent CA Information Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.024.001.01",
+      "name": "Agent CA Information Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.025.001.01",
+      "name": "Agent CA Standing Instruction Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.026.001.01",
+      "name": "Agent CA Standing Instruction Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.027.001.01",
+      "name": "Agent CA Standing Instruction Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.028.001.01",
+      "name": "Agent CA Deactivation Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "seev.029.001.01",
+      "name": "Agent CA Deactivation Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.030.001.01",
+      "name": "Agent CA Deactivation Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.01",
+      "name": "Corporate Action Notification V01",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.02",
+      "name": "Corporate Action Notification V02",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.03",
+      "name": "Corporate Action Notification V03",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.04",
+      "name": "Corporate Action Notification V04",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.05",
+      "name": "Corporate Action Notification V05",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.06",
+      "name": "Corporate Action Notification V06",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.07",
+      "name": "Corporate Action Notification V07",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.08",
+      "name": "Corporate Action Notification V08",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.09",
+      "name": "Corporate Action Notification V09",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.10",
+      "name": "Corporate Action Notification V10",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.11",
+      "name": "Corporate Action Notification V11",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.12",
+      "name": "Corporate Action Notification V12",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.13",
+      "name": "Corporate Action Notification V13",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.14",
+      "name": "Corporate Action Notification V14",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.15",
+      "name": "Corporate Action Notification V15",
+      "description": ""
+    },
+    {
+      "id": "seev.031.001.16",
+      "name": "Corporate Action Notification V16",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.01",
+      "name": "Corporate Action Notification .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.02",
+      "name": "Corporate Action Notification V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.03",
+      "name": "Corporate Action Notification 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.04",
+      "name": "Corporate Action Notification 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.05",
+      "name": "Corporate Action Notification 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.06",
+      "name": "Corporate Action Notification 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.07",
+      "name": "Corporate Action Notification 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.08",
+      "name": "Corporate Action Notification 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.09",
+      "name": "Corporate Action Notification 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.10",
+      "name": "Corporate Action Notification 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.11",
+      "name": "Corporate Action Notification 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.12",
+      "name": "Corporate Action Notification 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.13",
+      "name": "Corporate Action Notification 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.14",
+      "name": "Corporate Action Notification 002V14",
+      "description": ""
+    },
+    {
+      "id": "seev.031.002.15",
+      "name": "Corporate Action Notification 002V15",
+      "description": ""
+    },
+    {
+      "id": "seev.032.001.01",
+      "name": "Corporate Action Event Processing Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.032.001.02",
+      "name": "Corporate Action Event Processing Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.032.001.03",
+      "name": "Corporate Action Event Processing Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.032.001.04",
+      "name": "Corporate Action Event Processing Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.032.001.05",
+      "name": "Corporate Action Event Processing Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "seev.032.001.06",
+      "name": "Corporate Action Event Processing Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "seev.032.001.07",
+      "name": "Corporate Action Event Processing Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "seev.032.001.08",
+      "name": "Corporate Action Event Processing Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "seev.032.001.09",
+      "name": "Corporate Action Event Processing Status Advice V09",
+      "description": ""
+    },
+    {
+      "id": "seev.032.002.01",
+      "name": "Corporate Action Event Processing Status Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.032.002.02",
+      "name": "Corporate Action Event Processing Status Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.032.002.03",
+      "name": "Corporate Action Event Processing Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.032.002.04",
+      "name": "Corporate Action Event Processing Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.032.002.05",
+      "name": "Corporate Action Event Processing Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.032.002.06",
+      "name": "Corporate Action Event Processing Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.032.002.07",
+      "name": "Corporate Action Event Processing Status Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.032.002.08",
+      "name": "Corporate Action Event Processing Status Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.032.002.09",
+      "name": "Corporate Action Event Processing Status Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.01",
+      "name": "Corporate Action Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.02",
+      "name": "Corporate Action Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.03",
+      "name": "Corporate Action Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.04",
+      "name": "Corporate Action Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.05",
+      "name": "Corporate Action Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.06",
+      "name": "Corporate Action Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.07",
+      "name": "Corporate Action Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.08",
+      "name": "Corporate Action Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.09",
+      "name": "Corporate Action Instruction V09",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.10",
+      "name": "Corporate Action Instruction V10",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.11",
+      "name": "Corporate Action Instruction V11",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.12",
+      "name": "Corporate Action Instruction V12",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.13",
+      "name": "Corporate Action Instruction V13",
+      "description": ""
+    },
+    {
+      "id": "seev.033.001.14",
+      "name": "Corporate Action Instruction V14",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.01",
+      "name": "Corporate Action Instruction .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.02",
+      "name": "Corporate Action Instruction V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.03",
+      "name": "Corporate Action Instruction 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.04",
+      "name": "Corporate Action Instruction 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.05",
+      "name": "Corporate Action Instruction 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.06",
+      "name": "Corporate Action Instruction 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.07",
+      "name": "Corporate Action Instruction 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.08",
+      "name": "Corporate Action Instruction 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.09",
+      "name": "Corporate Action Instruction 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.10",
+      "name": "Corporate Action Instruction 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.11",
+      "name": "Corporate Action Instruction 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.12",
+      "name": "Corporate Action Instruction 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.033.002.13",
+      "name": "Corporate Action Instruction 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.01",
+      "name": "Corporate Action Instruction Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.02",
+      "name": "Corporate Action Instruction Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.03",
+      "name": "Corporate Action Instruction Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.04",
+      "name": "Corporate Action Instruction Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.05",
+      "name": "Corporate Action Instruction Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.06",
+      "name": "Corporate Action Instruction Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.07",
+      "name": "Corporate Action Instruction Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.08",
+      "name": "Corporate Action Instruction Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.09",
+      "name": "Corporate Action Instruction Status Advice V09",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.10",
+      "name": "Corporate Action Instruction Status Advice V10",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.11",
+      "name": "Corporate Action Instruction Status Advice V11",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.12",
+      "name": "Corporate Action Instruction Status Advice V12",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.13",
+      "name": "Corporate Action Instruction Status Advice V13",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.14",
+      "name": "Corporate Action Instruction Status Advice V14",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.15",
+      "name": "Corporate Action Instruction Status Advice V15",
+      "description": ""
+    },
+    {
+      "id": "seev.034.001.16",
+      "name": "Corporate Action Instruction Status Advice V16",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.01",
+      "name": "Corporate Action Instruction Status Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.02",
+      "name": "Corporate Action Instruction Status Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.03",
+      "name": "Corporate Action Instruction Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.04",
+      "name": "Corporate Action Instruction Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.05",
+      "name": "Corporate Action Instruction Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.06",
+      "name": "Corporate Action Instruction Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.07",
+      "name": "Corporate Action Instruction Status Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.08",
+      "name": "Corporate Action Instruction Status Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.09",
+      "name": "Corporate Action Instruction Status Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.10",
+      "name": "Corporate Action Instruction Status Advice 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.11",
+      "name": "Corporate Action Instruction Status Advice 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.12",
+      "name": "Corporate Action Instruction Status Advice 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.13",
+      "name": "Corporate Action Instruction Status Advice 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.14",
+      "name": "Corporate Action Instruction Status Advice 002V14",
+      "description": ""
+    },
+    {
+      "id": "seev.034.002.15",
+      "name": "Corporate Action Instruction Status Advice 002V15",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.01",
+      "name": "Corporate Action Movement Preliminary Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.02",
+      "name": "Corporate Action Movement Preliminary Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.03",
+      "name": "Corporate Action Movement Preliminary Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.04",
+      "name": "Corporate Action Movement Preliminary Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.05",
+      "name": "Corporate Action Movement Preliminary Advice V05",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.06",
+      "name": "Corporate Action Movement Preliminary Advice V06",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.07",
+      "name": "Corporate Action Movement Preliminary Advice V07",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.08",
+      "name": "Corporate Action Movement Preliminary Advice V08",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.09",
+      "name": "Corporate Action Movement Preliminary Advice V09",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.10",
+      "name": "Corporate Action Movement Preliminary Advice V10",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.11",
+      "name": "Corporate Action Movement Preliminary Advice V11",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.12",
+      "name": "Corporate Action Movement Preliminary Advice V12",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.13",
+      "name": "Corporate Action Movement Preliminary Advice V13",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.14",
+      "name": "Corporate Action Movement Preliminary Advice V14",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.15",
+      "name": "Corporate Action Movement Preliminary Advice V15",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.16",
+      "name": "Corporate Action Movement Preliminary Advice V16",
+      "description": ""
+    },
+    {
+      "id": "seev.035.001.17",
+      "name": "Corporate Action Movement Preliminary Advice V17",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.01",
+      "name": "Corporate Action Movement Preliminary Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.02",
+      "name": "Corporate Action Movement Preliminary Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.03",
+      "name": "Corporate Action Movement Preliminary Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.04",
+      "name": "Corporate Action Movement Preliminary Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.05",
+      "name": "Corporate Action Movement Preliminary Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.06",
+      "name": "Corporate Action Movement Preliminary Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.07",
+      "name": "Corporate Action Movement Preliminary Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.08",
+      "name": "Corporate Action Movement Preliminary Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.09",
+      "name": "Corporate Action Movement Preliminary Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.10",
+      "name": "Corporate Action Movement Preliminary Advice 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.11",
+      "name": "Corporate Action Movement Preliminary Advice 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.12",
+      "name": "Corporate Action Movement Preliminary Advice 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.13",
+      "name": "Corporate Action Movement Preliminary Advice 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.14",
+      "name": "Corporate Action Movement Preliminary Advice 002V14",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.15",
+      "name": "Corporate Action Movement Preliminary Advice 002V15",
+      "description": ""
+    },
+    {
+      "id": "seev.035.002.16",
+      "name": "Corporate Action Movement Preliminary Advice 002V16",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.01",
+      "name": "Corporate Action Movement Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.02",
+      "name": "Corporate Action Movement Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.03",
+      "name": "Corporate Action Movement Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.04",
+      "name": "Corporate Action Movement Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.05",
+      "name": "Corporate Action Movement Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.06",
+      "name": "Corporate Action Movement Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.07",
+      "name": "Corporate Action Movement Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.08",
+      "name": "Corporate Action Movement Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.09",
+      "name": "Corporate Action Movement Confirmation V09",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.10",
+      "name": "Corporate Action Movement Confirmation V10",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.11",
+      "name": "Corporate Action Movement Confirmation V11",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.12",
+      "name": "Corporate Action Movement Confirmation V12",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.13",
+      "name": "Corporate Action Movement Confirmation V13",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.14",
+      "name": "Corporate Action Movement Confirmation V14",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.15",
+      "name": "Corporate Action Movement Confirmation V15",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.16",
+      "name": "Corporate Action Movement Confirmation V16",
+      "description": ""
+    },
+    {
+      "id": "seev.036.001.17",
+      "name": "Corporate Action Movement Confirmation V17",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.01",
+      "name": "Corporate Action Movement Confirmation .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.02",
+      "name": "Corporate Action Movement Confirmation V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.03",
+      "name": "Corporate Action Movement Confirmation 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.04",
+      "name": "Corporate Action Movement Confirmation 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.05",
+      "name": "Corporate Action Movement Confirmation 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.06",
+      "name": "Corporate Action Movement Confirmation 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.07",
+      "name": "Corporate Action Movement Confirmation 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.08",
+      "name": "Corporate Action Movement Confirmation 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.09",
+      "name": "Corporate Action Movement Confirmation 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.10",
+      "name": "Corporate Action Movement Confirmation 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.11",
+      "name": "Corporate Action Movement Confirmation 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.12",
+      "name": "Corporate Action Movement Confirmation 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.13",
+      "name": "Corporate Action Movement Confirmation 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.14",
+      "name": "Corporate Action Movement Confirmation 002V14",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.15",
+      "name": "Corporate Action Movement Confirmation 002V15",
+      "description": ""
+    },
+    {
+      "id": "seev.036.002.16",
+      "name": "Corporate Action Movement Confirmation 002V16",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.01",
+      "name": "Corporate Action Movement Reversal Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.02",
+      "name": "Corporate Action Movement Reversal Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.03",
+      "name": "Corporate Action Movement Reversal Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.04",
+      "name": "Corporate Action Movement Reversal Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.05",
+      "name": "Corporate Action Movement Reversal Advice V05",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.06",
+      "name": "Corporate Action Movement Reversal Advice V06",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.07",
+      "name": "Corporate Action Movement Reversal Advice V07",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.08",
+      "name": "Corporate Action Movement Reversal Advice V08",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.09",
+      "name": "Corporate Action Movement Reversal Advice V09",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.10",
+      "name": "Corporate Action Movement Reversal Advice V10",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.11",
+      "name": "Corporate Action Movement Reversal Advice V11",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.12",
+      "name": "Corporate Action Movement Reversal Advice V12",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.13",
+      "name": "Corporate Action Movement Reversal Advice V13",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.14",
+      "name": "Corporate Action Movement Reversal Advice V14",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.15",
+      "name": "Corporate Action Movement Reversal Advice V15",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.16",
+      "name": "Corporate Action Movement Reversal Advice V16",
+      "description": ""
+    },
+    {
+      "id": "seev.037.001.17",
+      "name": "Corporate Action Movement Reversal Advice V17",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.01",
+      "name": "Corporate Action Movement Reversal Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.02",
+      "name": "Corporate Action Movement Reversal Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.03",
+      "name": "Corporate Action Movement Reversal Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.04",
+      "name": "Corporate Action Movement Reversal Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.05",
+      "name": "Corporate Action Movement Reversal Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.06",
+      "name": "Corporate Action Movement Reversal Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.07",
+      "name": "Corporate Action Movement Reversal Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.08",
+      "name": "Corporate Action Movement Reversal Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.09",
+      "name": "Corporate Action Movement Reversal Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.10",
+      "name": "Corporate Action Movement Reversal Advice 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.11",
+      "name": "Corporate Action Movement Reversal Advice 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.12",
+      "name": "Corporate Action Movement Reversal Advice 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.13",
+      "name": "Corporate Action Movement Reversal Advice 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.14",
+      "name": "Corporate Action Movement Reversal Advice 002V14",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.15",
+      "name": "Corporate Action Movement Reversal Advice 002V15",
+      "description": ""
+    },
+    {
+      "id": "seev.037.002.16",
+      "name": "Corporate Action Movement Reversal Advice 002V16",
+      "description": ""
+    },
+    {
+      "id": "seev.038.001.01",
+      "name": "Corporate Action Narrative V01",
+      "description": ""
+    },
+    {
+      "id": "seev.038.001.02",
+      "name": "Corporate Action Narrative V02",
+      "description": ""
+    },
+    {
+      "id": "seev.038.001.03",
+      "name": "Corporate Action Narrative V03",
+      "description": ""
+    },
+    {
+      "id": "seev.038.001.04",
+      "name": "Corporate Action Narrative V04",
+      "description": ""
+    },
+    {
+      "id": "seev.038.001.05",
+      "name": "Corporate Action Narrative V05",
+      "description": ""
+    },
+    {
+      "id": "seev.038.001.06",
+      "name": "Corporate Action Narrative V06",
+      "description": ""
+    },
+    {
+      "id": "seev.038.001.07",
+      "name": "Corporate Action Narrative V07",
+      "description": ""
+    },
+    {
+      "id": "seev.038.001.08",
+      "name": "Corporate Action Narrative V08",
+      "description": ""
+    },
+    {
+      "id": "seev.038.001.09",
+      "name": "Corporate Action Narrative V09",
+      "description": ""
+    },
+    {
+      "id": "seev.038.002.01",
+      "name": "Corporate Action Narrative .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.038.002.02",
+      "name": "Corporate Action Narrative V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.038.002.03",
+      "name": "Corporate Action Narrative 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.038.002.04",
+      "name": "Corporate Action Narrative 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.038.002.05",
+      "name": "Corporate Action Narrative 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.038.002.06",
+      "name": "Corporate Action Narrative 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.038.002.07",
+      "name": "Corporate Action Narrative 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.038.002.08",
+      "name": "Corporate Action Narrative 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.038.002.09",
+      "name": "Corporate Action Narrative 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.01",
+      "name": "Corporate Action Cancellation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.02",
+      "name": "Corporate Action Cancellation Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.03",
+      "name": "Corporate Action Cancellation Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.04",
+      "name": "Corporate Action Cancellation Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.05",
+      "name": "Corporate Action Cancellation Advice V05",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.06",
+      "name": "Corporate Action Cancellation Advice V06",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.07",
+      "name": "Corporate Action Cancellation Advice V07",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.08",
+      "name": "Corporate Action Cancellation Advice V08",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.09",
+      "name": "Corporate Action Cancellation Advice V09",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.10",
+      "name": "Corporate Action Cancellation Advice V10",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.11",
+      "name": "Corporate Action Cancellation Advice V11",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.12",
+      "name": "Corporate Action Cancellation Advice V12",
+      "description": ""
+    },
+    {
+      "id": "seev.039.001.13",
+      "name": "Corporate Action Cancellation Advice V13",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.01",
+      "name": "Corporate Action Cancellation Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.02",
+      "name": "Corporate Action Cancellation Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.03",
+      "name": "Corporate Action Cancellation Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.04",
+      "name": "Corporate Action Cancellation Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.05",
+      "name": "Corporate Action Cancellation Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.06",
+      "name": "Corporate Action Cancellation Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.07",
+      "name": "Corporate Action Cancellation Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.08",
+      "name": "Corporate Action Cancellation Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.09",
+      "name": "Corporate Action Cancellation Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.10",
+      "name": "Corporate Action Cancellation Advice 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.11",
+      "name": "Corporate Action Cancellation Advice 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.12",
+      "name": "Corporate Action Cancellation Advice 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.039.002.13",
+      "name": "Corporate Action Cancellation Advice 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.01",
+      "name": "Corporate Action Instruction Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.02",
+      "name": "Corporate Action Instruction Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.03",
+      "name": "Corporate Action Instruction Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.04",
+      "name": "Corporate Action Instruction Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.05",
+      "name": "Corporate Action Instruction Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.06",
+      "name": "Corporate Action Instruction Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.07",
+      "name": "Corporate Action Instruction Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.08",
+      "name": "Corporate Action Instruction Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.09",
+      "name": "Corporate Action Instruction Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.10",
+      "name": "Corporate Action Instruction Cancellation Request V10",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.11",
+      "name": "Corporate Action Instruction Cancellation Request V11",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.12",
+      "name": "Corporate Action Instruction Cancellation Request V12",
+      "description": ""
+    },
+    {
+      "id": "seev.040.001.13",
+      "name": "Corporate Action Instruction Cancellation Request V13",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.01",
+      "name": "Corporate Action Instruction Cancellation Request .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.02",
+      "name": "Corporate Action Instruction Cancellation Request V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.03",
+      "name": "Corporate Action Instruction Cancellation Request 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.04",
+      "name": "Corporate Action Instruction Cancellation Request 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.05",
+      "name": "Corporate Action Instruction Cancellation Request 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.06",
+      "name": "Corporate Action Instruction Cancellation Request 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.07",
+      "name": "Corporate Action Instruction Cancellation Request 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.08",
+      "name": "Corporate Action Instruction Cancellation Request 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.09",
+      "name": "Corporate Action Instruction Cancellation Request 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.10",
+      "name": "Corporate Action Instruction Cancellation Request 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.11",
+      "name": "Corporate Action Instruction Cancellation Request 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.12",
+      "name": "Corporate Action Instruction Cancellation Request 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.040.002.13",
+      "name": "Corporate Action Instruction Cancellation Request 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.01",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.02",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.03",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.04",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.05",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V05",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.06",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V06",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.07",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V07",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.08",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V08",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.09",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V09",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.10",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V10",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.11",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V11",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.12",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V12",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.13",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V13",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.14",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V14",
+      "description": ""
+    },
+    {
+      "id": "seev.041.001.15",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V15",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.01",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.02",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.03",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.04",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.05",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.06",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.07",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.08",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.09",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.10",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.11",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.12",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.13",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.041.002.14",
+      "name": "Corporate Action Instruction Cancellation Request Status Advice 002V14",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.01",
+      "name": "Corporate Action Instruction Statement Report V01",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.02",
+      "name": "Corporate Action Instruction Statement Report V02",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.03",
+      "name": "Corporate Action Instruction Statement Report V03",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.04",
+      "name": "Corporate Action Instruction Statement Report V04",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.05",
+      "name": "Corporate Action Instruction Statement Report V05",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.06",
+      "name": "Corporate Action Instruction Statement Report V06",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.07",
+      "name": "Corporate Action Instruction Statement Report V07",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.08",
+      "name": "Corporate Action Instruction Statement Report V08",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.09",
+      "name": "Corporate Action Instruction Statement Report V09",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.10",
+      "name": "Corporate Action Instruction Statement Report V10",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.11",
+      "name": "Corporate Action Instruction Statement Report V11",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.12",
+      "name": "Corporate Action Instruction Statement Report V12",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.13",
+      "name": "Corporate Action Instruction Statement Report V13",
+      "description": ""
+    },
+    {
+      "id": "seev.042.001.14",
+      "name": "Corporate Action Instruction Statement Report V14",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.01",
+      "name": "Corporate Action Instruction Statement Report .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.02",
+      "name": "Corporate Action Instruction Statement Report V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.03",
+      "name": "Corporate Action Instruction Statement Report 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.04",
+      "name": "Corporate Action Instruction Statement Report 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.05",
+      "name": "Corporate Action Instruction Statement Report 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.06",
+      "name": "Corporate Action Instruction Statement Report 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.07",
+      "name": "Corporate Action Instruction Statement Report 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.08",
+      "name": "Corporate Action Instruction Statement Report 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.09",
+      "name": "Corporate Action Instruction Statement Report 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.10",
+      "name": "Corporate Action Instruction Statement Report 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.11",
+      "name": "Corporate Action Instruction Statement Report 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.12",
+      "name": "Corporate Action Instruction Statement Report 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.042.002.13",
+      "name": "Corporate Action Instruction Statement Report 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.01",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.02",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.03",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.04",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.05",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V05",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.06",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V06",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.07",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V07",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.08",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V08",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.09",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V09",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.10",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V10",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.11",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V11",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.12",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V12",
+      "description": ""
+    },
+    {
+      "id": "seev.044.001.13",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V13",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.01",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice .002V01",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.02",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice V02 Subset",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.03",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V03",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.04",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V04",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.05",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V05",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.06",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V06",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.07",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V07",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.08",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V08",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.09",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V09",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.10",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V10",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.11",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V11",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.12",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V12",
+      "description": ""
+    },
+    {
+      "id": "seev.044.002.13",
+      "name": "Corporate Action Movement Preliminary Advice Cancellation Advice 002V13",
+      "description": ""
+    },
+    {
+      "id": "seev.045.001.01",
+      "name": "Shareholders Identification Disclosure Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.045.001.02",
+      "name": "Shareholders Identification Disclosure Request V02",
+      "description": ""
+    },
+    {
+      "id": "seev.045.001.03",
+      "name": "Shareholders Identification Disclosure Request V03",
+      "description": ""
+    },
+    {
+      "id": "seev.045.001.04",
+      "name": "Shareholders Identification Disclosure Request V04",
+      "description": ""
+    },
+    {
+      "id": "seev.046.001.01",
+      "name": "Shareholders Identification Disclosure Request Cancellation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.047.001.01",
+      "name": "Shareholders Identification Disclosure Response V01",
+      "description": ""
+    },
+    {
+      "id": "seev.047.001.02",
+      "name": "Shareholders Identification Disclosure Response V02",
+      "description": ""
+    },
+    {
+      "id": "seev.047.001.03",
+      "name": "Shareholders Identification Disclosure Response V03",
+      "description": ""
+    },
+    {
+      "id": "seev.048.001.01",
+      "name": "Shareholder Identification Disclosure Response Cancellation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.049.001.01",
+      "name": "Shareholder Identification Disclosure Response Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.050.001.01",
+      "name": "Market Claim Creation V01",
+      "description": ""
+    },
+    {
+      "id": "seev.050.001.02",
+      "name": "Market Claim Creation V02",
+      "description": ""
+    },
+    {
+      "id": "seev.050.001.03",
+      "name": "Market Claim Creation V03",
+      "description": ""
+    },
+    {
+      "id": "seev.050.001.04",
+      "name": "Market Claim Creation V04",
+      "description": ""
+    },
+    {
+      "id": "seev.051.001.01",
+      "name": "Market Claim Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.051.001.02",
+      "name": "Market Claim Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "seev.052.001.01",
+      "name": "Market Claim Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.052.001.02",
+      "name": "Market Claim Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.052.001.03",
+      "name": "Market Claim Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.052.001.04",
+      "name": "Market Claim Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.053.001.01",
+      "name": "Market Claim Cancellation Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.053.001.02",
+      "name": "Market Claim Cancellation Request Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "seev.053.001.03",
+      "name": "Market Claim Cancellation Request Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "seev.053.001.04",
+      "name": "Market Claim Cancellation Request Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "seev.060.001.01",
+      "name": "Buyer Protection Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "seev.061.001.01",
+      "name": "Buyer Protection Instruction Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.062.001.01",
+      "name": "Buyer Protection Instruction Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.063.001.01",
+      "name": "Buyer Protection Instruction Cancellation Request Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.064.001.01",
+      "name": "Buyer Protection Instruction Allegement Notification V01",
+      "description": ""
+    },
+    {
+      "id": "seev.065.001.01",
+      "name": "Buyer Protection Instruction Allegement Removal Advice V01",
+      "description": ""
+    },
+    {
+      "id": "seev.066.001.01",
+      "name": "Buyer Protection Instruction Report Request V01",
+      "description": ""
+    },
+    {
+      "id": "seev.067.001.01",
+      "name": "Buyer Protection Instruction Report V01",
+      "description": ""
+    }
+  ]
+}

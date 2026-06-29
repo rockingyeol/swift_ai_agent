@@ -1,0 +1,55 @@
+{
+  "description": "SWIFT ISO 20022 remt 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "remt.001.001.01",
+      "name": "Remittance Advice V01",
+      "description": ""
+    },
+    {
+      "id": "remt.001.001.02",
+      "name": "Remittance Advice V02",
+      "description": ""
+    },
+    {
+      "id": "remt.001.001.03",
+      "name": "Remittance Advice V03",
+      "description": ""
+    },
+    {
+      "id": "remt.001.001.04",
+      "name": "Remittance Advice V04",
+      "description": ""
+    },
+    {
+      "id": "remt.001.001.05",
+      "name": "Remittance Advice V05",
+      "description": ""
+    },
+    {
+      "id": "remt.001.001.06",
+      "name": "Remittance Advice V06",
+      "description": ""
+    },
+    {
+      "id": "remt.001.001.07",
+      "name": "Remittance Advice V07",
+      "description": ""
+    },
+    {
+      "id": "remt.002.001.01",
+      "name": "Remittance Location Advice V01",
+      "description": ""
+    },
+    {
+      "id": "remt.002.001.02",
+      "name": "Remittance Location Advice V02",
+      "description": ""
+    },
+    {
+      "id": "remt.002.001.03",
+      "name": "Remittance Location Advice V03",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "description": "SWIFT ISO 20022 cafm 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "cafm.001.001.01",
+      "name": "File Action Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cafm.001.001.02",
+      "name": "File Action Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cafm.001.001.03",
+      "name": "File Action Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cafm.001.001.04",
+      "name": "File Action Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cafm.002.001.01",
+      "name": "File Action Response V01",
+      "description": ""
+    },
+    {
+      "id": "cafm.002.001.02",
+      "name": "File Action Response V02",
+      "description": ""
+    },
+    {
+      "id": "cafm.002.001.03",
+      "name": "File Action Response V03",
+      "description": ""
+    },
+    {
+      "id": "cafm.002.001.04",
+      "name": "File Action Response V04",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "description": "SWIFT ISO 20022 fxtr 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "fxtr.007.001.03",
+      "name": "Non Deliverable Forward Notification V03",
+      "description": ""
+    },
+    {
+      "id": "fxtr.008.001.03",
+      "name": "Foreign Exchange And Derivative Trade Status Notification V03",
+      "description": ""
+    },
+    {
+      "id": "fxtr.008.001.04",
+      "name": "Foreign Exchange Trade Status Notification V04",
+      "description": ""
+    },
+    {
+      "id": "fxtr.008.001.05",
+      "name": "Foreign Exchange Trade Status Notification V05",
+      "description": ""
+    },
+    {
+      "id": "fxtr.008.001.06",
+      "name": "Foreign Exchange Trade Status Notification V06",
+      "description": ""
+    },
+    {
+      "id": "fxtr.008.001.07",
+      "name": "Foreign Exchange Trade Status Notification V07",
+      "description": ""
+    },
+    {
+      "id": "fxtr.008.001.08",
+      "name": "Foreign Exchange Trade Status Notification V08",
+      "description": ""
+    },
+    {
+      "id": "fxtr.012.001.05",
+      "name": "Foreign Exchange Option Notification V05",
+      "description": ""
+    },
+    {
+      "id": "fxtr.013.001.02",
+      "name": "Withdrawal Notification V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.013.001.03",
+      "name": "Foreign Exchange Trade Withdrawal Notification V03",
+      "description": ""
+    },
+    {
+      "id": "fxtr.014.001.01",
+      "name": "Foreign Exchange Trade Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.014.001.02",
+      "name": "Foreign Exchange Trade Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.014.001.03",
+      "name": "Foreign Exchange Trade Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "fxtr.014.001.04",
+      "name": "Foreign Exchange Trade Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "fxtr.014.001.05",
+      "name": "Foreign Exchange Trade Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "fxtr.014.001.06",
+      "name": "Foreign Exchange Trade Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "fxtr.015.001.01",
+      "name": "Foreign Exchange Trade Instruction Amendment V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.015.001.02",
+      "name": "Foreign Exchange Trade Instruction Amendment V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.015.001.03",
+      "name": "Foreign Exchange Trade Instruction Amendment V03",
+      "description": ""
+    },
+    {
+      "id": "fxtr.015.001.04",
+      "name": "Foreign Exchange Trade Instruction Amendment V04",
+      "description": ""
+    },
+    {
+      "id": "fxtr.015.001.05",
+      "name": "Foreign Exchange Trade Instruction Amendment V05",
+      "description": ""
+    },
+    {
+      "id": "fxtr.015.001.06",
+      "name": "Foreign Exchange Trade Instruction Amendment V06",
+      "description": ""
+    },
+    {
+      "id": "fxtr.016.001.01",
+      "name": "Foreign Exchange Trade Instruction Cancellation V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.016.001.02",
+      "name": "Foreign Exchange Trade Instruction Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.016.001.03",
+      "name": "Foreign Exchange Trade Instruction Cancellation V03",
+      "description": ""
+    },
+    {
+      "id": "fxtr.016.001.04",
+      "name": "Foreign Exchange Trade Instruction Cancellation V04",
+      "description": ""
+    },
+    {
+      "id": "fxtr.016.001.05",
+      "name": "Foreign Exchange Trade Instruction Cancellation V05",
+      "description": ""
+    },
+    {
+      "id": "fxtr.016.001.06",
+      "name": "Foreign Exchange Trade Instruction Cancellation V06",
+      "description": ""
+    },
+    {
+      "id": "fxtr.017.001.01",
+      "name": "Foreign Exchange Trade Status And Details Notification V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.017.001.02",
+      "name": "Foreign Exchange Trade Status And Details Notification V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.017.001.03",
+      "name": "Foreign Exchange Trade Status And Details Notification V03",
+      "description": ""
+    },
+    {
+      "id": "fxtr.017.001.04",
+      "name": "Foreign Exchange Trade Status And Details Notification V04",
+      "description": ""
+    },
+    {
+      "id": "fxtr.017.001.05",
+      "name": "Foreign Exchange Trade Status And Details Notification V05",
+      "description": ""
+    },
+    {
+      "id": "fxtr.017.001.06",
+      "name": "Foreign Exchange Trade Status And Details Notification V06",
+      "description": ""
+    },
+    {
+      "id": "fxtr.030.001.01",
+      "name": "Foreign Exchange Trade Bulk Status Notification V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.030.001.02",
+      "name": "Foreign Exchange Trade Bulk Status Notification V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.030.001.03",
+      "name": "Foreign Exchange Trade Bulk Status Notification V03",
+      "description": ""
+    },
+    {
+      "id": "fxtr.030.001.04",
+      "name": "Foreign Exchange Trade Bulk Status Notification V04",
+      "description": ""
+    },
+    {
+      "id": "fxtr.030.001.05",
+      "name": "Foreign Exchange Trade Bulk Status Notification V05",
+      "description": ""
+    },
+    {
+      "id": "fxtr.030.001.06",
+      "name": "Foreign Exchange Trade Bulk Status Notification V06",
+      "description": ""
+    },
+    {
+      "id": "fxtr.031.001.01",
+      "name": "Foreign Exchange Trade Capture Report V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.031.001.02",
+      "name": "Foreign Exchange Trade Capture Report V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.032.001.01",
+      "name": "Foreign Exchange Trade Capture Report Request V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.032.001.02",
+      "name": "Foreign Exchange Trade Capture Report Request V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.033.001.01",
+      "name": "Foreign Exchange Trade Capture Report Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.033.001.02",
+      "name": "Foreign Exchange Trade Capture Report Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.034.001.01",
+      "name": "Foreign Exchange Trade Confirmation Request V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.034.001.02",
+      "name": "Foreign Exchange Trade Confirmation Request V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.035.001.01",
+      "name": "Foreign Exchange Trade Confirmation Request Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.035.001.02",
+      "name": "Foreign Exchange Trade Confirmation Request Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.036.001.01",
+      "name": "Foreign Exchange Trade Confirmation Request Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.036.001.02",
+      "name": "Foreign Exchange Trade Confirmation Request Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.037.001.01",
+      "name": "Foreign Exchange Trade Confirmation Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.037.001.02",
+      "name": "Foreign Exchange Trade Confirmation Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "fxtr.038.001.01",
+      "name": "Foreign Exchange Trade Confirmation Status Advice Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "fxtr.038.001.02",
+      "name": "Foreign Exchange Trade Confirmation Status Advice Acknowledgement V02",
+      "description": ""
+    }
+  ]
+}

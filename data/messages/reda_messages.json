@@ -1,0 +1,860 @@
+{
+  "description": "SWIFT ISO 20022 reda 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "DRAFT1reda.006.001.01",
+      "name": "Security Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1reda.008.001.01",
+      "name": "Security Creation Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1reda.013.001.01",
+      "name": "Security Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1reda.029.001.01",
+      "name": "Security Maintenance Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1reda.030.001.01",
+      "name": "Security Deletion Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1reda.075.001.01",
+      "name": "Eligible Securities Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1reda.077.001.01",
+      "name": "Close Link Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.006.001.01",
+      "name": "Security Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.007.001.01",
+      "name": "Security Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.008.001.01",
+      "name": "Security Creation Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.013.001.01",
+      "name": "Security Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.029.001.01",
+      "name": "Security Maintenance Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.030.001.01",
+      "name": "Security Deletion Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.033.001.01",
+      "name": "Securities Audit Trail Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.034.001.01",
+      "name": "Securities Audit Trail Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.049.001.01",
+      "name": "Account Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.050.001.01",
+      "name": "Account Link Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.051.001.01",
+      "name": "Account Link Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.075.001.01",
+      "name": "Eligible Securities Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2reda.077.001.01",
+      "name": "Close Link Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3reda.006.001.01",
+      "name": "Security Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3reda.009.001.01",
+      "name": "Security Activity Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3reda.010.001.01",
+      "name": "Security Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3reda.033.001.01",
+      "name": "Securities Audit Trail Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3reda.034.001.01",
+      "name": "Securities Audit Trail Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3reda.044.001.01",
+      "name": "Eligible Counterpart CSD Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3reda.045.001.01",
+      "name": "Security CSD Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3reda.046.001.01",
+      "name": "Security CSD Link Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3reda.047.001.01",
+      "name": "Security CSD Link Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.009.001.01",
+      "name": "Security Activity Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.014.001.01",
+      "name": "Party Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.015.001.01",
+      "name": "Party Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.016.001.01",
+      "name": "Party Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.017.001.01",
+      "name": "Party Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.022.001.01",
+      "name": "Party Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.025.001.01",
+      "name": "Eligible Securities Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.026.001.01",
+      "name": "Eligible Counterpart CSD Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.028.001.01",
+      "name": "Collateral Data Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.045.001.01",
+      "name": "Security CSD Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.046.001.01",
+      "name": "Security CSD Link Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.047.001.01",
+      "name": "Security CSD Link Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.049.001.01",
+      "name": "Account Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.050.001.01",
+      "name": "Account Link Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.051.001.01",
+      "name": "Account Link Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4reda.074.001.01",
+      "name": "Triparty Collateral Unilateral Removal Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.018.001.01",
+      "name": "Securities Account Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.019.001.01",
+      "name": "Securities Account Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.020.001.01",
+      "name": "Securities Account Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.023.001.01",
+      "name": "Securities Account Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.024.001.01",
+      "name": "Collateral Value Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.025.001.01",
+      "name": "Eligible Securities Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.027.001.01",
+      "name": "Close Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.045.001.01",
+      "name": "Security CSD Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.046.001.01",
+      "name": "Security CSD Link Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.047.001.01",
+      "name": "Security CSD Link Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.049.001.01",
+      "name": "Account Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.050.001.01",
+      "name": "Account Link Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5reda.051.001.01",
+      "name": "Account Link Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6reda.018.001.01",
+      "name": "Securities Account Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6reda.019.001.01",
+      "name": "Securities Account Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6reda.020.001.01",
+      "name": "Securities Account Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6reda.021.001.01",
+      "name": "Securities Account Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6reda.023.001.01",
+      "name": "Securities Account Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6reda.026.001.01",
+      "name": "Eligible Counterpart CSD Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6reda.044.001.01",
+      "name": "Eligible Counterpart CSD Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6reda.045.001.01",
+      "name": "Security CSD Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6reda.046.001.01",
+      "name": "Security CSD Link Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT7reda.021.001.01",
+      "name": "Securities Account Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT7reda.024.001.01",
+      "name": "Collateral Value Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT7reda.026.001.01",
+      "name": "Eligible Counterpart CSD Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT7reda.027.001.01",
+      "name": "Close Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT7reda.045.001.01",
+      "name": "Security CSD Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT8reda.024.001.01",
+      "name": "Collateral Value Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT8reda.025.001.01",
+      "name": "Eligible Securities Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT8reda.028.001.01",
+      "name": "Collateral Data Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.001.001.02",
+      "name": "Price Report V02",
+      "description": ""
+    },
+    {
+      "id": "reda.001.001.03",
+      "name": "Price Report V03",
+      "description": ""
+    },
+    {
+      "id": "reda.001.001.04",
+      "name": "Price Report V04",
+      "description": ""
+    },
+    {
+      "id": "reda.001.001.05",
+      "name": "Price Report V05",
+      "description": ""
+    },
+    {
+      "id": "reda.002.001.02",
+      "name": "Price Report Cancellation V02",
+      "description": ""
+    },
+    {
+      "id": "reda.002.001.03",
+      "name": "Price Report Cancellation V03",
+      "description": ""
+    },
+    {
+      "id": "reda.002.001.04",
+      "name": "Price Report Cancellation V04",
+      "description": ""
+    },
+    {
+      "id": "reda.002.001.05",
+      "name": "Price Report Cancellation V05",
+      "description": ""
+    },
+    {
+      "id": "reda.003.001.02",
+      "name": "Price Report Correction V02",
+      "description": ""
+    },
+    {
+      "id": "reda.003.001.03",
+      "name": "Price Report Correction V03",
+      "description": ""
+    },
+    {
+      "id": "reda.004.001.01",
+      "name": "Fund Processing Passport Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.004.001.02",
+      "name": "Fund Processing Passport Report V02",
+      "description": ""
+    },
+    {
+      "id": "reda.004.001.03",
+      "name": "Fund Reference Data Report V03",
+      "description": ""
+    },
+    {
+      "id": "reda.004.001.04",
+      "name": "Fund Reference Data Report V04",
+      "description": ""
+    },
+    {
+      "id": "reda.004.001.05",
+      "name": "Fund Reference Data Report V05",
+      "description": ""
+    },
+    {
+      "id": "reda.004.001.06",
+      "name": "Fund Reference Data Report V06",
+      "description": ""
+    },
+    {
+      "id": "reda.004.001.07",
+      "name": "Fund Reference Data Report V07",
+      "description": ""
+    },
+    {
+      "id": "reda.005.001.01",
+      "name": "Request For Investment Fund Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.005.001.02",
+      "name": "Investment Fund Report Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.005.001.03",
+      "name": "Investment Fund Report Request V03",
+      "description": ""
+    },
+    {
+      "id": "reda.006.001.01",
+      "name": "Security Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.007.001.01",
+      "name": "Security Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.008.001.01",
+      "name": "Security Creation Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.009.001.01",
+      "name": "Security Activity Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.010.001.01",
+      "name": "Security Query V01",
+      "description": ""
+    },
+    {
+      "id": "reda.013.001.01",
+      "name": "Security Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.014.001.01",
+      "name": "Party Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.014.001.02",
+      "name": "Party Creation Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.015.001.01",
+      "name": "Party Query V01",
+      "description": ""
+    },
+    {
+      "id": "reda.016.001.01",
+      "name": "Party Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.017.001.01",
+      "name": "Party Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.017.001.02",
+      "name": "Party Report V02",
+      "description": ""
+    },
+    {
+      "id": "reda.018.001.01",
+      "name": "Securities Account Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.019.001.01",
+      "name": "Securities Account Query V01",
+      "description": ""
+    },
+    {
+      "id": "reda.020.001.01",
+      "name": "Securities Account Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.021.001.01",
+      "name": "Securities Account Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.022.001.01",
+      "name": "Party Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.022.001.02",
+      "name": "Party Modification Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.023.001.01",
+      "name": "Securities Account Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.024.001.01",
+      "name": "Collateral Value Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.025.001.01",
+      "name": "Eligible Securities Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.026.001.01",
+      "name": "Eligible Counterpart CSD Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.027.001.01",
+      "name": "Close Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.028.001.01",
+      "name": "Collateral Data Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.029.001.01",
+      "name": "Security Maintenance Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.030.001.01",
+      "name": "Security Deletion Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.031.001.01",
+      "name": "Party Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.032.001.01",
+      "name": "Securities Account Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.033.001.01",
+      "name": "Securities Audit Trail Query V01",
+      "description": ""
+    },
+    {
+      "id": "reda.034.001.01",
+      "name": "Securities Audit Trail Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.035.001.01",
+      "name": "Securities Account Activity Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.036.001.01",
+      "name": "Securities Account Audit Trail Query V01",
+      "description": ""
+    },
+    {
+      "id": "reda.037.001.01",
+      "name": "Securities Account Audit Trail Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.041.001.01",
+      "name": "Party Activity Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.041.001.02",
+      "name": "Party Activity Advice V02",
+      "description": ""
+    },
+    {
+      "id": "reda.042.001.01",
+      "name": "Party Audit Trail Query V01",
+      "description": ""
+    },
+    {
+      "id": "reda.043.001.01",
+      "name": "Party Audit Trail Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.043.001.02",
+      "name": "Party Audit Trail Report V02",
+      "description": ""
+    },
+    {
+      "id": "reda.044.001.01",
+      "name": "Eligible Counterpart CSD Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.045.001.01",
+      "name": "Security CSD Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.046.001.01",
+      "name": "Security CSD Link Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.047.001.01",
+      "name": "Security CSD Link Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.049.001.01",
+      "name": "Account Link Creation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.050.001.01",
+      "name": "Account Link Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.051.001.01",
+      "name": "Account Link Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.056.001.01",
+      "name": "Standing Settlement Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "reda.057.001.01",
+      "name": "Standing Settlement Instruction Deletion V01",
+      "description": ""
+    },
+    {
+      "id": "reda.058.001.01",
+      "name": "Standing Settlement Instruction Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "reda.059.001.01",
+      "name": "Standing Settlement Instruction Cancellation V01",
+      "description": ""
+    },
+    {
+      "id": "reda.060.001.01",
+      "name": "Netting Cut Off Reference Data Update Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.060.001.02",
+      "name": "Netting Cut Off Reference Data Update Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.061.001.01",
+      "name": "Netting Cut Off Reference Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.061.001.02",
+      "name": "Netting Cut Off Reference Data Report V02",
+      "description": ""
+    },
+    {
+      "id": "reda.064.001.01",
+      "name": "Calendar Query V01",
+      "description": ""
+    },
+    {
+      "id": "reda.064.001.02",
+      "name": "Calendar Query V02",
+      "description": ""
+    },
+    {
+      "id": "reda.065.001.01",
+      "name": "Calendar Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.065.001.02",
+      "name": "Calendar Report V02",
+      "description": ""
+    },
+    {
+      "id": "reda.066.001.01",
+      "name": "Request To Pay Creditor Enrolment Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.066.001.02",
+      "name": "Request To Pay Creditor Enrolment Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.067.001.01",
+      "name": "Request To Pay Creditor Enrolment Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.067.001.02",
+      "name": "Request To Pay Creditor Enrolment Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.068.001.01",
+      "name": "Request To Pay Creditor Enrolment Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.068.001.02",
+      "name": "Request To Pay Creditor Enrolment Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.069.001.01",
+      "name": "Request To Pay Creditor Enrolment Status Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.069.001.02",
+      "name": "Request To Pay Creditor Enrolment Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "reda.070.001.01",
+      "name": "Request To Pay Debtor Activation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.070.001.02",
+      "name": "Request To Pay Debtor Activation Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.071.001.01",
+      "name": "Request To Pay Debtor Activation Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.071.001.02",
+      "name": "Request To Pay Debtor Activation Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.072.001.01",
+      "name": "Request To Pay Debtor Activation Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.072.001.02",
+      "name": "Request To Pay Debtor Activation Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "reda.073.001.01",
+      "name": "Request To Pay Debtor Activation Status Report V01",
+      "description": ""
+    },
+    {
+      "id": "reda.073.001.02",
+      "name": "Request To Pay Debtor Activation Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "reda.074.001.01",
+      "name": "Triparty Collateral Unilateral Removal Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.075.001.01",
+      "name": "Eligible Securities Deletion Request V01",
+      "description": ""
+    },
+    {
+      "id": "reda.077.001.01",
+      "name": "Close Link Deletion Request V01",
+      "description": ""
+    }
+  ]
+}

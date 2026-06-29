@@ -1,0 +1,1030 @@
+{
+  "description": "SWIFT ISO 20022 auth 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "DRAFT10auth.031.001.01",
+      "name": "Financial Instrument Reporting Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT11auth.030.001.01",
+      "name": "Derivatives Trade Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT13auth.017.001.01",
+      "name": "Financial Instrument Reporting Reference Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT15auth.016.001.01",
+      "name": "Financial Instrument Reporting Transaction Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1auth.016.001.03",
+      "name": "Financial Instrument Reporting Transaction Report V03",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1auth.029.001.04",
+      "name": "Derivatives Trade Report Query V04",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1auth.033.001.03",
+      "name": "Financial Instrument Reporting Non Equity Transparency Data Report V03",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1auth.090.001.02",
+      "name": "Derivatives Trade Position Set Report V02",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1auth.092.001.04",
+      "name": "Derivatives Trade Rejection Statistical Report V04",
+      "description": ""
+    },
+    {
+      "id": "DRAFT1auth.114.001.01",
+      "name": "Regulatory Metadata Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2auth.090.001.01",
+      "name": "Derivatives Trade Position Set Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2auth.091.001.01",
+      "name": "Derivatives Trade Reconciliation Statistical Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2auth.092.001.01",
+      "name": "Derivatives Trade Rejection Statistical Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT2auth.114.001.01",
+      "name": "Regulatory Metadata Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3auth.113.001.01",
+      "name": "Order Book Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT3auth.114.001.01",
+      "name": "Regulatory Metadata Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4auth.031.001.01",
+      "name": "Financial Instrument Reporting Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT4auth.039.001.01",
+      "name": "Financial Instrument Reporting Non Working Day Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.029.001.01",
+      "name": "Derivatives Trade Report Query V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.031.001.01",
+      "name": "Financial Instrument Reporting Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.032.001.01",
+      "name": "Financial Instrument Reporting Equity Transparency Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.033.001.01",
+      "name": "Financial Instrument Reporting Non Equity Transparency Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.035.001.01",
+      "name": "Financial Instrument Reporting Trading Volume Cap Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.041.001.01",
+      "name": "Financial Instrument Reporting Non Equity Trading Activity Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.042.001.01",
+      "name": "Financial Instrument Reporting Invalid Reference Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.045.001.01",
+      "name": "Financial Instrument Reporting Non Equity Trading Activity Result V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.047.001.01",
+      "name": "Financial Instrument Reporting Country Code Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.048.001.01",
+      "name": "Financial Instrument Reporting Currency Code Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.049.001.01",
+      "name": "Financial Instrument Reporting Market Identification Code Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT5auth.050.001.01",
+      "name": "Financial Instrument Reporting Instrument Classification Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6auth.030.001.01",
+      "name": "Derivatives Trade Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6auth.036.001.01",
+      "name": "Financial Instrument Reporting Reference Data Delta Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6auth.040.001.01",
+      "name": "Financial Instrument Reporting Equity Trading Activity Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6auth.043.001.01",
+      "name": "Financial Instrument Reporting Reference Data Index Report V01",
+      "description": ""
+    },
+    {
+      "id": "DRAFT6auth.044.001.01",
+      "name": "Financial Instrument Reporting Equity Trading Activity Result V01",
+      "description": ""
+    },
+    {
+      "id": "auth.001.001.01",
+      "name": "Information Request Opening V01",
+      "description": ""
+    },
+    {
+      "id": "auth.001.001.02",
+      "name": "Information Request Opening V02",
+      "description": ""
+    },
+    {
+      "id": "auth.002.001.01",
+      "name": "Information Request Response V01",
+      "description": ""
+    },
+    {
+      "id": "auth.002.001.02",
+      "name": "Information Request Response V02",
+      "description": ""
+    },
+    {
+      "id": "auth.003.001.01",
+      "name": "Information Request Status Change Notification V01",
+      "description": ""
+    },
+    {
+      "id": "auth.008.001.02",
+      "name": "Regulatory Transaction Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.009.001.02",
+      "name": "Regulatory Transaction Report Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "auth.010.001.01",
+      "name": "Regulatory Transaction Report Status V01",
+      "description": ""
+    },
+    {
+      "id": "auth.011.001.01",
+      "name": "Regulatory Transaction Report Cancellation Status V01",
+      "description": ""
+    },
+    {
+      "id": "auth.012.001.01",
+      "name": "Money Market Secured Market Statistical Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.012.001.02",
+      "name": "Money Market Secured Market Statistical Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.013.001.01",
+      "name": "Money Market Unsecured Market Statistical Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.013.001.02",
+      "name": "Money Market Unsecured Market Statistical Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.014.001.01",
+      "name": "Money Market Foreign Exchange Swaps Statistical Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.014.001.02",
+      "name": "Money Market Foreign Exchange Swaps Statistical Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.015.001.01",
+      "name": "Money Market Overnight Index Swaps Statistical Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.015.001.02",
+      "name": "Money Market Overnight Index Swaps Statistical Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.016.001.01",
+      "name": "Financial Instrument Reporting Transaction Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.016.001.02",
+      "name": "Financial Instrument Reporting Transaction Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.016.001.03",
+      "name": "Financial Instrument Reporting Transaction Report V03",
+      "description": ""
+    },
+    {
+      "id": "auth.017.001.01",
+      "name": "Financial Instrument Reporting Reference Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.017.001.02",
+      "name": "Financial Instrument Reporting Reference Data Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.018.001.01",
+      "name": "Contract Registration Request V01",
+      "description": ""
+    },
+    {
+      "id": "auth.018.001.02",
+      "name": "Contract Registration Request V02",
+      "description": ""
+    },
+    {
+      "id": "auth.018.001.03",
+      "name": "Contract Registration Request V03",
+      "description": ""
+    },
+    {
+      "id": "auth.018.001.04",
+      "name": "Contract Registration Request V04",
+      "description": ""
+    },
+    {
+      "id": "auth.019.001.01",
+      "name": "Contract Registration Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "auth.019.001.02",
+      "name": "Contract Registration Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "auth.019.001.03",
+      "name": "Contract Registration Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "auth.019.001.04",
+      "name": "Contract Registration Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "auth.020.001.01",
+      "name": "Contract Registration Closure Request V01",
+      "description": ""
+    },
+    {
+      "id": "auth.020.001.02",
+      "name": "Contract Registration Closure Request V02",
+      "description": ""
+    },
+    {
+      "id": "auth.020.001.03",
+      "name": "Contract Registration Closure Request V03",
+      "description": ""
+    },
+    {
+      "id": "auth.020.001.04",
+      "name": "Contract Registration Closure Request V04",
+      "description": ""
+    },
+    {
+      "id": "auth.021.001.01",
+      "name": "Contract Registration Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "auth.021.001.02",
+      "name": "Contract Registration Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "auth.021.001.03",
+      "name": "Contract Registration Amendment Request V03",
+      "description": ""
+    },
+    {
+      "id": "auth.021.001.04",
+      "name": "Contract Registration Amendment Request V04",
+      "description": ""
+    },
+    {
+      "id": "auth.022.001.01",
+      "name": "Contract Registration Statement V01",
+      "description": ""
+    },
+    {
+      "id": "auth.022.001.02",
+      "name": "Contract Registration Statement V02",
+      "description": ""
+    },
+    {
+      "id": "auth.022.001.03",
+      "name": "Contract Registration Statement V03",
+      "description": ""
+    },
+    {
+      "id": "auth.022.001.04",
+      "name": "Contract Registration Statement V04",
+      "description": ""
+    },
+    {
+      "id": "auth.023.001.01",
+      "name": "Contract Registration Statement Request V01",
+      "description": ""
+    },
+    {
+      "id": "auth.023.001.02",
+      "name": "Contract Registration Statement Request V02",
+      "description": ""
+    },
+    {
+      "id": "auth.023.001.03",
+      "name": "Contract Registration Statement Request V03",
+      "description": ""
+    },
+    {
+      "id": "auth.023.001.04",
+      "name": "Contract Registration Statement Request V04",
+      "description": ""
+    },
+    {
+      "id": "auth.024.001.01",
+      "name": "Payment Regulatory Information Notification V01",
+      "description": ""
+    },
+    {
+      "id": "auth.024.001.02",
+      "name": "Payment Regulatory Information Notification V02",
+      "description": ""
+    },
+    {
+      "id": "auth.024.001.03",
+      "name": "Payment Regulatory Information Notification V03",
+      "description": ""
+    },
+    {
+      "id": "auth.024.001.04",
+      "name": "Payment Regulatory Information Notification V04",
+      "description": ""
+    },
+    {
+      "id": "auth.025.001.01",
+      "name": "Currency Control Supporting Document Delivery V01",
+      "description": ""
+    },
+    {
+      "id": "auth.025.001.02",
+      "name": "Currency Control Supporting Document Delivery V02",
+      "description": ""
+    },
+    {
+      "id": "auth.025.001.03",
+      "name": "Currency Control Supporting Document Delivery V03",
+      "description": ""
+    },
+    {
+      "id": "auth.025.001.04",
+      "name": "Currency Control Supporting Document Delivery V04",
+      "description": ""
+    },
+    {
+      "id": "auth.026.001.01",
+      "name": "Currency Control Request Or Letter V01",
+      "description": ""
+    },
+    {
+      "id": "auth.026.001.02",
+      "name": "Currency Control Request Or Letter V02",
+      "description": ""
+    },
+    {
+      "id": "auth.026.001.03",
+      "name": "Currency Control Request Or Letter V03",
+      "description": ""
+    },
+    {
+      "id": "auth.026.001.04",
+      "name": "Currency Control Request Or Letter V04",
+      "description": ""
+    },
+    {
+      "id": "auth.027.001.01",
+      "name": "Currency Control Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "auth.027.001.02",
+      "name": "Currency Control Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "auth.027.001.03",
+      "name": "Currency Control Status Advice V03",
+      "description": ""
+    },
+    {
+      "id": "auth.027.001.04",
+      "name": "Currency Control Status Advice V04",
+      "description": ""
+    },
+    {
+      "id": "auth.028.001.01",
+      "name": "Money Market Statistical Report Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "auth.029.001.01",
+      "name": "Derivatives Trade Report Query V01",
+      "description": ""
+    },
+    {
+      "id": "auth.029.001.02",
+      "name": "Derivatives Trade Report Query V02",
+      "description": ""
+    },
+    {
+      "id": "auth.029.001.03",
+      "name": "Derivatives Trade Report Query V03",
+      "description": ""
+    },
+    {
+      "id": "auth.029.001.04",
+      "name": "Derivatives Trade Report Query V04",
+      "description": ""
+    },
+    {
+      "id": "auth.029.001.05",
+      "name": "Derivatives Trade Report Query V05",
+      "description": ""
+    },
+    {
+      "id": "auth.030.001.01",
+      "name": "Derivatives Trade Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.030.001.02",
+      "name": "Derivatives Trade Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.030.001.03",
+      "name": "Derivatives Trade Report V03",
+      "description": ""
+    },
+    {
+      "id": "auth.030.001.04",
+      "name": "Derivatives Trade Report V04",
+      "description": ""
+    },
+    {
+      "id": "auth.031.001.01",
+      "name": "Financial Instrument Reporting Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "auth.032.001.01",
+      "name": "Financial Instrument Reporting Equity Transparency Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.033.001.01",
+      "name": "Financial Instrument Reporting Non Equity Transparency Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.033.001.02",
+      "name": "Financial Instrument Reporting Non Equity Transparency Data Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.033.001.03",
+      "name": "Financial Instrument Reporting Non Equity Transparency Data Report V03",
+      "description": ""
+    },
+    {
+      "id": "auth.034.001.01",
+      "name": "Invoice Tax Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.035.001.01",
+      "name": "Financial Instrument Reporting Trading Volume Cap Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.036.001.01",
+      "name": "Financial Instrument Reporting Reference Data Delta Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.036.001.02",
+      "name": "Financial Instrument Reporting Reference Data Delta Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.036.001.03",
+      "name": "Financial Instrument Reporting Reference Data Delta Report V03",
+      "description": ""
+    },
+    {
+      "id": "auth.038.001.01",
+      "name": "Invoice Tax Report Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "auth.039.001.01",
+      "name": "Financial Instrument Reporting Non Working Day Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.040.001.01",
+      "name": "Financial Instrument Reporting Equity Trading Activity Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.041.001.01",
+      "name": "Financial Instrument Reporting Non Equity Trading Activity Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.042.001.01",
+      "name": "Financial Instrument Reporting Invalid Reference Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.042.001.02",
+      "name": "Financial Instrument Reporting Invalid Reference Data Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.043.001.01",
+      "name": "Financial Instrument Reporting Reference Data Index Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.044.001.01",
+      "name": "Financial Instrument Reporting Equity Trading Activity Result V01",
+      "description": ""
+    },
+    {
+      "id": "auth.044.001.02",
+      "name": "Financial Instrument Reporting Equity Trading Activity Result V02",
+      "description": ""
+    },
+    {
+      "id": "auth.044.001.03",
+      "name": "Financial Instrument Reporting Equity Trading Activity Result V03",
+      "description": ""
+    },
+    {
+      "id": "auth.045.001.01",
+      "name": "Financial Instrument Reporting Non Equity Trading Activity Result V01",
+      "description": ""
+    },
+    {
+      "id": "auth.045.001.02",
+      "name": "Financial Instrument Reporting Non Equity Trading Activity Result V02",
+      "description": ""
+    },
+    {
+      "id": "auth.045.001.03",
+      "name": "Financial Instrument Reporting Non Equity Trading Activity Result V03",
+      "description": ""
+    },
+    {
+      "id": "auth.047.001.01",
+      "name": "Financial Instrument Reporting Country Code Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.048.001.01",
+      "name": "Financial Instrument Reporting Currency Code Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.049.001.01",
+      "name": "Financial Instrument Reporting Market Identification Code Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.049.001.02",
+      "name": "Financial Instrument Reporting Market Identification Code Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.050.001.01",
+      "name": "Financial Instrument Reporting Instrument Classification Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.052.001.01",
+      "name": "Securities Financing Reporting Transaction Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.052.001.02",
+      "name": "Securities Financing Reporting Transaction Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.053.001.01",
+      "name": "Financial Instrument Reporting Trading Volume Cap Result Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.054.001.01",
+      "name": "CCP Clearing Member Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.055.001.01",
+      "name": "CCP Member Requirements Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.056.001.01",
+      "name": "CCP Member Obligations Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.057.001.01",
+      "name": "CCP Portfolio Stress Testing Definition Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.057.001.02",
+      "name": "CCP Portfolio Stress Testing Definition Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.058.001.01",
+      "name": "CCP Portfolio Stress Testing Result Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.059.001.01",
+      "name": "CCP Income Statement And Capital Adequacy Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.059.001.02",
+      "name": "CCP Income Statement And Capital Adequacy Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.060.001.01",
+      "name": "CCP Daily Cash Flows Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.060.001.02",
+      "name": "CCP Daily Cash Flows Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.061.001.01",
+      "name": "CCP Investments Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.061.001.02",
+      "name": "CCP Investments Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.062.001.01",
+      "name": "CCP Liquidity Stress Testing Definition Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.063.001.01",
+      "name": "CCP Liquidity Stress Testing Result Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.064.001.01",
+      "name": "CCP Available Financial Resources Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.064.001.02",
+      "name": "CCP Available Financial Resources Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.065.001.01",
+      "name": "CCP Back Testing Definition Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.066.001.01",
+      "name": "CCP Back Testing Result Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.067.001.01",
+      "name": "CCP Collateral Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.068.001.01",
+      "name": "CCP Account Position Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.069.001.01",
+      "name": "CCP Cleared Product Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.069.001.02",
+      "name": "CCP Cleared Product Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.069.001.03",
+      "name": "CCP Cleared Product Report V03",
+      "description": ""
+    },
+    {
+      "id": "auth.070.001.01",
+      "name": "Securities Financing Reporting Transaction Margin Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.070.001.02",
+      "name": "Securities Financing Reporting Transaction Margin Data Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.071.001.01",
+      "name": "Securities Financing Reporting Transaction Reused Collateral Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.071.001.02",
+      "name": "Securities Financing Reporting Transaction Reused Collateral Data Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.072.001.01",
+      "name": "Settlement Internaliser Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.078.001.01",
+      "name": "Securities Financing Reporting Pairing Request V01",
+      "description": ""
+    },
+    {
+      "id": "auth.078.001.02",
+      "name": "Securities Financing Reporting Pairing Request V02",
+      "description": ""
+    },
+    {
+      "id": "auth.079.001.01",
+      "name": "Securities Financing Reporting Transaction State Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.079.001.02",
+      "name": "Securities Financing Reporting Transaction State Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.080.001.01",
+      "name": "Securities Financing Reporting Reconciliation Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "auth.080.001.02",
+      "name": "Securities Financing Reporting Reconciliation Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "auth.083.001.01",
+      "name": "Securities Financing Reporting Missing Collateral Request V01",
+      "description": ""
+    },
+    {
+      "id": "auth.083.001.02",
+      "name": "Securities Financing Reporting Missing Collateral Request V02",
+      "description": ""
+    },
+    {
+      "id": "auth.084.001.01",
+      "name": "Securities Financing Reporting Transaction Status Advice V01",
+      "description": ""
+    },
+    {
+      "id": "auth.084.001.02",
+      "name": "Securities Financing Reporting Transaction Status Advice V02",
+      "description": ""
+    },
+    {
+      "id": "auth.085.001.01",
+      "name": "Securities Financing Reporting Margin Data Transaction State Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.085.001.02",
+      "name": "Securities Financing Reporting Margin Data Transaction State Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.086.001.01",
+      "name": "Securities Financing Reporting Reused Collateral Data Transaction State Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.086.001.02",
+      "name": "Securities Financing Reporting Reused Collateral Data Transaction State Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.090.001.01",
+      "name": "Derivatives Trade Position Set Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.090.001.02",
+      "name": "Derivatives Trade Position Set Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.091.001.01",
+      "name": "Derivatives Trade Reconciliation Statistical Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.091.001.02",
+      "name": "Derivatives Trade Reconciliation Statistical Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.091.001.03",
+      "name": "Derivatives Trade Reconciliation Statistical Report V03",
+      "description": ""
+    },
+    {
+      "id": "auth.092.001.01",
+      "name": "Derivatives Trade Rejection Statistical Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.092.001.02",
+      "name": "Derivatives Trade Rejection Statistical Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.092.001.03",
+      "name": "Derivatives Trade Rejection Statistical Report V03",
+      "description": ""
+    },
+    {
+      "id": "auth.092.001.04",
+      "name": "Derivatives Trade Rejection Statistical Report V04",
+      "description": ""
+    },
+    {
+      "id": "auth.094.001.01",
+      "name": "Securities Financing Reporting Transaction Query V01",
+      "description": ""
+    },
+    {
+      "id": "auth.094.001.02",
+      "name": "Securities Financing Reporting Transaction Query V02",
+      "description": ""
+    },
+    {
+      "id": "auth.100.001.01",
+      "name": "Settlement Fails Monthly Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.101.001.01",
+      "name": "Settlement Fails Annual Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.102.001.01",
+      "name": "Financial Instrument Reporting Cancellation Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.105.001.01",
+      "name": "Securities Financing Reporting Position Set Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.106.001.01",
+      "name": "Derivatives Trade Warnings Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.107.001.01",
+      "name": "Derivatives Trade State Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.107.001.02",
+      "name": "Derivatives Trade State Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.108.001.01",
+      "name": "Derivatives Trade Margin Data Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.108.001.02",
+      "name": "Derivatives Trade Margin Data Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.109.001.01",
+      "name": "Derivatives Trade Margin Data Transaction State Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.109.001.02",
+      "name": "Derivatives Trade Margin Data Transaction State Report V02",
+      "description": ""
+    },
+    {
+      "id": "auth.112.001.01",
+      "name": "CCP Interoperability Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.113.001.01",
+      "name": "Order Book Report V01",
+      "description": ""
+    },
+    {
+      "id": "auth.114.001.01",
+      "name": "Regulatory Metadata Report V01",
+      "description": ""
+    }
+  ]
+}

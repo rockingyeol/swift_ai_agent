@@ -1,0 +1,655 @@
+{
+  "description": "SWIFT ISO 20022 casp 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "casp.001.001.01",
+      "name": "Sale To POI Service Request V01",
+      "description": ""
+    },
+    {
+      "id": "casp.001.001.02",
+      "name": "Sale To POI Service Request V02",
+      "description": ""
+    },
+    {
+      "id": "casp.001.001.03",
+      "name": "Sale To POI Service Request V03",
+      "description": ""
+    },
+    {
+      "id": "casp.001.001.04",
+      "name": "Sale To POI Service Request V04",
+      "description": ""
+    },
+    {
+      "id": "casp.001.001.05",
+      "name": "Sale To POI Service Request V05",
+      "description": ""
+    },
+    {
+      "id": "casp.001.001.06",
+      "name": "Sale To POI Service Request V06",
+      "description": ""
+    },
+    {
+      "id": "casp.001.001.07",
+      "name": "Sale To POI Service Request V07",
+      "description": ""
+    },
+    {
+      "id": "casp.001.001.08",
+      "name": "Sale To POI Service Request V08",
+      "description": ""
+    },
+    {
+      "id": "casp.002.001.01",
+      "name": "Sale To POI Service Response V01",
+      "description": ""
+    },
+    {
+      "id": "casp.002.001.02",
+      "name": "Sale To POI Service Response V02",
+      "description": ""
+    },
+    {
+      "id": "casp.002.001.03",
+      "name": "Sale To POI Service Response V03",
+      "description": ""
+    },
+    {
+      "id": "casp.002.001.04",
+      "name": "Sale To POI Service Response V04",
+      "description": ""
+    },
+    {
+      "id": "casp.002.001.05",
+      "name": "Sale To POI Service Response V05",
+      "description": ""
+    },
+    {
+      "id": "casp.002.001.06",
+      "name": "Sale To POI Service Response V06",
+      "description": ""
+    },
+    {
+      "id": "casp.002.001.07",
+      "name": "Sale To POI Service Response V07",
+      "description": ""
+    },
+    {
+      "id": "casp.002.001.08",
+      "name": "Sale To POI Service Response V08",
+      "description": ""
+    },
+    {
+      "id": "casp.003.001.01",
+      "name": "Sale To POI Reconciliation Request V01",
+      "description": ""
+    },
+    {
+      "id": "casp.003.001.02",
+      "name": "Sale To POI Reconciliation Request V02",
+      "description": ""
+    },
+    {
+      "id": "casp.003.001.03",
+      "name": "Sale To POI Reconciliation Request V03",
+      "description": ""
+    },
+    {
+      "id": "casp.003.001.04",
+      "name": "Sale To POI Reconciliation Request V04",
+      "description": ""
+    },
+    {
+      "id": "casp.003.001.05",
+      "name": "Sale To POI Reconciliation Request V05",
+      "description": ""
+    },
+    {
+      "id": "casp.003.001.06",
+      "name": "Sale To POI Reconciliation Request V06",
+      "description": ""
+    },
+    {
+      "id": "casp.003.001.07",
+      "name": "Sale To POI Reconciliation Request V07",
+      "description": ""
+    },
+    {
+      "id": "casp.003.001.08",
+      "name": "Sale To POI Reconciliation Request V08",
+      "description": ""
+    },
+    {
+      "id": "casp.004.001.01",
+      "name": "Sale To POI Reconciliation Response V01",
+      "description": ""
+    },
+    {
+      "id": "casp.004.001.02",
+      "name": "Sale To POI Reconciliation Response V02",
+      "description": ""
+    },
+    {
+      "id": "casp.004.001.03",
+      "name": "Sale To POI Reconciliation Response V03",
+      "description": ""
+    },
+    {
+      "id": "casp.004.001.04",
+      "name": "Sale To POI Reconciliation Response V04",
+      "description": ""
+    },
+    {
+      "id": "casp.004.001.05",
+      "name": "Sale To POI Reconciliation Response V05",
+      "description": ""
+    },
+    {
+      "id": "casp.004.001.06",
+      "name": "Sale To POI Reconciliation Response V06",
+      "description": ""
+    },
+    {
+      "id": "casp.004.001.07",
+      "name": "Sale To POI Reconciliation Response V07",
+      "description": ""
+    },
+    {
+      "id": "casp.004.001.08",
+      "name": "Sale To POI Reconciliation Response V08",
+      "description": ""
+    },
+    {
+      "id": "casp.005.001.01",
+      "name": "Sale To POI Session Management Request V01",
+      "description": ""
+    },
+    {
+      "id": "casp.005.001.02",
+      "name": "Sale To POI Session Management Request V02",
+      "description": ""
+    },
+    {
+      "id": "casp.005.001.03",
+      "name": "Sale To POI Session Management Request V03",
+      "description": ""
+    },
+    {
+      "id": "casp.005.001.04",
+      "name": "Sale To POI Session Management Request V04",
+      "description": ""
+    },
+    {
+      "id": "casp.005.001.05",
+      "name": "Sale To POI Session Management Request V05",
+      "description": ""
+    },
+    {
+      "id": "casp.005.001.06",
+      "name": "Sale To POI Session Management Request V06",
+      "description": ""
+    },
+    {
+      "id": "casp.005.001.07",
+      "name": "Sale To POI Session Management Request V07",
+      "description": ""
+    },
+    {
+      "id": "casp.005.001.08",
+      "name": "Sale To POI Session Management Request V08",
+      "description": ""
+    },
+    {
+      "id": "casp.006.001.01",
+      "name": "Sale To POI Session Management Response V01",
+      "description": ""
+    },
+    {
+      "id": "casp.006.001.02",
+      "name": "Sale To POI Session Management Response V02",
+      "description": ""
+    },
+    {
+      "id": "casp.006.001.03",
+      "name": "Sale To POI Session Management Response V03",
+      "description": ""
+    },
+    {
+      "id": "casp.006.001.04",
+      "name": "Sale To POI Session Management Response V04",
+      "description": ""
+    },
+    {
+      "id": "casp.006.001.05",
+      "name": "Sale To POI Session Management Response V05",
+      "description": ""
+    },
+    {
+      "id": "casp.006.001.06",
+      "name": "Sale To POI Session Management Response V06",
+      "description": ""
+    },
+    {
+      "id": "casp.006.001.07",
+      "name": "Sale To POI Session Management Response V07",
+      "description": ""
+    },
+    {
+      "id": "casp.006.001.08",
+      "name": "Sale To POI Session Management Response V08",
+      "description": ""
+    },
+    {
+      "id": "casp.007.001.01",
+      "name": "Sale To POI Administrative Request V01",
+      "description": ""
+    },
+    {
+      "id": "casp.007.001.02",
+      "name": "Sale To POI Administrative Request V02",
+      "description": ""
+    },
+    {
+      "id": "casp.007.001.03",
+      "name": "Sale To POI Administrative Request V03",
+      "description": ""
+    },
+    {
+      "id": "casp.007.001.04",
+      "name": "Sale To POI Administrative Request V04",
+      "description": ""
+    },
+    {
+      "id": "casp.007.001.05",
+      "name": "Sale To POI Administrative Request V05",
+      "description": ""
+    },
+    {
+      "id": "casp.007.001.06",
+      "name": "Sale To POI Administrative Request V06",
+      "description": ""
+    },
+    {
+      "id": "casp.007.001.07",
+      "name": "Sale To POI Administrative Request V07",
+      "description": ""
+    },
+    {
+      "id": "casp.007.001.08",
+      "name": "Sale To POI Administrative Request V08",
+      "description": ""
+    },
+    {
+      "id": "casp.008.001.01",
+      "name": "Sale To POI Administrative Response V01",
+      "description": ""
+    },
+    {
+      "id": "casp.008.001.02",
+      "name": "Sale To POI Administrative Response V02",
+      "description": ""
+    },
+    {
+      "id": "casp.008.001.03",
+      "name": "Sale To POI Administrative Response V03",
+      "description": ""
+    },
+    {
+      "id": "casp.008.001.04",
+      "name": "Sale To POI Administrative Response V04",
+      "description": ""
+    },
+    {
+      "id": "casp.008.001.05",
+      "name": "Sale To POI Administrative Response V05",
+      "description": ""
+    },
+    {
+      "id": "casp.008.001.06",
+      "name": "Sale To POI Administrative Response V06",
+      "description": ""
+    },
+    {
+      "id": "casp.008.001.07",
+      "name": "Sale To POI Administrative Response V07",
+      "description": ""
+    },
+    {
+      "id": "casp.008.001.08",
+      "name": "Sale To POI Administrative Response V08",
+      "description": ""
+    },
+    {
+      "id": "casp.009.001.01",
+      "name": "Sale To POI Report Request V01",
+      "description": ""
+    },
+    {
+      "id": "casp.009.001.02",
+      "name": "Sale To POI Report Request V02",
+      "description": ""
+    },
+    {
+      "id": "casp.009.001.03",
+      "name": "Sale To POI Report Request V03",
+      "description": ""
+    },
+    {
+      "id": "casp.009.001.04",
+      "name": "Sale To POI Report Request V04",
+      "description": ""
+    },
+    {
+      "id": "casp.009.001.05",
+      "name": "Sale To POI Report Request V05",
+      "description": ""
+    },
+    {
+      "id": "casp.009.001.06",
+      "name": "Sale To POI Report Request V06",
+      "description": ""
+    },
+    {
+      "id": "casp.009.001.07",
+      "name": "Sale To POI Report Request V07",
+      "description": ""
+    },
+    {
+      "id": "casp.009.001.08",
+      "name": "Sale To POI Report Request V08",
+      "description": ""
+    },
+    {
+      "id": "casp.010.001.01",
+      "name": "Sale To POI Report Response V01",
+      "description": ""
+    },
+    {
+      "id": "casp.010.001.02",
+      "name": "Sale To POI Report Response V02",
+      "description": ""
+    },
+    {
+      "id": "casp.010.001.03",
+      "name": "Sale To POI Report Response V03",
+      "description": ""
+    },
+    {
+      "id": "casp.010.001.04",
+      "name": "Sale To POI Report Response V04",
+      "description": ""
+    },
+    {
+      "id": "casp.010.001.05",
+      "name": "Sale To POI Report Response V05",
+      "description": ""
+    },
+    {
+      "id": "casp.010.001.06",
+      "name": "Sale To POI Report Response V06",
+      "description": ""
+    },
+    {
+      "id": "casp.010.001.07",
+      "name": "Sale To POI Report Response V07",
+      "description": ""
+    },
+    {
+      "id": "casp.010.001.08",
+      "name": "Sale To POI Report Response V08",
+      "description": ""
+    },
+    {
+      "id": "casp.011.001.01",
+      "name": "Sale To POI Abort V01",
+      "description": ""
+    },
+    {
+      "id": "casp.011.001.02",
+      "name": "Sale To POI Abort V02",
+      "description": ""
+    },
+    {
+      "id": "casp.011.001.03",
+      "name": "Sale To POI Abort V03",
+      "description": ""
+    },
+    {
+      "id": "casp.011.001.04",
+      "name": "Sale To POI Abort V04",
+      "description": ""
+    },
+    {
+      "id": "casp.011.001.05",
+      "name": "Sale To POI Abort V05",
+      "description": ""
+    },
+    {
+      "id": "casp.011.001.06",
+      "name": "Sale To POI Abort V06",
+      "description": ""
+    },
+    {
+      "id": "casp.011.001.07",
+      "name": "Sale To POI Abort V07",
+      "description": ""
+    },
+    {
+      "id": "casp.011.001.08",
+      "name": "Sale To POI Abort V08",
+      "description": ""
+    },
+    {
+      "id": "casp.012.001.01",
+      "name": "Sale To POI Event Notification V01",
+      "description": ""
+    },
+    {
+      "id": "casp.012.001.02",
+      "name": "Sale To POI Event Notification V02",
+      "description": ""
+    },
+    {
+      "id": "casp.012.001.03",
+      "name": "Sale To POI Event Notification V03",
+      "description": ""
+    },
+    {
+      "id": "casp.012.001.04",
+      "name": "Sale To POI Event Notification V04",
+      "description": ""
+    },
+    {
+      "id": "casp.012.001.05",
+      "name": "Sale To POI Event Notification V05",
+      "description": ""
+    },
+    {
+      "id": "casp.012.001.06",
+      "name": "Sale To POI Event Notification V06",
+      "description": ""
+    },
+    {
+      "id": "casp.012.001.07",
+      "name": "Sale To POI Event Notification V07",
+      "description": ""
+    },
+    {
+      "id": "casp.012.001.08",
+      "name": "Sale To POI Event Notification V08",
+      "description": ""
+    },
+    {
+      "id": "casp.013.001.01",
+      "name": "Sale To POI Message Rejection V01",
+      "description": ""
+    },
+    {
+      "id": "casp.013.001.02",
+      "name": "Sale To POI Message Rejection V02",
+      "description": ""
+    },
+    {
+      "id": "casp.014.001.01",
+      "name": "Sale To POI Message Status Request V01",
+      "description": ""
+    },
+    {
+      "id": "casp.014.001.02",
+      "name": "Sale To POI Message Status Request V02",
+      "description": ""
+    },
+    {
+      "id": "casp.014.001.03",
+      "name": "Sale To POI Message Status Request V03",
+      "description": ""
+    },
+    {
+      "id": "casp.014.001.04",
+      "name": "Sale To POI Message Status Request V04",
+      "description": ""
+    },
+    {
+      "id": "casp.014.001.05",
+      "name": "Sale To POI Message Status Request V05",
+      "description": ""
+    },
+    {
+      "id": "casp.014.001.06",
+      "name": "Sale To POI Message Status Request V06",
+      "description": ""
+    },
+    {
+      "id": "casp.014.001.07",
+      "name": "Sale To POI Message Status Request V07",
+      "description": ""
+    },
+    {
+      "id": "casp.014.001.08",
+      "name": "Sale To POI Message Status Request V08",
+      "description": ""
+    },
+    {
+      "id": "casp.015.001.01",
+      "name": "Sale To POI Message Status Response V01",
+      "description": ""
+    },
+    {
+      "id": "casp.015.001.02",
+      "name": "Sale To POI Message Status Response V02",
+      "description": ""
+    },
+    {
+      "id": "casp.015.001.03",
+      "name": "Sale To POI Message Status Response V03",
+      "description": ""
+    },
+    {
+      "id": "casp.015.001.04",
+      "name": "Sale To POI Message Status Response V04",
+      "description": ""
+    },
+    {
+      "id": "casp.015.001.05",
+      "name": "Sale To POI Message Status Response V05",
+      "description": ""
+    },
+    {
+      "id": "casp.015.001.06",
+      "name": "Sale To POI Message Status Response V06",
+      "description": ""
+    },
+    {
+      "id": "casp.015.001.07",
+      "name": "Sale To POI Message Status Response V07",
+      "description": ""
+    },
+    {
+      "id": "casp.015.001.08",
+      "name": "Sale To POI Message Status Response V08",
+      "description": ""
+    },
+    {
+      "id": "casp.016.001.01",
+      "name": "Sale To POI Device Request V01",
+      "description": ""
+    },
+    {
+      "id": "casp.016.001.02",
+      "name": "Sale To POI Device Request V02",
+      "description": ""
+    },
+    {
+      "id": "casp.016.001.03",
+      "name": "Sale To POI Device Request V03",
+      "description": ""
+    },
+    {
+      "id": "casp.016.001.04",
+      "name": "Sale To POI Device Request V04",
+      "description": ""
+    },
+    {
+      "id": "casp.016.001.05",
+      "name": "Sale To POI Device Request V05",
+      "description": ""
+    },
+    {
+      "id": "casp.016.001.06",
+      "name": "Sale To POI Device Request V06",
+      "description": ""
+    },
+    {
+      "id": "casp.016.001.07",
+      "name": "Sale To POI Device Request V07",
+      "description": ""
+    },
+    {
+      "id": "casp.016.001.08",
+      "name": "Sale To POI Device Request V08",
+      "description": ""
+    },
+    {
+      "id": "casp.017.001.01",
+      "name": "Sale To POI Device Response V01",
+      "description": ""
+    },
+    {
+      "id": "casp.017.001.02",
+      "name": "Sale To POI Device Response V02",
+      "description": ""
+    },
+    {
+      "id": "casp.017.001.03",
+      "name": "Sale To POI Device Response V03",
+      "description": ""
+    },
+    {
+      "id": "casp.017.001.04",
+      "name": "Sale To POI Device Response V04",
+      "description": ""
+    },
+    {
+      "id": "casp.017.001.05",
+      "name": "Sale To POI Device Response V05",
+      "description": ""
+    },
+    {
+      "id": "casp.017.001.06",
+      "name": "Sale To POI Device Response V06",
+      "description": ""
+    },
+    {
+      "id": "casp.017.001.07",
+      "name": "Sale To POI Device Response V07",
+      "description": ""
+    },
+    {
+      "id": "casp.017.001.08",
+      "name": "Sale To POI Device Response V08",
+      "description": ""
+    }
+  ]
+}

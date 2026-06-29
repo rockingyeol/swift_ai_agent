@@ -1,0 +1,70 @@
+{
+  "description": "SWIFT ISO 20022 tsin 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "tsin.001.001.01",
+      "name": "Invoice Financing Request V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.002.001.01",
+      "name": "Invoice Financing Request Status V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.003.001.01",
+      "name": "Invoice Financing Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.004.001.01",
+      "name": "Financial Invoice V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.005.001.01",
+      "name": "Undertaking Application V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.006.001.01",
+      "name": "Invoice Assignment Request V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.007.001.01",
+      "name": "Invoice Assignment Status V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.008.001.01",
+      "name": "Invoice Assignment Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.009.001.01",
+      "name": "Party Registration And Guarantee Request V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.010.001.01",
+      "name": "Party Registration And Guarantee Status V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.011.001.01",
+      "name": "Party Registration And Guarantee Notification V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.012.001.01",
+      "name": "Party Registration And Guarantee Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "tsin.013.001.01",
+      "name": "Invoice Assignment Acknowledgement V01",
+      "description": ""
+    }
+  ]
+}

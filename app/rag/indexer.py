@@ -21,7 +21,10 @@ import os
 import threading
 from typing import Callable, Optional, Union
 
+import structlog
 from qdrant_client import QdrantClient
+
+_log = structlog.get_logger(__name__)
 from qdrant_client.models import (
     Distance,
     HnswConfigDiff,
@@ -38,20 +41,27 @@ try:
 except ImportError:
     _TQDM_AVAILABLE = False
 
-from app.rag.chunker import MTFieldChunk, SwiftChunk, chunk_id_to_point_id
+from app.rag.chunker import (
+    MTEnrichedChunk,
+    MTFieldChunk,
+    MXEnrichedChunk,
+    MXFieldChunk,
+    SwiftChunk,
+    chunk_id_to_point_id,
+)
 
 # ---------------------------------------------------------------------------
 # 설정
 # ---------------------------------------------------------------------------
 COLLECTION     = os.getenv("QDRANT_COLLECTION", "swift_guidebook")
 QDRANT_URL     = os.getenv("QDRANT_URL", "http://localhost:6333")
-QDRANT_API_KEY = os.getenv("QDRANT_API_KEY", None)
+QDRANT_API_KEY = os.getenv("QDRANT_API_KEY") or None
 EMBED_MODEL    = os.getenv("EMBED_MODEL", "BAAI/bge-m3")
 
 _DENSE_DIM = 1024  # BGE-M3 dense 벡터 차원
 
-# Union 타입: 신규(MTFieldChunk) + 레거시(SwiftChunk) 모두 지원
-AnyChunk = Union[MTFieldChunk, SwiftChunk]
+# Union 타입: Enriched(신규 인제스트) + Base(기존) + Legacy(SwiftChunk) 모두 지원
+AnyChunk = Union[MTEnrichedChunk, MXEnrichedChunk, MTFieldChunk, MXFieldChunk, SwiftChunk]
 
 
 # ---------------------------------------------------------------------------
@@ -83,7 +93,13 @@ def _get_embed_model():
 
 def get_client() -> QdrantClient:
     """QDRANT_URL / QDRANT_API_KEY 환경변수 기반 클라이언트 반환."""
-    return QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
+    return QdrantClient(
+        url=QDRANT_URL,
+        api_key=QDRANT_API_KEY,
+        # client 와 server 마이너 버전 차이 경고 억제
+        # (qdrant-client 1.18.x + server v1.13.x 조합에서 발생하는 UserWarning)
+        check_compatibility=False,
+    )
 
 
 def check_connection(client: Optional[QdrantClient] = None) -> bool:
@@ -97,11 +113,27 @@ def check_connection(client: Optional[QdrantClient] = None) -> bool:
 
 
 def collection_exists(client: QdrantClient, name: str = COLLECTION) -> bool:
+    """컬렉션 존재 여부 확인.
+
+    - 404 / UnexpectedResponse → 컬렉션 없음(False)
+    - 네트워크 오류 → 경고 로그 후 False (호출자가 degraded 처리)
+    - 그 외 예외 → 재발생 (버그 신호)
+    """
     try:
         client.get_collection(name)
         return True
-    except Exception:
-        return False
+    except Exception as e:
+        msg = str(e).lower()
+        # 404 / "not found" → 컬렉션이 없는 정상 케이스
+        if "not found" in msg or "404" in msg or "doesn't exist" in msg:
+            return False
+        # 연결/타임아웃 오류 → 경고 후 False (상위에서 degraded 처리)
+        if any(k in msg for k in ("connection", "timeout", "refused", "unreachable")):
+            _log.warning("collection_exists_connection_error", collection=name, error=str(e))
+            return False
+        # 그 외 → 예상치 못한 오류, 재발생
+        _log.error("collection_exists_unexpected_error", collection=name, error=str(e))
+        raise
 
 
 # ---------------------------------------------------------------------------

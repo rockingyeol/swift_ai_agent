@@ -1,0 +1,560 @@
+{
+  "description": "SWIFT ISO 20022 pacs 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "camt.056.001.01",
+      "name": "FI To FI Payment Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.02",
+      "name": "FI To FI Payment Cancellation Request V02",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.03",
+      "name": "FI To FI Payment Cancellation Request V03",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.04",
+      "name": "FI To FI Payment Cancellation Request V04",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.05",
+      "name": "FI To FI Payment Cancellation Request V05",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.06",
+      "name": "FI To FI Payment Cancellation Request V06",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.07",
+      "name": "FI To FI Payment Cancellation Request V07",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.08",
+      "name": "FI To FI Payment Cancellation Request V08",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.09",
+      "name": "FI To FI Payment Cancellation Request V09",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.10",
+      "name": "FI To FI Payment Cancellation Request V10",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.11",
+      "name": "FI To FI Payment Cancellation Request V11",
+      "description": ""
+    },
+    {
+      "id": "camt.056.001.12",
+      "name": "FI To FI Payment Cancellation Request V12",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.02",
+      "name": "Payment Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.03",
+      "name": "FI To FI Payment Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.04",
+      "name": "FI To FI Payment Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.05",
+      "name": "FI To FI Payment Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.06",
+      "name": "FI To FI Payment Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.07",
+      "name": "FI To FI Payment Status Report V07",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.08",
+      "name": "FI To FI Payment Status Report V08",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.09",
+      "name": "FI To FI Payment Status Report V09",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.10",
+      "name": "FI To FI Payment Status Report V10",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.11",
+      "name": "FI To FI Payment Status Report V11",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.12",
+      "name": "FI To FI Payment Status Report V12",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.13",
+      "name": "FI To FI Payment Status Report V13",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.14",
+      "name": "FI To FI Payment Status Report V14",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.15",
+      "name": "FI To FI Payment Status Report V15",
+      "description": ""
+    },
+    {
+      "id": "pacs.002.001.16",
+      "name": "FI To FI Payment Status Report V16",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.01",
+      "name": "FI To FI Customer Direct Debit V01",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.02",
+      "name": "FI To FI Customer Direct Debit V02",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.03",
+      "name": "FI To FI Customer Direct Debit V03",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.04",
+      "name": "FI To FI Customer Direct Debit V04",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.05",
+      "name": "FI To FI Customer Direct Debit V05",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.06",
+      "name": "FI To FI Customer Direct Debit V06",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.07",
+      "name": "FI To FI Customer Direct Debit V07",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.08",
+      "name": "FI To FI Customer Direct Debit V08",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.09",
+      "name": "FI To FI Customer Direct Debit V09",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.10",
+      "name": "FI To FI Customer Direct Debit V10",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.11",
+      "name": "FI To FI Customer Direct Debit V11",
+      "description": ""
+    },
+    {
+      "id": "pacs.003.001.12",
+      "name": "FI To FI Customer Direct Debit V12",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.01",
+      "name": "Payment Return V01",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.02",
+      "name": "Payment Return V02",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.03",
+      "name": "Payment Return V03",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.04",
+      "name": "Payment Return V04",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.05",
+      "name": "Payment Return V05",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.06",
+      "name": "Payment Return V06",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.07",
+      "name": "Payment Return V07",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.08",
+      "name": "Payment Return V08",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.09",
+      "name": "Payment Return V09",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.10",
+      "name": "Payment Return V10",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.11",
+      "name": "Payment Return V11",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.12",
+      "name": "Payment Return V12",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.13",
+      "name": "Payment Return V13",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.14",
+      "name": "Payment Return V14",
+      "description": ""
+    },
+    {
+      "id": "pacs.004.001.15",
+      "name": "Payment Return V15",
+      "description": ""
+    },
+    {
+      "id": "pacs.006.001.01",
+      "name": "Payment Cancellation Request V01",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.01",
+      "name": "FI To FI Payment Reversal V01",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.02",
+      "name": "FI To FI Payment Reversal V02",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.03",
+      "name": "FI To FI Payment Reversal V03",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.04",
+      "name": "FI To FI Payment Reversal V04",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.05",
+      "name": "FI To FI Payment Reversal V05",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.06",
+      "name": "FI To FI Payment Reversal V06",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.07",
+      "name": "FI To FI Payment Reversal V07",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.08",
+      "name": "FI To FI Payment Reversal V08",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.09",
+      "name": "FI To FI Payment Reversal V09",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.10",
+      "name": "FI To FI Payment Reversal V10",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.11",
+      "name": "FI To FI Payment Reversal V11",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.12",
+      "name": "FI To FI Payment Reversal V12",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.13",
+      "name": "FI To FI Payment Reversal V13",
+      "description": ""
+    },
+    {
+      "id": "pacs.007.001.14",
+      "name": "FI To FI Payment Reversal V14",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.01",
+      "name": "FI To FI Customer Credit Transfer V01",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.02",
+      "name": "FI To FI Customer Credit Transfer V02",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.03",
+      "name": "FI To FI Customer Credit Transfer V03",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.04",
+      "name": "FI To FI Customer Credit Transfer V04",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.05",
+      "name": "FI To FI Customer Credit Transfer V05",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.06",
+      "name": "FI To FI Customer Credit Transfer V06",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.07",
+      "name": "FI To FI Customer Credit Transfer V07",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.08",
+      "name": "FI To FI Customer Credit Transfer V08",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.09",
+      "name": "FI To FI Customer Credit Transfer V09",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.10",
+      "name": "FI To FI Customer Credit Transfer V10",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.11",
+      "name": "FI To FI Customer Credit Transfer V11",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.12",
+      "name": "FI To FI Customer Credit Transfer V12",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.13",
+      "name": "FI To FI Customer Credit Transfer V13",
+      "description": ""
+    },
+    {
+      "id": "pacs.008.001.14",
+      "name": "FI To FI Customer Credit Transfer V14",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.01",
+      "name": "Financial Institution Credit Transfer V01",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.02",
+      "name": "Financial Institution Credit Transfer V02",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.03",
+      "name": "Financial Institution Credit Transfer V03",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.04",
+      "name": "Financial Institution Credit Transfer V04",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.05",
+      "name": "Financial Institution Credit Transfer V05",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.06",
+      "name": "Financial Institution Credit Transfer V06",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.07",
+      "name": "Financial Institution Credit Transfer V07",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.08",
+      "name": "Financial Institution Credit Transfer V08",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.09",
+      "name": "Financial Institution Credit Transfer V09",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.10",
+      "name": "Financial Institution Credit Transfer V10",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.11",
+      "name": "Financial Institution Credit Transfer V11",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.12",
+      "name": "Financial Institution Credit Transfer V12",
+      "description": ""
+    },
+    {
+      "id": "pacs.009.001.13",
+      "name": "Financial Institution Credit Transfer V13",
+      "description": ""
+    },
+    {
+      "id": "pacs.010.001.01",
+      "name": "Financial Institution Direct Debit V01",
+      "description": ""
+    },
+    {
+      "id": "pacs.010.001.02",
+      "name": "Financial Institution Direct Debit V02",
+      "description": ""
+    },
+    {
+      "id": "pacs.010.001.03",
+      "name": "Financial Institution Direct Debit V03",
+      "description": ""
+    },
+    {
+      "id": "pacs.010.001.04",
+      "name": "Financial Institution Direct Debit V04",
+      "description": ""
+    },
+    {
+      "id": "pacs.010.001.05",
+      "name": "Financial Institution Direct Debit V05",
+      "description": ""
+    },
+    {
+      "id": "pacs.010.001.06",
+      "name": "Financial Institution Direct Debit V06",
+      "description": ""
+    },
+    {
+      "id": "pacs.028.001.01",
+      "name": "FI To FI Payment Status Request V01",
+      "description": ""
+    },
+    {
+      "id": "pacs.028.001.02",
+      "name": "FI To FI Payment Status Request V02",
+      "description": ""
+    },
+    {
+      "id": "pacs.028.001.03",
+      "name": "FI To FI Payment Status Request V03",
+      "description": ""
+    },
+    {
+      "id": "pacs.028.001.04",
+      "name": "FI To FI Payment Status Request V04",
+      "description": ""
+    },
+    {
+      "id": "pacs.028.001.05",
+      "name": "FI To FI Payment Status Request V05",
+      "description": ""
+    },
+    {
+      "id": "pacs.028.001.06",
+      "name": "FI To FI Payment Status Request V06",
+      "description": ""
+    },
+    {
+      "id": "pacs.028.001.07",
+      "name": "FI To FI Payment Status Request V07",
+      "description": ""
+    },
+    {
+      "id": "pacs.029.001.01",
+      "name": "Multilateral Settlement Request V01",
+      "description": ""
+    },
+    {
+      "id": "pacs.029.001.02",
+      "name": "Multilateral Settlement Request V02",
+      "description": ""
+    }
+  ]
+}

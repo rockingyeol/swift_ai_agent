@@ -1,0 +1,205 @@
+{
+  "description": "SWIFT ISO 20022 caam 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "caam.001.001.01",
+      "name": "ATM Device Report V01",
+      "description": ""
+    },
+    {
+      "id": "caam.001.001.02",
+      "name": "ATM Device Report V02",
+      "description": ""
+    },
+    {
+      "id": "caam.001.001.03",
+      "name": "ATM Device Report V03",
+      "description": ""
+    },
+    {
+      "id": "caam.001.001.04",
+      "name": "ATM Device Report V04",
+      "description": ""
+    },
+    {
+      "id": "caam.001.001.05",
+      "name": "ATM Device Report V05",
+      "description": ""
+    },
+    {
+      "id": "caam.002.001.01",
+      "name": "ATM Device Control V01",
+      "description": ""
+    },
+    {
+      "id": "caam.002.001.02",
+      "name": "ATM Device Control V02",
+      "description": ""
+    },
+    {
+      "id": "caam.002.001.03",
+      "name": "ATM Device Control V03",
+      "description": ""
+    },
+    {
+      "id": "caam.002.001.04",
+      "name": "ATM Device Control V04",
+      "description": ""
+    },
+    {
+      "id": "caam.003.001.01",
+      "name": "ATM Key Download Request V01",
+      "description": ""
+    },
+    {
+      "id": "caam.003.001.02",
+      "name": "ATM Key Download Request V02",
+      "description": ""
+    },
+    {
+      "id": "caam.003.001.03",
+      "name": "ATM Key Download Request V03",
+      "description": ""
+    },
+    {
+      "id": "caam.003.001.04",
+      "name": "ATM Key Download Request V04",
+      "description": ""
+    },
+    {
+      "id": "caam.003.001.05",
+      "name": "ATM Key Download Request V05",
+      "description": ""
+    },
+    {
+      "id": "caam.004.001.01",
+      "name": "ATM Key Download Response V01",
+      "description": ""
+    },
+    {
+      "id": "caam.004.001.02",
+      "name": "ATM Key Download Response V02",
+      "description": ""
+    },
+    {
+      "id": "caam.004.001.03",
+      "name": "ATM Key Download Response V03",
+      "description": ""
+    },
+    {
+      "id": "caam.004.001.04",
+      "name": "ATM Key Download Response V04",
+      "description": ""
+    },
+    {
+      "id": "caam.004.001.05",
+      "name": "ATM Key Download Response V05",
+      "description": ""
+    },
+    {
+      "id": "caam.005.001.01",
+      "name": "ATM Diagnostic Request V01",
+      "description": ""
+    },
+    {
+      "id": "caam.005.001.02",
+      "name": "ATM Diagnostic Request V02",
+      "description": ""
+    },
+    {
+      "id": "caam.005.001.03",
+      "name": "ATM Diagnostic Request V03",
+      "description": ""
+    },
+    {
+      "id": "caam.006.001.01",
+      "name": "ATM Diagnostic Response V01",
+      "description": ""
+    },
+    {
+      "id": "caam.006.001.02",
+      "name": "ATM Diagnostic Response V02",
+      "description": ""
+    },
+    {
+      "id": "caam.007.001.01",
+      "name": "Host To ATM Request V01",
+      "description": ""
+    },
+    {
+      "id": "caam.008.001.01",
+      "name": "Host To ATM Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "caam.009.001.01",
+      "name": "ATM Reconciliation Advice V01",
+      "description": ""
+    },
+    {
+      "id": "caam.009.001.02",
+      "name": "ATM Reconciliation Advice V02",
+      "description": ""
+    },
+    {
+      "id": "caam.009.001.03",
+      "name": "ATM Reconciliation Advice V03",
+      "description": ""
+    },
+    {
+      "id": "caam.010.001.01",
+      "name": "ATM Reconciliation Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "caam.010.001.02",
+      "name": "ATM Reconciliation Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "caam.010.001.03",
+      "name": "ATM Reconciliation Acknowledgement V03",
+      "description": ""
+    },
+    {
+      "id": "caam.011.001.01",
+      "name": "ATM Exception Advice V01",
+      "description": ""
+    },
+    {
+      "id": "caam.011.001.02",
+      "name": "ATM Exception Advice V02",
+      "description": ""
+    },
+    {
+      "id": "caam.012.001.01",
+      "name": "ATM Exception Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "caam.012.001.02",
+      "name": "ATM Exception Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "caam.013.001.01",
+      "name": "ATM Configuration Report V01",
+      "description": ""
+    },
+    {
+      "id": "caam.014.001.01",
+      "name": "ATM Configuration Control V01",
+      "description": ""
+    },
+    {
+      "id": "caam.015.001.01",
+      "name": "ATM Reconciliation Request V01",
+      "description": ""
+    },
+    {
+      "id": "caam.016.001.01",
+      "name": "ATM Reconciliation Response V01",
+      "description": ""
+    }
+  ]
+}

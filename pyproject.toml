@@ -15,8 +15,17 @@ dependencies = [
     # LLM client (vLLM compatible OpenAI API)
     "openai>=1.30",
 
-    # Vector DB
-    "qdrant-client>=1.9",
+    # Vector DB — qdrant server v1.13+ 필요 (query_points + Prefetch + FusionQuery/RRF)
+    "qdrant-client>=1.13",
+
+    # LangChain OpenAI integration — with_structured_output() 사용
+    "langchain-openai>=0.2",
+
+    # LangChain Anthropic integration — Claude API (claude-3-5-haiku / sonnet / opus)
+    "langchain-anthropic>=0.3",
+
+    # Jinja2 — XML 템플릿 렌더링 (generator fallback)
+    "jinja2>=3.1",
 
     # Embeddings / Reranker
     "FlagEmbedding>=1.2",

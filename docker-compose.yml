@@ -1,32 +1,208 @@
-version: "3.9"
+# =============================================================================
+# SWIFT AI Agent — Docker Compose v2
+#
+# 서비스 구성 및 기동 순서:
+#   qdrant (vector DB)
+#     └─ healthy → prowide-svc (Java Spring Boot)
+#                    └─ healthy → swift-agent (Python FastAPI)
+#
+# 네트워크: swift-net (커스텀 브리지) — 컨테이너명 DNS 통신
+# 볼륨: qdrant_data, hf_cache, audit_data (데이터 영속성)
+#
+# 환경변수:
+#   - .env          : 시크릿·API 키 등 외부 노출 금지 항목 (git ignore)
+#   - environment[] : 컨테이너 내부 서비스 URL 등 compose 레벨 override
+#
+# 사용법:
+#   cp .env.example .env   # 최초 1회 — 값 설정 후 사용
+#   docker compose up -d --build
+#   docker compose logs -f swift-agent
+# =============================================================================
 
 services:
+
+  # ── Qdrant Vector DB ─────────────────────────────────────────────────────────
   qdrant:
-    image: qdrant/qdrant:v1.9.2
+    image: qdrant/qdrant:v1.13.6
+    container_name: qdrant
+    networks:
+      - swift-net
     ports:
-      - "6333:6333"
-      - "6334:6334"
+      # 6333: gRPC + REST API  /  6334: gRPC (TLS, 선택)
+      - "${QDRANT_HOST_PORT:-6333}:6333"
+      - "${QDRANT_GRPC_PORT:-6334}:6334"
     volumes:
+      # 벡터 데이터 영속성 — 컨테이너 재시작/재생성 시 데이터 보존
       - qdrant_data:/qdrant/storage
+    # Qdrant Cloud 사용 시 아래 주석을 해제하고 .env 에 QDRANT_API_KEY 값을 설정
+    # environment:
+    #   QDRANT__SERVICE__API_KEY: "${QDRANT_API_KEY}"
+    healthcheck:
+      # qdrant 이미지에 curl/wget 미포함 → /dev/tcp 로 TCP 포트 개방 확인
+      # Alpine 기반 이미지는 bash 미포함 → sh 사용 (bash → sh)
+      # 6333 포트는 Qdrant 가 완전히 초기화된 뒤에만 LISTEN 을 시작함
+      test: ["CMD-SHELL", "sh -c '</dev/tcp/localhost/6333' 2>/dev/null || exit 1"]
+      interval: 10s
+      timeout: 5s
+      start_period: 20s
+      retries: 6
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
+
+  # ── Prowide Java 마이크로서비스 (MT/MX 구문 검증·변환) ───────────────────────
   prowide-svc:
-    build: ./prowide-svc
+    build:
+      context: ./prowide-svc
+      dockerfile: Dockerfile
+      # 빌드 캐시 재사용: CI 환경에서 --cache-from 으로 레지스트리 캐시 활용 가능
+      args:
+        BUILDKIT_INLINE_CACHE: "1"
+    image: swift-ai-agent/prowide-svc:latest
+    container_name: prowide-svc
+    networks:
+      - swift-net
     ports:
-      - "8080:8080"
+      - "${PROWIDE_HOST_PORT:-8080}:8080"
     environment:
-      - SPRING_PROFILES_ACTIVE=local
-
-  swift-agent:
-    build: .
+      SPRING_PROFILES_ACTIVE: docker
+      # JVM 힙 상한 (compose 레벨 override 가능)
+      JAVA_OPTS: "${PROWIDE_JAVA_OPTS:--Xmx512m}"
     depends_on:
-      - qdrant
-      - prowide-svc
+      qdrant:
+        # Qdrant 가 healthy 상태가 된 후에만 Spring Boot 기동
+        condition: service_healthy
+    healthcheck:
+      # Spring Boot Actuator /actuator/health 가 {"status":"UP"} 반환 시 healthy
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 15s
+      timeout: 10s
+      # Spring Boot + Prowide 라이브러리 초기화 시간 여유 확보
+      start_period: 90s
+      retries: 5
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
+
+
+  # ── Swift AI Agent — Python FastAPI ──────────────────────────────────────────
+  swift-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # 멀티스테이지 최종 타깃 명시
+      target: runtime
+      args:
+        BUILDKIT_INLINE_CACHE: "1"
+    image: swift-ai-agent/swift-agent:latest
+    container_name: swift-agent
+    networks:
+      - swift-net
+    ports:
+      - "${SWIFT_AGENT_HOST_PORT:-8000}:8000"
+
+    # ── 환경변수 우선순위: environment[] > env_file(.env) ─────────────────────
+    # .env 파일: 시크릿·API 키 등 외부 노출 금지 항목 (git ignore 필수)
     env_file:
       - .env
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./data:/data
 
+    # compose 레벨 override: 컨테이너 DNS 이름으로 서비스 URL 고정
+    # (호스트에서 localhost 로 접근하는 .env 값을 컨테이너 내부 DNS 로 교체)
+    environment:
+      # ── 서비스 연결 URL (컨테이너 DNS) ───────────────────────────────────────
+      PROWIDE_URL: "http://prowide-svc:8080"
+      QDRANT_URL:  "http://qdrant:6333"
+      # 호스트 Ollama: 컨테이너 내부에서 localhost 는 컨테이너 자신을 가리키므로
+      # Docker Desktop(Windows/Mac) 전용 host.docker.internal 로 교체
+      VLLM_BASE_URL: "http://host.docker.internal:11434/v1"
+
+      # ── 로그·감사 경로 ────────────────────────────────────────────────────────
+      AUDIT_LOG_PATH: "/app/logs/audit.jsonl"
+
+      # ── HuggingFace 모델 캐시 ────────────────────────────────────────────────
+      HF_HOME: "/app/.hf_cache"
+
+      # ── uvicorn 설정 (Dockerfile CMD override 없이 조정 가능) ─────────────────
+      LOG_LEVEL: "${LOG_LEVEL:-info}"
+
+      # ── 아래 항목은 .env 에서 주입 (.env.example 참조) ────────────────────────
+      # LLM_PROVIDER, ANTHROPIC_API_KEY, ANTHROPIC_MODEL
+      # VLLM_BASE_URL, VLLM_API_KEY, VLLM_MODEL (LLM_PROVIDER=ollama 시)
+      # QDRANT_COLLECTION, QDRANT_API_KEY
+      # EMBED_MODEL, RERANKER_MODEL
+      # HITL_ENABLED, HITL_RISK_THRESHOLD
+
+    depends_on:
+      prowide-svc:
+        # prowide-svc 가 healthy 상태가 된 후에만 Python Agent 기동
+        # → Spring Boot 초기화 완료 전 Prowide API 호출 실패 방지
+        condition: service_healthy
+
+    volumes:
+      # 가이드북 PDF 등 정적 데이터 (읽기 전용 마운트)
+      - ./data:/app/data:ro
+
+      # HuggingFace 모델 캐시 — 재시작 시 BGE-M3·Reranker 재다운로드 방지
+      # 최초 기동 시 자동 다운로드 (~2 GB), 이후 캐시 재사용
+      - hf_cache:/app/.hf_cache
+
+      # 감사 로그 — 컨테이너 재생성 시에도 로그 보존
+      - audit_data:/app/logs
+
+      # 스키마 트리 캐시 — LLM 재호출 없이 동일 전문 유형 즉시 반환
+      - schema_cache:/app/schema_cache
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      # BGE-M3 모델 로딩 시간 고려 (초기 기동 시 1~3분 소요 가능)
+      start_period: 180s
+      retries: 3
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+
+# =============================================================================
+# 네트워크 — swift-net (커스텀 브리지)
+# =============================================================================
+networks:
+  swift-net:
+    name: swift-net
+    driver: bridge
+    ipam:
+      config:
+        # 기본 브리지와 서브넷 충돌 방지를 위한 명시적 할당
+        - subnet: "172.28.0.0/16"
+
+
+# =============================================================================
+# 볼륨 — 데이터 영속성 보장
+# =============================================================================
 volumes:
+  # Qdrant 벡터 인덱스 (컨테이너 삭제 후 재생성 시에도 임베딩 데이터 보존)
   qdrant_data:
+    name: swift_qdrant_data
+
+  # HuggingFace 모델 캐시 (BGE-M3 ~1.2 GB, Reranker ~600 MB)
+  hf_cache:
+    name: swift_hf_cache
+
+  # 감사 로그 (JSONL) — 규제 컴플라이언스 보존용
+  audit_data:
+    name: swift_audit_data
+
+  # 스키마 트리 캐시 — msg_type별 JSON 파일 영속 저장
+  schema_cache:
+    name: swift_schema_cache

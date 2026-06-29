@@ -1,0 +1,95 @@
+{
+  "description": "SWIFT ISO 20022 trck 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "trck.001.001.01",
+      "name": "Payment Status Tracker Update V01",
+      "description": ""
+    },
+    {
+      "id": "trck.001.001.02",
+      "name": "Payment Status Tracker Update V02",
+      "description": ""
+    },
+    {
+      "id": "trck.001.001.03",
+      "name": "Payment Status Tracker Update V03",
+      "description": ""
+    },
+    {
+      "id": "trck.001.001.04",
+      "name": "Payment Status Tracker Update V04",
+      "description": ""
+    },
+    {
+      "id": "trck.001.001.05",
+      "name": "Payment Status Tracker Update V05",
+      "description": ""
+    },
+    {
+      "id": "trck.002.001.01",
+      "name": "Payment Status Tracker Report V01",
+      "description": ""
+    },
+    {
+      "id": "trck.002.001.02",
+      "name": "Payment Status Tracker Report V02",
+      "description": ""
+    },
+    {
+      "id": "trck.002.001.03",
+      "name": "Payment Status Tracker Report V03",
+      "description": ""
+    },
+    {
+      "id": "trck.002.001.04",
+      "name": "Payment Status Tracker Report V04",
+      "description": ""
+    },
+    {
+      "id": "trck.003.001.01",
+      "name": "Tracker Alert Notification V01",
+      "description": ""
+    },
+    {
+      "id": "trck.003.001.02",
+      "name": "Tracker Alert Notification V02",
+      "description": ""
+    },
+    {
+      "id": "trck.004.001.01",
+      "name": "Payment Status Customer Tracker Report V01",
+      "description": ""
+    },
+    {
+      "id": "trck.004.001.02",
+      "name": "Payment Status Customer Tracker Report V02",
+      "description": ""
+    },
+    {
+      "id": "trck.004.001.03",
+      "name": "Payment Status Customer Tracker Report V03",
+      "description": ""
+    },
+    {
+      "id": "trck.004.001.04",
+      "name": "Payment Status Customer Tracker Report V04",
+      "description": ""
+    },
+    {
+      "id": "trck.005.001.01",
+      "name": "Tracker Investigation Status Notification V01",
+      "description": ""
+    },
+    {
+      "id": "trck.005.001.02",
+      "name": "Tracker Investigation Status Notification V02",
+      "description": ""
+    },
+    {
+      "id": "trck.005.001.03",
+      "name": "Tracker Investigation Status Notification V03",
+      "description": ""
+    }
+  ]
+}

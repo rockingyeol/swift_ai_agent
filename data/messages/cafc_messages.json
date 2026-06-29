@@ -1,0 +1,45 @@
+{
+  "description": "SWIFT ISO 20022 cafc 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "cafc.001.001.01",
+      "name": "Fee Collection Initiation V01",
+      "description": ""
+    },
+    {
+      "id": "cafc.001.001.02",
+      "name": "Fee Collection Initiation V02",
+      "description": ""
+    },
+    {
+      "id": "cafc.001.001.03",
+      "name": "Fee Collection Initiation V03",
+      "description": ""
+    },
+    {
+      "id": "cafc.001.001.04",
+      "name": "Fee Collection Initiation V04",
+      "description": ""
+    },
+    {
+      "id": "cafc.002.001.01",
+      "name": "Fee Collection Response V01",
+      "description": ""
+    },
+    {
+      "id": "cafc.002.001.02",
+      "name": "Fee Collection Response V02",
+      "description": ""
+    },
+    {
+      "id": "cafc.002.001.03",
+      "name": "Fee Collection Response V03",
+      "description": ""
+    },
+    {
+      "id": "cafc.002.001.04",
+      "name": "Fee Collection Response V04",
+      "description": ""
+    }
+  ]
+}

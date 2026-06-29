@@ -21,7 +21,8 @@
     <properties>
         <java.version>21</java.version>
         <!-- Prowide Core (LGPL) — MT 파싱/검증 -->
-        <prowide-core.version>SRU2024-9.3.7</prowide-core.version>
+        <!-- SRU2024-9.3.7 은 존재하지 않음. Maven Central 실제 최신 버전으로 수정 -->
+        <prowide-core.version>SRU2024-9.5.8</prowide-core.version>
         <!--
             MX/ISO 20022는 별도 Prowide ISO 20022(SRU) 라이브러리 필요.
             라이선스 정책 확인 후 추가할 것. plan.md §1 (B) 참조.
@@ -43,6 +44,20 @@
             <groupId>com.prowidesoftware</groupId>
             <artifactId>pw-swift-core</artifactId>
             <version>${prowide-core.version}</version>
+        </dependency>
+
+        <!-- Prowide ISO 20022 (MX 스키마 리플렉션) -->
+        <dependency>
+            <groupId>com.prowidesoftware</groupId>
+            <artifactId>pw-iso20022</artifactId>
+            <version>SRU2024-10.2.3</version>
+        </dependency>
+
+        <!-- JAXB API — Java 11+ 에서 JDK 기본 포함 제거됨 -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
         </dependency>
 
         <dependency>

@@ -1,0 +1,60 @@
+{
+  "description": "SWIFT ISO 20022 cbrf 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "cbrf.001.001.01",
+      "name": "Clearing Positions Settlement Instruction V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.002.001.01",
+      "name": "Participant To Participant Messages Reconciliation Report V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.003.001.01",
+      "name": "Communication Characteristics Modification Request V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.004.001.01",
+      "name": "Liquidity Report V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.005.001.01",
+      "name": "Participant Profile Report V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.006.001.01",
+      "name": "Packet Header V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.007.001.01",
+      "name": "Schedule Change Notification V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.008.001.01",
+      "name": "Queue Reordering Notification V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.009.001.01",
+      "name": "Conditional Instruction Confirmation V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.010.001.01",
+      "name": "Unfunded Short Positions Notification V01",
+      "description": ""
+    },
+    {
+      "id": "cbrf.011.001.01",
+      "name": "Participant Notification V01",
+      "description": ""
+    }
+  ]
+}

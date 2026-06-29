@@ -1,0 +1,850 @@
+{
+  "description": "SWIFT ISO 20022 acmt 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "acmt.001.001.01",
+      "name": "Account Opening Instruction",
+      "description": ""
+    },
+    {
+      "id": "acmt.001.001.02",
+      "name": "Account Opening Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.001.001.03",
+      "name": "Account Opening Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.001.001.04",
+      "name": "Account Opening Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.001.001.05",
+      "name": "Account Opening Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.001.001.06",
+      "name": "Account Opening Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.001.001.07",
+      "name": "Account Opening Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "acmt.001.001.08",
+      "name": "Account Opening Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "acmt.002.001.01",
+      "name": "Account Details Confirmation",
+      "description": ""
+    },
+    {
+      "id": "acmt.002.001.02",
+      "name": "Account Details Confirmation V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.002.001.03",
+      "name": "Account Details Confirmation V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.002.001.04",
+      "name": "Account Details Confirmation V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.002.001.05",
+      "name": "Account Details Confirmation V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.002.001.06",
+      "name": "Account Details Confirmation V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.002.001.07",
+      "name": "Account Details Confirmation V07",
+      "description": ""
+    },
+    {
+      "id": "acmt.002.001.08",
+      "name": "Account Details Confirmation V08",
+      "description": ""
+    },
+    {
+      "id": "acmt.003.001.01",
+      "name": "Account Modification Instruction",
+      "description": ""
+    },
+    {
+      "id": "acmt.003.001.02",
+      "name": "Account Modification Instruction V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.003.001.03",
+      "name": "Account Modification Instruction V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.003.001.04",
+      "name": "Account Modification Instruction V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.003.001.05",
+      "name": "Account Modification Instruction V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.003.001.06",
+      "name": "Account Modification Instruction V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.003.001.07",
+      "name": "Account Modification Instruction V07",
+      "description": ""
+    },
+    {
+      "id": "acmt.003.001.08",
+      "name": "Account Modification Instruction V08",
+      "description": ""
+    },
+    {
+      "id": "acmt.004.001.01",
+      "name": "Get Account Details",
+      "description": ""
+    },
+    {
+      "id": "acmt.004.001.02",
+      "name": "Get Account Details V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.004.001.03",
+      "name": "Get Account Details V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.004.001.04",
+      "name": "Get Account Details V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.004.001.05",
+      "name": "Get Account Details V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.004.001.06",
+      "name": "Get Account Details V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.005.001.01",
+      "name": "Request For Account Management Status Report",
+      "description": ""
+    },
+    {
+      "id": "acmt.005.001.02",
+      "name": "Request For Account Management Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.005.001.03",
+      "name": "Request For Account Management Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.005.001.04",
+      "name": "Request For Account Management Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.005.001.05",
+      "name": "Request For Account Management Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.005.001.06",
+      "name": "Request For Account Management Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.006.001.01",
+      "name": "Account Management Status Report",
+      "description": ""
+    },
+    {
+      "id": "acmt.006.001.02",
+      "name": "Account Management Status Report V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.006.001.03",
+      "name": "Account Management Status Report V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.006.001.04",
+      "name": "Account Management Status Report V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.006.001.05",
+      "name": "Account Management Status Report V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.006.001.06",
+      "name": "Account Management Status Report V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.006.001.07",
+      "name": "Account Management Status Report V07",
+      "description": ""
+    },
+    {
+      "id": "acmt.007.001.01",
+      "name": "Account Opening Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.007.001.02",
+      "name": "Account Opening Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.007.001.03",
+      "name": "Account Opening Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.007.001.04",
+      "name": "Account Opening Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.007.001.05",
+      "name": "Account Opening Request V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.008.001.01",
+      "name": "Account Opening Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.008.001.02",
+      "name": "Account Opening Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.008.001.03",
+      "name": "Account Opening Amendment Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.008.001.04",
+      "name": "Account Opening Amendment Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.008.001.05",
+      "name": "Account Opening Amendment Request V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.009.001.01",
+      "name": "Account Opening Additional Information Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.009.001.02",
+      "name": "Account Opening Additional Information Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.009.001.03",
+      "name": "Account Opening Additional Information Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.009.001.04",
+      "name": "Account Opening Additional Information Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.010.001.01",
+      "name": "Account Request Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.010.001.02",
+      "name": "Account Request Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.010.001.03",
+      "name": "Account Request Acknowledgement V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.010.001.04",
+      "name": "Account Request Acknowledgement V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.011.001.01",
+      "name": "Account Request Rejection V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.011.001.02",
+      "name": "Account Request Rejection V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.011.001.03",
+      "name": "Account Request Rejection V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.011.001.04",
+      "name": "Account Request Rejection V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.012.001.01",
+      "name": "Account Additional Information Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.012.001.02",
+      "name": "Account Additional Information Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.012.001.03",
+      "name": "Account Additional Information Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.012.001.04",
+      "name": "Account Additional Information Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.013.001.01",
+      "name": "Account Report Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.013.001.02",
+      "name": "Account Report Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.013.001.03",
+      "name": "Account Report Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.013.001.04",
+      "name": "Account Report Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.014.001.01",
+      "name": "Account Report V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.014.001.02",
+      "name": "Account Report V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.014.001.03",
+      "name": "Account Report V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.014.001.04",
+      "name": "Account Report V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.014.001.05",
+      "name": "Account Report V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.015.001.01",
+      "name": "Account Excluded Mandate Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.015.001.02",
+      "name": "Account Excluded Mandate Maintenance Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.015.001.03",
+      "name": "Account Excluded Mandate Maintenance Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.015.001.04",
+      "name": "Account Excluded Mandate Maintenance Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.015.001.05",
+      "name": "Account Excluded Mandate Maintenance Request V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.016.001.01",
+      "name": "Account Excluded Mandate Maintenance Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.016.001.02",
+      "name": "Account Excluded Mandate Maintenance Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.016.001.03",
+      "name": "Account Excluded Mandate Maintenance Amendment Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.016.001.04",
+      "name": "Account Excluded Mandate Maintenance Amendment Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.016.001.05",
+      "name": "Account Excluded Mandate Maintenance Amendment Request V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.017.001.01",
+      "name": "Account Mandate Maintenance Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.017.001.02",
+      "name": "Account Mandate Maintenance Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.017.001.03",
+      "name": "Account Mandate Maintenance Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.017.001.04",
+      "name": "Account Mandate Maintenance Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.017.001.05",
+      "name": "Account Mandate Maintenance Request V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.018.001.01",
+      "name": "Account Mandate Maintenance Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.018.001.02",
+      "name": "Account Mandate Maintenance Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.018.001.03",
+      "name": "Account Mandate Maintenance Amendment Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.018.001.04",
+      "name": "Account Mandate Maintenance Amendment Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.018.001.05",
+      "name": "Account Mandate Maintenance Amendment Request V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.019.001.01",
+      "name": "Account Closing Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.019.001.02",
+      "name": "Account Closing Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.019.001.03",
+      "name": "Account Closing Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.019.001.04",
+      "name": "Account Closing Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.020.001.01",
+      "name": "Account Closing Amendment Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.020.001.02",
+      "name": "Account Closing Amendment Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.020.001.03",
+      "name": "Account Closing Amendment Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.020.001.04",
+      "name": "Account Closing Amendment Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.021.001.01",
+      "name": "Account Closing Additional Information Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.021.001.02",
+      "name": "Account Closing Additional Information Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.021.001.03",
+      "name": "Account Closing Additional Information Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.021.001.04",
+      "name": "Account Closing Additional Information Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.022.001.01",
+      "name": "Identification Modification Advice V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.022.001.02",
+      "name": "Identification Modification Advice V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.022.001.03",
+      "name": "Identification Modification Advice V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.022.001.04",
+      "name": "Identification Modification Advice V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.023.001.01",
+      "name": "Identification Verification Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.023.001.02",
+      "name": "Identification Verification Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.023.001.03",
+      "name": "Identification Verification Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.023.001.04",
+      "name": "Identification Verification Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.024.001.01",
+      "name": "Identification Verification Report V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.024.001.02",
+      "name": "Identification Verification Report V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.024.001.03",
+      "name": "Identification Verification Report V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.024.001.04",
+      "name": "Identification Verification Report V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.027.001.01",
+      "name": "Account Switch Information Request V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.027.001.02",
+      "name": "Account Switch Information Request V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.027.001.03",
+      "name": "Account Switch Information Request V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.027.001.04",
+      "name": "Account Switch Information Request V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.027.001.05",
+      "name": "Account Switch Information Request V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.027.001.06",
+      "name": "Account Switch Information Request V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.028.001.01",
+      "name": "Account Switch Information Response V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.028.001.02",
+      "name": "Account Switch Information Response V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.028.001.03",
+      "name": "Account Switch Information Response V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.028.001.04",
+      "name": "Account Switch Information Response V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.028.001.05",
+      "name": "Account Switch Information Response V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.028.001.06",
+      "name": "Account Switch Information Response V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.029.001.01",
+      "name": "Account Switch Cancel Existing Payment V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.029.001.02",
+      "name": "Account Switch Cancel Existing Payment V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.029.001.03",
+      "name": "Account Switch Cancel Existing Payment V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.029.001.04",
+      "name": "Account Switch Cancel Existing Payment V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.029.001.05",
+      "name": "Account Switch Cancel Existing Payment V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.029.001.06",
+      "name": "Account Switch Cancel Existing Payment V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.030.001.01",
+      "name": "Account Switch Request Redirection V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.030.001.02",
+      "name": "Account Switch Request Redirection V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.030.001.03",
+      "name": "Account Switch Request Redirection V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.030.001.04",
+      "name": "Account Switch Request Redirection V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.031.001.01",
+      "name": "Account Switch Request Balance Transfer V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.031.001.02",
+      "name": "Account Switch Request Balance Transfer V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.031.001.03",
+      "name": "Account Switch Request Balance Transfer V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.031.001.04",
+      "name": "Account Switch Request Balance Transfer V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.031.001.05",
+      "name": "Account Switch Request Balance Transfer V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.031.001.06",
+      "name": "Account Switch Request Balance Transfer V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.032.001.01",
+      "name": "Account Switch Balance Transfer Acknowledgement V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.032.001.02",
+      "name": "Account Switch Balance Transfer Acknowledgement V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.032.001.03",
+      "name": "Account Switch Balance Transfer Acknowledgement V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.032.001.04",
+      "name": "Account Switch Balance Transfer Acknowledgement V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.032.001.05",
+      "name": "Account Switch Balance Transfer Acknowledgement V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.032.001.06",
+      "name": "Account Switch Balance Transfer Acknowledgement V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.033.001.01",
+      "name": "Account Switch Notify Account Switch Complete V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.033.001.02",
+      "name": "Account Switch Notify Account Switch Complete V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.034.001.01",
+      "name": "Account Switch Request Payment V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.034.001.02",
+      "name": "Account Switch Request Payment V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.034.001.03",
+      "name": "Account Switch Request Payment V03",
+      "description": ""
+    },
+    {
+      "id": "acmt.034.001.04",
+      "name": "Account Switch Request Payment V04",
+      "description": ""
+    },
+    {
+      "id": "acmt.034.001.05",
+      "name": "Account Switch Request Payment V05",
+      "description": ""
+    },
+    {
+      "id": "acmt.034.001.06",
+      "name": "Account Switch Request Payment V06",
+      "description": ""
+    },
+    {
+      "id": "acmt.035.001.01",
+      "name": "Account Switch Payment Response V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.035.001.02",
+      "name": "Account Switch Payment Response V02",
+      "description": ""
+    },
+    {
+      "id": "acmt.036.001.01",
+      "name": "Account Switch Termination Switch V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.037.001.01",
+      "name": "Account Switch Technical Rejection V01",
+      "description": ""
+    },
+    {
+      "id": "acmt.037.001.02",
+      "name": "Account Switch Technical Rejection V02",
+      "description": ""
+    }
+  ]
+}

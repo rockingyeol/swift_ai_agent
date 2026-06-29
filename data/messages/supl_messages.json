@@ -1,0 +1,615 @@
+{
+  "description": "SWIFT ISO 20022 supl 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "supl.001.001.02",
+      "name": "DTCCCANOCSD Data SD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.03",
+      "name": "DTCCCANOCSD Data SD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.04",
+      "name": "DTCCCANOCSD Data SD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.05",
+      "name": "DTCCCANOCSD Data SD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.06",
+      "name": "DTCCCANOCSD Data SD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.07",
+      "name": "DTCCCANOCSD Data SD1V07",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.08",
+      "name": "DTCCCANOCSD Data SD1V08",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.09",
+      "name": "DTCCCANOCSD Data SD1V09",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.10",
+      "name": "DTCCCANOCSD Data SD1V10",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.11",
+      "name": "DTCCCANOCSD Data SD1V11",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.12",
+      "name": "DTCCCANOCSD Data SD1V12",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.13",
+      "name": "DTCCCANOCSD Data SD1V13",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.14",
+      "name": "DTCCCANOCSD Data SD1V14",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.15",
+      "name": "DTCCCANOCSD Data SD1V15",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.16",
+      "name": "DTCCCANOCSD Data SD1V16",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.17",
+      "name": "DTCCCANOCSD Data SD1V17",
+      "description": ""
+    },
+    {
+      "id": "supl.001.001.18",
+      "name": "DTCCCANOCSD Data SD1V18",
+      "description": ""
+    },
+    {
+      "id": "supl.002.001.02",
+      "name": "DTCCCANO Market Data SD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.002.001.03",
+      "name": "DTCCCANO Market Data SD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.002.001.04",
+      "name": "DTCCCANO Market Data SD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.002.001.05",
+      "name": "DTCCCANO Market Data SD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.002.001.06",
+      "name": "DTCCCANO Market Data SD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.003.001.02",
+      "name": "DTCCCANO Service Data SD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.003.001.03",
+      "name": "DTCCCANO Service Data SD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.004.001.03",
+      "name": "DTCCCANO Custodian SD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.005.001.03",
+      "name": "DTCCCANO Derivative SD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.02",
+      "name": "DTCCCACNSD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.03",
+      "name": "DTCCCACNSD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.04",
+      "name": "DTCCCACNSD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.05",
+      "name": "DTCCCACNSD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.06",
+      "name": "DTCCCACNSD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.07",
+      "name": "DTCCCACNSD1V07",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.08",
+      "name": "DTCCCACNSD1V08",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.09",
+      "name": "DTCCCACNSD1V09",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.10",
+      "name": "DTCCCACNSD1V10",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.11",
+      "name": "DTCCCACNSD1V11",
+      "description": ""
+    },
+    {
+      "id": "supl.006.001.12",
+      "name": "DTCCCACNSD1V12",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.01",
+      "name": "DTCCCANO Eligible Balance SD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.02",
+      "name": "DTCCCANO Eligible Balance SD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.03",
+      "name": "DTCCCANO Eligible Balance SD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.04",
+      "name": "DTCCCANO Eligible Balance SD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.05",
+      "name": "DTCCCANO Eligible Balance SD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.06",
+      "name": "DTCCCANO Eligible Balance SD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.07",
+      "name": "DTCCCANO Eligible Balance SD1V07",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.08",
+      "name": "DTCCCANO Eligible Balance SD1V08",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.09",
+      "name": "DTCCCANO Eligible Balance SD1V09",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.10",
+      "name": "DTCCCANO Eligible Balance SD1V10",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.11",
+      "name": "DTCCCANO Eligible Balance SD1V11",
+      "description": ""
+    },
+    {
+      "id": "supl.007.001.12",
+      "name": "DTCCCANO Eligible Balance SD1V12",
+      "description": ""
+    },
+    {
+      "id": "supl.008.001.01",
+      "name": "DTCCCAINSD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.008.001.02",
+      "name": "DTCCCAINSD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.008.001.03",
+      "name": "DTCCCAINSD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.008.001.04",
+      "name": "DTCCCAINSD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.008.001.05",
+      "name": "DTCCCAINSD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.008.001.06",
+      "name": "DTCCCAINSD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.008.001.07",
+      "name": "DTCCCAINSD1V07",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.01",
+      "name": "DTCCCAPASD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.02",
+      "name": "DTCCCAPASD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.03",
+      "name": "DTCCCAPASD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.04",
+      "name": "DTCCCAPASD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.05",
+      "name": "DTCCCAPASD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.06",
+      "name": "DTCCCAPASD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.07",
+      "name": "DTCCCAPASD1V07",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.08",
+      "name": "DTCCCAPASD1V08",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.09",
+      "name": "DTCCCAPASD1V09",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.10",
+      "name": "DTCCCAPASD1V10",
+      "description": ""
+    },
+    {
+      "id": "supl.009.001.11",
+      "name": "DTCCCAPASD1V11",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.01",
+      "name": "DTCCCAPSSD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.02",
+      "name": "DTCCCAPSSD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.03",
+      "name": "DTCCCAPSSD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.04",
+      "name": "DTCCCAPSSD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.05",
+      "name": "DTCCCAPSSD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.06",
+      "name": "DTCCCAPSSD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.07",
+      "name": "DTCCCAPSSD1V07",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.08",
+      "name": "DTCCCAPSSD1V08",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.09",
+      "name": "DTCCCAPSSD1V09",
+      "description": ""
+    },
+    {
+      "id": "supl.010.001.10",
+      "name": "DTCCCAPSSD1V10",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.01",
+      "name": "DTCCCACOSD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.02",
+      "name": "DTCCCACOSD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.03",
+      "name": "DTCCCACOSD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.04",
+      "name": "DTCCCACOSD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.05",
+      "name": "DTCCCACOSD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.06",
+      "name": "DTCCCACOSD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.07",
+      "name": "DTCCCACOSD1V07",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.08",
+      "name": "DTCCCACOSD1V08",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.09",
+      "name": "DTCCCACOSD1V09",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.10",
+      "name": "DTCCCACOSD1V10",
+      "description": ""
+    },
+    {
+      "id": "supl.011.001.11",
+      "name": "DTCCCACOSD1V11",
+      "description": ""
+    },
+    {
+      "id": "supl.017.001.01",
+      "name": "Payment SD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.025.001.01",
+      "name": "DTCCCARESD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.025.001.02",
+      "name": "DTCCCARESD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.025.001.03",
+      "name": "DTCCCARESD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.025.001.04",
+      "name": "DTCCCARESD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.025.001.05",
+      "name": "DTCCCARESD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.027.001.01",
+      "name": "Information Response SD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.030.001.01",
+      "name": "DTCCCAISSD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.030.001.02",
+      "name": "DTCCCAISSD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.030.001.03",
+      "name": "DTCCCAISSD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.030.001.04",
+      "name": "DTCCCAISSD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.030.001.05",
+      "name": "DTCCCAISSD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.030.001.06",
+      "name": "DTCCCAISSD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.030.001.07",
+      "name": "DTCCCAISSD1V07",
+      "description": ""
+    },
+    {
+      "id": "supl.030.001.08",
+      "name": "DTCCCAISSD1V08",
+      "description": ""
+    },
+    {
+      "id": "supl.031.001.01",
+      "name": "DTCCCASTSD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.031.001.02",
+      "name": "DTCCCASTSD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.031.001.03",
+      "name": "DTCCCASTSD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.031.001.04",
+      "name": "DTCCCASTSD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.031.001.05",
+      "name": "DTCCCASTSD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.031.001.06",
+      "name": "DTCCCASTSD1V06",
+      "description": ""
+    },
+    {
+      "id": "supl.032.001.01",
+      "name": "DTCCCAICSD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.032.001.02",
+      "name": "DTCCCAICSD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.033.001.01",
+      "name": "DTCCCACSSD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.033.001.02",
+      "name": "DTCCCACSSD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.033.001.03",
+      "name": "DTCCCACSSD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.034.001.01",
+      "name": "DTCCCAPCSD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.034.001.02",
+      "name": "DTCCCAPCSD1V02",
+      "description": ""
+    },
+    {
+      "id": "supl.034.001.03",
+      "name": "DTCCCAPCSD1V03",
+      "description": ""
+    },
+    {
+      "id": "supl.034.001.04",
+      "name": "DTCCCAPCSD1V04",
+      "description": ""
+    },
+    {
+      "id": "supl.034.001.05",
+      "name": "DTCCCAPCSD1V05",
+      "description": ""
+    },
+    {
+      "id": "supl.035.001.01",
+      "name": "EUPSD2SCA Data SD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.043.001.01",
+      "name": "Multiple Foreign Exchange SD1V01",
+      "description": ""
+    },
+    {
+      "id": "supl.044.001.01",
+      "name": "Multiple Debit Accounts SD1V01",
+      "description": ""
+    }
+  ]
+}

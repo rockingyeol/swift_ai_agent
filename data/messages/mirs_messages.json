@@ -1,0 +1,10 @@
+{
+  "description": "SWIFT ISO 20022 mirs 메시지 목록 (전체 버전)",
+  "messages": [
+    {
+      "id": "mirs.095.001.01",
+      "name": "Activation Deactivation V01",
+      "description": ""
+    }
+  ]
+}
